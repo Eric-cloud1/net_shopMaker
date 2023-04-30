@@ -1,0 +1,8 @@
+E:\XMAble\trunk\Website\bin\MakerShop.Data.dll
+E:\XMAble\trunk\Website\bin\MakerShop.Data.pdb
+E:\XMAble\trunk\MakerShop.Data\obj\Debug\ResolveAssemblyReference.cache
+E:\XMAble\trunk\MakerShop.Data\obj\Debug\MakerShop.Data.Resources.resources
+E:\XMAble\trunk\MakerShop.Data\obj\Debug\MakerShop.Data.dll
+E:\XMAble\trunk\MakerShop.Data\obj\Debug\MakerShop.Data.pdb
+E:\XMAble\trunk\MakerShop.Data\obj\Debug\ResGen.read.1.tlog
+E:\XMAble\trunk\MakerShop.Data\obj\Debug\ResGen.write.1.tlog

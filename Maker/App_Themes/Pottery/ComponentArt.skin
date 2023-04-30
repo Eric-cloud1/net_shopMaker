@@ -1,0 +1,39 @@
+<%-- This file is reserved for skins applied to ComponentArt controls --%>
+<%@ Register Assembly="ComponentArt.Web.UI" Namespace="ComponentArt.Web.UI" TagPrefix="ComponentArt" %>
+
+<%-- Default TreeView Style --%>
+<ComponentArt:TreeView 
+    DragAndDropEnabled="false" 
+    NodeEditingEnabled="false" 
+    KeyboardEnabled="true"
+    CssClass="TreeView" 
+    NodeCssClass="TreeNode" 
+    SelectedNodeCssClass="SelectedTreeNode" 
+    HoverNodeCssClass="HoverTreeNode" 
+    NodeEditCssClass="NodeEdit"
+    LineImageWidth="19" 
+    LineImageHeight="20"
+    DefaultImageWidth="16" 
+    DefaultImageHeight="16"
+    NodeLabelPadding="3"
+    ItemSpacing="0" 
+    ImagesBaseUrl="~/App_Themes/Pottery/images/ComponentArt/TreeView"
+    ShowLines="true" 
+    LineImagesFolderUrl="~/App_Themes/Pottery/images/ComponentArt/TreeView/lines"
+    runat="server" />
+
+<%-- Default TabStrip Style --%>
+<ComponentArt:TabStrip 
+    CssClass="TopGroup"
+    DefaultItemLookId="DefaultTabLook"
+    DefaultSelectedItemLookId="SelectedTabLook"
+    DefaultDisabledItemLookId="DisabledTabLook"
+    DefaultGroupTabSpacing="0"
+    ImagesBaseUrl="~/App_Themes/Pottery/images/ComponentArt/"
+    runat="server">
+    <ItemLooks>
+        <ComponentArt:ItemLook LookId="DefaultTabLook" CssClass="DefaultTab" HoverCssClass="DefaultTabHover" LabelPaddingLeft="10" LabelPaddingRight="10" LabelPaddingTop="3" LabelPaddingBottom="3" LeftIconUrl="tab_left_icon.gif" RightIconUrl="tab_right_icon.gif" HoverLeftIconUrl="hover_tab_left_icon.gif" HoverRightIconUrl="hover_tab_right_icon.gif" LeftIconWidth="11" LeftIconHeight="22" RightIconWidth="3" RightIconHeight="22" />
+        <ComponentArt:ItemLook LookId="SelectedTabLook" CssClass="SelectedTab" LabelPaddingLeft="11" LabelPaddingRight="10" LabelPaddingTop="3" LabelPaddingBottom="3" LeftIconUrl="selected_tab_left_icon.gif" RightIconUrl="selected_tab_right_icon.gif" LeftIconWidth="10" LeftIconHeight="22" RightIconWidth="3" RightIconHeight="22" />
+        <ComponentArt:ItemLook LookId="DisabledTabLook" CssClass="DisabledTab" LabelPaddingLeft="11" LabelPaddingRight="10" LabelPaddingTop="3" LabelPaddingBottom="3" LeftIconUrl="tab_left_icon.gif" RightIconUrl="tab_right_icon.gif" LeftIconWidth="10" LeftIconHeight="22" RightIconWidth="3" RightIconHeight="22" />
+    </ItemLooks>
+</ComponentArt:TabStrip>

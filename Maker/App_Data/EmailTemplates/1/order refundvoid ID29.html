@@ -1,0 +1,266 @@
+<html>
+<head>
+<style type="text/css">
+TABLE.Email {
+width: 640px;
+padding: 5px;
+margin: 0px;
+border: 1px solid #5872CB;
+}
+TABLE.Email TH {
+font-weight: bold;
+font-size: 12px;
+color: #ffffff;
+font-family: Arial, Verdana, Sans-Serif;
+font-style: strong;
+background-color: #304FBA;
+text-align: center;
+text-decoration: none;
+padding: 5px;
+}
+TABLE.Email TD {
+font-weight: normal;
+font-size: 12px;
+color: #000000;
+font-family: Arial, Verdana, Sans-Serif;
+background-color: #ffffff;
+text-align: left;
+text-decoration: none;
+padding: 3px;
+}
+</style>
+</head>
+<body>
+<table class="Email">
+<tr>
+<td colspan="2" class="Email">
+<div style="text-align:center; background-color: #C8F3FB;">
+<strong style="font-size:26px">ORDER CANCELATION.</strong><br>
+<strong style="font-size:18px;">Your Order Has Been CANCELED!</strong>
+
+
+
+
+</div>
+
+
+
+<p><strong>Dear  $order.BillToFirstName $order.BillToLastName !</strong><br />Thank you for your inquiry</p>
+Per your request, your order has been cancelled. We apologize for any inconvenience this may have caused you. We have already processed the credit with your bank. Please allow 3-10 days for it to appear on your credit card statement. As always, your business is extremely important to us and we look forward to future transactions.
+    <br><br>
+    Thank You,<br>
+Customer Service
+<br>
+<br>
+    <div align="center" style="background-color: #C8F3FB;">
+    <br>
+<br>
+<div style="font-size:18px;">
+<!--Your Billing statement will read: <br />
+  <strong>$payment.ChargeDescriptor<br />
+
+  </strong>--></div></div>
+ 
+
+
+ 
+ 
+</td>
+</tr>
+</table>
+<table class="Email">
+<tr>
+<th class="Email">Order Summary</th>
+</tr>
+</table>
+<table class="Email">
+<tr>
+<td class="Email"><div align="right"><strong>Email Address:</strong></div></td>
+<td class="Email">${order.BillToEmail}</td>
+</tr>
+<tr>
+<td class="Email" width="140"><div align="right"><strong>Order Number:</strong> </div></td>
+<td class="Email" width="500"><p>$order.OrderNumber</p></td>
+</tr>
+<tr>
+<td class="Email"><div align="right"><strong>Ordered on:</strong></div></td>
+<td class="Email">$order.OrderDate.ToString("G")</td>
+</tr>
+
+<tr>
+<td class="Email"><div align="right"><strong>Product:</strong></div></td>
+<td class="Email">
+
+Weight Loss</td>
+</tr>
+
+
+<tr>
+<td><div align="right"><strong style="color:#f00;">Refunded/Credited to Account:</strong></div></td>
+<td style="color:#F00;">- $transaction.Amount.ToString("ulc")</td>
+</tr>
+<tr>
+<td class="Email"><div align="right"><strong>Billing Statement:</strong></div></td>
+<td class="Email" style="background-color:#C8F3FB;">$payment.ChargeDescriptor</td>
+</tr>
+
+</table><div style="color:#fff; width:640px">
+
+#set ($shipNo = 1)	
+#foreach($shipment in $order.Shipments)
+#beforeall
+
+
+<table class="Email" style="color:#000;">
+<tr>
+<th class="Email" colspan="4">Shipment Information</th>
+</tr>
+<tr>
+<td colspan="4" class="Email" style="text-align: center;">							
+<strong><u>Shipment $shipNo of $order.Shipments.Count</u></strong>
+#set ($shipNo = $shipNo + 1)			
+</td>
+</tr>
+<tr>
+<td class="Email" colspan="4" style="text-align: center;">
+
+<div style="color:#fff;">
+<table width="100%">
+<tr>
+<td class="Email" valign="top">
+
+</td>
+
+<td class="Email" valign="top">
+<div style="color:#000;">
+<strong>Billing & Shipping Address:</strong>
+<div style="padding-left:30px;">
+$shipment.FormatToAddress(true)
+#if ($shipment.ShipMessage.Length > 0)
+<br/><strong>Message:</strong>$shipment.ShipMessage
+#end					  
+</div>
+<div style="text-align:center"><br>
+<strong>Thanks again for your patience.</strong><br>
+
+</div>
+</div>
+</td>
+<td class="Email" valign="top">
+
+</td>
+</tr>
+</table>
+
+</div>
+
+
+	
+</td>
+</tr>
+<tr><td style="color:#fff;">
+<!--#foreach($orderItem in $order.Items.FilterByShipmentAndSort())
+#beforeall  
+<tr>
+
+<td style="background:#cccccc; color:#00000; text-align: center;"><strong>Description</strong></td>
+<td style="background:#cccccc; color:#00000; text-align: center;"><strong>Quantity</strong></td>
+<td style="background:#cccccc; color:#00000; text-align: center;"><strong>Price</strong></td>
+</tr>
+#each
+
+#if ((($orderItem.OrderItemType == "Product") || ($orderItem.OrderItemType == "Discount") || ($orderItem.OrderItemType == "Coupon") || ($orderItem.OrderItemType == "GiftWrap")) && !$orderItem.IsHidden)
+<tr class="Email">
+<td class="Email" style="text-align: center;">
+#if (($orderItem.OrderItemType == "Product"))
+$orderItem.Sku
+#elseif (($orderItem.OrderItemType == "Discount"))
+DISCOUNT
+#elseif (($orderItem.OrderItemType == "Coupon"))
+COUPON
+#elseif (($orderItem.OrderItemType == "GiftWrap"))
+GIFTWRAP
+#end
+</td>
+
+<td class="Email" style="text-align: center;">$orderItem.Quantity</td>
+<td class="Email" style="text-align: right;">$orderItem.ExtendedPrice.ToString("ulc")</td>
+</tr>
+#end
+#end
+<tr class="Email"><td colspan="4">&nbsp;</td>
+</tr>-->
+
+
+</td></tr>
+</table>		
+#end	
+</div>
+<div style="color:#fff;">
+<!--
+<table class="Email">
+<tr>
+<th class="Email">Order Totals</th>
+</tr>
+</table>
+<table class="Email">
+<tr>
+<td width="40%" style="background:#cccccc; color:#00000; text-align: right;">
+<strong>Subtotal:</strong>
+</td>
+<td width="15%" class="Email" style="text-align: right;">
+$order.Items.TotalPriceById(0).ToString("ulc")
+</td>
+<td width="55%" rowspan="5"><p align="center"><strong>Thanks again for shopping with us!</strong></p>
+<p align="center" style="background-color:Yellow ">Your Billing statement will read: <br />
+$payment.ChargeDescriptor<br />
+Customer Service #: <br />$payment.CustomerServicePhone
+ </p></td>
+</tr>
+<tr>
+<td width="40%" style="background:#cccccc; color:#00000; text-align: right;">
+<strong>Tax:</strong>
+</td>
+<td width="15%" class="Email" style="text-align: right;">
+$order.Items.TotalPriceById(3).ToString("ulc")
+</td>
+</tr>
+<tr>
+<td width="40%" style="background:#cccccc; color:#00000; text-align: right;">
+<strong>Shipping and Handling:</strong>
+</td>
+<td width="15%" class="Email" style="text-align: right;">
+$order.Items.TotalPriceById(1, 2).ToString("ulc")
+</td>
+</tr>
+<tr>
+<td width="40%" style="background:#cccccc; color:#00000; text-align: right;">
+<strong>Discounts:</strong>
+</td>
+<td width="15%" class="Email" style="text-align: right;">
+$order.Items.TotalPriceById(4).ToString("ulc")
+</td>
+</tr>	
+<tr>
+<td width="40%" style="background:#cccccc; color:#00000; text-align: right;">
+<strong>Coupons:</strong>
+</td>
+<td width="15%" class="Email" style="text-align: right;">
+$order.Items.TotalPriceById(5).ToString("ulc")
+</td>
+</tr>
+<tr>
+<td width="30%" style="background:#cccccc; color:#00000; text-align: right;">
+<strong>Total:</strong>
+</td>
+<td width="15%" class="Email" style="text-align: right;">
+$order.Items.TotalPriceById().ToString("ulc")
+</td>
+</tr>
+<tr><td colspan="4">If you would like to purchase additional product please go to <a href="http://www.purenutrasystems.com" >www.PureNutrasystems.com</a></td></tr>
+</table>-->
+</div>
+
+
+</body>
+</html>

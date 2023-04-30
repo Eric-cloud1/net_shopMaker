@@ -1,0 +1,50 @@
+<html>
+<head>
+<style type="text/css">
+TABLE.Email {
+width: 640px;
+padding: 5px;
+margin: 0px;
+border: 1px solid #5872CB;
+}
+TABLE.Email TH {
+font-weight: bold;
+font-size: 12px;
+color: #ffffff;
+font-family: Arial, Verdana, Sans-Serif;
+font-style: strong;
+background-color: #304FBA;
+text-align: center;
+text-decoration: none;
+padding: 5px;
+}
+TABLE.Email TD {
+font-weight: normal;
+font-size: 12px;
+color: #000000;
+font-family: Arial, Verdana, Sans-Serif;
+background-color: #ffffff;
+text-align: left;
+text-decoration: none;
+padding: 3px;
+}
+</style>
+</head>
+<body>
+<table class="Email">
+<tr>
+<td class="Email">
+<p>Hello,</p>
+<p>I found this at ${store.Name} and thought you might find it of interest.</p>
+<p><a href="${store.StoreUrl}Product.aspx?ProductId=${product.ProductId}">$product.Name</a></p>
+<p>Sincerely,<br>
+${fromName}</p>
+<p><hr></p>
+<p>${fromEmail} requested that we send this e-mail.</p>
+<p><strong><a href="${store.StoreUrl}">$store.Name</a></strong><br />
+$store.DefaultWarehouse.FormatAddress(true)</p>
+</td>
+</tr>
+</table>
+</body>
+</html>

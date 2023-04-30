@@ -1,0 +1,26 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+    <title>VirolPlex</title>
+    <meta http-equiv="Pragma" content="no-cache" />
+
+    <script language="javascript" type="text/javascript">
+        var str;
+
+        if (window.location.href.indexOf('default.htm') > 0)
+            str = window.location.href.substring(0, window.location.href.indexOf('default.htm') - 1);
+        else
+            str = window.location.href;
+
+        if (str.substring(str.length - 1,str.length) != '/')
+            str = str + '/';
+        str = str + 'admin/orders';
+        
+        window.location = str; 
+
+    </script>
+
+</head>
+<body>
+</body>
+</html>

@@ -1,0 +1,208 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+  <siteMapNode title="Admin Menu" roles="*">
+    <siteMapNode title="Manage" LookId="TopItemLook" roles="System,Admin,Jr. Admin,Manage Orders,Manage Catalog,Customer Service Admin, Customer Service, Gateway Service Admin, Gateway Service ">
+      <siteMapNode title="Dashboard" url="~/Admin/Default.aspx" roles="System,Admin,Jr. Admin"  />
+      <siteMapNode title="Orders" url="~/Admin/Orders/Default.aspx" roles="System,Admin,Jr. Admin,Manage Orders" />
+      <siteMapNode title="Images and Assets" url="~/Admin/Products/Assets/AssetManager.aspx" roles="System,Admin,Jr. Admin,Manage Catalog" />
+      <siteMapNode title="Gift Certificates" url="~/Admin/Payment/GiftCertificates.aspx" roles="System,Admin,Jr. Admin" />
+      <siteMapNode title="Subscriptions" url="~/Admin/People/Subscriptions/Default.aspx" roles="System,Admin,Jr. Admin" />
+      <siteMapNode title="Product Reviews" url="~/Admin/Products/Reviews/Default.aspx" />
+      <siteMapNode title="Product Batch Edit" url="~/Admin/Products/Batching/BatchEdit.aspx" />
+      <siteMapNode title="Low Inventory" url="~/Admin/Reports/LowInventory.aspx" />
+    </siteMapNode>
+	  <siteMapNode title="Customer Service" LookId="TopItemLook" roles="System,Admin,Jr. Admin,Customer Service Admin, Customer Service ">
+		  <siteMapNode title="Phone"   url="http://api.viralplex.com/customerservice/govtcell/1/onepage.aspx" roles="System,Admin,Jr. Admin,Customer Service Admin, Customer Service "  />
+	  </siteMapNode>
+    <siteMapNode title="Catalog" LookId="TopItemLook" roles="System,Admin,Jr. Admin,Manage Catalog">
+      <siteMapNode title="Browse" url="~/Admin/Catalog/Browse.aspx" />
+      <siteMapNode title="Search" url="~/Admin/Catalog/Search.aspx" />
+      <siteMapNode title="Digital Goods" url="~/Admin/DigitalGoods/Default.aspx" Look-RightIconUrl="arrow.gif">
+        <siteMapNode title="Manage Digital Goods" url="~/Admin/DigitalGoods/DigitalGoods.aspx" />
+        <siteMapNode title="Digital Good Files" url="~/Admin/DigitalGoods/DigitalGoodFiles.aspx" />
+        <siteMapNode title="Find Digital Goods" url="~/Admin/DigitalGoods/FindDigitalGoods.aspx" />
+        <siteMapNode title="Readmes" url="~/Admin/DigitalGoods/Readmes.aspx" />
+        <siteMapNode title="License Agreements" url="~/Admin/DigitalGoods/Agreements.aspx" />
+      </siteMapNode>
+      <siteMapNode title="Find Kits" url="~/Admin/Products/Kits/Search.aspx" />
+      <siteMapNode title="Product Templates" url="~/Admin/Products/ProductTemplates/Default.aspx"></siteMapNode>
+     <!-- <siteMapNode title="Gift Wrap" url="~/Admin/Products/GiftWrap/Default.aspx" /> -->
+     <!-- <siteMapNode title="Orphaned Items" url="~/Admin/Catalog/OrphanedItems.aspx" /> -->
+    </siteMapNode>
+    <siteMapNode title="People" LookId="TopItemLook" roles="System,Admin,Jr. Admin,Customer Service Admin, Gateway Service Admin">
+      <siteMapNode title="Users" url="~/Admin/People/Users/Default.aspx" />
+      <siteMapNode title="User Groups" url="~/Admin/People/Groups/Default.aspx" />
+      <siteMapNode title="Vendors" url="~/Admin/People/Vendors/Default.aspx" roles="System,Admin,Jr. Admin" />
+      <siteMapNode title="Manufacturers" url="~/Admin/People/Manufacturers/Default.aspx" roles="System,Admin,Jr. Admin"/>
+      <siteMapNode title="Affiliates" url="~/Admin/Marketing/Affiliates/AffiliateSearch.aspx" roles="System,Admin,Jr. Admin"/>
+    </siteMapNode>
+   <!-- <siteMapNode title="Marketing" LookId="TopItemLook" roles="System,Admin,Jr. Admin"> -->
+	  <!--   <siteMapNode title="Coupons" url="~/Admin/Marketing/Coupons/Default.aspx" /> -->
+    <!-- <siteMapNode title="Volume Discounts" url="~/Admin/Marketing/Discounts/Default.aspx" /> -->
+	<!-- <siteMapNode title="Featured Products" url="~/Admin/Marketing/FeaturedProducts.aspx" /> -->
+    <!-- <siteMapNode title="Email Lists" url="~/Admin/Marketing/Email/Default.aspx" /> -->
+    <!-- <siteMapNode title="Feeds" url="~/Admin/Marketing/Feeds/Default.aspx" Look-RightIconUrl="arrow.gif"> -->
+	<!-- <siteMapNode title="Google Base Feed" url="~/Admin/Marketing/Feeds/GoogleBase.aspx" /> -->
+     <!-- <siteMapNode title="Yahoo! Shopping Feed" url="~/Admin/Marketing/Feeds/YahooShopping.aspx" /> -->
+		<!--    <siteMapNode title="Shopping.com Feed" url="~/Admin/Marketing/Feeds/Shopping.com.aspx" />  -->
+     <!-- </siteMapNode> -->
+    <!-- </siteMapNode> -->
+
+
+    <siteMapNode title="Tools" lookId="TopItemLook" roles="System,Admin,Jr. Admin,Customer Service Admin,View Reports">
+      <siteMapNode title="Shipping" Look-RightIconUrl="arrow.gif" roles="*">
+        <siteMapNode title="Shipping Summary" url="~/Admin/Tools/Shipping/ShippingSummary.aspx"/>
+        <siteMapNode title="Returns" url="~/Admin/Tools/Shipping/Returns.aspx"/>
+      </siteMapNode>
+	  <siteMapNode title="Report" Look-RightIconUrl="arrow.gif" roles="*">
+		<siteMapNode title="Schedule" url="~/Admin/Tools/Report/ReportSchedule.aspx"/>
+	  </siteMapNode>
+      <siteMapNode title="Customer Export" url="~/Admin/Tools/Export/CustomerExport.aspx"/>
+      <siteMapNode title="Quick Lookup" url="~/Admin/Tools/QuickLookup.aspx"/>
+      <siteMapNode title="Import Affiliate Counts" url="~/Admin/Tools/Import/AffiliateCounts.aspx"/>
+    </siteMapNode>
+
+    <siteMapNode title="Reports" LookId="TopItemLook" roles="System,Admin,Jr. Admin,View Reports">
+
+      <siteMapNode title="Continuity" url="~/Admin/Reports/Continuity/Default.aspx" Look-RightIconUrl="arrow.gif" roles="*">
+        <siteMapNode title="Conversions Performance" url="~/Admin/Reports/Continuity/ConversionsPerformance.aspx" />
+        <siteMapNode title="Gateways Performance" url="~/Admin/Reports/Continuity/GatewaysPerformance.aspx" />
+      </siteMapNode>
+
+      <siteMapNode title="Shipping" Look-RightIconUrl="arrow.gif" roles="*">
+        <siteMapNode title="Pending Shipments" url="~/Admin/Reports/Shipping/PendingShipment.aspx" />
+        <siteMapNode title="Forecast Shipments" url="~/Admin/Reports/Shipping/ForecastShipment.aspx" />
+        <siteMapNode title="Product Shipments" url="~/Admin/Reports/Shipping/ProductShipment.aspx" />
+      </siteMapNode>
+
+      <siteMapNode title="Billing" url="~/Admin/Reports/Billing/Default.aspx" Look-RightIconUrl="arrow.gif" roles="*">
+        <siteMapNode title="Daily Billing" url="~/Admin/Reports/Billing/DailyBillingReport.aspx" />
+        <siteMapNode title="Initial Billing" url="~/Admin/Reports/Billing/TrialStatus.aspx" />
+        <siteMapNode title="Rebilling Authorize" url="~/Admin/Reports/Billing/RebillAuthorizeReport.aspx"  />
+        <siteMapNode title="Rebilling Capture" url="~/Admin/Reports/Billing/RebillCaptureReport.aspx"  />
+        <siteMapNode title="Forecast Authorized" url="~/Admin/Reports/Billing/ForecastAuthorizedReport.aspx" />
+        <siteMapNode title="Forecast Captured" url="~/Admin/Reports/Billing/ForecastCapturedReport.aspx" />
+        <siteMapNode title="Transactions" url="~/Admin/Reports/Billing/Transaction.aspx" />
+        <siteMapNode title="Queue" url="~/Admin/Payment/Reschedule.aspx" roles="System" />
+      </siteMapNode>
+
+      <siteMapNode title="Charts" url="~/Admin/Reports/Chart/Default.aspx" Look-RightIconUrl="arrow.gif" roles="*">
+        <siteMapNode title="Conversion" Look-RightIconUrl="arrow.gif" roles="*">
+          <siteMapNode title="Click to Order" url="~/Admin/Reports/Chart/Conversion.aspx" />
+          <siteMapNode title="Click to Lead" url="~/Admin/Reports/Chart/ConversionLead.aspx" />
+          <siteMapNode title="Leads to Order" url="~/Admin/Reports/Chart/ConversionLeadsOrder.aspx" />
+        </siteMapNode>
+        <siteMapNode title="Order" Look-RightIconUrl="arrow.gif" roles="*">
+          <siteMapNode title="Current Sales" url="~/Admin/Reports/Chart/SalesCurrent.aspx" />
+          <siteMapNode title="Sales Abandoned" url="~/Admin/Reports/Chart/SalesAbandon.aspx" />
+          <siteMapNode title="Sales Failed" url="~/Admin/Reports/Chart/SalesFailedCurrent.aspx" />
+          <siteMapNode title="Forecast" url="~/Admin/Reports/Chart/ForecastChart.aspx" />
+        </siteMapNode>
+      </siteMapNode>
+
+      <siteMapNode title="Sales" Look-RightIconUrl="arrow.gif" roles="*">
+        <siteMapNode title="Sales Summary" url="~/Admin/Reports/SalesSummary.aspx" />
+        <siteMapNode title="Daily Sales" url="~/Admin/Reports/DailySales.aspx" />
+        <siteMapNode title="Monthly Sales" url="~/Admin/Reports/MonthlySales.aspx" />
+        <siteMapNode title="Taxes" url="~/Admin/Reports/Taxes.aspx" />
+      </siteMapNode>
+      <siteMapNode title="Gateway" Look-RightIconUrl="arrow.gif" url="~/Admin/Reports/Gateway/Default.aspx" roles="*">
+        <siteMapNode title="Status Summary" url="~/Admin/Reports/Gateway/GatewayStatusSummary.aspx" />
+        <siteMapNode title="Breakdown" url="~/Admin/Reports/Gateway/GatewayBreakdown.aspx" />
+        <siteMapNode title="ChargeBack" url="~/Admin/Reports/ChargeBack/Chargeback.aspx" />
+        <siteMapNode title="ChargeBack Count" url="~/Admin/Reports/ChargeBack/ChargeBackCount.aspx" />
+      </siteMapNode>
+
+      <siteMapNode title="Products" Look-RightIconUrl="arrow.gif" roles="*">
+        <siteMapNode title="Sales by Product" url="~/Admin/Reports/TopProducts.aspx" />
+        <siteMapNode title="Popular Products" url="~/Admin/Reports/PopularProducts.aspx" />
+        <siteMapNode title="Popular Categories" url="~/Admin/Reports/PopularCategories.aspx" />
+        <siteMapNode title="Product Sales Breakdown" url="~/Admin/Reports/ProductBreakdown.aspx" />
+        <siteMapNode title="Digital Goods" url="~/Admin/Reports/Products/Digitalgoods.aspx" />
+        <siteMapNode title="Product Overall Status"  url="~/Admin/Reports/Products/Overall.aspx"  />
+      </siteMapNode>
+      <siteMapNode title="Customers" Look-RightIconUrl="arrow.gif" roles="*">
+        <siteMapNode title="Sales by Customer" url="~/Admin/Reports/TopCustomers.aspx" />
+    <!--    <siteMapNode title="Abandoned Baskets" url="~/Admin/Reports/MonthlyAbandonedBaskets.aspx" /> -->
+        <siteMapNode title="Browser Popularity" url="~/Admin/Reports/PopularBrowsers.aspx" />
+      </siteMapNode>
+	<!--<siteMapNode title="Marketing" Look-RightIconUrl="arrow.gif" roles="*"> -->
+	<!-- <siteMapNode title="Sales by Affiliate" url="~/Admin/Reports/SalesByAffiliate.aspx" /> -->
+	<!--  <siteMapNode title="Sales by Affiliate Details" url="~/Admin/Reports/SalesByAffiliateDetail.aspx" /> -->
+	<!--  <siteMapNode title="Sales By Referrer" url="~/Admin/Reports/SalesByReferrer.aspx" /> -->
+     <!--  <siteMapNode title="Coupon Usage" url="~/Admin/Reports/CouponUsage.aspx" /> -->
+     <!-- </siteMapNode> -->
+      <siteMapNode title="Who Is Online?" url="~/Admin/Reports/WhoIsOnline.aspx" />
+      <siteMapNode title="Audit Log" url="~/Admin/Store/Security/AuditLog.aspx" roles="System" />
+    </siteMapNode>
+    <siteMapNode title="Configure" LookId="TopItemLook" roles="System,Jr. Admin,Admin">
+      <siteMapNode title="Store" url="~/Admin/Store/StoreSettings.aspx" />
+      <siteMapNode title="Maintenance" url="~/Admin/Store/Maintenance.aspx" />
+      <siteMapNode title="Currencies" url="~/Admin/Store/Currencies/Default.aspx" />
+	 <siteMapNode title="Language Translations" url="~/Admin/Store/Regions/Default.aspx" />
+    <!--  <siteMapNode title="Page Tracking" url="~/Admin/Store/PageTracking/Default.aspx" /> -->
+      <siteMapNode title="Security" Look-RightIconUrl="arrow.gif" roles="System">
+        <siteMapNode title="General / SSL" url="~/Admin/Store/Security/Default.aspx" />
+        <siteMapNode title="Licensing" url="~/Admin/Store/Security/Licensing.aspx" />
+        <siteMapNode title="Database" url="~/Admin/Store/Security/Connection.aspx" />
+        <siteMapNode title="IP Firewall" url="~/Admin/Store/Security/BlockedIPs.aspx" />
+        <siteMapNode title="Password Policy" url="~/Admin/Store/Security/PasswordPolicy.aspx" />
+        <siteMapNode title="Encryption Key" url="~/Admin/Store/Security/EncryptionKey.aspx"  />
+        <siteMapNode title="System Settings" url="~/Admin/Store/Security/SystemSettings.aspx"  />
+      </siteMapNode>
+      <siteMapNode title="Payments" url="~/Admin/Payment/Default.aspx" Look-RightIconUrl="arrow.gif" roles="System,Admin,Jr. Admin">
+        <siteMapNode title="Methods" url="~/Admin/Payment/Methods.aspx" />
+        <siteMapNode title="Gateways" url="~/Admin/Payment/Gateways.aspx" />
+        <siteMapNode title="Gateway Failover" url="~/Admin/Payment/GatewayFailover/GatewayFailover.aspx" />
+        <siteMapNode title="Gateway Response" url="~/Admin/Payment/GatewayResponse/GatewayResponse.aspx" />
+        <siteMapNode title="View Gateway Templates" url="~/Admin/Payment/GatewayTemplates.aspx" />
+        <siteMapNode title="Gateway Templates" url="~/Admin/Payment/Templates.aspx" />
+        <siteMapNode title="Gateway Groups" url="~/Admin/Payment/GatewayGroups/Templates.aspx" />
+        <siteMapNode title="Settings" url="~/Admin/Payment/Settings.aspx" />
+
+      </siteMapNode>
+
+      <siteMapNode title="Rules" url="" Look-RightIconUrl="arrow.gif" roles="System,Admin,Jr. Admin">
+        <siteMapNode title="Whitelists" url="~/Admin/Rules/AddByPassCardRule.aspx" />
+        <siteMapNode title="Blacklists" url="~/Admin/Rules/BlackList.aspx" />
+      </siteMapNode>
+      <siteMapNode title="Regions" url="~/Admin/Shipping/Regions.aspx" Look-RightIconUrl="arrow.gif" roles="System,Admin,Jr. Admin">
+        <siteMapNode title="Countries" url="~/Admin/Shipping/Countries/Default.aspx" />
+        <siteMapNode title="Zones" url="~/Admin/Shipping/Zones/Default.aspx" />
+      </siteMapNode>
+      <siteMapNode title="Shipping" url="~/Admin/Shipping/Default.aspx" Look-RightIconUrl="arrow.gif" roles="System,Admin,Jr. Admin">
+        <siteMapNode title="Methods" url="~/Admin/Shipping/Methods/Default.aspx" />
+        <siteMapNode title="Integrated Carriers" url="~/Admin/Shipping/Providers/Default.aspx" />
+        <siteMapNode title="Warehouses" url="~/Admin/Shipping/Warehouses/Default.aspx" />
+      </siteMapNode>
+      <siteMapNode title="Taxes" url="~/Admin/Taxes/Default.aspx"  Look-RightIconUrl="arrow.gif" roles="System,Admin,Jr. Admin">
+        <siteMapNode title="Settings" url="~/Admin/Taxes/Settings.aspx" />
+        <siteMapNode title="Tax Codes" url="~/Admin/Taxes/TaxCodes.aspx" />
+        <siteMapNode title="Tax Rules" url="~/Admin/Taxes/TaxRules.aspx" />
+        <siteMapNode title="Third Party Providers" url="~/Admin/Taxes/Providers/Default.aspx" />
+      </siteMapNode>
+      <siteMapNode title="Email" Look-RightIconUrl="arrow.gif" roles="System,Admin,Jr. Admin">
+        <siteMapNode title="Settings" url="~/Admin/Store/EmailTemplates/Settings.aspx" />
+        <siteMapNode title="Templates" url="~/Admin/Store/EmailTemplates/Default.aspx" />
+      </siteMapNode>
+      <siteMapNode LookId="BreakItem" />
+      <siteMapNode title="Order Statuses" url="~/Admin/Store/OrderStatuses/Default.aspx" roles="System,Admin" />
+     <!-- <siteMapNode title="Product Reviews" url="~/Admin/Store/ProductReviewSettings.aspx" /> -->
+    </siteMapNode>
+    <siteMapNode title="Website" LookId="TopItemLook" roles="System,Admin,Jr. Admin,Manage Website">
+      <siteMapNode title="Logo and Images" url="~/Admin/Website/LogoAndImages.aspx" />
+      <siteMapNode title="Content and Layout" url="~/Admin/Website/Scriptlets/Default.aspx" />
+      <siteMapNode title="Themes and Display Pages" url="~/Admin/Website/ThemesAndLayouts.aspx" />
+      <siteMapNode title="Customized Pages" url="~/Admin/Website/CustomizedPages.aspx" />
+      <siteMapNode title="Themes File Manager" url="~/Admin/Website/ThemeManager.aspx" />
+      <siteMapNode title="XML Site Map" url="~/Admin/Website/CommonXMLSiteMap.aspx" />
+    </siteMapNode>
+    <siteMapNode title="Help" LookId="TopItemLook" roles="System,Admin,Jr. Admin">
+      <siteMapNode title="Error Log" url="~/Admin/Help/ErrorLog.aspx" roles="System,Admin,Jr. Admin" />
+      <siteMapNode title="Online Support" url="http://help.MakerShop.com" roles="*" />
+      <siteMapNode LookId="BreakItem" />
+      <siteMapNode title="About MakerShop" url="~/Admin/Help/About.aspx" roles="*" />
+      <siteMapNode title="ConLib Reference" url="~/Admin/Website/Scriptlets/ConLibHelp2.aspx" roles="System,Admin,Jr. Admin,Manage Website" />
+    </siteMapNode>
+  </siteMapNode>
+</siteMap>

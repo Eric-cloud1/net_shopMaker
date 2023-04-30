@@ -1,0 +1,16 @@
+<asp:WebPartZone runat="server" WebPartVerbRenderMode="TitleBar" PartChromeType="None">
+    <PartTitleStyle CssClass="WebPart_PartTitle" />
+    <CloseVerb Description="Close this part" ImageUrl="images/webparts/close.gif" />
+    <MinimizeVerb Description="Minimize this part" ImageUrl="images/webparts/minimize.gif" />
+    <RestoreVerb Description="Restore this part" ImageUrl="images/webparts/restore.gif" />
+    <EditVerb Description="Edit this part" ImageUrl="images/webparts/edit.gif" />
+</asp:WebPartZone> 
+
+<asp:WebPartZone runat="server" SkinID="AdminZone" WebPartVerbRenderMode="TitleBar" PartChromeType="TitleOnly">
+    <PartTitleStyle CssClass="WebPart_PartTitle" />
+    <PartStyle CssClass="WebPart_AdminPart" />
+    <CloseVerb Description="Close this part" ImageUrl="images/webparts/close.gif" />
+    <MinimizeVerb Description="Minimize this part" ImageUrl="images/webparts/minimize.gif" />
+    <RestoreVerb Description="Restore this part" ImageUrl="images/webparts/restore.gif" />
+    <EditVerb Description="Edit this part" ImageUrl="images/webparts/edit.gif" />
+</asp:WebPartZone> 

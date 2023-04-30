@@ -1,0 +1,43 @@
+<!--
+<Description>
+Displays the standard store header.
+</Description>
+-->
+<table id="storeHeader" cellpadding="0" cellspacing="0">
+	<tr>
+		<td class="logo">
+		        <a href="~/Default.aspx">[[ConLib:StoreLogo]]</a>
+		</td>
+		<td class="headerContent" align="right" valign="top">
+			<div class="shortcuts">
+				#if($customer.IsAnonymous)
+					<a href="~/Login.aspx" class="login">Login</a>
+				#else
+					<a href="~/Logout.aspx" class="login">Logout</a>
+				#end
+				<a href="~/Members/MyAccount.aspx" class="acct">Account</a>
+				<a href="~/Members/MyWishlist.aspx" class="wishlist">Wishlist</a>
+				<a href="~/Basket.aspx" class="basket">Cart</a>
+				#if($customer.IsAdmin)
+					<a href="~/Admin/Default.aspx" class="admin">Admin</a>
+				#end
+			</div>
+			<div class="search">
+				[[ConLib:SimpleSearch]]
+			</div>
+		</td>
+	</tr>
+	<tr>
+		<td class="navigation" colspan="2">
+			<div class="content" style="float:left;">
+				<a href="~/Default.aspx" class="tab">Home</a>
+				<a href="~/Search.aspx" class="tab">Product Finder</a>	
+				<a href="~/AdvancedSearch.aspx" class="tab">Advanced Search</a>	
+				#if ($store.Currencies.Count > 1 ) 
+					<a href="~/Currencies.aspx" class="tab">Currencies</a>
+				#end
+				<a href="~/ContactUs.aspx" class="tab">Contact Us</a>
+			</div>
+		</td>
+	</tr>
+</table>

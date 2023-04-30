@@ -1,0 +1,31 @@
+<p><style type="text/css">
+TABLE.Email {
+width: 640px;
+padding: 5px;
+margin: 0px;
+border: 1px solid #5872CB;
+}
+TABLE.Email TH {
+font-weight: bold;
+font-size: 12px;
+color: #ffffff;
+font-family: Arial, Verdana, Sans-Serif;
+font-style: strong;
+background-color: #304FBA;
+text-align: center;
+text-decoration: none;
+padding: 5px;
+}
+TABLE.Email TD {
+font-weight: normal;
+font-size: 12px;
+color: #000000;
+font-family: Arial, Verdana, Sans-Serif;
+background-color: #ffffff;
+text-align: left;
+text-decoration: none;
+padding: 3px;
+}</style></p><table class="Email"><tbody><tr><td class="Email"><p><strong>Please Review - </strong></p><p><strong>On ${note.CreatedDate}, a new message&nbsp;was added to <a href="${store.StoreUrl}Admin/Orders/OrderHistory.aspx?OrderNumber=$order.OrderNumber&OrderId=$order.OrderId">Order Number $order.OrderNumber</a></strong></p>
+<p><strong>Customer said:</strong></p>
+<p>${note.Comment}</p>
+<p><strong>$store.Name</strong></p><p>&nbsp;</p></td></tr></tbody></table><p>&nbsp;</p>

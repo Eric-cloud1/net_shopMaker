@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+To Generate Schema objects use the XSD command, for example:
+__________________________________________________________
+E:\MakerShop\DataPort\trunk\Api\Schema>xsd XMLUtils.xsd /c /n:MakerShop.DataClient.Api.Schema.Utils
+__________________________________________________________
+-->
+<xs:schema id="XMLUtils" targetNamespace="http://tempuri.org/XMLUtils.xsd" elementFormDefault="qualified" xmlns="http://tempuri.org/XMLUtils.xsd" xmlns:mstns="http://tempuri.org/XMLUtils.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="ImportTemplate">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="TemplateObject" type="TemplateObject">
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:complexType name="TemplateObject">
+    <xs:sequence>
+      <xs:element name="Name" type="xs:string" />
+      <xs:element name="AC6Type" type="xs:string" />
+      <xs:element name="ClientType" type="xs:string" />
+      <xs:element name="TextDelimiter" type="xs:string" />
+      <xs:element name="TextQualifier" type="xs:string" />
+      <xs:element name="Fields">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="Field" type="Field" minOccurs="0" maxOccurs="unbounded" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="Field">
+    <xs:sequence>
+      <xs:element name="Name" type="xs:string" />
+      <xs:element name="MappedName" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ClientConfiguration">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="Stores">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="StoreConfiguration" type="StoreConfiguration" minOccurs="0" maxOccurs="unbounded" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="CurrentConfigId" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:complexType name="StoreConfiguration">
+    <xs:sequence>
+      <xs:element name="ServiceURL" type="xs:string" />
+      <xs:element name="IsDebugMode" type="xs:boolean" />
+      <xs:element name="Name" type="xs:string" />
+      <xs:element name="LoginName" type="xs:string" />
+      <xs:element name="Password" type="xs:string" />
+      <xs:element name="StorePassword" type="xs:boolean" />
+      <xs:element name="ConfigId" type="xs:string" />
+      <xs:element name="UseTrustAllSSLCertificatePolicy" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>

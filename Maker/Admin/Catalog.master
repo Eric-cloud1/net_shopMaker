@@ -1,0 +1,41 @@
+<%@ Master Language="C#" %>
+<%@ Register Src="UserControls/AdminHeader.ascx" TagName="AdminHeader" TagPrefix="uc" %>
+<%@ Register Src="Catalog/CatalogBreadCrumbs.ascx" TagName="CatalogBreadCrumbs" TagPrefix="uc" %>
+<%@ Register Src="UserControls/FooterPanel.ascx" TagName="FooterPanel" TagPrefix="uc" %>
+<%@ Register Src="Dashboard/AdminWebpartsPanel.ascx" TagName="AdminWebpartsPanel" TagPrefix="uc" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head id="Head1" runat="server">
+    <title>Merchant Administration</title>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <ajax:ScriptManager ID="ScriptManager1" runat="server" EnablePartialRendering="true" />
+        <table cellpadding="0" cellspacing="0" id="pageLayout">
+            <tr class="header">
+                <td>
+                    <uc:AdminHeader ID="AdminHeader1" runat="server" />
+                    <asp:contentplaceholder ID="BreadCrumbsPanel" runat="server">
+                        <ajax:UpdatePanel ID="BreadCrumbsAjax" runat="server" UpdateMode="Always">
+                            <ContentTemplate>
+                                <uc:CatalogBreadCrumbs ID="CategoryBreadCrumbs" runat="server" />
+                            </ContentTemplate>
+                        </ajax:UpdatePanel>
+                    </asp:contentplaceholder>
+                </td>
+            </tr>
+            <tr class="main">
+                <td>
+                    <asp:contentplaceholder ID="MainContent" runat="server">
+                    </asp:contentplaceholder>
+                </td>
+            </tr>
+            <tr class="footer">
+                <td>
+                    <uc:FooterPanel ID="FooterPanel1" runat="server" />
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

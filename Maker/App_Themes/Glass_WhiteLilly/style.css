@@ -1,0 +1,1267 @@
+@media screen {
+
+/******************************************************************************************/
+/* global styles common to all pages [ Glass_WhiteLilly Theme ]                               */
+/******************************************************************************************/
+
+/* force a vertical scrollbar in firefox, prevents horizontal page shifting */
+html { min-height: 100%; margin-bottom:1px; }
+
+/* styling for the page body */
+body { 
+    padding: 0 10px 0 10px; margin: 0; background:#FFFFFF; font-family: Arial, Verdana, Helvetica, sans-serif;
+    font-size: 12px; }
+
+/* default styling for block elements */
+td, p, form {text-decoration:none; margin:0; }
+
+ul { margin: 2px 0 2px 20px; }
+
+/* special styling for validation summary lists */
+.validationSummary ul { padding-left:0; }
+
+/* default styling for links */
+a{ text-decoration: none; color: #333333; }
+a:hover { color:#969696; text-decoration:none; }
+
+/* link styling for links that are highlighted on a page */
+a.highlight { 
+    font-weight:bold; color:#003718; padding-top:5px; padding-bottom:5px; margin-top:5px; text-decoration:none; 
+    font:Arial, Helvetica, sans-serif; }
+
+/* default styling for input elements */
+input { vertical-align:middle; }
+
+/* styling for subclassed textbox elements */
+input.textBox { background-color:#FFFFFF; border:1px solid #b3b3b3; padding: 2px; width:190px; height:16px; margin:0 3px 0 15px; }
+
+/* style for buttons */
+input.button, a.button {
+    background:#edefee url(images/button_bg.gif) repeat-x top;
+    font-family: Arial, Helvetica, sans-serif;  font-size: 11px; color: #333333 !important; cursor:pointer;
+    margin: 1px 0; font-weight:900; border: 1px solid #789b03; white-space: nowrap; }
+    
+input.button:hover, a.button:hover { background:#cae95b url(images/button_bg_hover.gif) repeat-x top;  }
+
+a.button { padding: 4px 5px 4px 5px; display:-moz-inline-box; display:inline-block;} 
+a.button:hover { padding: 4px 5px 4px 5px; display:-moz-inline-box;  display:inline-block; }
+    
+input.button { height:21px; }
+
+input.button:hover { height:21px; }
+
+/* style for a paragraph element to highlight */
+p.highlight { color:#DB0B0B; padding-top:5px; margin-top:5px; text-decoration:none;}
+
+/* Text styles used to provide status information */
+.goodCondition{font-weight: bold; color: #008000; padding-bottom: 3px;}
+.warnCondition{font-weight: bold; color: #FFA500; padding-bottom: 3px;}
+.errorCondition{font-weight: bold; color: #FF0000; padding-bottom: 3px;}
+
+.contentArea { padding:5px 10px 5px 10px;  }
+.borderedArea { border:solid 1px #b9b9b9;}
+.noTopPadding { padding-top:0; }
+.noBottomPadding { padding-bottom:0;}
+.noRightPadding { padding-right:0;}
+.noLeftPadding { padding-left:0;}
+.noTopBottomPadding {padding-top:0; padding-bottom:0;}
+.noLeftRightPadding {padding-left:0; padding-right:0;}
+
+/* style for element that acts as a spacer between other elements */
+.spacer { clear:both; font-size: 1px; line-height: 1px; height: 1px; padding: 0; margin: 0; }
+
+/* container for the breadcrumbs trail */
+.breadCrumbPanel {
+    background:#FFFFFF url(images/CategoryBreadCrumbsEdge.gif) no-repeat left top; text-indent:16px;
+    padding: 8px 0; color:#657906; font-family:Verdana, Arial, Helvetica, sans-serif; font-size:11px; font-weight:lighter; }
+    
+.breadCrumbPanel a { color:#657906; font-size:11px; font-weight:lighter; text-transform: lowercase; }
+.breadCrumbPanel a:hover{ color:#788A95; }
+.breadCrumbPanel a:visited{ color:#657906; font-weight:bold; }
+
+.CategoryBreadCrumbs{
+    padding: 8px 0;  background:#FFFFFF url(images/CategoryBreadCrumbsEdge.gif) no-repeat left top; color:#C2D2DC;
+    font-family:Verdana, Arial, Helvetica, sans-serif; font-size:9px; text-indent:16px;}
+    
+.CategoryBreadCrumbs a{ color:#657906; font-size:12px; text-transform: lowercase; }
+.CategoryBreadCrumbs a:hover{ color:#788A95; }
+.CategoryBreadCrumbs a:visited{ color:#657906; font-weight:bold; }
+
+/* link in the breadcrumbs trail */
+.breadCrumbLink{
+    text-decoration: underline; text-indent: 0; color:#5872CB; margin:4px 0 8px 0; padding:4px 0 8px 0; 
+    border:1px solid #FF0000;}
+
+/* generic styling for a suggested retail price */
+.msrp { text-decoration:line-through; }
+
+/* applied to ajax progress update */
+#centeredProgress{ 
+    width: 300px; height: 200px; position: absolute; top: 50%; left: 50%; margin-left: -150px; margin-top: -200px;  
+    z-index: 99;  color: #FFFFFF; border: 5px solid #C1C1C1; background: #FFFFFF url(images/processing.gif) no-repeat 50%; }
+
+/* background style for the screen when an ajax progress update is displayed */
+#ajaxProgressBg {
+    border: 0; padding: 0; margin: 0; width: 100%; position: absolute; background-color: #333333; opacity: 0.3;
+    filter: Alpha(opacity:30); z-index: 0; }
+
+/* style for the ajax progress indicator */
+#ajaxProgress{
+    padding: 0; position: absolute; background-color: #FFFFFF; background: #FFFFFF url(images/processing.gif) no-repeat 50%;
+    z-index: 1; left:50%; margin-left:-100px; width:200px; height:200px; border: solid 2px #333333; }
+
+hr { width:100%; }
+
+h2 { font-size:12px; }
+
+h2.sectionHeader {
+    background: url(images/section_header_bg.gif) repeat-x; padding: 0 0 0 10px; border:1px solid #4F616D;
+    margin:0 0 12px 0; height:27px; line-height:27px; font-size:14px; color:#FFFFFF; font-weight:bold; }
+
+/*---------------------------------------*/
+/*- styles for left sidebar panel       -*/
+/*---------------------------------------*/
+
+/* container for the left sidebar content */
+#leftSidebarPanel {
+    width: 194px; margin: 0; padding: 0 3px 3px 3px; background-color: #ffffff; border: 1px solid #969696;
+    border-left: solid 1px #969696; border-right-width:0; }
+
+/* content section in the left sidebar */
+#leftSidebarPanel .section { margin: 0; padding: 0; border: 0; }
+
+/* header in left sidebar content section */
+#leftSidebarPanel .section .header{ 
+    height: 24px; margin: 4px 0 0 0; padding: 0; background: url(images/section_header_bg1.gif) repeat-x;}
+
+/* caption in left sidebar content section header */
+#leftSidebarPanel .section .header h2 {
+    color: #ffffff; text-indent:8px; font-size: 14px; line-height: 24px; font-weight: 700; padding: 0; margin: 0;
+    background: url(images/header_icons.gif) no-repeat 0 0; }
+#leftSidebarPanel .section .content {}
+#leftSidebarPanel .section .content .inputForm{ margin: 0; border: solid 1px #b9b9b9; border-top:0; background:#FFFFFF;}
+#leftSidebarPanel .section .labelheading {border:solid 1px #b9b9b9; border-bottom:0; padding:10px 10px 0 12px; color: #333333;}
+#leftSidebarPanel .H2 {font-weight:lighter; color: #333333; font-size:11px;}
+#leftSidebarPanel .section .content table{ 
+	border-bottom: solid 1px #b9b9b9; background:#FFFFFF; width: 100%; margin: 0; border-collapse:inherit!important;}
+#leftSidebarPanel .searchFilterHeader { margin: 4px 0 0 0;}
+    
+/*---------------------------------------*/
+/*- styles for right sidebar panel      -*/
+/*---------------------------------------*/ 
+
+/* container for the right sidebar content */
+#rightSidebarPanel {
+    width: 194px; margin: 0; padding: 0 5px 4px 5px; background-color: #FFFFFF; border: 1px solid #969696;
+    border-left:0; border-right: solid 1px #969696; }
+#rightSidebarPanel .VisiblePanel{width:100%; height:100%; overflow:hidden;}
+#rightSidebarPanel .section { margin: 0; padding: 0; }
+#rightSidebarPanel .VisiblePanel .section .content table tr { border: solid 1px #8ed4af; }
+#rightSidebarPanel .section .header {
+    background:#FFFFFF url(images/section_header_bg2.gif) repeat-x;
+    height: 32px; border-right: solid 1px #b9b9b9;  border-top: 0; color: #333333;  margin: 4px 0 0 0; padding: 0; }
+#rightSidebarPanel .section .header h2 {
+    float:left; width: auto; text-indent: 12px; font-size: 14px; border-right:0; line-height: 32px;  padding: 0;
+    margin: 0; color: #333333; height: 32px; background: url(images/header_icons2.gif) no-repeat; }
+#rightSidebarPanel .section .header a {
+    float:right; text-decoration:underline; color:#333333; padding:0; margin:0; }
+#rightSidebarPanel .section .header a:hover { color:#984700; }
+#rightSidebarPanel .section .content { padding:0; margin: 0; }
+#rightSidebarPanel .section .content .inputForm{ margin: 0; border: solid 1px #b9b9b9; border-top:0;}
+#rightSidebarPanel .section .labelheading { border:solid 1px #b9b9b9; border-bottom:0; padding:10px 10px 0 12px; color: #333333;}
+#rightSidebarPanel .H2 { font-weight:lighter; color: #333333; font-size:11px; }
+#rightSidebarPanel .section .content .category { border-top: solid 1px #b9b9b9; border-bottom:0; }
+#rightSidebarPanel .section .content tbody{ background-color:#ffffff; }
+#rightSidebarPanel .section .content table{ 
+	border-bottom: solid 1px #b9b9b9; background:#FFFFFF; width: 100%; margin: 0; border-collapse:inherit!important;}
+#rightSidebarPanel .section .content table .thumbnail { border: solid 3px #eeeeee; }
+#rightSidebarPanel .section .nofooter{ background-color:#FFFFFF; padding: 0;}
+#rightSidebarPanel .section .footer { height:24px; line-height:24px; margin:0; color:#8C0901; margin-top:8px; padding: 0 2px; }
+#rightSidebarPanel .section .relatedProducts{ border:solid 1px #b9b9b9;}
+#rightSidebarPanel .searchFilterHeader { margin: 4px 0 0 0;}
+
+.Cell { padding: 5px 10px; border: solid 1px #b9b9b9;}
+.expressCheckoutCell{ border: solid 1px #b9b9b9;}
+.ourDepartmentsCell{border:solid 1px #b9b9b9; padding:5px; line-height:18px;}
+.onePageCheckoutCell { padding: 5px 10px; border: solid 1px #b9b9b9; border-top:0;}
+.shippingEstimateCell { border:solid 1px #b9b9b9; padding: 3px;}
+.myRecentOrdersCell { border:solid 1px #b9b9b9; padding: 5px 10px; line-height: 25px; }
+.myRecentOrdersCell .bullet{ background:url(images/bullet1.gif) no-repeat left; padding-left:18px;}
+
+
+/*---------------------------------------*/
+/*- styles for main panel               -*/
+/*---------------------------------------*/
+
+/* container for the main panel content */
+#mainPanel { padding: 4px; margin: 4px 4px 0 4px; background-color: #eeeeee; border: 1px solid #969696;  }
+
+/* used to display a content section in the main panel */
+#mainPanel .section { margin-bottom:5px; }
+
+/* header for content section in the main panel */
+#mainPanel .section .header {
+    background: url(images/section_header_bg.gif) repeat-x; height:29px; line-height:24px; padding: 0 5px 0 4px;
+    margin:0; border-left: solid 1px #b9b9b9; border-right: solid 1px #b9b9b9; border-bottom: solid 1px #969696; }
+
+/* the header / caption of a content section */
+#mainPanel .section .header H2 { margin:0; height:25px; line-height:27px; font-size:12px; text-indent:7px; color:#222222;  }
+#mainPanel .section .content { 
+	background: #FFFFFF url(images/CategoryBreadCrumbsEdge.gif) no-repeat left top;  margin: 5px 0 0 0;
+	padding:10px 10px 0 10px; line-height:13px;}
+#mainPanel  div.section div.content td div{ border:solid 1px #b4aeb8; padding: 5px; }
+#mainPanel .section .content table.inputForm { background: #FFFFFF; border: solid 1px #CFDFDF; padding: 5px;}
+#mainPanel div .iner_frame .itemList tr td{ border:solid 1px #8FA0AB;  color:#333333; padding-top: 5px; padding-bottom: 5px; }
+#mainPanel div .iner_frame .itemList tr td a{ color:#333333; font-size: 11px; }
+#mainPanel div .iner_frame .itemList tr td a:hover{ color:#416573; }
+#mainPanel div .iner_frame .itemList tr th{ border:solid 1px #8FA0AB; }
+#mainPanel div .iner_frame .itemList{ border:solid 1px #8FA0AB; }
+
+.iner_frame{ background: #FFFFFF; border: solid 1px #afa9b4; padding: 8px; }
+
+#mainPanel div .itemList tr.even td{
+    border:solid 1px #b3b3b3; line-height: 15px; background: #e5e5e5 url(images/oddRowBg.gif) repeat-x top; }
+    
+#mainPanel div .itemList tr.altodd td{
+    border:solid 1px #CCCCCC; line-height: 15px; background: #e4f5eb url(images/oddRowBg.gif) top repeat-x; }
+    
+H2.preference {
+    background: url(images/section_header_bg.gif) repeat-x; height:29px; line-height:24px; padding: 0 5px 0 4px;
+    margin:0; color:#FFFFFF; margin-left:4px; margin-right:4px; }
+
+/* used to display a dialog box in the main panel */
+#mainPanel .dialogSection { background: #FFFFFF; border: solid 5px #eeeeee; margin: 0; }
+#mainPanel .form .inputForm { background: #FFFFFF; }
+#mainPanel .form .inputForm textarea { border:solid 1px #afa9b3; }
+#mainPanel .dialogSection  .inputForm {  padding: 10px; color: #3f2a4d; }
+
+/* header for dialog box in the main panel */
+#mainPanel .dialogSection .header {
+    background:  url(images/dialogSectionBgLeft.gif) no-repeat left top; height:29px; line-height:24px; padding: 0 0 0 10px;
+    margin:0 1px 0 0; }
+/* the header / caption of a dialog box */
+#mainPanel .dialogSection .header h2 {
+    background: url(images/dialogSectionBg.gif) repeat-x; color:#222222; height: 29px; border-right: solid 1px #b9b9b9;
+    padding-right: 0; width: 100%; margin:0; text-transform: uppercase;  font-size:12px; float:left; line-height:29px;}
+
+/* link style within the header of a dialog box */
+#mainPanel .dialogSection .header a { float:right; text-decoration:underline; color:#333333; }
+
+/* link style within the header of a dialog box (hover) */
+#mainPanel .dialogSection .header a:hover { float:right; text-decoration:underline; color:#8C0901; }
+
+/* the content area of the dialog box */
+#mainPanel .dialogSection .content { border-top:10px solid #eeeeee;  margin-top:0;   background: #FFFFFF; min-height: 200px;}
+#mainPanel .dialogSection .content table th.rowheader{background-color:White;}
+#mainPanel .dialogSection .content table td.txt{}
+
+/* additional styling usually applied to content area when no footer is displayed */
+#mainPanel .dialogSection .nofooter { margin-right:0;}
+
+/* footer for dialog box */
+#mainPanel .dialogSection .footer {
+    background: #DCDCDC url(images/sectionFooterBackground.gif) repeat-x left top;
+    height:24px; line-height:24px; margin:0; color:#8C0901; margin-top:8px; }
+
+/* styling for validation summaries that appear in the main panel */
+#mainPanel .validationSummary { margin-bottom:6px; }
+
+#mainPanel .section .content .ProductItemView { border: solid 1px #b9b9b9;}
+#mainPanel .section .content .ProductItemViewOdd { border: solid 1px #b9b9b9;}
+
+/* outer wrapper for the main page content */
+#outerContentWrapper { text-align: center; width: 100%; }
+
+/* inner wrapper for the main page content */
+#innerContentWrapper { background-color:#E3EFFF; margin: 0; text-align: left; }
+
+/* additional style required when container is a table */
+table#contentLayout .form tr { background: #FFFFFF; color: #333333; border: 1px solid #b9b9b9;}
+table#contentLayout { width:100%; }
+
+#outerFrame{}
+/* style for the outer store header container */
+#storeHeader {
+    width:100%; margin: 0 auto 0 auto; background: #FFFFFF url(images/header_bg.gif) repeat-x; border: 1px solid #969696;
+    border-top: 0; border-bottom: 0; }
+
+/* styling attached to the container for the linked logo image */
+#storeHeader .logo { margin: 6px 0 0 0; padding: 0; }
+
+/* additional styling for the logo image tag */
+#storeHeader .logo img {margin: 10px 0 0 10px; }
+
+/* used for any content besides the logo in the header */
+#storeHeader .headerContent {
+    height: 99px; padding: 0 20px 0 0; background:url(images/Header_Image.gif) no-repeat left top; }
+    
+/* style for container of shortcut links that can appear in the header */
+#storeHeader .shortcuts { width:400px; height:48px; }
+
+/* style for links within shortcuts container */
+#storeHeader .shortcuts  a {
+    font-family: Verdana, Arial, Helvetica, sans-serif; display: block; text-decoration: none; text-align: center; 
+    background:url(images/button_topBg.gif) no-repeat; width: 56px; border-bottom: solid 1px #bebebe; float: right;
+    height: 29px; padding: 9px 3px 0 3px; margin: 14px 0 0 0; font-size: 11px; text-transform: capitalize; color: #222222;}
+
+#storeHeader .shortcuts a:hover {
+    background:url(images/button_topBghover.gif) no-repeat; padding: 10px 4px 0 3px; border-bottom: solid 1px #accd0c;
+    font-size: 11px; font-weight:bold;}
+
+/* style for specific shortcuts */
+#storeHeader .shortcuts a.basket:hover{margin-top:13px;}
+#storeHeader .shortcuts a.acct:hover{margin-top:13px;}
+#storeHeader .shortcuts a.admin:hover{margin-top:13px;}
+#storeHeader .shortcuts a.wishlist:hover{margin-top:13px;}
+#storeHeader .shortcuts a.login:hover{margin-top:13px;}
+
+/* style for the search container */
+#storeHeader .search { height:25px; padding:10px 0 0 0; text-align:center; width:244px; }
+
+/* style for search text box within the search area */
+#storeHeader .search input.searchPhrase { 
+    color: #324F65; background:#FFFFFF; border: solid 1px #e2e2e2; width: 170px; margin: 0 7px 0 0; }
+
+/* style for the search button */
+.searchButton {
+    font-family: Verdana, Arial, Helvetica, sans-serif; background: url(images/search_btn2.gif) no-repeat; font-size: 11px;
+    color: #FFFFFF; border:none; padding: 0 2px 3px 2px; font-weight: bold; cursor:pointer; margin:0; width:63px;
+    height:21px; text-align:center; }
+.searchButton:hover { background:url(images/search_btn_hover2.gif) no-repeat; }
+
+.allButton {
+    font-family: Arial, Helvetica, sans-serif; background: url(images/button_bg.gif) repeat-x; font-size: 11px;
+    text-transform: capitalize; color: #134FA3; border: solid 1px #919FA2; padding: 0 2px; font-weight: bold;
+    cursor:pointer; margin:0; position: absolute; left: 172px; width:56px; height:19px; text-align:center; line-height:22px; }
+    
+.allButton:hover { background: url(images/button_bg_hover.gif) repeat-x; color: #867001; }
+
+/* styling for the navigation container */
+#storeHeader .navigation {
+    background: url(images/storeHeader_navigationBG.gif) repeat-x; border-top: 1px solid #969696; border-bottom: 0; width:100%;
+    text-align:left; height:24px; }
+
+/* styling for the link container in the navigation bar */
+#storeHeader .navigation .content {margin:0 auto; }
+
+/* styling for tab links in the navigation bar content */
+#storeHeader .navigation a {
+    background:url(images/blueDots.gif) no-repeat 0 60%; font-family: Verdana, Arial, Helvetica, sans-serif; 
+    font-size: 11px; color: #3c3231; text-transform: uppercase; width: auto; padding: 9px 20px 8px 20px; text-decoration: none;
+    text-align: center; line-height:24px; }
+    
+#storeHeader .navigation a:hover { background:url(images/storeHeader_HoverBG.gif) repeat-x 0 60%; color: #333333; }
+
+/******************************************************************************************/
+/* styles for the store footer section                                                    */
+/******************************************************************************************/
+
+/* container for the store footer */
+#footer { 
+    border:1px solid #969696; border-top:0; height: 54px; background:url(images/footerBG.gif); color: #F6F7F9; 
+    line-height: 18px; margin:0 auto; }
+
+/* paragraph within the store footer */
+#footer p { padding: 8px 0 0 0; color: #969696; }
+
+/* link within paragraph in the store footer */
+#footer p a {
+    font-family: Arial, Helvetica, sans-serif; color:#333333; font-size: 12px; text-decoration:none; font-weight:bold;
+    padding: 0 5px; border-left: 1px solid #FFFFFF; }
+
+/* alter styling of first link within paragraph in the store footer */
+#footer p a:first-child { border-left: none; }
+
+/* container for the store navigation links */
+#storeNav { margin: 2px 1px; width: 198px; }
+
+/* default style for hyperlink in store navigation */
+#storeNav a {  background-color: #333333;  color:#333333;  font-weight:bold;  text-decoration:none;  display:block;  padding: 8px 3px 8px 40px; border-bottom: 1px solid #FFFFFF; }
+#storeNav a:hover {  color:#F99034; text-decoration:underline; }
+
+/* additional style for basket link */
+#storeNav a.basket { background: #000 url(images/storeNav_basket.jpg) no-repeat 5px 3px; }
+/* additional style for wishlist link */
+#storeNav a.wishlist { background: #000 url(images/storeNav_wishlist.jpg) no-repeat 5px 3px; }
+/* additional style for account link */
+#storeNav a.account { background: #000 url(images/storeNav_account.jpg) no-repeat 5px 3px; }
+/* additional style for login link */
+#storeNav a.login { background: #000 url(images/storeNav_login.jpg) no-repeat 5px 3px; }
+/* additional style for logout link */
+#storeNav a.logout { background: #000 url(images/storeNav_logout.gif) no-repeat 5px 3px; }
+/* additional style for admin link */
+#storeNav a.admin { background: #000 url(images/storeNav_admin.gif) no-repeat 5px 3px; }
+
+/* styling for the search dialog container */
+#storeSearch { width: 530px; padding: 0; margin: 0 20px; display: block; }
+
+/* styling for the search keywords text box */
+#storeSearch input.keywords { border:1px solid #EE8122; width:131px; height:15px; padding:2px 0 0 4px; }
+
+/* styling for the search button */
+#storeSearch input.searchButton { margin:0; vertical-align: middle; }
+
+/* styling for the tagline in the search image */
+#storeSearch .tagline { font-family:Arial; font-size:24px; color:#4A4A48; width:250px; margin-right:45px; }
+
+div.pageHeader { margin-bottom:5px; margin-top:4px; background: url(images/section_header_bg1.gif) repeat-x; height: 25px; line-height:25px; }
+
+div.pageHeader div.content { padding:3px; }
+
+/* container for form */
+table.inputForm { background:#FFFFFF  url(images/thumbnailTdBg.gif) no-repeat left top; width: 100%; text-align: left; margin: 0; }
+table.inputForm input { border:solid 1px #b9b9b9; color: #333333; padding: 2px; }
+
+table.inputForm select { border:solid 1px #b9b9b9; width: 330px; color: #333333; padding: 2px; }
+
+/* default styles for cells in form*/
+table.inputForm th, table.inputForm td { padding:0 5px 2px 10px; margin: 0; text-align:left;} 
+
+/* styling for row headers in form */
+table.inputForm .rowHeader { color: #333333; padding:10px 5px 10px 10px; text-align:left; width: 130px; }
+
+/* style for links that appear within rowheader */
+table.inputForm .rowHeader a {  border:1px solid #650101; width:100%; color: #333333; font-size: 10px; font-weight:bold; text-align:left; padding: 6px; }
+
+/* set style for other elements within rowheader */
+table.inputForm .rowHeader * {  font-weight: bold; font-size: 12px;  }
+
+/* style for paging container */*
+.paging { text-align: right; padding: 15px 0px 5px 1px; margin: 15px 0 5px 0;}
+/* span within the paging container - this is actually the active page index */
+.paging span , .paging .current {padding: 3px 5px;  border: 1px solid #b9b9b9; font-weight: bold; font-family: Tahoma, Arial, Helvetica, sans-serif; font-size: 9px; margin: 3px 0 3px 1px; background: #c3e6d0 url(images/paging.gif) no-repeat top left; 
+color: #765e8a; }
+/* link within paging container */
+.paging a { padding: 3px 5px; border: 1px solid #b9b9b9; font-weight: bold; font-family: Tahoma, Arial, Helvetica, sans-serif; font-size: 9px; margin: 3px 0 3px 1px; background: #a6dec1 url(images/pagingA.gif) no-repeat left top; color: #333333; text-decoration:none; }
+/* link(hover) within paging container */
+.paging a:hover { background: #2c9052 url(images/pagingAhover.gif) no-repeat left top; color: #FFFFFF; border:1px solid #969696; }
+
+/* list container for categories */
+ul.category { margin: 0; padding: 0; list-style-type: none; }
+
+/* category list item */
+ul.category li{ margin:0; padding:0 0 0 5px ; border-bottom: 1px solid #b9b9b9; background: #accd0c;
+	border-left: 1px solid #b9b9b9;	border-right: 1px solid #b9b9b9;}
+
+/* link within the category list item */
+ul.category li a { display: block; background: #e5e5e5 url(images/left_panel_item_bg.gif) no-repeat top left; padding: 8px 0 8px 20pt; color: #333333; line-height:12px; }
+ul.category li a:hover { padding: 8px 0 8px 20pt; background:#e1f38c url(images/left_panel_item_bg_hover.gif) no-repeat top left;  }
+
+/* container for the buy product form */
+table.buyProductForm { background: #b9b9b9 url(images/buyProductFormEdge.gif) no-repeat left top; padding:10px 5px 5px 5px;  width: 100%; }
+
+/* default style for cells within the buy product form */
+table.buyProductForm td, table.buyProductForm th {  padding:3px; }
+
+/* style for row header in buy product form */
+table.buyProductForm .rowHeader {
+    color: #FFFFFF; font-weight: bold; font-size: 11px; border-width: 0; padding:10px 5px 5px 5px; 
+    border-right: dotted 1px #E1EAEF; text-align: right; }
+
+.optionPicker td { border: outset 2px #999; }
+
+.optionPicker td.selected { border: inset 2px #999; }
+
+/* wrapper for the catalog container */
+.catalogWrapper {padding: 5px; margin:1px 1px 0 1px;}
+.catalogWrapper .Thumbnail{ padding: 10px ; margin-right: 10px; background:#ffffff url(images/thumbnailTdBg.gif) no-repeat top left;}
+    
+.catalogWrapper td{ color: #80919C; }
+.catalogWrapper a{color: #969696;}
+.catalogWrapper a:hover{color: #ffffff;}
+.catalogWrapper .tableNode{ height: 270px;}
+
+.catalog {}
+
+#Price { border:solid 1px red; }
+.catalog td { border-bottom: solid 10px #eeeeee; border-top: solid 10px #eeeeee; }
+
+/* node in the catalog display - used in flow layouts */
+.catalog .flowNode { 
+    text-align:center; margin:0; padding:5px; float:left; width:238px; height:180px; border:1px solid #C4C4C4; }
+
+/* node in the catalog display - used in table layouts */
+.catalog .tableNode {
+    background:#FFFFFF url(images/thumbnailTdBg.gif) no-repeat left top;
+    text-align: center;
+    padding: 10px;}
+.catalog .tableNode div { margin-top:10px;} 
+.catalog .tableNode img { margin-top:6px;}   
+.catalog .tableNode a { color:#7a9300; font-weight:normal; }
+.catalog .tableNode a:hover { color:#97b600; }
+
+.catalog .tableNode .Thumbnail { background: #ffffff; padding: 5px; line-height: 25px;}
+/* thumbnail image within the catalog display */
+.catalog .thumbnail { display: block; width: auto; margin: 0 auto 5px; color:#01076C; background: #003333; }
+
+/* style for item separator */
+.catalog .separator { padding: 0 0 0 6px;}
+
+/* container for the products grid */
+table.productsGrid { border: 3px solid #eeeeee; background:#eaeaea url(images/thumbnailsBG.gif) repeat-x top; }
+
+table.productsGrid td { margin: 0; }
+
+table.productsGrid tr {}
+
+/* cell that contains the product thumbnail */
+td.thumbnail {
+    background: #FFFFFF url(images/thumbnailTdBg.gif) no-repeat left top; border-right:0; text-align:center;
+    height:151px; padding-left:6px; padding-right:6px; width: 35%; vertical-align:middle; }
+
+table.productsGrid .thumbnail { width: 120px; }
+
+/* cell that displays the product details */
+td.details { padding-left:10px; padding-right:5px; padding-top:10px; padding-bottom:5px; text-align: left;
+    vertical-align:text-top; border:solid 1px #FFFFFF; }
+
+td.details div{ padding: 3px 3px 3px 0;}
+td.details .highlight{ height:20px;}
+td.details p {height:0;}
+td.details .detailsInnerPara { height:70px; }
+td.details .detailsInnerPara a{color:#7a9300;}
+td.details .detailsInnerPara a:hover {color:#97b600; }
+
+td.details p a{color:#7a9300;}
+td.details p a:hover{color:#97b600;}
+
+/* style for separators in the grid */
+.rowSeparator{ padding-bottom: 3px; padding-top: 3px; }
+  
+.itemSeparator{background: url(images/v_dot.gif) repeat-y left top; padding-right:5px;}
+
+/* container for the product header */
+div.productHeader { margin: 0 0 9px 0; padding: 0; background: #546FC8 url(images/section_header_bg1.gif) repeat-x 0 0;}
+
+/* product page header caption */
+div.pageHeader H1 {
+    background: url(images/header_icon_mid.gif) no-repeat 3px 0; font-size: 12px; color: #ffffff; padding: 0; margin: 0;
+    font-weight:bold; line-height:23px; text-indent:37px; border: solid 1px #5d5d5d; }
+
+/* container for content associated with product tab */
+div.productTabDetail { min-height:200px; border:1px solid black; padding:4px; }
+
+/* header within content associated with product tab */
+div.productTabDetail H2 { 
+    background:#FFFFFF; border:solid 1px black; font-size:12px; font-weight:bold; padding:4px; margin:2px 0 4px 0; }
+
+/* container for the search filter controls */
+.searchFilterPanel { margin:0; }
+
+.productGridBorder{ border:solid 1px #b9b9b9; border-top:0; padding: 0 0 3px 0; margin:0; background: #FFFFFF; }
+
+.productGridBorder input{ border:solid 1px #b9b9b9; }
+
+/* header for the search filter panel */
+.searchFilterHeader {
+    background: #FFFFFF url(images/section_header_bg2.gif) repeat-x left top; height:33px; line-height:33px; color:#333333;
+    font-size:14px; font-weight:bold; font:Arial, Helvetica, sans-serif; text-align:left; margin: 0;
+	border-bottom:1px solid #b9b9b9; }
+
+/* caption for the search filter panel header */
+.searchFilterHeader h2 { background: url(images/header_icons2.gif) no-repeat 0 0; margin:0; border-right:1px solid #b9b9b9; font-weight:bold; font-size:12px; text-indent: 12px; }
+
+/* used for the show all link in the search filter panel */
+.showAll { 
+    color:#b2842f;  font-weight: bold; text-align: right; width: auto; display: block; padding: 2px 10px 2px 2px;
+    margin: 5px 5px 2px 5px; font-size: 14px; border: solid 1px #b9b9b9; text-transform: capitalize; }
+    
+.showAll:hover { color:#8A5D0A; }
+
+/* links used to apply a different search criteria */
+a.searchCriteria { 
+    text-decoration: none; background: url(images/miniBasketBullet2.gif) no-repeat left top; display: block;
+    line-height: 13px; font-size: 11px; font-family: Verdana, Arial, Helvetica, sans-serif; margin: 0 5px 10px 8px; 
+    border-bottom: 0; padding: 2px 3px 0 24px; color:#333333; }
+    
+a.searchCriteria:hover { color:#779b03; background:url(images/miniBasketBullet2_Hover.gif) no-repeat left top; }
+
+/* style applied to search criteria caption in search panel */
+h3.searchCriteria {
+    color:#333333; background: url(images/searchCriteriaBg.jpg) repeat-x top; border-top:0;
+    border-left: solid 5px #accd0c; border-bottom:solid 1px #b9b9b9; height: 24px; margin-top: 0; line-height: 24px;
+	font-weight:bold; text-indent: 5px; font-size:12px; }
+
+.summarySection h3 { font-size:100%; }
+.summarySection .summarySectionContent a{
+    color: #969696; background: #E4ECEE url(images/button_bg.gif) repeat-x; float: left; padding: 1px 5px 1px 5px; 
+    border: solid 1px #b9b9b9; }
+.summarySection .summarySectionContent a:hover{ background: #DAE7EA  url(images/button_bg_hover.gif) repeat-x; }
+
+/* header for the search sort header */
+.searchSortHeader { background: url(images/section_header_bg.gif) repeat-x; height:30px; line-height:24px; padding: 0 5px 0 4px;  margin:0; color:#222222; border-left: solid 1px #779b03; border-right: solid 1px #779b03; border-bottom: solid 1px #5a7600; }
+
+/* styling for span tag (text) within the search sort header */
+.searchSortHeader span { font-weight:bold; }
+
+.searchSortHeader .sorting { border: 0; color: #333333; padding: 1px; font-size: 12px; font-family:verdana; }
+
+#miniBasketMainBox { padding : 0; font:Arial, Helvetica, sans-serif; font-size : 11px; position:relative;}
+
+.miniBasketItemBox { border : solid 1px #b9b9b9; border-bottom:0; border-top: 0; padding : 5px; background: #fafbfd url(images/basketBg.gif) repeat-x top;  }
+
+.miniBasketIconBox {
+    width:50px;  height:50px; float:left; position:relative; border: solid 1px #b9b9b9; background:#FFFFFF;
+    vertical-align:baseline; overflow:hidden; }
+
+.miniBasketItemTitleBox { margin-left: 34px; }
+
+.miniBasketItemTitleNoIconBox {padding-left:5px;}
+
+.miniBasketItemTitle { color:#3f2a4b; font-weight: normal; float:left; position:relative; text-align:left; margin:0 5px 0 15px;}
+
+.miniBasketItemTitle a { color:#333333;}
+.miniBasketItemTitle a:hover { color:#779b03;}
+.miniBasketSubItemTitle { font-size: 10px; padding: 0; text-indent:0; margin: 0; clear:both; }
+.miniBasketSubItemTitle li {
+	font-size:10px; color:#788A95; list-style-type:none; list-style-image:url('images/miniBasketBullet.gif');margin:4px 0 0 10px;}
+.miniBasketQtyDeleteLine { padding : 5px 5px 10px 5px; background-color : transparent; clear: both; text-align:center; }
+.miniBasketQtyDeleteLine span{ font-weight: bold; color: #3f2a4b; text-transform: capitalize;}
+.miniBasketQtyDeleteLine a{
+    background:#edefee url(images/button_bg.gif) repeat-x; width: 48px; height: 14px; color: #222222;
+    border: solid 1px #779b03; padding: 2px 3px 2px 3px;}
+.miniBasketQtyDeleteLine a:hover{ background:#edefee url(images/button_bg_hover.gif) repeat-x;}
+.miniBasketQtyInput{ padding : 1px; margin-right : 3px;  margin-top: 1px; width : 20px; Height : 13px; border : 1px #b9b9b9 solid;
+font-size : 9px;}
+.miniBasketPriceLabel, .miniBasketPrice{ padding: 2px; color: #003616; font-weight : bold; position:relative;}
+.miniBasketPrice { color : #DB0B0B; }
+#miniBasketSubTotalBox {
+    border: 1px #b9b9b9 solid; background: #FFFFFF url(images/TotalBoxBg.gif) repeat-x;
+    padding : 3px; border-bottom : 1px #b9b9b9 solid; }
+
+#miniBasketSubTotalBox div. content nofooter{ border: 0; }
+
+#miniBasketSubTotalBox #tax_label,#ship_label { font-weight : bold; font-size : 11px; width : 45%; float : left; text-align : right;}
+    
+#miniBasketSubTotalBox #sub_label { float : left; font-weight : bold; font-size : 12px; width : 45%; text-align : right; position:relative;}
+    
+#miniBasketSubTotalBox #tax_num,#ship_num {font-weight : normal; font-size : 11px; padding-left : 3px; width : 49%; float : left;}
+
+#miniBasketSubTotalBox #sub_num {
+    font-weight : bold; font-size : 14px; color : #DB0B0B; padding-left : 3px; padding-bottom: 5px;
+    width : 49%; float : left; position:relative;}
+
+#miniBasketShippingEstimateBox {}
+
+#miniBasketCheckoutButtonBox { margin : 2px 0 0 0; padding : 8px 2px; text-align:center;  border-top : 1px #b9b9b9 solid; }
+
+/* container for message that displays when a basket is empty */
+.emptyBasketPanel {
+    background:url(images/empty_shop.gif) no-repeat 15%; padding-top: 20px; padding-left: 60px; margin: 20px 35px 35px 35px;
+    height: 50px; text-align:center; }
+
+/* message that displays when a basket is empty */
+.emptyBasketPanel span.message { font-size: 18px; font-weight: normal; color: #666666; }
+
+/* links to products that are displayed in the basket contents */
+a.basketProductLink {text-decoration: none; color:Red; font-weight:bolder;}
+a.basketProductLink:hover {color:#333333;}
+
+/* price that appears within a basket dialog */
+.basketDialogPrice { font-weight:bold; }
+
+/* container for message that displays when a basket dialog is empty */
+div.emptyBasketDialogPanel { }
+
+/* message that displays when a basket dialog is empty */
+div.emptyBasketDialogPanel span.message { text-align:center; font-style:italic; padding:5px;}
+
+/* container for message that displays when a wishlist is empty */
+div.emptyWishlistPanel {
+    background:url(images/wish_list.gif) no-repeat 15%;
+    padding-top: 20px; padding-left: 60px; margin: 20px 35px 35px 35px; height: 50px; text-align:center; }
+    
+.emptyWishlistPanel { border:solid 1px #b9b9b9; background:#FFFFFF; text-indent: 5px; color: #333333;}
+
+/* message that displays when a wishlist is empty */
+div.emptyWishlistPanel span.message { font-size: 18px; font-weight: normal; color: #666666; }
+
+/* links to products that are displayed in the wishlist contents */
+a.wishlistProductLink {text-decoration: none; color:#636363; font-weight:bolder;}
+a.wishlistProductLink:hover {color:#333333;}
+
+/* price that appears within a wishlist dialog */
+.wishlistDialogPrice { font-weight:bold; }
+
+/* container for message that displays when a wishlist dialog is empty */
+div.emptyWishlistDialogPanel { }
+
+/* message that displays when a wishlist dialog is empty */
+div.emptyWishlistDialogPanel span.message { text-align:center; font-style:italic; padding:5px; }
+
+/* checkout page header */
+div.checkoutPageHeader { margin-bottom:8px; }
+
+div.checkoutPageHeader .content a {
+    background:#d3d3d3 url(images/checkoutPageHeaderEdgeHover.gif) no-repeat left top; padding: 1px 10px 1px 10px; 
+    color: #222222; font-weight:bold; }
+    
+div.checkoutPageHeader .content a:hover { background:#b9b9b9 url(images/checkoutPageHeaderEdge.gif) no-repeat left top; color:#ffffff; }
+
+/* checkout page header caption */
+div.checkoutPageHeader H1 { font-size: 18px; color: #969696; padding: 4px 0; margin: 3px 0 6px 0; text-indent: 5px; border-bottom: 1px solid #b9b9b9; }
+
+/* chekcout page header - styling for checkout steps */
+div.checkoutPageHeader div.checkoutSteps { background-color:#E5DECA; border:1px solid #BEB49D; padding:0; margin:4px 5px 4px 4px; float:right;}
+
+/* checkout page header content */
+div.checkoutPageHeader div.content {
+    padding:10px; width: 680px; margin:0pt auto; border:solid 1px #b9b9b9; font-size:13px; text-align:justify;
+    background: #e5e5e5 url(images/oddRowBg.gif) repeat-x; }
+.checkoutAlert{
+    padding:10px; width: 780px; margin:0pt auto; border:solid 1px #b9b9b9; font-size:13px; text-align:justify;
+    background: #e5e5e5 url(images/oddRowBg.gif) repeat-x; }
+
+.LoginMessage { 
+    background:#FFFFFF url(images/CategoryBreadCrumbsEdge.gif) no-repeat left top;
+    padding: 5px 0; text-indent: 10px;  width: 800px; margin:0pt auto; color:red; }
+    
+.LoginMessage a { 
+    background:#d3d3d3 url(images/checkoutPageHeaderEdgeHover.gif) no-repeat left top;
+    color: #222222; font-weight: bold; padding: 1px 15px;  }
+    
+.LoginMessage a:hover { 
+    background:#b9b9b9 url(images/checkoutPageHeaderEdge.gif) no-repeat left top; color: #FFFFFF;  font-weight: bold; }
+
+/* used to contain the details for an individual shipment, used wherever information is organized by shipment */
+div.shipmentSection { margin-bottom:5px; border: solid 1px black; border-collapse:collapse; }
+
+div.shipmentSection div.header { border: solid 1px black; }
+
+/* the header / caption of a shipment section, identifies which shipment is displayed */
+div.shipmentSection H2 { margin:0; padding: 0 2px; height:25px; line-height:25px; font-size:12px; }
+
+/* the content of the shipment section */
+div.shipmentSection .content { padding:2px; }
+
+/* used wherever a list of order items is displayed */
+table.itemList { width:100%; border-collapse:collapse;  border:0;}
+
+/* default column header styling for item list */
+th.columnHeader{margin:0; background: #e5e5e5 url(images/searchCriteriaBg.jpg) repeat-x top; max-height: 29px; padding:7px 10px; }
+
+/* default data cell styling for item list*/
+table.itemList td { padding:2px 10px; background: #FFFFFF; border:solid 1px #b3b3b3;} 
+table.itemList td a{color: #416573;}
+table.itemList td a:hover{color: #788F03;}
+
+/* header styling for items column */
+table.itemList th.items { 
+    background: #e5e5e5 url(images/searchCriteriaBg.jpg) repeat-x top; 
+    padding-top: 6px; padding-bottom: 6px; border: solid 1px #b3b3b3; max-height:29px;}
+
+/* styling for items column */
+table.itemList td.items { 
+    background: #F5F5F5  url(images/evenRowBg.gif) repeat-x; 
+    padding:10px 10px 10px 15px; border: solid 1px #b3b3b3; text-align:left; line-height: 18px;}
+
+/* header styling for items column */
+table.itemList th.price {  
+    background: #e5e5e5 url(images/searchCriteriaBg.jpg) repeat-x top;  
+    padding-top: 6px; padding-bottom: 6px; border: solid 1px #b3b3b3; max-height:29px; }
+
+/* styling for price column */
+table.itemList td.price { background: #F5F5F5  url(images/evenRowBg.gif) repeat-x; padding:10px; border: solid 1px #b3b3b3; }
+
+table.itemList th.address { 
+    background: #e5e5e5 url(images/searchCriteriaBg.jpg) repeat-x top; 
+    padding-top: 6px; padding-bottom: 6px; border: solid 1px #b3b3b3; max-height:29px; }
+
+table.itemList td.address { background: #F5F5F5  url(images/evenRowBg.gif) repeat-x; padding:10px; border: solid 1px #b3b3b3; }
+table.itemList td.address select{ border: solid 1px #b3b3b3; padding: 2px;}
+
+/* used when checkout navigation buttons (e.g. continue, back) appear by themselves 
+outside of any  other container.  */
+.checkoutNavigation { margin-top:4px; margin-bottom:8px; }
+
+/* used when the checkout navigation section has a validation summary.  */
+.checkoutNavigation span.validation { display:block;margin-bottom:12px; }
+
+/* contains the buttons or links in the checkout navigation section */
+.checkoutNavigation span.buttons { }
+
+/* table style */
+table.form  {  margin: 4px 0px; border-collapse: collapse; padding: 10px; page-break-inside:avoid; border: solid 1px #b9b9b9; width:100%; }
+
+/* style common to headers and cells */
+table.form td, table.form th { padding:4px 8px; border-bottom: solid 1px #b9b9b9;}
+
+/* styling for header cells  */
+table.form th { font-weight:bold; font-size:14px; border-bottom:solid 1px #b9b9b9; }
+
+/* styling for header cell intended for vertical text */
+table.form th.verticalText {
+    width:10px;  text-align:center; color: #637d00; font-size: 11px; letter-spacing: 25px; font-weight:bold; 
+    border-right: solid 1px #b9b9b9; background: #f0faca; vertical-align:middle;
+}
+
+/* additional styling for header cell */
+table.form th.header { text-align:left; }
+
+/* additional styling for caption */
+table.form th.header span.caption { font-size:20px; }
+
+/* style for cell that contains an address */
+table.form td.address { width:180px; border-right: solid 1px #b9b9b9; color: #333333; font-size: 12px;}
+
+table.form td.address a{ 
+    color: #969696; background: #E4ECEE url(images/button_bg.gif) repeat-x;
+    float: right; padding: 1px 5px 1px 5px; border: solid 1px #b9b9b9; }
+table.form td.address a:hover{ background: #DAE7EA  url(images/button_bg_hover.gif) repeat-x; }
+
+/* style for cell on right that should expand to the full width possible */
+table.form td.expand { width:504px; color: #333333;  line-height: 25px;}
+
+/* style for cell that contains a datasheet */
+table.form td.dataSheet { padding:0; background: #FFFFFF; }
+
+/* style for font within the datasheet */
+table.form td.dataSheet * { font-size:12px; }
+
+/* additional styling for datasheet that appears within a form */
+table.form table.dataSheet { margin-bottom:-1px; }
+
+/* styling for the total row */
+table.dataSheet tr.totalRow td, table.dataSheet tr.totalRow th {
+    border-top: double 3px gray; border-bottom: double 3px gray; background-color:#656565; color:White; }
+
+/* this is the container for the order summary on the view order page */
+table.form td.orderSummary { width:202px;padding:15px; border-right: solid 1px #b9b9b9; }
+
+/* style for the caption of the order summary panel */
+table.form td.orderSummary h3 { margin: 0 0 2px 0; }
+
+/* style for the invoice caption */
+h1.invoice { margin: 0 0 6px 0; font-size:24px; font-weight:bold; }
+
+/* style for the store name */
+h1.storeName { margin: 0 0 6px 0; font-size:18px; font-weight:bold; }
+
+/* container for the checkout progress indicator */
+.checkoutProgress {
+    background: url(images/header_bg.gif) repeat-x bottom; border:1px solid #b9b9b9; height: 25px; font-size:11px;
+    font-family:Arial, Helvetica, sans-serif; font-weight:bold; padding: 1px 1px 3px 1px; text-transform:uppercase;
+    color:#333333; margin:0 18px; display:block; float:right; }
+
+/* default styling for span tags within the progress indicator */
+.checkoutProgress span { display: block; float: left; width: auto; }
+
+/* styling for checkout stage container when it is active */
+.checkoutProgress span.on { padding: 3px 2px; margin: 1px; }
+
+/* styling for checkout stage container when it is inactive */
+.checkoutProgress span.off { padding: 2px; margin: 1px; }
+
+/* style for checkout stage label when it is active */
+.checkoutProgress span.on span {
+    padding: 2px 6px; background: url(images/storeHeader_HoverBG.gif) repeat-x; border: solid 1px #b9b9b9;
+    border-bottom:0; color: #3f294d; }
+
+/* style for checkout stage label when it is inactive */
+.checkoutProgress span.off span { padding: 3px 6px 2px 6px; }
+
+/* style for the outer container for checkout steps */
+#storeHeader div.checkoutSteps { background-color:#E5DECA; border:1px solid #BEB49D; padding:0;  width:100%; }
+
+/* style for the address book table */
+table.addressBook { width:97%; }
+
+/* caption for the address book */
+table.addressBook th.caption {
+    background: #969696 url(images/section_header_bg.gif) repeat-x; color: #222222; text-indent: 10px; 
+	border-left: 1px solid #b9b9b9; border-right: 1px solid #b9b9b9; padding: 2px 3px 2px 2px; margin: 5px 0 0 0; }
+
+/* styling for the text container inside the caption */
+table.addressBook th.caption .text { float:left; display:block; line-height:24px;}
+
+/* styling for the button container inside the caption */
+table.addressBook th.caption .buttons { float: right; display: block; }
+
+/* container for address book entries */
+table.addressBook td.entries {border: 1px solid #b9b9b9; text-align: left; padding: 5px; background: #FFFFFF;}
+
+/* entry in the address book container */
+table.addressBook .entry {
+    background:url(images/shipping_address_bg.gif) no-repeat; vertical-align:middle; text-align:left; margin:0;
+    padding:5px 0 0 0; display: block; width: 350px; height:195px; float: left; }
+
+/* container for address data in an address entry */
+.addressBook .address { 
+    text-align:left; padding:47px 0 0 50px; color: #333333; font-weight: bold; line-height: 15px; width:200px; float: left; }
+
+/* container for buttons in an address entry */
+.addressBook td .buttons {
+    margin-top:5px; text-align:left; padding:60px 0 0 0; width: 100px; float: right; }
+    
+.addressBook td .buttons a{display:block; margin-bottom: 5px; width: 40px; text-align:center;}
+
+/* styling for button element inside the buttons container */
+table.addressBook td .buttons .button {margin-right: 5px;}
+
+/* styling for shipping addreses table */
+table.setShippingAddresses { }
+
+/* table will use default itemList styling, you can override th attributes here */
+table.setShippingAddresses th { }
+
+/* header styling for items column */
+table.setShippingAddresses th.items { }
+
+/* styling for items column */
+table.setShippingAddresses td.items { }
+
+/* header styling for items column */
+table.setShippingAddresses th.price { }
+
+/* styling for price column */
+table.setShippingAddresses td.price { }
+
+/* header styling for address column */
+table.setShippingAddresses th.address { }
+
+/* styling for address column */
+table.setShippingAddresses td.address { }
+
+/* the outer table to select shipping methods */
+table.selectShippingMethod {}
+
+/* default header style for shipping method table */
+table.selectShippingMethod td.dataSheet { padding:6px;  border:1px solid #b9b9b9;}
+
+/* default header style for shipping method table */
+table.selectShippingMethod td.dataSheet th { 
+    padding: 5px 2px;  background:  url(images/searchCriteriaBg.jpg) repeat-x top; max-height:29px; border: solid 1px #b9b9b9;}
+    
+table.selectShippingMethod th.shipto { 
+	background: #FFFFFF; color:#969696; height: 29px; line-height: 30px; border-bottom:solid 2px #b9b9b9;}
+/* the table cell that displays the shipment items grid */
+table.selectShippingMethod td.items{background-color:#DEDEDE;}
+
+/* the table cell that displays the available shipping methods */
+table.selectShippingMethod td.methods { padding: 4px; text-align:left;  border-left:1px solid #8698B2; width:200px; }
+
+table.selectShippingMethod td.methods h3 { 
+    background: #8F9FAC url(images/section_header_bg.gif) repeat-x; color: #222222; padding: 5px 2px; display:block;
+    border-left: 1px solid #b9b9b9; border-right: 1px solid #b9b9b9; border-bottom:solid 1px #969696; font-weight:bold;
+    font-size:100%; text-align:center; margin: 3px 3px 6px 3px; }
+
+/* the caption for available shipping methods */
+table.selectShippingMethod td.methods .caption { display:block; font-weight:bold; margin-bottom:6px; text-align:center; }
+
+table.selectShippingMethod td.methods textarea{ border:solid 1px #afa9b3;}
+
+/* section to ask the customer whether to set gift options for an order */
+.addGiftOptions {
+    background:#FFFFFF url(images/giftbox3.gif) no-repeat left top;
+    margin: 0 auto; width:500px; height:98px; border:0; float:right; text-align:right; }
+
+/* caption of the add gift options section */
+.addGiftOptions h3 { margin: 10px 10px 5px 300px; font-size:100%; }
+
+/* content of the add gift options section, including input field and text */
+.addGiftOptions .content { margin-right:10px; margin-top:5px; }
+
+/* contains any navigation buttons (such as continue or back) that appear within the section */
+.addGiftOptions .buttons { margin-right:10px; margin-top:5px; }
+
+.VisiblePanel { display:block; }
+.ProductItemList{border-collapse:inherit!important;}
+.PIVThumnail{ height:80px;}
+.PIVimage_desc{ min-height:60px;}
+.ProductItemView div{ background: #eeeeee; padding: 5px; border: solid 1px #b9b9b9; }
+.ProductItemViewOdd { 
+	background: #eeeeee; padding: 5px; border: solid 1px #b9b9b9; border-bottom:0; width:194px; height:215px;
+	vertical-align:bottom;}
+.ProductItemViewOdd div { background: #FFFFFF; padding: 5px; border: solid 1px #b9b9b9; }
+
+.HiddenPanel { display:none; }
+
+/* container for the gift option controls */
+.giftOptions { width:200px; }
+.giftOptions textarea{ border:solid 1px #afa9b3;}
+
+/* the container for controls to choose gift wrap if available */
+.giftOptions div.giftWrap { margin-top:2px; color: green;}
+
+/* displays when no gift wrap is available for an item */
+.giftOptions div.giftWrap div.noGiftWrap { font-style:italic; }
+
+/* displays when only one style of gift wrap is available for an item */
+.giftOptions div.giftWrap div.oneGiftWrap { }
+
+/* styling for the name of the available gift wrap style */
+.giftOptions div.giftWrap div.oneGiftWrap span.name { font-weight:bold }
+
+/* styling for the price of the available gift wrap style */
+.giftOptions div.giftWrap div.oneGiftWrap span.price { }
+
+/* displays when two or more gift wrap styles are available for an item */
+.giftOptions div.giftWrap div.multiGiftWrap { }
+
+/* styling for the title of the gift wrap selection box */
+.giftOptions div.giftWrap div.multiGiftWrap span.title { font-weight:bold }
+
+/* styling for the gift wrap selection box */
+.giftOptions div.giftWrap div.multiGiftWrap select { }
+
+/* the container for controls to enter a gift message */
+.giftOptions div.giftMessage { }
+
+/* styling for the gift message title */
+.giftOptions div.giftMessage span.title { 
+    font-weight:bold; border:solid 1px #b3b3b3; background-color:#f3f3f3; padding: 2px 10px; line-height:25px; color: #969696;}
+
+/* styling for the gift message cost */
+.giftOptions div.giftMessage span.price { }
+
+/* styling for the gift message entry area */
+.giftOptions div.giftMessage textarea { width:98%;height:40px; }
+
+/* styling for the characters remaining countdown */
+.giftOptions div.giftMessage span.count { }
+
+/* styling for the characters remaining countdown text */
+.giftOptions div.giftMessage span.countText { }
+
+/* style for the summary pane of the payment information section */
+.paymentMethodSummary { width:170px;padding: 10px; padding-right: 30px;}
+div.paymentMethodSummary { float:left; }
+
+/* style for the payment method listing of the payment information section */
+.paymentMethodList { background: #FFFFFF; width:70%;}
+div.paymentMethodList { }
+
+/* style for a content section in the summary pane */
+.paymentMethodSummary .section { margin-bottom:20px; }
+
+/* style for the header of the summary section */
+.paymentMethodSummary .section .header { 
+    background: url(images/section_header_bg.gif) repeat-x; margin-top: 10px;margin-bottom: 10px; }
+
+/* style for the caption of the section header */
+.paymentMethodSummary .section .header h2 { color:8a0000 !important; }
+
+/* style for the content of the summary section */
+paymentMethodSummary .section .content { }
+
+/* style for the order summary that appears in a summary section */
+table.orderSummary { width:100%; }
+
+/* column that displays the heading for the amounts in the order summary table */
+table.orderSummary th { text-align:right;font-weight:normal; white-space:nowrap;  border-bottom:0;}
+
+/* column that displays amounts in the order summary table */
+table.orderSummary td { text-align:right; width:80px;  border-bottom:0; }
+
+/* row that contains the divider between subtotals and total */
+table.orderSummary tr.totalDivider { }
+
+/* cell that contains the divider between subtotals and total */
+table.orderSummary tr.totalDivider td { width:100%; }
+
+/* divider between subtotals and total */
+table.orderSummary tr.totalDivider td hr { }
+
+/* styles the table for the entry form of a payment method */
+table.paymentForm { width:100%; margin-bottom:20px; margin-left:5px;}
+
+/* style for default table cell in entry form */
+table.paymentForm td { padding: 2px; }
+
+/* header cell that provides the caption for the form, states type of payment method */
+table.paymentForm th.caption { 
+    padding-top:8px; border-bottom:dotted 1px #b9b9b9; color: #969696; font-size: 14px; line-height: 30px; }
+
+/* header cell that provides the label for an input row */
+table.paymentForm th.rowHeader { text-align:right;  background: #eeeeee; padding-right: 10px; color: #333333;}
+table.paymentForm input{ border:solid 1px #b9b9b9;}
+table.paymentForm select{ border:solid 1px #b9b9b9; width: 145px;}
+
+/* cell that contains the submit button for a payment form */
+table.paymentForm td.submit { text-indent:10px; }
+
+/* container for the submit button */
+table.paymentForm td.submit span.button { }
+
+ul.columns { margin: 0 0 0 30px; padding: 0; list-style: none; }
+ 
+ul.columns li { 
+    margin: 2px; background-image: url(images/bullet1.gif); background-position: 0 3px; background-repeat: no-repeat;
+    text-indent:20px; height: 20px; }
+
+/* container for the order summary table */
+div.orderSummaryPanel { background: url(images/orderSummaryPanelBg.gif) repeat-x; border: solid 1px #b9b9b9; margin: 5px 0; }
+
+table.orderSummaryTable {width:100%; padding-left: 10px; text-indent: 10px; text-align:left; color: #333333;}
+
+table.orderSummaryTable th.rowHeader { width:16%; text-align:right; }
+table.orderSummaryTable td a{ 
+    color:#6c8900; font-size: 12px; font-weight: bold; padding: 0 10px 2px 10px; margin: 0; 
+	background: #edefee url(images/button.gif) repeat-x; }
+table.orderSummaryTable td a:hover{ color:#333333;}
+
+.odd{background-color: #DBDADA;padding: 6px 2px 6px 6px;}
+
+.even{background-color: #F5F5F5; padding: 6px 2px 6px 6px;}
+
+.altodd{background: #e5e5e5 url(images/oddRowBg.gif) repeat-x top;padding: 6px 2px 6px 6px;}
+.altodd a {color: #6B4500;}
+.altodd a:hover{color: #969696;}
+a.altoddButton{ 
+    border: solid 1px #b9b9b9; padding: 1px 5px; background:#e4ecee url(images/button_bg.gif) repeat-x; color: #969696; 
+    line-height: 22px;}
+a:hover.altoddButton{ background:#e4ecee url(images/button_bg_hover.gif) repeat-x; color: #969696;}
+
+.altodd td{color: #000000; padding: 5px 10px 5px 10px;  line-height: 18px;}
+
+.altodd input { border:solid 1px #afa9b4; padding:2px;}
+
+.altodd select { border:solid 1px #afa9b4; padding:2px;}
+
+.alteven{background: #F5F5F5 url(images/evenRowBg.gif) repeat-x top ;padding: 20px 2px 6px 6px;}
+.alteven a {color: #6B4500;}
+.alteven a:hover{color: #969696; }
+
+.alteven td{ color: #000000; padding: 10px; line-height: 18px;}
+
+.alteven  input { border:solid 1px #afa9b4; padding:2px;}
+
+.alteven  select { border:solid 1px #afa9b4; padding:2px;}
+
+.ship_to{writing-mode: tb-rl; filter: flipv fliph;}
+
+.small_cell{width: 300px;}
+.small_cell .header{margin-top: 0;}
+.lebeling{width: 100px;}
+
+/* table style */
+table.pagedList { min-width:300px;  background:#FFFFFF; padding: 5px; }
+
+/* style common to headers and cells */
+table.pagedList td { padding:2px 4px; }
+
+/* styling for header cells  */
+table.pagedList th {
+    background: #e5e5e5 url(images/searchCriteriaBg.jpg) repeat-x top; 
+    padding: 7px 2px; font-weight:bold; margin:0; color:#333333;  border: solid 1px #b9b9b9; }
+
+/* styling for links in header cells  (such as for sorting columns) */
+table.pagedList th a { padding-left: 2px; color: #333333; text-decoration:none; }
+table.pagedList th a:hover { color: #969696; text-decoration:underline; }
+
+/* styling for alternating rows */
+table.pagedList tr.oddRow { background:#e5e5e5 url(images/oddRowBg.gif) repeat-x; height:32px; }
+table.pagedList tr.evenRow { background: #F5F5F5  url(images/evenRowBg.gif) repeat-x; height:32px;}
+
+/* style for the empty result message */
+table.pagedList tr.empty td { width:300px; text-align:center; padding: 10px; font-style:italic; border: solid 1px black; }
+a
+/************** Style for the Conactpage List ****************/
+ul.contact li { list-style-image: url(images/bullet1.gif); }
+
+/************** Style for the Product Image ******************/
+.productimg {
+    vertical-align:top; text-align:center; max-width: 500px; padding: 6px;
+    background: #FFFFFF url(images/thumbnailTdBg.gif) no-repeat left top; }
+
+/* background for main page when modal popup is visible */
+.modalBackground { background-color:Gray; filter:alpha(opacity=70); opacity:0.7; }
+
+/* style for modal popup dialog */
+.modalPopup {
+    background-color:#E3EFFF; border-width:3px; border-style:solid; border-color:Gray; padding:3px; width:450px; }
+
+/* style for header of modal popup dialog */
+.modalPopupHeader  {
+    cursor:move; background-color:#DDDDDD; border:solid 1px Gray; color:Black; margin:-3px; padding:6px; font-weight:bold; }
+
+/* style for text of modal popup dialog */
+.modalPopupText { padding:10px; }
+
+/* style for the click to view price popup */
+.pricePopup {
+    background-color:#E3EFFF; border-width:3px; border-style:solid; border-color:Gray; padding:3px; width:300px;
+    position:absolute; left:50%; margin-left:-150px; z-index:99; }
+
+/* style for header of modal popup dialog */
+.pricePopupHeader {
+    background-color:#DDDDDD; border:solid 1px Gray; color:Black; margin:-3px; padding:6px; font-weight:bold; }
+
+/* used on the click to view price display */
+.pricePopup span.fieldHeader { display:block;float:left;width:135px;text-align:right;margin-right:6px; }
+.pricePopup span.fieldValue { display:block;float:left; }
+
+/* outer frame of the one page checkout form */
+.opcFrame { margin:0 auto; width:800px; }
+.opcFrame .content { border: solid 1px #b9b9b9; background-color: #f3f3f3; }
+
+/* main content panel of the one page checkout form */
+.opcMainPanel {
+    width:600px; background: #FFFFFF url(images/thumbnailTdBg.gif) no-repeat left top;
+    padding-right:10px; padding-left:10px;  vertical-align:baseline; }
+.opcMainPanel select { border:solid 1px #b9b9b9; padding: 2px; color: #333333; }
+.opcMainPanel input { border:solid 1px #b9b9b9; padding: 2px; color: #333333; margin: 5px 0 0 0;}
+.opcMainPanel h2 { background: url(images/searchCriteriaBg.jpg) repeat-x top; color: #333333; border: solid 1px #b9b9b9; }
+.opcMainPanel .inputForm { background: #FFFFFF; border: solid 1px #b9b9b9; }
+
+/* sidebar panel of the one page checkout form */
+.opcSidebar{
+    width:200px; background:#FFFFFF; border-top: solid 10px #FFFFFF; border-bottom: solid 13px #FFFFFF;
+    border-right: solid 5px #FFFFFF; padding: 5px; }
+
+/* frame for the payment section of the one page checkout form */
+.opcPaymentFrame { }
+
+/* panel that contains the list of available payment methods */
+.opcPaymentMethods { background:#ffffff url(images/PaymentMethodsBg.gif) repeat-x; width:130px; padding: 5px; }
+
+/* panel that contains the payment form for the selected method */
+.opcPaymentForm { }
+
+/*********** img-description *******/
+p.image_desc { margin-left:3px; margin-right:3px; }
+
+.ProductItemView { 
+	width:194px; padding: 5px; border:solid 1px #b9b9b9; border-bottom:0; height:215px;	vertical-align:bottom;}
+.ProductItemView .productsGrid .thumbnail{ border:solid 3px #f1eff4;  height: 120px;}
+.ProductItemView .productsGrid { padding: 0;}
+.ProductItemView .productsGrid .image_desc{ border:solid 1px #eeeeee; border-top:0; } 
+.featuredProductContainer { padding-bottom: 0; }
+.AgreementView { background-color: #FFFFFF; margin: 5px; padding: 10px ; border:solid 1px #92A7EC;}
+
+div.welcomeImage { width: 580px; height:180px; background:#FFFFFF url(images/image.gif) no-repeat; }
+
+td.welcomeImage { width: 100%; background:#FFFFFF url(images/background.gif) repeat-x; }
+
+.welcomeText{
+    background:#dcdcdc url(images/WelcomeTextBg.gif) repeat-x top; color: #333333; font-size:11px; font-weight: 500;
+    font: Verdana, Arial, Helvetica, sans-serif; margin: 0; }
+
+.welcomeText td { border: 1px solid #b9b9b9; text-align:justify; padding:4px; }
+
+.itemSeperator { width: 2px; }
+
+.inputFormText { 
+    border: 1px solid #8ed4af; padding:5px 0 0 9px; border-bottom: 0; border-top:0; font-weight: lighter;
+    font: Arial, Helvetica, sans-serif; font-size:12px; color: #333333; background-color:#FFFFFF;  margin: 0; }
+
+.inputFormBodyText { font: Arial, Helvetica, sans-serif; font-size:11px; font-weight:bold; color: #333333; }
+    
+.orderItemsList { margin-left:12px; padding:0; color:#666666; }
+
+/* used to display reviews message  */
+pre.Reviews 
+{
+    font-family: Arial, Verdana, Helvetica, sans-serif;
+	font-size: 12px;
+	white-space: pre-wrap;       /* css-3 */
+    white-space: -moz-pre-wrap !important;  /* Mozilla, since 1999 */
+    white-space: -pre-wrap;      /* Opera 4-6 */
+    white-space: -o-pre-wrap;    /* Opera 7 */
+    word-wrap: break-word;       /* Internet Explorer 5.5+ */
+}
+
+.nodeSummaryLink{text-decoration: underline; text-indent: 0px; color:#5872CB; margin:4px 0 8px 0; padding:4px 0 8px 0; cursor:pointer;}
+/* close the screen media selector */
+
+}

@@ -1,0 +1,323 @@
+<html>
+<head>
+<style type="text/css">
+TABLE.Email {
+width: 640px;
+padding: 5px;
+margin: 0px;
+border: 1px solid #5872CB;
+}
+TABLE.Email TH {
+font-weight: bold;
+font-size: 12px;
+color: #ffffff;
+font-family: Arial, Verdana, Sans-Serif;
+font-style: strong;
+background-color: #304FBA;
+text-align: center;
+text-decoration: none;
+padding: 5px;
+}
+TABLE.Email TD {
+font-weight: normal;
+font-size: 12px;
+color: #000000;
+font-family: Arial, Verdana, Sans-Serif;
+background-color: #ffffff;
+text-align: left;
+text-decoration: none;
+padding: 3px;
+}
+</style>
+</head>
+<body>
+<table class="Email">
+<tr>
+<td colspan="2" class="Email">
+<p><strong>Thank you for your order $order.BillToFirstName $order.BillToLastName !</strong></p>
+<p>If you would like to check the status of your order, manage addresses, update your email, or customize many other options, please visit your personal
+<a href="${store.StoreUrl}Members/MyAccount.aspx">My Account</a> page.</p>
+<p>Thank you for shopping with us.<br>
+$store.Name</p>
+</td>
+</tr>
+</table>
+<table class="Email">
+<tr>
+<th class="Email">Order Summary</th>
+</tr>
+</table>
+<table class="Email">
+<tr>
+<td class="Email"><div align="right"><strong>Email Address:</strong></div></td>
+<td class="Email">${order.BillToEmail}</td>
+</tr>
+<tr>
+<td class="Email" width="140"><div align="right"><strong>Order Number:</strong> </div></td>
+<td class="Email" width="500"><p>$order.OrderNumber</p></td>
+</tr>
+<tr>
+<td class="Email"><div align="right"><strong>Ordered on:</strong></div></td>
+<td class="Email">$order.OrderDate.ToString("G")</td>
+</tr>
+<tr>
+<td class="Email"><div align="right"><strong>Ordered by:</strong></div></td>
+<td class="Email">$order.BillToFirstName $order.BillToLastName</td>
+</tr>
+<tr>
+<td><div align="right"><strong>Order Total:</strong></div></td>
+<td>$order.Items.TotalPriceById().ToString("ulc")</td>
+</tr>
+<tr>
+<td class="Email"><div align="right"><strong>Order Status:</strong></div></td>
+<td class="Email"><a href="${store.StoreUrl}Members/MyOrder.aspx?OrderNumber=$order.OrderNumber&OrderId=$order.OrderId">View Online</a></td>
+</tr>
+</table>
+<table class="Email">
+<tr valign="top">
+<td class="Email" width="50%"><strong>Billing Address:</strong>
+<div style="padding-left:30px;">
+$order.FormatAddress(true)
+</div>
+</td>
+<td class="Email" width="50%">
+<strong>Payment Method:</strong>
+<div style="padding-left:30px;">
+#foreach($payment in $payments)
+$payment.PaymentMethodName<br />
+$payment.ReferenceNumber<br />
+#end
+</div>
+</td>
+</tr>
+</table>  
+#set ($shipNo = 1)	
+#foreach($shipment in $order.Shipments)
+#beforeall
+<table class="Email">
+<tr>
+<th class="Email">Shipment Information</th>
+</tr>
+</table>
+#each
+<table class="Email">
+<tr>
+<td colspan="4" class="Email" style="text-align: center;">							
+<strong><u>Shipment $shipNo of $order.Shipments.Count</u></strong>
+#set ($shipNo = $shipNo + 1)			
+</td>
+</tr>
+<tr>
+<td class="Email" colspan="4" style="text-align: center;">
+<table width="100%">
+<tr>
+<td class="Email" valign="top">
+<strong>Ship From:</strong>
+<div style="padding-left:30px;">
+$shipment.FormatFromAddress(true)
+</div>
+</td>
+<td class="Email" valign="top">
+<strong>Ship To:</strong>
+<div style="padding-left:30px;">
+$shipment.FormatToAddress(true)
+#if ($shipment.ShipMessage.Length > 0)
+<br/><strong>Message:</strong>$shipment.ShipMessage
+#end					  
+</div>
+</td>
+<td class="Email" valign="top">
+<strong>Shipment Method:</strong>
+<div style="padding-left:30px;">
+$shipment.ShipMethodName</div>
+<div style="padding-left:30px;"></div>
+</td>
+</tr>
+</table>	
+</td>
+</tr>
+#foreach($orderItem in $order.Items.FilterByShipmentAndSort($shipment.OrderShipmentId))
+#beforeall  
+<tr>
+<td style="background:#cccccc; color:#00000; text-align: center;"><strong>SKU</strong></td>
+<td style="background:#cccccc; color:#00000; text-align: center;"><strong>Description</strong></td>
+<td style="background:#cccccc; color:#00000; text-align: center;"><strong>Quantity</strong></td>
+<td style="background:#cccccc; color:#00000; text-align: center;"><strong>Price</strong></td>
+</tr>
+#each
+#if ((($orderItem.OrderItemType == "Product") || ($orderItem.OrderItemType == "Discount") || ($orderItem.OrderItemType == "Coupon") || ($orderItem.OrderItemType == "GiftWrap")) && !$orderItem.IsHidden)
+<tr class="Email">
+<td class="Email" style="text-align: center;">
+#if (($orderItem.OrderItemType == "Product"))
+$orderItem.Sku
+#elseif (($orderItem.OrderItemType == "Discount"))
+DISCOUNT
+#elseif (($orderItem.OrderItemType == "Coupon"))
+COUPON
+#elseif (($orderItem.OrderItemType == "GiftWrap"))
+GIFTWRAP
+#end
+</td>
+<td class="Email">
+$orderItem.Name
+#if ($orderItem.VariantName.Length > 0)
+($orderItem.VariantName)
+#end
+#foreach($orderItemInput in $orderItem.Inputs)
+#if (!$orderItemInput.IsMerchantField)
+<br /><b>$orderItemInput.Name:</b> $orderItemInput.InputValue
+#end
+#end
+#if ($orderItem.WrapStyle)
+<br>
+Gift Wrap: $orderItem.WrapStyle.Name
+#end
+#if ($orderItem.GiftMessage.Length > 0)
+<br>
+Gift Message: $orderItem.GiftMessage
+#end
+</td>
+<td class="Email" style="text-align: center;">$orderItem.Quantity</td>
+<td class="Email" style="text-align: right;">$orderItem.ExtendedPrice.ToString("ulc")</td>
+</tr>
+#end
+#end
+<tr class="Email"><td colspan="4">&nbsp;</td>
+</tr>
+</table>		
+#end	
+<!-- Output Non-Shipping Items -->
+#foreach($orderItem in $order.Items.FilterByShipmentAndSort())
+#beforeall
+<table class="Email">
+<tr>
+<th class="Email">Non-Shipping Items</th>
+</tr>
+</table>		
+<table class="Email">
+<tr>
+<td style="background:#cccccc; color:#00000; text-align: center;"><strong>SKU</strong></td>
+<td style="background:#cccccc; color:#00000; text-align: center;"><strong>Name</strong></td>
+<td style="background:#cccccc; color:#00000; text-align: center;"><strong>Price</strong></td>
+<td style="background:#cccccc; color:#00000; text-align: center;"><strong>Quantity</strong></td>
+<td style="background:#cccccc; color:#00000; text-align: center;"><strong>Total</strong></td>
+</tr>
+#each
+#if ((($orderItem.OrderItemType == "Product") || ($orderItem.OrderItemType == "Coupon") || ($orderItem.OrderItemType == "Discount")) && !$orderItem.IsHidden)
+<tr>
+<td class="Email" style="text-align: center;">
+#if (($orderItem.OrderItemType == "Product"))
+$orderItem.Sku
+#elseif (($orderItem.OrderItemType == "Discount"))
+DISCOUNT
+#elseif (($orderItem.OrderItemType == "Coupon"))
+COUPON
+#end
+</td>
+<td class="Email">
+$orderItem.Name
+#if ($orderItem.VariantName.Length > 0)
+($orderItem.VariantName)
+#end
+#foreach($orderItemInput in $orderItem.Inputs)
+#if (!$orderItemInput.IsMerchantField)
+<br /><b>$orderItemInput.Name:</b> $orderItemInput.InputValue
+#end
+#end
+</td>
+<td class="Email" style="text-align: right;">$orderItem.Price.ToString("ulc")</td>
+<td class="Email" style="text-align: center;">$orderItem.Quantity</td>
+<td class="Email" style="text-align: right;">$orderItem.ExtendedPrice.ToString("ulc")</td>
+</tr>
+#end
+#afterall
+</table>		
+#end 
+#foreach ($gc in $order.GiftCertificates)
+#beforeall
+<table class="Email">
+<tr>
+<th class="Email" >Gift Certificates</th>
+</tr>
+</table>
+<table class="Email">
+<tr>
+<td style="background:#cccccc; color:#00000; text-align: center;"  ><strong>Name</strong></td>
+<td style="background:#cccccc; color:#00000; text-align: center;" ><strong>Status</strong></td>				
+</tr>
+#each
+<tr class="Email">
+<td class="Email" style="text-align: left;"  >
+<a href="${store.StoreUrl}Members/MyGiftCertificate.aspx?GiftCertificateId=$gc.GiftCertificateId">$gc.Name</a>
+</td>
+<td class="Email" style="text-align: left;" >
+#if($gc.Transactions.Count > 0)
+#set ($lastIndex = $gc.Transactions.Count - 1)
+#set ($transaction = $gc.Transactions.get_item(${lastIndex}))
+$transaction.Description.ToString()
+#end
+</td>
+</tr>
+#afterall
+</table>
+#end
+<table class="Email">
+<tr>
+<th class="Email">Order Totals</th>
+</tr>
+</table>
+<table class="Email">
+<tr>
+<td width="40%" style="background:#cccccc; color:#00000; text-align: right;">
+<strong>Subtotal:</strong>
+</td>
+<td width="15%" class="Email" style="text-align: right;">
+$order.Items.TotalPriceById(0).ToString("ulc")
+</td>
+<td width="55%" rowspan="5"><p align="center"><strong>Thanks again for shopping with us!</strong></p>
+<p align="center"><a href="${store.StoreUrl}"><strong>$store.Name</strong></a></p></td>
+</tr>
+<tr>
+<td width="40%" style="background:#cccccc; color:#00000; text-align: right;">
+<strong>Tax:</strong>
+</td>
+<td width="15%" class="Email" style="text-align: right;">
+$order.Items.TotalPriceById(3).ToString("ulc")
+</td>
+</tr>
+<tr>
+<td width="40%" style="background:#cccccc; color:#00000; text-align: right;">
+<strong>Shipping and Handling:</strong>
+</td>
+<td width="15%" class="Email" style="text-align: right;">
+$order.Items.TotalPriceById(1, 2).ToString("ulc")
+</td>
+</tr>
+<tr>
+<td width="40%" style="background:#cccccc; color:#00000; text-align: right;">
+<strong>Discounts:</strong>
+</td>
+<td width="15%" class="Email" style="text-align: right;">
+$order.Items.TotalPriceById(4).ToString("ulc")
+</td>
+</tr>	
+<tr>
+<td width="40%" style="background:#cccccc; color:#00000; text-align: right;">
+<strong>Coupons:</strong>
+</td>
+<td width="15%" class="Email" style="text-align: right;">
+$order.Items.TotalPriceById(5).ToString("ulc")
+</td>
+</tr>
+<tr>
+<td width="30%" style="background:#cccccc; color:#00000; text-align: right;">
+<strong>Total:</strong>
+</td>
+<td width="15%" class="Email" style="text-align: right;">
+$order.Items.TotalPriceById().ToString("ulc")
+</td>
+</tr>
+</table>
+<p>&nbsp;</p>
+</body>
+</html>

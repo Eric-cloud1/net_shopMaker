@@ -1,0 +1,30 @@
+<!--
+<Description>
+Sidebar to be displayed when you view or edit your own wishlist.
+</Description>
+-->
+#if ($customer.IsAnonymous == false)
+<div class="section">
+    <div class="header">      
+        <h2>Wishlist Password</h2>
+    </div>
+    <div class="Cell" style="padding-left:10px;">
+        <p align="justify">
+            To limit who can view your wishlist, you can enter a password below.  If you enter a password, you must provide it to anyone you want to see your list.
+        </p><br />
+        <b>Password:</b><br />
+        [[ConLib:SetWishlistPassword]]        
+     </div>
+</div>
+#else
+<div class="section">
+    <div class="header">      
+        <h2>Register Now!</h2>
+    </div>
+    <div class="Cell" style="padding-left:10px;">
+        <p align="justify">
+            To preserve your wishlist for future visits and for additional wishlist features, you should <a href="${store.StoreUrl}Login.aspx">register now</a>.
+        </p>
+     </div>
+</div>
+#end

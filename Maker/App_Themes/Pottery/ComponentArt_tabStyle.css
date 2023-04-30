@@ -1,0 +1,71 @@
+﻿.TopGroup
+{
+  z-index:99;
+  position:relative;
+  text-align: left;
+}
+.TopGroup1
+{
+  z-index:99;
+  position:relative;
+  text-align: left;
+}
+
+.DefaultTab 
+{
+ 
+  background-image: url(images/ComponentArt/tab_bg.gif);
+  color:black;
+  font-family:Tahoma;
+  font-size:9px; 
+  font-weight: bold;
+  cursor:pointer;
+  background-color: #C2C2C2;
+  border:1px solid #343434;
+}
+
+.DefaultTabHover 
+{
+  color:#FFFFFF; 
+  background-image: url(images/ComponentArt/hover_tab_bg.gif);
+  font-family:Tahoma;
+  font-size:9px; 
+  font-weight: bold;
+  text-decoration: underline;
+  cursor:pointer;
+ background-color: #B40101;
+ border:1px solid #700101;
+}
+
+.SelectedTab 
+{
+  color:black; 
+  background-image: url(images/ComponentArt/selected_tab_bg.gif);
+  font-family:Tahoma;
+  font-size:9px; 
+  font-weight: bold;
+  cursor:default;
+  background-color: #FFC522;
+  border:1px solid #6A4F02;
+}
+
+.DisabledTab 
+{
+  color:#AAAAAA; 
+  background-image: url(images/ComponentArt/tab_bg.gif);
+  font-family:Tahoma;
+  font-size:9px; 
+  font-weight: bold;
+  cursor:default;
+}
+
+.MultiPage
+{
+  background-color:White;
+  border: 1px solid #919B9C;
+  width:487px;
+  height:250px;
+  position:relative;
+  top:-1px;
+  z-index:98;
+}

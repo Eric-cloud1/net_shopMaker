@@ -1,0 +1,1389 @@
+INFO  2011-11-30 17:07:36,381   128ms Object                 DoLog              - Running maintenance routines
+INFO  2011-11-30 17:07:49,481 13228ms Object                 DoLog              - Maintenance routines complete
+INFO  2011-11-30 18:57:59,341   123ms Object                 DoLog              - Running maintenance routines
+INFO  2011-11-30 18:58:12,522 13304ms Object                 DoLog              - Maintenance routines complete
+INFO  2011-12-01 00:58:00,929 21601710ms Object                 DoLog              - Running maintenance routines
+INFO  2011-12-01 00:58:01,258 21602039ms Object                 DoLog              - Maintenance routines complete
+INFO  2011-12-01 06:58:00,952 43201733ms Object                 DoLog              - Running maintenance routines
+INFO  2011-12-01 06:58:02,109 43202890ms Object                 DoLog              - Maintenance routines complete
+INFO  2011-12-01 09:57:16,472   213ms Object                 RunMaintenance     - Running maintenance routines
+INFO  2011-12-01 09:57:30,061 13802ms Object                 RunMaintenance     - Maintenance routines complete
+ERROR 2011-12-01 10:20:11,776 1375516ms Object                 Application_Error  - An error has occured at http://localhost/Able/Admin/Marketing/Affiliates/AffiliateSearch.aspx
+System.Web.HttpUnhandledException (0x80004005): Exception of type 'System.Web.HttpUnhandledException' was thrown. ---> System.NotSupportedException: The data source does not support sorting.
+   at System.Web.UI.DataSourceView.RaiseUnsupportedCapabilityError(DataSourceCapabilities capability)
+   at System.Web.UI.WebControls.ReadOnlyDataSourceView.ExecuteSelect(DataSourceSelectArguments arguments)
+   at System.Web.UI.DataSourceView.Select(DataSourceSelectArguments arguments, DataSourceViewSelectCallback callback)
+   at System.Web.UI.WebControls.DataBoundControl.PerformSelect()
+   at Admin_Marketing_Affiliates_AffiliateSearch.SearchButton_Click(Object sender, EventArgs e) in e:\inetpub\wwwroot\Able\Admin\Marketing\Affiliates\AffiliateSearch.aspx.cs:line 182
+   at System.Web.UI.WebControls.Button.RaisePostBackEvent(String eventArgument)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at ASP.admin_marketing_affiliates_affiliatesearch_aspx.ProcessRequest(HttpContext context) in c:\Windows\Microsoft.NET\Framework64\v4.0.30319\Temporary ASP.NET Files\able\35a05edd\454078e6\App_Web_vqexhgmo.0.cs:line 0
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+ERROR 2011-12-01 10:21:21,883 1445623ms Object                 Application_Error  - An error has occured at http://localhost/Able/Admin/Marketing/Affiliates/AffiliateSearch.aspx
+System.Web.HttpUnhandledException (0x80004005): Exception of type 'System.Web.HttpUnhandledException' was thrown. ---> System.NotSupportedException: The data source does not support sorting.
+   at System.Web.UI.DataSourceView.RaiseUnsupportedCapabilityError(DataSourceCapabilities capability)
+   at System.Web.UI.WebControls.ReadOnlyDataSourceView.ExecuteSelect(DataSourceSelectArguments arguments)
+   at System.Web.UI.DataSourceView.Select(DataSourceSelectArguments arguments, DataSourceViewSelectCallback callback)
+   at System.Web.UI.WebControls.DataBoundControl.PerformSelect()
+   at Admin_Marketing_Affiliates_AffiliateSearch.SearchButton_Click(Object sender, EventArgs e) in e:\inetpub\wwwroot\Able\Admin\Marketing\Affiliates\AffiliateSearch.aspx.cs:line 182
+   at System.Web.UI.WebControls.Button.RaisePostBackEvent(String eventArgument)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at ASP.admin_marketing_affiliates_affiliatesearch_aspx.ProcessRequest(HttpContext context) in c:\Windows\Microsoft.NET\Framework64\v4.0.30319\Temporary ASP.NET Files\able\35a05edd\454078e6\App_Web_x35zosey.0.cs:line 0
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+INFO  2011-12-01 10:28:27,273   229ms Object                 RunMaintenance     - Running maintenance routines
+INFO  2011-12-01 10:28:40,420 13376ms Object                 RunMaintenance     - Maintenance routines complete
+INFO  2011-12-01 10:30:38,842   228ms Object                 RunMaintenance     - Running maintenance routines
+INFO  2011-12-01 10:30:39,072   458ms Object                 RunMaintenance     - Maintenance routines complete
+ERROR 2011-12-01 10:39:52,467 553852ms Object                 Application_Error  - An error has occured at http://localhost/Able/Admin/Marketing/Affiliates/AffiliateSearch.aspx
+System.Web.HttpUnhandledException (0x80004005): Exception of type 'System.Web.HttpUnhandledException' was thrown. ---> System.NotSupportedException: The data source does not support sorting.
+   at System.Web.UI.DataSourceView.RaiseUnsupportedCapabilityError(DataSourceCapabilities capability)
+   at System.Web.UI.WebControls.ReadOnlyDataSourceView.ExecuteSelect(DataSourceSelectArguments arguments)
+   at System.Web.UI.DataSourceView.Select(DataSourceSelectArguments arguments, DataSourceViewSelectCallback callback)
+   at System.Web.UI.WebControls.DataBoundControl.PerformSelect()
+   at Admin_Marketing_Affiliates_AffiliateSearch.SearchButton_Click(Object sender, EventArgs e) in e:\inetpub\wwwroot\Able\Admin\Marketing\Affiliates\AffiliateSearch.aspx.cs:line 185
+   at System.Web.UI.WebControls.Button.RaisePostBackEvent(String eventArgument)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at ASP.admin_marketing_affiliates_affiliatesearch_aspx.ProcessRequest(HttpContext context) in c:\Windows\Microsoft.NET\Framework64\v4.0.30319\Temporary ASP.NET Files\able\35a05edd\454078e6\App_Web_zzaa4zc3.0.cs:line 0
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+ERROR 2011-12-01 10:50:26,682 1188067ms Object                 Application_Error  - An error has occured at http://localhost/Able/Admin/Marketing/Affiliates/AffiliateSearch.aspx
+System.Web.HttpUnhandledException (0x80004005): Exception of type 'System.Web.HttpUnhandledException' was thrown. ---> System.NotSupportedException: The data source does not support sorting.
+   at System.Web.UI.DataSourceView.RaiseUnsupportedCapabilityError(DataSourceCapabilities capability)
+   at System.Web.UI.WebControls.ReadOnlyDataSourceView.ExecuteSelect(DataSourceSelectArguments arguments)
+   at System.Web.UI.DataSourceView.Select(DataSourceSelectArguments arguments, DataSourceViewSelectCallback callback)
+   at System.Web.UI.WebControls.DataBoundControl.PerformSelect()
+   at Admin_Marketing_Affiliates_AffiliateSearch.SearchButton_Click(Object sender, EventArgs e) in e:\inetpub\wwwroot\Able\Admin\Marketing\Affiliates\AffiliateSearch.aspx.cs:line 187
+   at System.Web.UI.WebControls.Button.RaisePostBackEvent(String eventArgument)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at ASP.admin_marketing_affiliates_affiliatesearch_aspx.ProcessRequest(HttpContext context) in c:\Windows\Microsoft.NET\Framework64\v4.0.30319\Temporary ASP.NET Files\able\35a05edd\454078e6\App_Web_teoe3xj3.0.cs:line 0
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+ERROR 2011-12-01 10:55:51,080 1512466ms Object                 Application_Error  - An error has occured at http://localhost/Able/Admin/Marketing/Affiliates/AffiliateSearch.aspx
+System.Web.HttpUnhandledException (0x80004005): Exception of type 'System.Web.HttpUnhandledException' was thrown. ---> System.NotSupportedException: The data source does not support sorting.
+   at System.Web.UI.DataSourceView.RaiseUnsupportedCapabilityError(DataSourceCapabilities capability)
+   at System.Web.UI.WebControls.ReadOnlyDataSourceView.ExecuteSelect(DataSourceSelectArguments arguments)
+   at System.Web.UI.DataSourceView.Select(DataSourceSelectArguments arguments, DataSourceViewSelectCallback callback)
+   at System.Web.UI.WebControls.DataBoundControl.PerformSelect()
+   at Admin_Marketing_Affiliates_AffiliateSearch.SearchButton_Click(Object sender, EventArgs e) in e:\inetpub\wwwroot\Able\Admin\Marketing\Affiliates\AffiliateSearch.aspx.cs:line 188
+   at System.Web.UI.WebControls.Button.RaisePostBackEvent(String eventArgument)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at ASP.admin_marketing_affiliates_affiliatesearch_aspx.ProcessRequest(HttpContext context) in c:\Windows\Microsoft.NET\Framework64\v4.0.30319\Temporary ASP.NET Files\able\35a05edd\454078e6\App_Web_se5r34xr.0.cs:line 0
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+ERROR 2011-12-01 10:57:43,880 1625265ms Object                 Application_Error  - An error has occured at http://localhost/Able/Admin/Marketing/Affiliates/AffiliateSearch.aspx
+System.Web.HttpUnhandledException (0x80004005): Exception of type 'System.Web.HttpUnhandledException' was thrown. ---> System.InvalidOperationException: The Select operation is not supported by ObjectDataSource 'AffiliateDs' unless the SelectMethod is specified.
+   at System.Web.UI.WebControls.ObjectDataSourceView.ExecuteSelect(DataSourceSelectArguments arguments)
+   at System.Web.UI.DataSourceView.Select(DataSourceSelectArguments arguments, DataSourceViewSelectCallback callback)
+   at System.Web.UI.WebControls.DataBoundControl.PerformSelect()
+   at System.Web.UI.WebControls.BaseDataBoundControl.EnsureDataBound()
+   at System.Web.UI.WebControls.GridView.OnPreRender(EventArgs e)
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at ASP.admin_marketing_affiliates_affiliatesearch_aspx.ProcessRequest(HttpContext context) in c:\Windows\Microsoft.NET\Framework64\v4.0.30319\Temporary ASP.NET Files\able\35a05edd\454078e6\App_Web_chudz2vf.0.cs:line 0
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+ERROR 2011-12-01 10:57:51,457 1632843ms Object                 Application_Error  - An error has occured at http://localhost/Able/Admin/Marketing/Affiliates/AffiliateSearch.aspx
+System.Web.HttpUnhandledException (0x80004005): Exception of type 'System.Web.HttpUnhandledException' was thrown. ---> System.InvalidOperationException: The Select operation is not supported by ObjectDataSource 'AffiliateDs' unless the SelectMethod is specified.
+   at System.Web.UI.WebControls.ObjectDataSourceView.ExecuteSelect(DataSourceSelectArguments arguments)
+   at System.Web.UI.DataSourceView.Select(DataSourceSelectArguments arguments, DataSourceViewSelectCallback callback)
+   at System.Web.UI.WebControls.DataBoundControl.PerformSelect()
+   at System.Web.UI.WebControls.BaseDataBoundControl.EnsureDataBound()
+   at System.Web.UI.WebControls.GridView.OnPreRender(EventArgs e)
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at ASP.admin_marketing_affiliates_affiliatesearch_aspx.ProcessRequest(HttpContext context) in c:\Windows\Microsoft.NET\Framework64\v4.0.30319\Temporary ASP.NET Files\able\35a05edd\454078e6\App_Web_chudz2vf.0.cs:line 0
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+ERROR 2011-12-01 11:04:49,196 2050582ms Object                 Application_Error  - An error has occured at http://localhost/Able/Admin/Marketing/Affiliates/AffiliateSearch.aspx
+System.Web.HttpUnhandledException (0x80004005): Exception of type 'System.Web.HttpUnhandledException' was thrown. ---> System.InvalidOperationException: A type must be specified in the TypeName property of ObjectDataSource 'AffiliateDs'.
+   at System.Web.UI.WebControls.ObjectDataSourceView.GetType(String typeName)
+   at System.Web.UI.WebControls.ObjectDataSourceView.ExecuteSelect(DataSourceSelectArguments arguments)
+   at System.Web.UI.DataSourceView.Select(DataSourceSelectArguments arguments, DataSourceViewSelectCallback callback)
+   at System.Web.UI.WebControls.DataBoundControl.PerformSelect()
+   at System.Web.UI.WebControls.BaseDataBoundControl.EnsureDataBound()
+   at System.Web.UI.WebControls.GridView.OnPreRender(EventArgs e)
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at ASP.admin_marketing_affiliates_affiliatesearch_aspx.ProcessRequest(HttpContext context) in c:\Windows\Microsoft.NET\Framework64\v4.0.30319\Temporary ASP.NET Files\able\35a05edd\454078e6\App_Web_j5bpvzxy.0.cs:line 0
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+ERROR 2011-12-01 11:06:18,578 2139963ms Object                 Application_Error  - An error has occured at http://localhost/Able/Admin/Marketing/Affiliates/AffiliateSearch.aspx
+System.Web.HttpUnhandledException (0x80004005): Exception of type 'System.Web.HttpUnhandledException' was thrown. ---> System.InvalidOperationException: ObjectDataSource 'AffiliateDs' could not find a non-generic method 'LoadForStore' that has parameters: maximumRows, startRowIndex, sortExpression, Name.
+   at System.Web.UI.WebControls.ObjectDataSourceView.GetResolvedMethodData(Type type, String methodName, IDictionary allParameters, DataSourceOperation operation)
+   at System.Web.UI.WebControls.ObjectDataSourceView.ExecuteSelect(DataSourceSelectArguments arguments)
+   at System.Web.UI.DataSourceView.Select(DataSourceSelectArguments arguments, DataSourceViewSelectCallback callback)
+   at System.Web.UI.WebControls.DataBoundControl.PerformSelect()
+   at System.Web.UI.WebControls.BaseDataBoundControl.EnsureDataBound()
+   at System.Web.UI.WebControls.GridView.OnPreRender(EventArgs e)
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at ASP.admin_marketing_affiliates_affiliatesearch_aspx.ProcessRequest(HttpContext context) in c:\Windows\Microsoft.NET\Framework64\v4.0.30319\Temporary ASP.NET Files\able\35a05edd\454078e6\App_Web_kr31eyhf.0.cs:line 0
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+INFO  2011-12-01 11:37:42,083   210ms Object                 RunMaintenance     - Running maintenance routines
+INFO  2011-12-01 11:37:55,019 13146ms Object                 RunMaintenance     - Maintenance routines complete
+INFO  2011-12-01 12:06:34,978   222ms Object                 RunMaintenance     - Running maintenance routines
+INFO  2011-12-01 12:06:57,819 23063ms Object                 RunMaintenance     - Maintenance routines complete
+ERROR 2011-12-01 12:07:02,495 27738ms Object                 Application_Error  - An error has occured at http://localhost/Able/Admin/Marketing/Affiliates/EditAffiliate.aspx?AffiliateId=330
+System.Web.HttpUnhandledException (0x80004005): Exception of type 'System.Web.HttpUnhandledException' was thrown. ---> System.InvalidOperationException: An extender can't be in a different UpdatePanel than the control it extends.
+   at System.Web.UI.ExtenderControl.RegisterWithScriptManager()
+   at AjaxControlToolkit.ExtenderControlBase.OnPreRender(EventArgs e)
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at ASP.admin_marketing_affiliates_editaffiliate_aspx.ProcessRequest(HttpContext context) in c:\Windows\Microsoft.NET\Framework64\v4.0.30319\Temporary ASP.NET Files\able\35a05edd\454078e6\App_Web_zvhb5os1.4.cs:line 0
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+ERROR 2011-12-01 12:09:16,465 161709ms Object                 Application_Error  - An error has occured at http://localhost/Able/Admin/Marketing/Affiliates/EditAffiliate.aspx?AffiliateId=333
+System.Web.HttpUnhandledException (0x80004005): Exception of type 'System.Web.HttpUnhandledException' was thrown. ---> System.InvalidOperationException: An extender can't be in a different UpdatePanel than the control it extends.
+   at System.Web.UI.ExtenderControl.RegisterWithScriptManager()
+   at AjaxControlToolkit.ExtenderControlBase.OnPreRender(EventArgs e)
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at ASP.admin_marketing_affiliates_editaffiliate_aspx.ProcessRequest(HttpContext context) in c:\Windows\Microsoft.NET\Framework64\v4.0.30319\Temporary ASP.NET Files\able\35a05edd\454078e6\App_Web_zvhb5os1.4.cs:line 0
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+ERROR 2011-12-01 12:12:42,093 367336ms Object                 Application_Error  - An error has occured at http://localhost/Able/Admin/Marketing/Affiliates/EditAffiliate.aspx?AffiliateId=333
+System.Web.HttpUnhandledException (0x80004005): Exception of type 'System.Web.HttpUnhandledException' was thrown. ---> System.InvalidOperationException: An extender can't be in a different UpdatePanel than the control it extends.
+   at System.Web.UI.ExtenderControl.RegisterWithScriptManager()
+   at AjaxControlToolkit.ExtenderControlBase.OnPreRender(EventArgs e)
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at ASP.admin_marketing_affiliates_editaffiliate_aspx.ProcessRequest(HttpContext context) in c:\Windows\Microsoft.NET\Framework64\v4.0.30319\Temporary ASP.NET Files\able\35a05edd\454078e6\App_Web_zvhb5os1.4.cs:line 0
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+ERROR 2011-12-01 12:12:42,719 367962ms Object                 Application_Error  - An error has occured at http://localhost/Able/Admin/Marketing/Affiliates/EditAffiliate.aspx?AffiliateId=333
+System.Web.HttpUnhandledException (0x80004005): Exception of type 'System.Web.HttpUnhandledException' was thrown. ---> System.InvalidOperationException: An extender can't be in a different UpdatePanel than the control it extends.
+   at System.Web.UI.ExtenderControl.RegisterWithScriptManager()
+   at AjaxControlToolkit.ExtenderControlBase.OnPreRender(EventArgs e)
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at ASP.admin_marketing_affiliates_editaffiliate_aspx.ProcessRequest(HttpContext context) in c:\Windows\Microsoft.NET\Framework64\v4.0.30319\Temporary ASP.NET Files\able\35a05edd\454078e6\App_Web_zvhb5os1.4.cs:line 0
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+ERROR 2011-12-01 12:20:56,830 862074ms Object                 Application_Error  - An error has occured at http://localhost/Able/Admin/Marketing/Affiliates/EditAffiliate.aspx?AffiliateId=327
+System.Web.HttpUnhandledException (0x80004005): Exception of type 'System.Web.HttpUnhandledException' was thrown. ---> System.InvalidOperationException: An extender can't be in a different UpdatePanel than the control it extends.
+   at System.Web.UI.ExtenderControl.RegisterWithScriptManager()
+   at AjaxControlToolkit.ExtenderControlBase.OnPreRender(EventArgs e)
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at ASP.admin_marketing_affiliates_editaffiliate_aspx.ProcessRequest(HttpContext context) in c:\Windows\Microsoft.NET\Framework64\v4.0.30319\Temporary ASP.NET Files\able\35a05edd\454078e6\App_Web_zvhb5os1.4.cs:line 0
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+ERROR 2011-12-01 12:22:08,644 933888ms Object                 Application_Error  - An error has occured at http://localhost/Able/Admin/Marketing/Affiliates/EditAffiliate.aspx?AffiliateId=327
+System.Web.HttpUnhandledException (0x80004005): Exception of type 'System.Web.HttpUnhandledException' was thrown. ---> System.InvalidOperationException: An extender can't be in a different UpdatePanel than the control it extends.
+   at System.Web.UI.ExtenderControl.RegisterWithScriptManager()
+   at AjaxControlToolkit.ExtenderControlBase.OnPreRender(EventArgs e)
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at ASP.admin_marketing_affiliates_editaffiliate_aspx.ProcessRequest(HttpContext context) in c:\Windows\Microsoft.NET\Framework64\v4.0.30319\Temporary ASP.NET Files\able\35a05edd\454078e6\App_Web_yw11meeh.4.cs:line 0
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+ERROR 2011-12-01 12:50:07,301 2612545ms Object                 Application_Error  - An error has occured at http://localhost/Able/Admin/Products/EditGateway.aspx?AffiliateId=327&ParentAffiliateId=0
+System.Web.HttpUnhandledException (0x80004005): Exception of type 'System.Web.HttpUnhandledException' was thrown. ---> System.NullReferenceException: Object reference not set to an instance of an object.
+   at Admin_Products_EditGateway.Page_Load(Object sender, EventArgs e) in e:\inetpub\wwwroot\Able\Admin\Products\EditGateway.aspx.cs:line 44
+   at System.Web.Util.CalliHelper.EventArgFunctionCaller(IntPtr fp, Object o, Object t, EventArgs e)
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at ASP.admin_products_editgateway_aspx.ProcessRequest(HttpContext context) in c:\Windows\Microsoft.NET\Framework64\v4.0.30319\Temporary ASP.NET Files\able\35a05edd\454078e6\App_Web_nlqt52ju.0.cs:line 0
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+ERROR 2011-12-01 12:55:59,163 2964407ms Object                 Application_Error  - An error has occured at http://localhost/Able/Admin/Products/EditGateway.aspx?AffiliateId=327&ParentAffiliateId=0
+System.Web.HttpUnhandledException (0x80004005): Exception of type 'System.Web.HttpUnhandledException' was thrown. ---> System.NullReferenceException: Object reference not set to an instance of an object.
+   at Admin_Products_EditGateway.Page_Load(Object sender, EventArgs e) in e:\inetpub\wwwroot\Able\Admin\Products\EditGateway.aspx.cs:line 44
+   at System.Web.Util.CalliHelper.EventArgFunctionCaller(IntPtr fp, Object o, Object t, EventArgs e)
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at ASP.admin_products_editgateway_aspx.ProcessRequest(HttpContext context) in c:\Windows\Microsoft.NET\Framework64\v4.0.30319\Temporary ASP.NET Files\able\35a05edd\454078e6\App_Web_le5k1x45.10.cs:line 0
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+WARN  2011-12-01 12:57:18,671 3043915ms Object                 DoExecuteReader    - SET TRANSACTION ISOLATION LEVEL READ UNCOMMITTED; SELECT AffiliateId,PaymentGatewayTemplateId,CreateDate,CreateUser,ChangeDate,ChangeUser FROM xm_PaymentGatewayTemplates_Affilaite WHERE  AffiliateId = @AffiliateId  
+System.Data.SqlClient.SqlException (0x80131904): Invalid object name 'xm_PaymentGatewayTemplates_Affilaite'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning()
+   at System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   at System.Data.SqlClient.SqlDataReader.ConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at MakerShop.Data.Database.DoExecuteReader(DbCommand command, CommandBehavior behavior) in E:\XMAble\trunk\MakerShop.Data\Database.cs:line 477
+ERROR 2011-12-01 12:57:19,026 3044270ms Object                 Application_Error  - An error has occured at http://localhost/Able/Admin/Products/EditGateway.aspx?AffiliateId=327&ParentAffiliateId=0
+System.Web.HttpUnhandledException (0x80004005): Exception of type 'System.Web.HttpUnhandledException' was thrown. ---> System.Data.SqlClient.SqlException (0x80131904): Invalid object name 'xm_PaymentGatewayTemplates_Affilaite'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning()
+   at System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   at System.Data.SqlClient.SqlDataReader.ConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at MakerShop.Data.Database.DoExecuteReader(DbCommand command, CommandBehavior behavior) in E:\XMAble\trunk\MakerShop.Data\Database.cs:line 487
+   at MakerShop.Data.Database.ExecuteReader(DbCommand command) in E:\XMAble\trunk\MakerShop.Data\Database.cs:line 805
+   at MakerShop.Payments.PaymentGatewayTemplate_Affiliate.Load(Int32 pAffiliateId) in E:\XMAble\trunk\MakerShop\Payments\PaymentGatewayTemplate_Affiliate.Generated.cs:line 229
+   at MakerShop.Payments.PaymentGatewayTemplate_AffiliateDataSource.Load(Int32 pAffiliateId) in E:\XMAble\trunk\MakerShop\Payments\PaymentGatewayTemplate_AffiliateDataSource.Generated.cs:line 43
+   at Admin_Products_EditGateway.Page_Load(Object sender, EventArgs e) in e:\inetpub\wwwroot\Able\Admin\Products\EditGateway.aspx.cs:line 55
+   at System.Web.Util.CalliHelper.EventArgFunctionCaller(IntPtr fp, Object o, Object t, EventArgs e)
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at ASP.admin_products_editgateway_aspx.ProcessRequest(HttpContext context) in c:\Windows\Microsoft.NET\Framework64\v4.0.30319\Temporary ASP.NET Files\able\35a05edd\454078e6\App_Web_tnmnczfb.0.cs:line 0
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+WARN  2011-12-01 12:58:51,739 3136983ms Object                 DoExecuteReader    - SET TRANSACTION ISOLATION LEVEL READ UNCOMMITTED; SELECT AffiliateId,PaymentGatewayTemplateId,CreateDate,CreateUser,ChangeDate,ChangeUser FROM xm_PaymentGatewayTemplates_Affilaite WHERE  AffiliateId = @AffiliateId  
+System.Data.SqlClient.SqlException (0x80131904): Invalid object name 'xm_PaymentGatewayTemplates_Affilaite'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning()
+   at System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   at System.Data.SqlClient.SqlDataReader.ConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at MakerShop.Data.Database.DoExecuteReader(DbCommand command, CommandBehavior behavior) in E:\XMAble\trunk\MakerShop.Data\Database.cs:line 477
+ERROR 2011-12-01 12:58:52,070 3137313ms Object                 Application_Error  - An error has occured at http://localhost/Able/Admin/Products/EditGateway.aspx?AffiliateId=327&ParentAffiliateId=0
+System.Web.HttpUnhandledException (0x80004005): Exception of type 'System.Web.HttpUnhandledException' was thrown. ---> System.Data.SqlClient.SqlException (0x80131904): Invalid object name 'xm_PaymentGatewayTemplates_Affilaite'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning()
+   at System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   at System.Data.SqlClient.SqlDataReader.ConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at MakerShop.Data.Database.DoExecuteReader(DbCommand command, CommandBehavior behavior) in E:\XMAble\trunk\MakerShop.Data\Database.cs:line 487
+   at MakerShop.Data.Database.ExecuteReader(DbCommand command) in E:\XMAble\trunk\MakerShop.Data\Database.cs:line 805
+   at MakerShop.Payments.PaymentGatewayTemplate_Affiliate.Load(Int32 pAffiliateId) in E:\XMAble\trunk\MakerShop\Payments\PaymentGatewayTemplate_Affiliate.Generated.cs:line 229
+   at MakerShop.Payments.PaymentGatewayTemplate_AffiliateDataSource.Load(Int32 pAffiliateId) in E:\XMAble\trunk\MakerShop\Payments\PaymentGatewayTemplate_AffiliateDataSource.Generated.cs:line 43
+   at Admin_Products_EditGateway.Page_Load(Object sender, EventArgs e) in e:\inetpub\wwwroot\Able\Admin\Products\EditGateway.aspx.cs:line 55
+   at System.Web.Util.CalliHelper.EventArgFunctionCaller(IntPtr fp, Object o, Object t, EventArgs e)
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at ASP.admin_products_editgateway_aspx.ProcessRequest(HttpContext context) in c:\Windows\Microsoft.NET\Framework64\v4.0.30319\Temporary ASP.NET Files\able\35a05edd\454078e6\App_Web_tnmnczfb.0.cs:line 0
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+INFO  2011-12-01 13:12:22,785   237ms Object                 RunMaintenance     - Running maintenance routines
+INFO  2011-12-01 13:12:35,713 13165ms Object                 RunMaintenance     - Maintenance routines complete
+ERROR 2011-12-01 13:18:50,175 387627ms Object                 Application_Error  - An error has occured at http://localhost/Able/Admin/Products/EditGateway.aspx?AffiliateId=333&ParentAffiliateId=0
+System.Web.HttpUnhandledException (0x80004005): Exception of type 'System.Web.HttpUnhandledException' was thrown. ---> System.InvalidOperationException: The 'MasterPageFile' property can only be set in or before the 'Page_PreInit' event.
+   at System.Web.UI.Page.set_MasterPageFile(String value)
+   at Admin_Products_EditGateway.Page_Load(Object sender, EventArgs e) in e:\inetpub\wwwroot\Able\Admin\Products\EditGateway.aspx.cs:line 50
+   at System.Web.Util.CalliHelper.EventArgFunctionCaller(IntPtr fp, Object o, Object t, EventArgs e)
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at ASP.admin_products_editgateway_aspx.ProcessRequest(HttpContext context) in c:\Windows\Microsoft.NET\Framework64\v4.0.30319\Temporary ASP.NET Files\able\35a05edd\454078e6\App_Web_m3gm0uk2.2.cs:line 0
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+ERROR 2011-12-01 13:19:41,220 438672ms Object                 Application_Error  - An error has occured at http://localhost/Able/Admin/Products/EditGateway.aspx?AffiliateId=333&ParentAffiliateId=0
+System.Web.HttpUnhandledException (0x80004005): Exception of type 'System.Web.HttpUnhandledException' was thrown. ---> System.InvalidOperationException: The 'MasterPageFile' property can only be set in or before the 'Page_PreInit' event.
+   at System.Web.UI.Page.set_MasterPageFile(String value)
+   at Admin_Products_EditGateway.Page_Init(Object sender, EventArgs e) in e:\inetpub\wwwroot\Able\Admin\Products\EditGateway.aspx.cs:line 50
+   at System.Web.Util.CalliHelper.EventArgFunctionCaller(IntPtr fp, Object o, Object t, EventArgs e)
+   at System.Web.UI.Page.OnInit(EventArgs e)
+   at System.Web.UI.Control.InitRecursive(Control namingContainer)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at ASP.admin_products_editgateway_aspx.ProcessRequest(HttpContext context) in c:\Windows\Microsoft.NET\Framework64\v4.0.30319\Temporary ASP.NET Files\able\35a05edd\454078e6\App_Web_44l2wzzi.2.cs:line 0
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+ERROR 2011-12-01 13:20:02,164 459615ms Object                 Application_Error  - An error has occured at http://localhost/Able/Admin/Products/EditGateway.aspx?AffiliateId=333&ParentAffiliateId=0
+System.Web.HttpUnhandledException (0x80004005): Exception of type 'System.Web.HttpUnhandledException' was thrown. ---> System.NullReferenceException: Object reference not set to an instance of an object.
+   at Admin_Products_EditGateway.Page_PreInit(Object sender, EventArgs e) in e:\inetpub\wwwroot\Able\Admin\Products\EditGateway.aspx.cs:line 52
+   at System.Web.Util.CalliHelper.EventArgFunctionCaller(IntPtr fp, Object o, Object t, EventArgs e)
+   at System.EventHandler.Invoke(Object sender, EventArgs e)
+   at System.Web.UI.Page.PerformPreInit()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at ASP.admin_products_editgateway_aspx.ProcessRequest(HttpContext context) in c:\Windows\Microsoft.NET\Framework64\v4.0.30319\Temporary ASP.NET Files\able\35a05edd\454078e6\App_Web_l4vmhl22.0.cs:line 0
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+ERROR 2011-12-01 13:28:34,810 972262ms Object                 Application_Error  - An error has occured at http://localhost/Able/Admin/products/EditProduct.aspx
+System.Web.HttpUnhandledException (0x80004005): Exception of type 'System.Web.HttpUnhandledException' was thrown. ---> System.NullReferenceException: Object reference not set to an instance of an object.
+   at Admin_Products_EditProduct.Page_Init(Object sender, EventArgs e) in e:\inetpub\wwwroot\Able\Admin\Products\EditProduct.aspx.cs:line 28
+   at System.Web.Util.CalliHelper.EventArgFunctionCaller(IntPtr fp, Object o, Object t, EventArgs e)
+   at System.Web.UI.Page.OnInit(EventArgs e)
+   at System.Web.UI.Control.InitRecursive(Control namingContainer)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at ASP.admin_products_editproduct_aspx.ProcessRequest(HttpContext context) in c:\Windows\Microsoft.NET\Framework64\v4.0.30319\Temporary ASP.NET Files\able\35a05edd\454078e6\App_Web_iw1q3srm.12.cs:line 0
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+INFO  2011-12-01 13:49:47,587   212ms Object                 RunMaintenance     - Running maintenance routines
+INFO  2011-12-01 13:50:00,362 12987ms Object                 RunMaintenance     - Maintenance routines complete
+INFO  2011-12-01 14:31:43,086   213ms Object                 RunMaintenance     - Running maintenance routines
+INFO  2011-12-01 14:31:55,999 13126ms Object                 RunMaintenance     - Maintenance routines complete
+INFO  2011-12-08 16:02:40,477   591ms Object                 RunMaintenance     - Running maintenance routines
+WARN  2011-12-08 16:02:40,925  1039ms Object                 DoExecuteNonQuery  - AuditDatabase_SetSessionInfo
+System.Data.SqlClient.SqlException (0x80131904): Could not find stored procedure 'AuditDatabase_SetSessionInfo'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning()
+   at System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(DbAsyncResult result, String methodName, Boolean sendToPipe)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at MakerShop.Data.Database.DoExecuteNonQuery(DbCommand command) in E:\XMAble\trunk\MakerShop.Data\Database.cs:line 449
+ERROR 2011-12-08 16:02:41,014  1128ms Object                 RunMaintenance     - Error in page tracking log maintenance
+System.Data.SqlClient.SqlException (0x80131904): Could not find stored procedure 'AuditDatabase_SetSessionInfo'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning()
+   at System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(DbAsyncResult result, String methodName, Boolean sendToPipe)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at MakerShop.Data.Database.DoExecuteNonQuery(DbCommand command) in E:\XMAble\trunk\MakerShop.Data\Database.cs:line 459
+   at MakerShop.Utility.MaintenanceWorker.TrimPageViewLog(DateTime beforeDate) in E:\XMAble\trunk\MakerShop\Utility\MaintenanceWorker.cs:line 450
+   at MakerShop.Utility.MaintenanceWorker.MaintainPageViewLog() in E:\XMAble\trunk\MakerShop\Utility\MaintenanceWorker.cs:line 416
+   at MakerShop.Utility.MaintenanceWorker.RunMaintenance() in E:\XMAble\trunk\MakerShop\Utility\MaintenanceWorker.cs:line 49
+WARN  2011-12-08 16:02:41,025  1139ms Object                 DoExecuteNonQuery  - AuditDatabase_SetSessionInfo
+System.Data.SqlClient.SqlException (0x80131904): Could not find stored procedure 'AuditDatabase_SetSessionInfo'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning()
+   at System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(DbAsyncResult result, String methodName, Boolean sendToPipe)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at MakerShop.Data.Database.DoExecuteNonQuery(DbCommand command) in E:\XMAble\trunk\MakerShop.Data\Database.cs:line 449
+ERROR 2011-12-08 16:02:41,032  1146ms Object                 RunMaintenance     - Error in email list maintenance
+System.Data.SqlClient.SqlException (0x80131904): Could not find stored procedure 'AuditDatabase_SetSessionInfo'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning()
+   at System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(DbAsyncResult result, String methodName, Boolean sendToPipe)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at MakerShop.Data.Database.DoExecuteNonQuery(DbCommand command) in E:\XMAble\trunk\MakerShop.Data\Database.cs:line 459
+   at MakerShop.Utility.MaintenanceWorker.MaintainEmailSubscriptions() in E:\XMAble\trunk\MakerShop\Utility\MaintenanceWorker.cs:line 548
+   at MakerShop.Utility.MaintenanceWorker.RunMaintenance() in E:\XMAble\trunk\MakerShop\Utility\MaintenanceWorker.cs:line 54
+WARN  2011-12-08 16:02:41,037  1151ms Object                 DoExecuteNonQuery  - AuditDatabase_SetSessionInfo
+System.Data.SqlClient.SqlException (0x80131904): Could not find stored procedure 'AuditDatabase_SetSessionInfo'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning()
+   at System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(DbAsyncResult result, String methodName, Boolean sendToPipe)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at MakerShop.Data.Database.DoExecuteNonQuery(DbCommand command) in E:\XMAble\trunk\MakerShop.Data\Database.cs:line 449
+ERROR 2011-12-08 16:02:41,044  1158ms Object                 RunMaintenance     - Error in subscription maintenance
+System.Data.SqlClient.SqlException (0x80131904): Could not find stored procedure 'AuditDatabase_SetSessionInfo'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning()
+   at System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(DbAsyncResult result, String methodName, Boolean sendToPipe)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at MakerShop.Data.Database.DoExecuteNonQuery(DbCommand command) in E:\XMAble\trunk\MakerShop.Data\Database.cs:line 459
+   at MakerShop.Utility.MaintenanceWorker.ExpireSubscriptions() in E:\XMAble\trunk\MakerShop\Utility\MaintenanceWorker.cs:line 337
+   at MakerShop.Utility.MaintenanceWorker.RunMaintenance() in E:\XMAble\trunk\MakerShop\Utility\MaintenanceWorker.cs:line 59
+WARN  2011-12-08 16:02:41,438  1552ms Object                 DoExecuteNonQuery  - AuditDatabase_SetSessionInfo
+System.Data.SqlClient.SqlException (0x80131904): Could not find stored procedure 'AuditDatabase_SetSessionInfo'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning()
+   at System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(DbAsyncResult result, String methodName, Boolean sendToPipe)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at MakerShop.Data.Database.DoExecuteNonQuery(DbCommand command) in E:\XMAble\trunk\MakerShop.Data\Database.cs:line 449
+ERROR 2011-12-08 16:02:41,445  1559ms Object                 RunMaintenance     - Error maintaining audit log
+System.Data.SqlClient.SqlException (0x80131904): Could not find stored procedure 'AuditDatabase_SetSessionInfo'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning()
+   at System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(DbAsyncResult result, String methodName, Boolean sendToPipe)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at MakerShop.Data.Database.DoExecuteNonQuery(DbCommand command) in E:\XMAble\trunk\MakerShop.Data\Database.cs:line 459
+   at MakerShop.Utility.MaintenanceWorker.TrimAuditLog(DateTime beforeDate) in E:\XMAble\trunk\MakerShop\Utility\MaintenanceWorker.cs:line 656
+   at MakerShop.Utility.MaintenanceWorker.MaintainAuditLog() in E:\XMAble\trunk\MakerShop\Utility\MaintenanceWorker.cs:line 571
+   at MakerShop.Utility.MaintenanceWorker.RunMaintenance() in E:\XMAble\trunk\MakerShop\Utility\MaintenanceWorker.cs:line 69
+WARN  2011-12-08 16:02:41,460  1574ms Object                 DoExecuteNonQuery  - AuditDatabase_SetSessionInfo
+System.Data.SqlClient.SqlException (0x80131904): Could not find stored procedure 'AuditDatabase_SetSessionInfo'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning()
+   at System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(DbAsyncResult result, String methodName, Boolean sendToPipe)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at MakerShop.Data.Database.DoExecuteNonQuery(DbCommand command) in E:\XMAble\trunk\MakerShop.Data\Database.cs:line 449
+ERROR 2011-12-08 16:02:41,463  1577ms Object                 RunMaintenance     - Error maintaining catalog nodes
+System.Data.SqlClient.SqlException (0x80131904): Could not find stored procedure 'AuditDatabase_SetSessionInfo'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning()
+   at System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(DbAsyncResult result, String methodName, Boolean sendToPipe)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at MakerShop.Data.Database.DoExecuteNonQuery(DbCommand command) in E:\XMAble\trunk\MakerShop.Data\Database.cs:line 459
+   at MakerShop.Utility.MaintenanceWorker.MaintainCatalog() in E:\XMAble\trunk\MakerShop\Utility\MaintenanceWorker.cs:line 119
+   at MakerShop.Utility.MaintenanceWorker.RunMaintenance() in E:\XMAble\trunk\MakerShop\Utility\MaintenanceWorker.cs:line 74
+INFO  2011-12-08 16:02:41,466  1580ms Object                 RunMaintenance     - Maintenance routines complete
+WARN  2011-12-08 16:02:50,142 10256ms Object                 DoExecuteNonQuery  - AuditDatabase_SetSessionInfo
+System.Data.SqlClient.SqlException (0x80131904): Could not find stored procedure 'AuditDatabase_SetSessionInfo'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning()
+   at System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(DbAsyncResult result, String methodName, Boolean sendToPipe)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at MakerShop.Data.Database.DoExecuteNonQuery(DbCommand command) in E:\XMAble\trunk\MakerShop.Data\Database.cs:line 449
+ERROR 2011-12-08 16:02:50,229 10343ms Object                 Application_Error  - An error has occured at http://localhost/Able/login.aspx?ReturnUrl=/Able/Admin/Marketing/Affiliates/AffiliateSearch.aspx
+System.Data.SqlClient.SqlException (0x80131904): Could not find stored procedure 'AuditDatabase_SetSessionInfo'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning()
+   at System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(DbAsyncResult result, String methodName, Boolean sendToPipe)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at MakerShop.Data.Database.DoExecuteNonQuery(DbCommand command) in E:\XMAble\trunk\MakerShop.Data\Database.cs:line 459
+   at MakerShop.Users.User.BaseSave() in E:\XMAble\trunk\MakerShop\Users\User.Generated.cs:line 962
+   at MakerShop.Users.User.Save() in E:\XMAble\trunk\MakerShop\Users\User.cs:line 302
+   at MakerShop.Users.UserDataSource.CreateUserInstance(String userName) in E:\XMAble\trunk\MakerShop\Users\UserDataSource.cs:line 723
+   at MakerShop.Common.Token.InitUserContext(HttpContext context) in E:\XMAble\trunk\MakerShop\Common\Token.cs:line 55
+   at System.Web.HttpApplication.SyncEventExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+WARN  2011-12-08 16:06:04,945 205059ms Object                 DoExecuteReader    - SET TRANSACTION ISOLATION LEVEL READ UNCOMMITTED; SELECT AffiliateId,StoreId,Name,PayeeName,FirstName,LastName,Company,Address1,Address2,City,Province,PostalCode,CountryCode,PhoneNumber,FaxNumber,MobileNumber,WebsiteUrl,Email,CommissionRate,CommissionIsPercent,CommissionOnTotal,ReferralDays,Active,PromoCode,ParentAffiliateID,AffiliateTypeId,RoutingNumber,AccountNumber FROM ac_Affiliates
+System.Data.SqlClient.SqlException (0x80131904): Invalid column name 'PromoCode'.
+Invalid column name 'ParentAffiliateID'.
+Invalid column name 'AffiliateTypeId'.
+Invalid column name 'RoutingNumber'.
+Invalid column name 'AccountNumber'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning()
+   at System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   at System.Data.SqlClient.SqlDataReader.ConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at MakerShop.Data.Database.DoExecuteReader(DbCommand command, CommandBehavior behavior) in E:\XMAble\trunk\MakerShop.Data\Database.cs:line 477
+ERROR 2011-12-08 16:06:05,291 205405ms Object                 Application_Error  - An error has occured at http://localhost/Able/Admin/Marketing/Affiliates/AffiliateSearch.aspx
+System.Web.HttpUnhandledException (0x80004005): Exception of type 'System.Web.HttpUnhandledException' was thrown. ---> System.Data.SqlClient.SqlException (0x80131904): Invalid column name 'PromoCode'.
+Invalid column name 'ParentAffiliateID'.
+Invalid column name 'AffiliateTypeId'.
+Invalid column name 'RoutingNumber'.
+Invalid column name 'AccountNumber'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning()
+   at System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   at System.Data.SqlClient.SqlDataReader.ConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at MakerShop.Data.Database.DoExecuteReader(DbCommand command, CommandBehavior behavior) in E:\XMAble\trunk\MakerShop.Data\Database.cs:line 487
+   at MakerShop.Data.Database.ExecuteReader(DbCommand command) in E:\XMAble\trunk\MakerShop.Data\Database.cs:line 805
+   at MakerShop.Marketing.AffiliateDataSource.LoadForCriteria(String sqlCriteria, Int32 maximumRows, Int32 startRowIndex, String sortExpression) in E:\XMAble\trunk\MakerShop\Marketing\AffiliateDataSource.Generated.cs:line 166
+   at Admin_Marketing_Affiliates_AffiliateSearch.Page_Load(Object sender, EventArgs e) in e:\inetpub\wwwroot\Able\Admin\Marketing\Affiliates\AffiliateSearch.aspx.cs:line 61
+   at System.Web.Util.CalliHelper.EventArgFunctionCaller(IntPtr fp, Object o, Object t, EventArgs e)
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at ASP.admin_marketing_affiliates_affiliatesearch_aspx.ProcessRequest(HttpContext context) in c:\Windows\Microsoft.NET\Framework64\v4.0.30319\Temporary ASP.NET Files\able\35a05edd\454078e6\App_Web_dq11kreb.2.cs:line 0
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+INFO  2011-12-08 16:26:38,778   211ms Object                 RunMaintenance     - Running maintenance routines
+INFO  2011-12-08 16:26:38,926   359ms Object                 TrimPageViewLog    - Page view maintenance cleared 2 expired records.
+INFO  2011-12-08 16:26:39,166   599ms Object                 TrimAuditLog       - Audit log maintenance archived 47 expired entries.
+INFO  2011-12-08 16:26:39,245   678ms Object                 RunMaintenance     - Maintenance routines complete
+WARN  2011-12-08 16:47:09,265 1230698ms Object                 DoExecuteReader    - SET TRANSACTION ISOLATION LEVEL READ UNCOMMITTED; SET NOCOUNT ON; SELECT OrderId,CellPhone,HomePhone,DOB,PeopleInHousehold,AnnualIncome,MonthlyIncome,HouseholdAnnualIncome,HouseholdMonthlyIncome,PeopleEmployed,Children,GovernmentProgramId,Last4SSN,BillToMiddleName,Signature,SignatureTime FROM ac_Orders_Ex WHERE  OrderId = @OrderId  
+System.Data.SqlClient.SqlException (0x80131904): Invalid column name 'Signature'.
+Invalid column name 'SignatureTime'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning()
+   at System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   at System.Data.SqlClient.SqlDataReader.ConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at MakerShop.Data.Database.DoExecuteReader(DbCommand command, CommandBehavior behavior) in E:\XMAble\trunk\MakerShop.Data\Database.cs:line 477
+ERROR 2011-12-08 16:47:09,397 1230830ms Object                 Application_Error  - An error has occured at http://localhost/Able/Admin/Orders/ViewOrder.aspx?OrderNumber=11&OrderId=11
+System.Web.HttpUnhandledException (0x80004005): Exception of type 'System.Web.HttpUnhandledException' was thrown. ---> System.Data.SqlClient.SqlException (0x80131904): Invalid column name 'Signature'.
+Invalid column name 'SignatureTime'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning()
+   at System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   at System.Data.SqlClient.SqlDataReader.ConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at MakerShop.Data.Database.DoExecuteReader(DbCommand command, CommandBehavior behavior) in E:\XMAble\trunk\MakerShop.Data\Database.cs:line 487
+   at MakerShop.Data.Database.ExecuteReader(DbCommand command) in E:\XMAble\trunk\MakerShop.Data\Database.cs:line 805
+   at MakerShop.Orders.Order_Ex.Load(Int32 pOrderId) in E:\XMAble\trunk\MakerShop\Orders\Order_Ex.Generated.cs:line 425
+   at MakerShop.Orders.Order.get_Order_Ex() in E:\XMAble\trunk\MakerShop\Orders\Order.Generated.cs:line 893
+   at MakerShop.Orders.Order.FormatAddress(String pattern, Boolean isHtml) in E:\XMAble\trunk\MakerShop\Orders\Order.cs:line 406
+   at Admin_Orders_ViewOrder.BindBillToAddress() in e:\inetpub\wwwroot\Able\Admin\Orders\ViewOrder.aspx.cs:line 328
+   at Admin_Orders_ViewOrder.BindOrder() in e:\inetpub\wwwroot\Able\Admin\Orders\ViewOrder.aspx.cs:line 129
+   at Admin_Orders_ViewOrder.Page_PreRender(Object sender, EventArgs e) in e:\inetpub\wwwroot\Able\Admin\Orders\ViewOrder.aspx.cs:line 100
+   at System.Web.Util.CalliHelper.EventArgFunctionCaller(IntPtr fp, Object o, Object t, EventArgs e)
+   at System.EventHandler.Invoke(Object sender, EventArgs e)
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at ASP.admin_orders_vieworder_aspx.ProcessRequest(HttpContext context) in c:\Windows\Microsoft.NET\Framework64\v4.0.30319\Temporary ASP.NET Files\able\35a05edd\454078e6\App_Web_agcwptvu.8.cs:line 0
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+WARN  2011-12-08 16:54:08,815 1650248ms Object                 DoExecuteReader    - SET TRANSACTION ISOLATION LEVEL READ UNCOMMITTED; SELECT ProductId,StoreId,Name,Price,CostOfGoods,MSRP,Weight,Length,Width,Height,ManufacturerId,Sku,ModelNumber,DisplayPage,TaxCodeId,ShippableId,WarehouseId,InventoryModeId,InStock,InStockWarningLevel,ThumbnailUrl,ThumbnailAltText,ImageUrl,ImageAltText,Summary,Description,ExtendedDescription,VendorId,CreatedDate,LastModifiedDate,IsFeatured,IsProhibited,AllowReviews,AllowBackorder,WrapGroupId,ExcludeFromFeed,HtmlHead,DisablePurchase,MinQuantity,MaxQuantity,VisibilityId,Theme,IconUrl,IconAltText,IsGiftCertificate,UseVariablePrice,MinimumPrice,MaximumPrice,SearchKeywords,HidePrice,IsNotValidated,CustomerServiceUrl FROM ac_Products WHERE ProductId = @productId AND StoreId = @storeId
+System.Data.SqlClient.SqlException (0x80131904): Invalid column name 'CustomerServiceUrl'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning()
+   at System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   at System.Data.SqlClient.SqlDataReader.ConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at MakerShop.Data.Database.DoExecuteReader(DbCommand command, CommandBehavior behavior) in E:\XMAble\trunk\MakerShop.Data\Database.cs:line 477
+ERROR 2011-12-08 16:54:08,835 1650268ms Object                 Application_Error  - An error has occured at http://localhost/Able/Admin/Orders/ViewOrder.aspx?OrderNumber=11&OrderId=11
+System.Web.HttpUnhandledException (0x80004005): Exception of type 'System.Web.HttpUnhandledException' was thrown. ---> System.Data.SqlClient.SqlException (0x80131904): Invalid column name 'CustomerServiceUrl'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning()
+   at System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   at System.Data.SqlClient.SqlDataReader.ConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at MakerShop.Data.Database.DoExecuteReader(DbCommand command, CommandBehavior behavior) in E:\XMAble\trunk\MakerShop.Data\Database.cs:line 487
+   at MakerShop.Data.Database.ExecuteReader(DbCommand command) in E:\XMAble\trunk\MakerShop.Data\Database.cs:line 805
+   at MakerShop.Products.Product.Load(Int32 productId) in E:\XMAble\trunk\MakerShop\Products\Product.Generated.cs:line 1670
+   at MakerShop.Products.ProductDataSource.Load(Int32 productId, Boolean useCache) in E:\XMAble\trunk\MakerShop\Products\ProductDataSource.Generated.cs:line 83
+   at MakerShop.Orders.OrderItem.get_Product() in E:\XMAble\trunk\MakerShop\Orders\OrderItem.Generated.cs:line 655
+   at Admin_UserControls_OrderItemDetail.Page_PreRender(Object sender, EventArgs e) in e:\inetpub\wwwroot\Able\Admin\UserControls\OrderItemDetail.ascx.cs:line 52
+   at System.Web.Util.CalliHelper.EventArgFunctionCaller(IntPtr fp, Object o, Object t, EventArgs e)
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at ASP.admin_orders_vieworder_aspx.ProcessRequest(HttpContext context) in c:\Windows\Microsoft.NET\Framework64\v4.0.30319\Temporary ASP.NET Files\able\35a05edd\454078e6\App_Web_agcwptvu.8.cs:line 0
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+WARN  2011-12-08 17:04:51,918 2293351ms Object                 DoExecuteReader    - SET TRANSACTION ISOLATION LEVEL READ UNCOMMITTED; SELECT ProductId,PaymentGatewayTemplateId,CreateDate,CreateUser,ChangeDate,ChangeUser FROM xm_PaymentGatewayTemplates_Product WHERE  ProductId = @ProductId  
+System.Data.SqlClient.SqlException (0x80131904): Invalid object name 'xm_PaymentGatewayTemplates_Product'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning()
+   at System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   at System.Data.SqlClient.SqlDataReader.ConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at MakerShop.Data.Database.DoExecuteReader(DbCommand command, CommandBehavior behavior) in E:\XMAble\trunk\MakerShop.Data\Database.cs:line 477
+ERROR 2011-12-08 17:04:51,985 2293418ms Object                 Application_Error  - An error has occured at http://localhost/Able/Admin/Products/EditGateway.aspx?ProductId=5
+System.Web.HttpUnhandledException (0x80004005): Exception of type 'System.Web.HttpUnhandledException' was thrown. ---> System.Data.SqlClient.SqlException (0x80131904): Invalid object name 'xm_PaymentGatewayTemplates_Product'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning()
+   at System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   at System.Data.SqlClient.SqlDataReader.ConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at MakerShop.Data.Database.DoExecuteReader(DbCommand command, CommandBehavior behavior) in E:\XMAble\trunk\MakerShop.Data\Database.cs:line 487
+   at MakerShop.Data.Database.ExecuteReader(DbCommand command) in E:\XMAble\trunk\MakerShop.Data\Database.cs:line 805
+   at MakerShop.Payments.PaymentGatewayTemplate_Product.Load(Int32 pProductId) in E:\XMAble\trunk\MakerShop\Payments\PaymentGatewayTemplate_Product.Generated.cs:line 229
+   at MakerShop.Payments.PaymentGatewayTemplate_ProductDataSource.Load(Int32 pProductId) in E:\XMAble\trunk\MakerShop\Payments\PaymentGatewayTemplate_ProductDataSource.Generated.cs:line 43
+   at Admin_Products_EditGateway.Page_Load(Object sender, EventArgs e) in e:\inetpub\wwwroot\Able\Admin\Products\EditGateway.aspx.cs:line 36
+   at System.Web.Util.CalliHelper.EventArgFunctionCaller(IntPtr fp, Object o, Object t, EventArgs e)
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at ASP.admin_products_editgateway_aspx.ProcessRequest(HttpContext context) in c:\Windows\Microsoft.NET\Framework64\v4.0.30319\Temporary ASP.NET Files\able\35a05edd\454078e6\App_Web_rk2hh3tp.2.cs:line 0
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+WARN  2011-12-08 17:09:02,743 2544176ms Object                 DoExecuteReader    - SET TRANSACTION ISOLATION LEVEL READ UNCOMMITTED; SELECT ProductId,PaymentGatewayTemplateId,CreateDate,CreateUser,ChangeDate,ChangeUser FROM xm_PaymentGatewayTemplates_Product WHERE  ProductId = @ProductId  
+System.Data.SqlClient.SqlException (0x80131904): Invalid object name 'xm_PaymentGatewayTemplates_Product'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning()
+   at System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   at System.Data.SqlClient.SqlDataReader.ConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at MakerShop.Data.Database.DoExecuteReader(DbCommand command, CommandBehavior behavior) in E:\XMAble\trunk\MakerShop.Data\Database.cs:line 477
+ERROR 2011-12-08 17:09:02,749 2544182ms Object                 Application_Error  - An error has occured at http://localhost/Able/Admin/Products/EditGateway.aspx?ProductId=5
+System.Web.HttpUnhandledException (0x80004005): Exception of type 'System.Web.HttpUnhandledException' was thrown. ---> System.Data.SqlClient.SqlException (0x80131904): Invalid object name 'xm_PaymentGatewayTemplates_Product'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning()
+   at System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   at System.Data.SqlClient.SqlDataReader.ConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at MakerShop.Data.Database.DoExecuteReader(DbCommand command, CommandBehavior behavior) in E:\XMAble\trunk\MakerShop.Data\Database.cs:line 487
+   at MakerShop.Data.Database.ExecuteReader(DbCommand command) in E:\XMAble\trunk\MakerShop.Data\Database.cs:line 805
+   at MakerShop.Payments.PaymentGatewayTemplate_Product.Load(Int32 pProductId) in E:\XMAble\trunk\MakerShop\Payments\PaymentGatewayTemplate_Product.Generated.cs:line 229
+   at MakerShop.Payments.PaymentGatewayTemplate_ProductDataSource.Load(Int32 pProductId) in E:\XMAble\trunk\MakerShop\Payments\PaymentGatewayTemplate_ProductDataSource.Generated.cs:line 43
+   at Admin_Products_EditGateway.Page_Load(Object sender, EventArgs e) in e:\inetpub\wwwroot\Able\Admin\Products\EditGateway.aspx.cs:line 36
+   at System.Web.Util.CalliHelper.EventArgFunctionCaller(IntPtr fp, Object o, Object t, EventArgs e)
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at ASP.admin_products_editgateway_aspx.ProcessRequest(HttpContext context) in c:\Windows\Microsoft.NET\Framework64\v4.0.30319\Temporary ASP.NET Files\able\35a05edd\454078e6\App_Web_rk2hh3tp.2.cs:line 0
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+WARN  2011-12-08 17:16:53,940 3015373ms Object                 DoExecuteReader    - SET TRANSACTION ISOLATION LEVEL READ UNCOMMITTED; SELECT ProductId,PaymentGatewayTemplateId,CreateDate,CreateUser,ChangeDate,ChangeUser FROM xm_PaymentGatewayTemplates_Product WHERE  ProductId = @ProductId  
+System.Data.SqlClient.SqlException (0x80131904): Invalid object name 'xm_PaymentGatewayTemplates_Product'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning()
+   at System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   at System.Data.SqlClient.SqlDataReader.ConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at MakerShop.Data.Database.DoExecuteReader(DbCommand command, CommandBehavior behavior) in E:\XMAble\trunk\MakerShop.Data\Database.cs:line 477
+ERROR 2011-12-08 17:16:53,947 3015380ms Object                 Application_Error  - An error has occured at http://localhost/Able/Admin/Products/EditGateway.aspx?ProductId=5
+System.Web.HttpUnhandledException (0x80004005): Exception of type 'System.Web.HttpUnhandledException' was thrown. ---> System.Data.SqlClient.SqlException (0x80131904): Invalid object name 'xm_PaymentGatewayTemplates_Product'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning()
+   at System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   at System.Data.SqlClient.SqlDataReader.ConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at MakerShop.Data.Database.DoExecuteReader(DbCommand command, CommandBehavior behavior) in E:\XMAble\trunk\MakerShop.Data\Database.cs:line 487
+   at MakerShop.Data.Database.ExecuteReader(DbCommand command) in E:\XMAble\trunk\MakerShop.Data\Database.cs:line 805
+   at MakerShop.Payments.PaymentGatewayTemplate_Product.Load(Int32 pProductId) in E:\XMAble\trunk\MakerShop\Payments\PaymentGatewayTemplate_Product.Generated.cs:line 229
+   at MakerShop.Payments.PaymentGatewayTemplate_ProductDataSource.Load(Int32 pProductId) in E:\XMAble\trunk\MakerShop\Payments\PaymentGatewayTemplate_ProductDataSource.Generated.cs:line 43
+   at Admin_Products_EditGateway.Page_Load(Object sender, EventArgs e) in e:\inetpub\wwwroot\Able\Admin\Products\EditGateway.aspx.cs:line 36
+   at System.Web.Util.CalliHelper.EventArgFunctionCaller(IntPtr fp, Object o, Object t, EventArgs e)
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at ASP.admin_products_editgateway_aspx.ProcessRequest(HttpContext context) in c:\Windows\Microsoft.NET\Framework64\v4.0.30319\Temporary ASP.NET Files\able\35a05edd\454078e6\App_Web_rk2hh3tp.2.cs:line 0
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+WARN  2011-12-08 17:16:55,124 3016557ms Object                 DoExecuteReader    - SET TRANSACTION ISOLATION LEVEL READ UNCOMMITTED; SELECT ProductId,PaymentGatewayTemplateId,CreateDate,CreateUser,ChangeDate,ChangeUser FROM xm_PaymentGatewayTemplates_Product WHERE  ProductId = @ProductId  
+System.Data.SqlClient.SqlException (0x80131904): Invalid object name 'xm_PaymentGatewayTemplates_Product'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning()
+   at System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   at System.Data.SqlClient.SqlDataReader.ConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at MakerShop.Data.Database.DoExecuteReader(DbCommand command, CommandBehavior behavior) in E:\XMAble\trunk\MakerShop.Data\Database.cs:line 477
+ERROR 2011-12-08 17:16:55,130 3016563ms Object                 Application_Error  - An error has occured at http://localhost/Able/Admin/Products/EditGateway.aspx?ProductId=5
+System.Web.HttpUnhandledException (0x80004005): Exception of type 'System.Web.HttpUnhandledException' was thrown. ---> System.Data.SqlClient.SqlException (0x80131904): Invalid object name 'xm_PaymentGatewayTemplates_Product'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning()
+   at System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   at System.Data.SqlClient.SqlDataReader.ConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at MakerShop.Data.Database.DoExecuteReader(DbCommand command, CommandBehavior behavior) in E:\XMAble\trunk\MakerShop.Data\Database.cs:line 487
+   at MakerShop.Data.Database.ExecuteReader(DbCommand command) in E:\XMAble\trunk\MakerShop.Data\Database.cs:line 805
+   at MakerShop.Payments.PaymentGatewayTemplate_Product.Load(Int32 pProductId) in E:\XMAble\trunk\MakerShop\Payments\PaymentGatewayTemplate_Product.Generated.cs:line 229
+   at MakerShop.Payments.PaymentGatewayTemplate_ProductDataSource.Load(Int32 pProductId) in E:\XMAble\trunk\MakerShop\Payments\PaymentGatewayTemplate_ProductDataSource.Generated.cs:line 43
+   at Admin_Products_EditGateway.Page_Load(Object sender, EventArgs e) in e:\inetpub\wwwroot\Able\Admin\Products\EditGateway.aspx.cs:line 36
+   at System.Web.Util.CalliHelper.EventArgFunctionCaller(IntPtr fp, Object o, Object t, EventArgs e)
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at ASP.admin_products_editgateway_aspx.ProcessRequest(HttpContext context) in c:\Windows\Microsoft.NET\Framework64\v4.0.30319\Temporary ASP.NET Files\able\35a05edd\454078e6\App_Web_rk2hh3tp.2.cs:line 0
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+WARN  2011-12-08 17:16:55,702 3017134ms Object                 DoExecuteReader    - SET TRANSACTION ISOLATION LEVEL READ UNCOMMITTED; SELECT ProductId,PaymentGatewayTemplateId,CreateDate,CreateUser,ChangeDate,ChangeUser FROM xm_PaymentGatewayTemplates_Product WHERE  ProductId = @ProductId  
+System.Data.SqlClient.SqlException (0x80131904): Invalid object name 'xm_PaymentGatewayTemplates_Product'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning()
+   at System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   at System.Data.SqlClient.SqlDataReader.ConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at MakerShop.Data.Database.DoExecuteReader(DbCommand command, CommandBehavior behavior) in E:\XMAble\trunk\MakerShop.Data\Database.cs:line 477
+ERROR 2011-12-08 17:16:55,708 3017140ms Object                 Application_Error  - An error has occured at http://localhost/Able/Admin/Products/EditGateway.aspx?ProductId=5
+System.Web.HttpUnhandledException (0x80004005): Exception of type 'System.Web.HttpUnhandledException' was thrown. ---> System.Data.SqlClient.SqlException (0x80131904): Invalid object name 'xm_PaymentGatewayTemplates_Product'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning()
+   at System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   at System.Data.SqlClient.SqlDataReader.ConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at MakerShop.Data.Database.DoExecuteReader(DbCommand command, CommandBehavior behavior) in E:\XMAble\trunk\MakerShop.Data\Database.cs:line 487
+   at MakerShop.Data.Database.ExecuteReader(DbCommand command) in E:\XMAble\trunk\MakerShop.Data\Database.cs:line 805
+   at MakerShop.Payments.PaymentGatewayTemplate_Product.Load(Int32 pProductId) in E:\XMAble\trunk\MakerShop\Payments\PaymentGatewayTemplate_Product.Generated.cs:line 229
+   at MakerShop.Payments.PaymentGatewayTemplate_ProductDataSource.Load(Int32 pProductId) in E:\XMAble\trunk\MakerShop\Payments\PaymentGatewayTemplate_ProductDataSource.Generated.cs:line 43
+   at Admin_Products_EditGateway.Page_Load(Object sender, EventArgs e) in e:\inetpub\wwwroot\Able\Admin\Products\EditGateway.aspx.cs:line 36
+   at System.Web.Util.CalliHelper.EventArgFunctionCaller(IntPtr fp, Object o, Object t, EventArgs e)
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at ASP.admin_products_editgateway_aspx.ProcessRequest(HttpContext context) in c:\Windows\Microsoft.NET\Framework64\v4.0.30319\Temporary ASP.NET Files\able\35a05edd\454078e6\App_Web_rk2hh3tp.2.cs:line 0
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+INFO  2011-12-09 15:58:17,343   233ms Object                 RunMaintenance     - Running maintenance routines
+INFO  2011-12-09 15:58:17,800   690ms Object                 RunMaintenance     - Maintenance routines complete
+INFO  2011-12-09 16:27:52,935   235ms Object                 RunMaintenance     - Running maintenance routines
+INFO  2011-12-09 16:27:53,243   542ms Object                 RunMaintenance     - Maintenance routines complete
+INFO  2011-12-09 17:01:35,515   250ms Object                 RunMaintenance     - Running maintenance routines
+INFO  2011-12-09 17:01:35,763   498ms Object                 RunMaintenance     - Maintenance routines complete
+INFO  2011-12-12 14:42:35,588   253ms Object                 RunMaintenance     - Running maintenance routines
+INFO  2011-12-12 14:42:39,855  4519ms Object                 RunMaintenance     - Maintenance routines complete
+INFO  2011-12-12 14:51:19,969   239ms Object                 RunMaintenance     - Running maintenance routines
+INFO  2011-12-12 14:51:20,390   660ms Object                 RunMaintenance     - Maintenance routines complete
+INFO  2011-12-12 14:52:05,995   229ms Object                 RunMaintenance     - Running maintenance routines
+INFO  2011-12-12 14:52:06,192   426ms Object                 RunMaintenance     - Maintenance routines complete
+INFO  2011-12-12 14:52:13,431   227ms Object                 RunMaintenance     - Running maintenance routines
+INFO  2011-12-12 14:52:13,633   429ms Object                 RunMaintenance     - Maintenance routines complete
+INFO  2011-12-12 14:59:06,461   224ms Object                 RunMaintenance     - Running maintenance routines
+INFO  2011-12-12 14:59:07,737  1500ms Object                 RunMaintenance     - Maintenance routines complete
+INFO  2011-12-12 15:00:57,068   231ms Object                 RunMaintenance     - Running maintenance routines
+INFO  2011-12-12 15:00:57,264   427ms Object                 RunMaintenance     - Maintenance routines complete
+INFO  2011-12-12 15:03:00,408   225ms Object                 RunMaintenance     - Running maintenance routines
+INFO  2011-12-12 15:03:00,615   432ms Object                 RunMaintenance     - Maintenance routines complete
+INFO  2011-12-12 15:04:51,037  1149ms Object                 RunMaintenance     - Running maintenance routines
+INFO  2011-12-12 15:04:51,507  1619ms Object                 RunMaintenance     - Maintenance routines complete
+INFO  2011-12-12 15:32:53,476   256ms Object                 RunMaintenance     - Running maintenance routines
+INFO  2011-12-12 15:32:53,691   471ms Object                 RunMaintenance     - Maintenance routines complete
+ERROR 2011-12-12 15:35:59,602 186381ms Object                 Application_Error  - An error has occured at http://localhost/Able/Admin/Products/AddProduct.aspx
+System.Web.HttpUnhandledException (0x80004005): Exception of type 'System.Web.HttpUnhandledException' was thrown. ---> System.NullReferenceException: Object reference not set to an instance of an object.
+   at Admin_Products_AddProduct.Page_Init(Object sender, EventArgs e) in e:\inetpub\wwwroot\Able\Admin\Products\AddProduct.aspx.cs:line 29
+   at System.Web.Util.CalliHelper.EventArgFunctionCaller(IntPtr fp, Object o, Object t, EventArgs e)
+   at System.Web.UI.Page.OnInit(EventArgs e)
+   at System.Web.UI.Control.InitRecursive(Control namingContainer)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at ASP.admin_products_addproduct_aspx.ProcessRequest(HttpContext context) in c:\Windows\Microsoft.NET\Framework64\v4.0.30319\Temporary ASP.NET Files\able\35a05edd\454078e6\App_Web_4cd41fvp.0.cs:line 0
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+INFO  2011-12-12 15:38:49,601   225ms Object                 RunMaintenance     - Running maintenance routines
+INFO  2011-12-12 15:38:49,797   421ms Object                 RunMaintenance     - Maintenance routines complete
+INFO  2011-12-12 15:38:54,655   235ms Object                 RunMaintenance     - Running maintenance routines
+INFO  2011-12-12 15:38:54,856   436ms Object                 RunMaintenance     - Maintenance routines complete
+INFO  2011-12-12 15:44:15,640   222ms Object                 RunMaintenance     - Running maintenance routines
+INFO  2011-12-12 15:44:16,984  1566ms Object                 RunMaintenance     - Maintenance routines complete
+INFO  2011-12-12 15:52:06,561   224ms Object                 RunMaintenance     - Running maintenance routines
+INFO  2011-12-12 15:52:06,778   441ms Object                 RunMaintenance     - Maintenance routines complete
+INFO  2011-12-12 15:58:47,266   218ms Object                 RunMaintenance     - Running maintenance routines
+INFO  2011-12-12 15:58:47,486   438ms Object                 RunMaintenance     - Maintenance routines complete
+INFO  2011-12-12 16:03:46,341   236ms Object                 RunMaintenance     - Running maintenance routines
+INFO  2011-12-12 16:03:47,589  1484ms Object                 RunMaintenance     - Maintenance routines complete
+INFO  2011-12-12 16:28:24,169  1271ms Object                 RunMaintenance     - Running maintenance routines
+INFO  2011-12-12 16:28:24,842  1944ms Object                 RunMaintenance     - Maintenance routines complete
+INFO  2011-12-12 16:29:48,964   239ms Object                 RunMaintenance     - Running maintenance routines
+INFO  2011-12-12 16:29:49,170   445ms Object                 RunMaintenance     - Maintenance routines complete
+WARN  2011-12-12 16:51:22,981 1294256ms Object                 DoExecuteScalar    - INSERT INTO ac_Products (StoreId, Name, Price, CostOfGoods, MSRP, Weight, Length, Width, Height, ManufacturerId, Sku, ModelNumber, DisplayPage, TaxCodeId, ShippableId, WarehouseId, InventoryModeId, InStock, InStockWarningLevel, ThumbnailUrl, ThumbnailAltText, ImageUrl, ImageAltText, Summary, Description, ExtendedDescription, VendorId, CreatedDate, LastModifiedDate, IsFeatured, IsProhibited, AllowReviews, AllowBackorder, WrapGroupId, ExcludeFromFeed, HtmlHead, DisablePurchase, MinQuantity, MaxQuantity, VisibilityId, Theme, IconUrl, IconAltText, IsGiftCertificate, UseVariablePrice, MinimumPrice, MaximumPrice, SearchKeywords, HidePrice, IsNotValidated, CustomerServiceUrl) VALUES (@StoreId, @Name, @Price, @CostOfGoods, @MSRP, @Weight, @Length, @Width, @Height, @ManufacturerId, @Sku, @ModelNumber, @DisplayPage, @TaxCodeId, @ShippableId, @WarehouseId, @InventoryModeId, @InStock, @InStockWarningLevel, @ThumbnailUrl, @ThumbnailAltText, @ImageUrl, @ImageAltText, @Summary, @Description, @ExtendedDescription, @VendorId, @CreatedDate, @LastModifiedDate, @IsFeatured, @IsProhibited, @AllowReviews, @AllowBackorder, @WrapGroupId, @ExcludeFromFeed, @HtmlHead, @DisablePurchase, @MinQuantity, @MaxQuantity, @VisibilityId, @Theme, @IconUrl, @IconAltText, @IsGiftCertificate, @UseVariablePrice, @MinimumPrice, @MaximumPrice, @SearchKeywords, @HidePrice, @IsNotValidated, @CustomerServiceUrl); SELECT Scope_Identity()
+System.Data.SqlClient.SqlException (0x80131904): Timeout expired.  The timeout period elapsed prior to completion of the operation or the server is not responding.
+The statement has been terminated.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning()
+   at System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   at System.Data.SqlClient.SqlDataReader.ConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteScalar()
+   at MakerShop.Data.Database.DoExecuteScalar(DbCommand command) in E:\XMAble\trunk\MakerShop.Data\Database.cs:line 504
+ERROR 2011-12-12 16:51:23,250 1294525ms Object                 Application_Error  - An error has occured at http://localhost/Able/Admin/Products/AddProduct.aspx?CategoryId=32
+System.Web.HttpUnhandledException (0x80004005): Exception of type 'System.Web.HttpUnhandledException' was thrown. ---> System.Data.SqlClient.SqlException (0x80131904): Timeout expired.  The timeout period elapsed prior to completion of the operation or the server is not responding.
+The statement has been terminated.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning()
+   at System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   at System.Data.SqlClient.SqlDataReader.ConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteScalar()
+   at MakerShop.Data.Database.DoExecuteScalar(DbCommand command) in E:\XMAble\trunk\MakerShop.Data\Database.cs:line 514
+   at MakerShop.Products.Product.BaseSave() in E:\XMAble\trunk\MakerShop\Products\Product.Generated.cs:line 1897
+   at MakerShop.Products.Product.Save() in E:\XMAble\trunk\MakerShop\Products\Product.cs:line 208
+   at Admin_Products_AddProduct.SaveProduct() in e:\inetpub\wwwroot\Able\Admin\Products\AddProduct.aspx.cs:line 221
+   at Admin_Products_AddProduct.SaveButton_Click(Object sender, EventArgs e) in e:\inetpub\wwwroot\Able\Admin\Products\AddProduct.aspx.cs:line 149
+   at System.Web.UI.WebControls.Button.RaisePostBackEvent(String eventArgument)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at ASP.admin_products_addproduct_aspx.ProcessRequest(HttpContext context) in c:\Windows\Microsoft.NET\Framework64\v4.0.30319\Temporary ASP.NET Files\able\35a05edd\454078e6\App_Web_4cd41fvp.0.cs:line 0
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+WARN  2011-12-12 17:00:59,036 1870310ms Object                 DoExecuteScalar    - INSERT INTO ac_Products (StoreId, Name, Price, CostOfGoods, MSRP, Weight, Length, Width, Height, ManufacturerId, Sku, ModelNumber, DisplayPage, TaxCodeId, ShippableId, WarehouseId, InventoryModeId, InStock, InStockWarningLevel, ThumbnailUrl, ThumbnailAltText, ImageUrl, ImageAltText, Summary, Description, ExtendedDescription, VendorId, CreatedDate, LastModifiedDate, IsFeatured, IsProhibited, AllowReviews, AllowBackorder, WrapGroupId, ExcludeFromFeed, HtmlHead, DisablePurchase, MinQuantity, MaxQuantity, VisibilityId, Theme, IconUrl, IconAltText, IsGiftCertificate, UseVariablePrice, MinimumPrice, MaximumPrice, SearchKeywords, HidePrice, IsNotValidated, CustomerServiceUrl) VALUES (@StoreId, @Name, @Price, @CostOfGoods, @MSRP, @Weight, @Length, @Width, @Height, @ManufacturerId, @Sku, @ModelNumber, @DisplayPage, @TaxCodeId, @ShippableId, @WarehouseId, @InventoryModeId, @InStock, @InStockWarningLevel, @ThumbnailUrl, @ThumbnailAltText, @ImageUrl, @ImageAltText, @Summary, @Description, @ExtendedDescription, @VendorId, @CreatedDate, @LastModifiedDate, @IsFeatured, @IsProhibited, @AllowReviews, @AllowBackorder, @WrapGroupId, @ExcludeFromFeed, @HtmlHead, @DisablePurchase, @MinQuantity, @MaxQuantity, @VisibilityId, @Theme, @IconUrl, @IconAltText, @IsGiftCertificate, @UseVariablePrice, @MinimumPrice, @MaximumPrice, @SearchKeywords, @HidePrice, @IsNotValidated, @CustomerServiceUrl); SELECT Scope_Identity()
+System.Data.SqlClient.SqlException (0x80131904): Timeout expired.  The timeout period elapsed prior to completion of the operation or the server is not responding.
+The statement has been terminated.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning()
+   at System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   at System.Data.SqlClient.SqlDataReader.ConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteScalar()
+   at MakerShop.Data.Database.DoExecuteScalar(DbCommand command) in E:\XMAble\trunk\MakerShop.Data\Database.cs:line 504
+ERROR 2011-12-12 17:00:59,273 1870547ms Object                 Application_Error  - An error has occured at http://localhost/Able/Admin/Products/AddProduct.aspx?CategoryId=32
+System.Web.HttpUnhandledException (0x80004005): Exception of type 'System.Web.HttpUnhandledException' was thrown. ---> System.Data.SqlClient.SqlException (0x80131904): Timeout expired.  The timeout period elapsed prior to completion of the operation or the server is not responding.
+The statement has been terminated.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning()
+   at System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   at System.Data.SqlClient.SqlDataReader.ConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteScalar()
+   at MakerShop.Data.Database.DoExecuteScalar(DbCommand command) in E:\XMAble\trunk\MakerShop.Data\Database.cs:line 514
+   at MakerShop.Products.Product.BaseSave() in E:\XMAble\trunk\MakerShop\Products\Product.Generated.cs:line 1897
+   at MakerShop.Products.Product.Save() in E:\XMAble\trunk\MakerShop\Products\Product.cs:line 208
+   at Admin_Products_AddProduct.SaveProduct() in e:\inetpub\wwwroot\Able\Admin\Products\AddProduct.aspx.cs:line 221
+   at Admin_Products_AddProduct.SaveButton_Click(Object sender, EventArgs e) in e:\inetpub\wwwroot\Able\Admin\Products\AddProduct.aspx.cs:line 149
+   at System.Web.UI.WebControls.Button.RaisePostBackEvent(String eventArgument)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at ASP.admin_products_addproduct_aspx.ProcessRequest(HttpContext context) in c:\Windows\Microsoft.NET\Framework64\v4.0.30319\Temporary ASP.NET Files\able\35a05edd\454078e6\App_Web_4cd41fvp.0.cs:line 0
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+WARN  2011-12-12 17:07:33,994 2265268ms Object                 DoExecuteScalar    - INSERT INTO ac_Products (StoreId, Name, Price, CostOfGoods, MSRP, Weight, Length, Width, Height, ManufacturerId, Sku, ModelNumber, DisplayPage, TaxCodeId, ShippableId, WarehouseId, InventoryModeId, InStock, InStockWarningLevel, ThumbnailUrl, ThumbnailAltText, ImageUrl, ImageAltText, Summary, Description, ExtendedDescription, VendorId, CreatedDate, LastModifiedDate, IsFeatured, IsProhibited, AllowReviews, AllowBackorder, WrapGroupId, ExcludeFromFeed, HtmlHead, DisablePurchase, MinQuantity, MaxQuantity, VisibilityId, Theme, IconUrl, IconAltText, IsGiftCertificate, UseVariablePrice, MinimumPrice, MaximumPrice, SearchKeywords, HidePrice, IsNotValidated, CustomerServiceUrl) VALUES (@StoreId, @Name, @Price, @CostOfGoods, @MSRP, @Weight, @Length, @Width, @Height, @ManufacturerId, @Sku, @ModelNumber, @DisplayPage, @TaxCodeId, @ShippableId, @WarehouseId, @InventoryModeId, @InStock, @InStockWarningLevel, @ThumbnailUrl, @ThumbnailAltText, @ImageUrl, @ImageAltText, @Summary, @Description, @ExtendedDescription, @VendorId, @CreatedDate, @LastModifiedDate, @IsFeatured, @IsProhibited, @AllowReviews, @AllowBackorder, @WrapGroupId, @ExcludeFromFeed, @HtmlHead, @DisablePurchase, @MinQuantity, @MaxQuantity, @VisibilityId, @Theme, @IconUrl, @IconAltText, @IsGiftCertificate, @UseVariablePrice, @MinimumPrice, @MaximumPrice, @SearchKeywords, @HidePrice, @IsNotValidated, @CustomerServiceUrl); SELECT Scope_Identity()
+System.Data.SqlClient.SqlException (0x80131904): Timeout expired.  The timeout period elapsed prior to completion of the operation or the server is not responding.
+The statement has been terminated.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning()
+   at System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   at System.Data.SqlClient.SqlDataReader.ConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteScalar()
+   at MakerShop.Data.Database.DoExecuteScalar(DbCommand command) in E:\XMAble\trunk\MakerShop.Data\Database.cs:line 504
+ERROR 2011-12-12 17:07:34,225 2265499ms Object                 Application_Error  - An error has occured at http://localhost/Able/Admin/Products/AddProduct.aspx?CategoryId=32
+System.Web.HttpUnhandledException (0x80004005): Exception of type 'System.Web.HttpUnhandledException' was thrown. ---> System.Data.SqlClient.SqlException (0x80131904): Timeout expired.  The timeout period elapsed prior to completion of the operation or the server is not responding.
+The statement has been terminated.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning()
+   at System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   at System.Data.SqlClient.SqlDataReader.ConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteScalar()
+   at MakerShop.Data.Database.DoExecuteScalar(DbCommand command) in E:\XMAble\trunk\MakerShop.Data\Database.cs:line 514
+   at MakerShop.Products.Product.BaseSave() in E:\XMAble\trunk\MakerShop\Products\Product.Generated.cs:line 1897
+   at MakerShop.Products.Product.Save() in E:\XMAble\trunk\MakerShop\Products\Product.cs:line 208
+   at Admin_Products_AddProduct.SaveProduct() in e:\inetpub\wwwroot\Able\Admin\Products\AddProduct.aspx.cs:line 221
+   at Admin_Products_AddProduct.SaveButton_Click(Object sender, EventArgs e) in e:\inetpub\wwwroot\Able\Admin\Products\AddProduct.aspx.cs:line 149
+   at System.Web.UI.WebControls.Button.RaisePostBackEvent(String eventArgument)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at ASP.admin_products_addproduct_aspx.ProcessRequest(HttpContext context) in c:\Windows\Microsoft.NET\Framework64\v4.0.30319\Temporary ASP.NET Files\able\35a05edd\454078e6\App_Web_4cd41fvp.0.cs:line 0
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+WARN  2011-12-12 17:13:48,226 2639500ms Object                 DoExecuteScalar    - INSERT INTO ac_Products (StoreId, Name, Price, CostOfGoods, MSRP, Weight, Length, Width, Height, ManufacturerId, Sku, ModelNumber, DisplayPage, TaxCodeId, ShippableId, WarehouseId, InventoryModeId, InStock, InStockWarningLevel, ThumbnailUrl, ThumbnailAltText, ImageUrl, ImageAltText, Summary, Description, ExtendedDescription, VendorId, CreatedDate, LastModifiedDate, IsFeatured, IsProhibited, AllowReviews, AllowBackorder, WrapGroupId, ExcludeFromFeed, HtmlHead, DisablePurchase, MinQuantity, MaxQuantity, VisibilityId, Theme, IconUrl, IconAltText, IsGiftCertificate, UseVariablePrice, MinimumPrice, MaximumPrice, SearchKeywords, HidePrice, IsNotValidated, CustomerServiceUrl) VALUES (@StoreId, @Name, @Price, @CostOfGoods, @MSRP, @Weight, @Length, @Width, @Height, @ManufacturerId, @Sku, @ModelNumber, @DisplayPage, @TaxCodeId, @ShippableId, @WarehouseId, @InventoryModeId, @InStock, @InStockWarningLevel, @ThumbnailUrl, @ThumbnailAltText, @ImageUrl, @ImageAltText, @Summary, @Description, @ExtendedDescription, @VendorId, @CreatedDate, @LastModifiedDate, @IsFeatured, @IsProhibited, @AllowReviews, @AllowBackorder, @WrapGroupId, @ExcludeFromFeed, @HtmlHead, @DisablePurchase, @MinQuantity, @MaxQuantity, @VisibilityId, @Theme, @IconUrl, @IconAltText, @IsGiftCertificate, @UseVariablePrice, @MinimumPrice, @MaximumPrice, @SearchKeywords, @HidePrice, @IsNotValidated, @CustomerServiceUrl); SELECT Scope_Identity()
+System.Data.SqlClient.SqlException (0x80131904): Timeout expired.  The timeout period elapsed prior to completion of the operation or the server is not responding.
+The statement has been terminated.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning()
+   at System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   at System.Data.SqlClient.SqlDataReader.ConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteScalar()
+   at MakerShop.Data.Database.DoExecuteScalar(DbCommand command) in E:\XMAble\trunk\MakerShop.Data\Database.cs:line 504
+ERROR 2011-12-12 17:13:48,493 2639767ms Object                 Application_Error  - An error has occured at http://localhost/Able/Admin/Products/AddProduct.aspx?CategoryId=32
+System.Web.HttpUnhandledException (0x80004005): Exception of type 'System.Web.HttpUnhandledException' was thrown. ---> System.Data.SqlClient.SqlException (0x80131904): Timeout expired.  The timeout period elapsed prior to completion of the operation or the server is not responding.
+The statement has been terminated.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning()
+   at System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   at System.Data.SqlClient.SqlDataReader.ConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteScalar()
+   at MakerShop.Data.Database.DoExecuteScalar(DbCommand command) in E:\XMAble\trunk\MakerShop.Data\Database.cs:line 514
+   at MakerShop.Products.Product.BaseSave() in E:\XMAble\trunk\MakerShop\Products\Product.Generated.cs:line 1897
+   at MakerShop.Products.Product.Save() in E:\XMAble\trunk\MakerShop\Products\Product.cs:line 208
+   at Admin_Products_AddProduct.SaveProduct() in e:\inetpub\wwwroot\Able\Admin\Products\AddProduct.aspx.cs:line 221
+   at Admin_Products_AddProduct.SaveButton_Click(Object sender, EventArgs e) in e:\inetpub\wwwroot\Able\Admin\Products\AddProduct.aspx.cs:line 149
+   at System.Web.UI.WebControls.Button.RaisePostBackEvent(String eventArgument)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at ASP.admin_products_addproduct_aspx.ProcessRequest(HttpContext context) in c:\Windows\Microsoft.NET\Framework64\v4.0.30319\Temporary ASP.NET Files\able\35a05edd\454078e6\App_Web_4cd41fvp.0.cs:line 0
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+INFO  2011-12-13 09:48:09,802   328ms Object                 RunMaintenance     - Running maintenance routines
+INFO  2011-12-13 09:48:10,298   824ms Object                 RunMaintenance     - Maintenance routines complete
+INFO  2011-12-13 10:31:37,562   221ms Object                 RunMaintenance     - Running maintenance routines
+INFO  2011-12-13 10:31:37,776   434ms Object                 RunMaintenance     - Maintenance routines complete
+INFO  2011-12-13 10:37:38,388   231ms Object                 RunMaintenance     - Running maintenance routines
+INFO  2011-12-13 10:37:38,609   452ms Object                 RunMaintenance     - Maintenance routines complete
+INFO  2011-12-13 11:12:55,307  1374ms Object                 RunMaintenance     - Running maintenance routines
+INFO  2011-12-13 11:12:55,869  1936ms Object                 RunMaintenance     - Maintenance routines complete
+INFO  2011-12-13 11:14:36,181   224ms Object                 RunMaintenance     - Running maintenance routines
+INFO  2011-12-13 11:14:36,395   438ms Object                 RunMaintenance     - Maintenance routines complete
+INFO  2011-12-13 13:19:36,441  1416ms Object                 RunMaintenance     - Running maintenance routines
+INFO  2011-12-13 13:19:37,593  2568ms Object                 RunMaintenance     - Maintenance routines complete
+INFO  2011-12-13 13:21:11,788   224ms Object                 RunMaintenance     - Running maintenance routines
+INFO  2011-12-13 13:21:12,015   451ms Object                 RunMaintenance     - Maintenance routines complete
+INFO  2011-12-13 13:29:53,294  1162ms Object                 RunMaintenance     - Running maintenance routines
+INFO  2011-12-13 13:29:53,750  1618ms Object                 RunMaintenance     - Maintenance routines complete
+INFO  2011-12-13 13:52:39,164  1305ms Object                 RunMaintenance     - Running maintenance routines
+INFO  2011-12-13 13:52:39,603  1744ms Object                 RunMaintenance     - Maintenance routines complete
+INFO  2011-12-13 13:53:57,001   236ms Object                 RunMaintenance     - Running maintenance routines
+INFO  2011-12-13 13:53:57,297   532ms Object                 RunMaintenance     - Maintenance routines complete
+INFO  2011-12-13 14:03:37,865   223ms Object                 RunMaintenance     - Running maintenance routines
+INFO  2011-12-13 14:03:38,119   477ms Object                 RunMaintenance     - Maintenance routines complete
+INFO  2011-12-13 14:20:49,523   217ms Object                 RunMaintenance     - Running maintenance routines
+INFO  2011-12-13 14:20:51,277  1971ms Object                 RunMaintenance     - Maintenance routines complete
+INFO  2011-12-13 14:31:11,864   234ms Object                 DoLog              - Running maintenance routines
+INFO  2011-12-13 14:31:15,410  3780ms Object                 DoLog              - Maintenance routines complete
+INFO  2011-12-13 15:14:20,885   231ms Object                 DoLog              - Running maintenance routines
+INFO  2011-12-13 15:14:21,838  1184ms Object                 DoLog              - Maintenance routines complete
+INFO  2011-12-13 15:19:57,632   221ms Object                 DoLog              - Running maintenance routines
+INFO  2011-12-13 15:19:57,842   431ms Object                 DoLog              - Maintenance routines complete
+INFO  2011-12-13 15:38:26,452   503ms Object                 DoLog              - Running maintenance routines
+INFO  2011-12-13 15:38:27,925  1976ms Object                 DoLog              - Maintenance routines complete
+ERROR 2011-12-13 15:55:42,402 1036453ms Object                 DoLog              - An error has occured at http://localhost/Able/Admin/Catalog/Browse.aspx
+System.Web.HttpUnhandledException (0x80004005): Exception of type 'System.Web.HttpUnhandledException' was thrown. ---> System.NullReferenceException: Object reference not set to an instance of an object.
+   at MakerShop.Products.ProductDataSource.DeleteChildData(Product product) in E:\XMAble\trunk\MakerShop\Products\ProductDataSource.cs:line 1522
+   at MakerShop.Products.Product.Delete() in E:\XMAble\trunk\MakerShop\Products\Product.cs:line 188
+   at Admin_Catalog_Browse.DoDelete(CatalogNodeType catalogNodeType, Int32 catalogNodeId) in e:\inetpub\wwwroot\Able\Admin\Catalog\Browse.aspx.cs:line 300
+   at Admin_Catalog_Browse.CGrid_RowCommand(Object sender, GridViewCommandEventArgs e) in e:\inetpub\wwwroot\Able\Admin\Catalog\Browse.aspx.cs:line 202
+   at System.Web.UI.WebControls.GridView.HandleEvent(EventArgs e, Boolean causesValidation, String validationGroup)
+   at System.Web.UI.WebControls.GridViewRow.OnBubbleEvent(Object source, EventArgs e)
+   at System.Web.UI.Control.RaiseBubbleEvent(Object source, EventArgs args)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at ASP.admin_catalog_browse_aspx.ProcessRequest(HttpContext context) in c:\Windows\Microsoft.NET\Framework64\v4.0.30319\Temporary ASP.NET Files\able\35a05edd\454078e6\App_Web_m0o2r3fv.0.cs:line 0
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+ERROR 2011-12-13 16:03:38,576 1512627ms Object                 DoLog              - An error has occured at http://localhost/Able/Admin/Catalog/Browse.aspx
+System.Web.HttpUnhandledException (0x80004005): Exception of type 'System.Web.HttpUnhandledException' was thrown. ---> System.NullReferenceException: Object reference not set to an instance of an object.
+   at MakerShop.Products.ProductDataSource.DeleteChildData(Product product) in E:\XMAble\trunk\MakerShop\Products\ProductDataSource.cs:line 1522
+   at MakerShop.Products.Product.Delete() in E:\XMAble\trunk\MakerShop\Products\Product.cs:line 188
+   at Admin_Catalog_Browse.DoDelete(CatalogNodeType catalogNodeType, Int32 catalogNodeId) in e:\inetpub\wwwroot\Able\Admin\Catalog\Browse.aspx.cs:line 300
+   at Admin_Catalog_Browse.CGrid_RowCommand(Object sender, GridViewCommandEventArgs e) in e:\inetpub\wwwroot\Able\Admin\Catalog\Browse.aspx.cs:line 202
+   at System.Web.UI.WebControls.GridView.HandleEvent(EventArgs e, Boolean causesValidation, String validationGroup)
+   at System.Web.UI.WebControls.GridViewRow.OnBubbleEvent(Object source, EventArgs e)
+   at System.Web.UI.Control.RaiseBubbleEvent(Object source, EventArgs args)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at ASP.admin_catalog_browse_aspx.ProcessRequest(HttpContext context) in c:\Windows\Microsoft.NET\Framework64\v4.0.30319\Temporary ASP.NET Files\able\35a05edd\454078e6\App_Web_m0o2r3fv.0.cs:line 0
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+ERROR 2011-12-13 16:07:15,640 1729691ms Object                 DoLog              - An error has occured at http://localhost/Able/Admin/Catalog/Browse.aspx
+System.Web.HttpUnhandledException (0x80004005): Exception of type 'System.Web.HttpUnhandledException' was thrown. ---> System.NullReferenceException: Object reference not set to an instance of an object.
+   at MakerShop.Products.ProductDataSource.DeleteChildData(Product product) in E:\XMAble\trunk\MakerShop\Products\ProductDataSource.cs:line 1522
+   at MakerShop.Products.Product.Delete() in E:\XMAble\trunk\MakerShop\Products\Product.cs:line 188
+   at Admin_Catalog_Browse.DoDelete(CatalogNodeType catalogNodeType, Int32 catalogNodeId) in e:\inetpub\wwwroot\Able\Admin\Catalog\Browse.aspx.cs:line 300
+   at Admin_Catalog_Browse.CGrid_RowCommand(Object sender, GridViewCommandEventArgs e) in e:\inetpub\wwwroot\Able\Admin\Catalog\Browse.aspx.cs:line 202
+   at System.Web.UI.WebControls.GridView.HandleEvent(EventArgs e, Boolean causesValidation, String validationGroup)
+   at System.Web.UI.WebControls.GridViewRow.OnBubbleEvent(Object source, EventArgs e)
+   at System.Web.UI.Control.RaiseBubbleEvent(Object source, EventArgs args)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at ASP.admin_catalog_browse_aspx.ProcessRequest(HttpContext context) in c:\Windows\Microsoft.NET\Framework64\v4.0.30319\Temporary ASP.NET Files\able\35a05edd\454078e6\App_Web_m0o2r3fv.0.cs:line 0
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+ERROR 2011-12-13 16:11:54,962 2009013ms Object                 DoLog              - An error has occured at http://localhost/Able/Admin/Catalog/Browse.aspx
+System.Web.HttpUnhandledException (0x80004005): Exception of type 'System.Web.HttpUnhandledException' was thrown. ---> System.NullReferenceException: Object reference not set to an instance of an object.
+   at MakerShop.Products.ProductDataSource.DeleteChildData(Product product) in E:\XMAble\trunk\MakerShop\Products\ProductDataSource.cs:line 1522
+   at MakerShop.Products.Product.Delete() in E:\XMAble\trunk\MakerShop\Products\Product.cs:line 188
+   at Admin_Catalog_Browse.DoDelete(CatalogNodeType catalogNodeType, Int32 catalogNodeId) in e:\inetpub\wwwroot\Able\Admin\Catalog\Browse.aspx.cs:line 300
+   at Admin_Catalog_Browse.CGrid_RowCommand(Object sender, GridViewCommandEventArgs e) in e:\inetpub\wwwroot\Able\Admin\Catalog\Browse.aspx.cs:line 202
+   at System.Web.UI.WebControls.GridView.HandleEvent(EventArgs e, Boolean causesValidation, String validationGroup)
+   at System.Web.UI.WebControls.GridViewRow.OnBubbleEvent(Object source, EventArgs e)
+   at System.Web.UI.Control.RaiseBubbleEvent(Object source, EventArgs args)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at ASP.admin_catalog_browse_aspx.ProcessRequest(HttpContext context) in c:\Windows\Microsoft.NET\Framework64\v4.0.30319\Temporary ASP.NET Files\able\35a05edd\454078e6\App_Web_m0o2r3fv.0.cs:line 0
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+ERROR 2011-12-13 16:26:57,959 2912010ms Object                 DoLog              - An error has occured at http://localhost/Able/Admin/Catalog/Browse.aspx
+System.Web.HttpUnhandledException (0x80004005): Exception of type 'System.Web.HttpUnhandledException' was thrown. ---> System.NullReferenceException: Object reference not set to an instance of an object.
+   at MakerShop.Products.ProductDataSource.DeleteChildData(Product product) in E:\XMAble\trunk\MakerShop\Products\ProductDataSource.cs:line 1522
+   at MakerShop.Products.Product.Delete() in E:\XMAble\trunk\MakerShop\Products\Product.cs:line 188
+   at Admin_Catalog_Browse.DoDelete(CatalogNodeType catalogNodeType, Int32 catalogNodeId) in e:\inetpub\wwwroot\Able\Admin\Catalog\Browse.aspx.cs:line 300
+   at Admin_Catalog_Browse.CGrid_RowCommand(Object sender, GridViewCommandEventArgs e) in e:\inetpub\wwwroot\Able\Admin\Catalog\Browse.aspx.cs:line 202
+   at System.Web.UI.WebControls.GridView.HandleEvent(EventArgs e, Boolean causesValidation, String validationGroup)
+   at System.Web.UI.WebControls.GridViewRow.OnBubbleEvent(Object source, EventArgs e)
+   at System.Web.UI.Control.RaiseBubbleEvent(Object source, EventArgs args)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at ASP.admin_catalog_browse_aspx.ProcessRequest(HttpContext context) in c:\Windows\Microsoft.NET\Framework64\v4.0.30319\Temporary ASP.NET Files\able\35a05edd\454078e6\App_Web_m0o2r3fv.0.cs:line 0
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+ERROR 2011-12-13 16:33:26,821 3300872ms Object                 DoLog              - An error has occured at http://localhost/Able/Admin/Catalog/Browse.aspx
+System.Web.HttpUnhandledException (0x80004005): Exception of type 'System.Web.HttpUnhandledException' was thrown. ---> System.NullReferenceException: Object reference not set to an instance of an object.
+   at MakerShop.Products.ProductDataSource.DeleteChildData(Product product) in E:\XMAble\trunk\MakerShop\Products\ProductDataSource.cs:line 1522
+   at MakerShop.Products.Product.Delete() in E:\XMAble\trunk\MakerShop\Products\Product.cs:line 188
+   at Admin_Catalog_Browse.DoDelete(CatalogNodeType catalogNodeType, Int32 catalogNodeId) in e:\inetpub\wwwroot\Able\Admin\Catalog\Browse.aspx.cs:line 300
+   at Admin_Catalog_Browse.CGrid_RowCommand(Object sender, GridViewCommandEventArgs e) in e:\inetpub\wwwroot\Able\Admin\Catalog\Browse.aspx.cs:line 202
+   at System.Web.UI.WebControls.GridView.HandleEvent(EventArgs e, Boolean causesValidation, String validationGroup)
+   at System.Web.UI.WebControls.GridViewRow.OnBubbleEvent(Object source, EventArgs e)
+   at System.Web.UI.Control.RaiseBubbleEvent(Object source, EventArgs args)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at ASP.admin_catalog_browse_aspx.ProcessRequest(HttpContext context) in c:\Windows\Microsoft.NET\Framework64\v4.0.30319\Temporary ASP.NET Files\able\35a05edd\454078e6\App_Web_m0o2r3fv.0.cs:line 0
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+INFO  2011-12-13 16:40:34,040   215ms Object                 DoLog              - Running maintenance routines
+INFO  2011-12-13 16:40:34,526   701ms Object                 DoLog              - Maintenance routines complete

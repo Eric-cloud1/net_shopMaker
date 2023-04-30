@@ -1,0 +1,210 @@
+﻿.fht_parent h1 {
+	margin: 0px; padding: 0px; outline: 0px; border: 0px currentColor; font-size: 100%; vertical-align: baseline;
+}
+.fht_parent h2 {
+	margin: 0px; padding: 0px; outline: 0px; border: 0px currentColor; font-size: 100%; vertical-align: baseline;
+}
+.fht_parent h3 {
+	margin: 0px; padding: 0px; outline: 0px; border: 0px currentColor; font-size: 100%; vertical-align: baseline;
+}
+.fht_parent h4 {
+	margin: 0px; padding: 0px; outline: 0px; border: 0px currentColor; font-size: 100%; vertical-align: baseline;
+}
+.fht_parent h5 {
+	margin: 0px; padding: 0px; outline: 0px; border: 0px currentColor; font-size: 100%; vertical-align: baseline;
+}
+.fht_parent h6 {
+	margin: 0px; padding: 0px; outline: 0px; border: 0px currentColor; font-size: 100%; vertical-align: baseline;
+}
+.fht_parent p {
+	margin: 0px; padding: 0px; outline: 0px; border: 0px currentColor; font-size: 100%; vertical-align: baseline;
+}
+.fht_parent blockquote {
+	margin: 0px; padding: 0px; outline: 0px; border: 0px currentColor; font-size: 100%; vertical-align: baseline;
+}
+.fht_parent pre {
+	margin: 0px; padding: 0px; outline: 0px; border: 0px currentColor; font-size: 100%; vertical-align: baseline;
+}
+.fht_parent a {
+	margin: 0px; padding: 0px; outline: 0px; border: 0px currentColor; font-size: 100%; vertical-align: baseline;
+}
+.fht_parent abbr {
+	margin: 0px; padding: 0px; outline: 0px; border: 0px currentColor; font-size: 100%; vertical-align: baseline;
+}
+.fht_parent acronym {
+	margin: 0px; padding: 0px; outline: 0px; border: 0px currentColor; font-size: 100%; vertical-align: baseline;
+}
+.fht_parent address {
+	margin: 0px; padding: 0px; outline: 0px; border: 0px currentColor; font-size: 100%; vertical-align: baseline;
+}
+.fht_parent big {
+	margin: 0px; padding: 0px; outline: 0px; border: 0px currentColor; font-size: 100%; vertical-align: baseline;
+}
+.fht_parent cite {
+	margin: 0px; padding: 0px; outline: 0px; border: 0px currentColor; font-size: 100%; vertical-align: baseline;
+}
+.fht_parent code {
+	margin: 0px; padding: 0px; outline: 0px; border: 0px currentColor; font-size: 100%; vertical-align: baseline;
+}
+.fht_parent img {
+	margin: 0px; padding: 0px; outline: 0px; border: 0px currentColor; font-size: 100%; vertical-align: baseline;
+}
+.fht_parent strong {
+	margin: 0px; padding: 0px; outline: 0px; border: 0px currentColor; font-size: 100%; vertical-align: baseline;
+}
+.fht_parent ol {
+	margin: 0px; padding: 0px; outline: 0px; border: 0px currentColor; font-size: 100%; vertical-align: baseline;
+}
+.fht_parent ul {
+	margin: 0px; padding: 0px; outline: 0px; border: 0px currentColor; font-size: 100%; vertical-align: baseline;
+}
+.fht_parent li {
+	margin: 0px; padding: 0px; outline: 0px; border: 0px currentColor; font-size: 100%; vertical-align: baseline;
+}
+.fht_parent table {
+	margin: 0px; padding: 0px; outline: 0px; border: 0px currentColor; font-size: 100%; vertical-align: baseline;
+}
+.fht_parent tbody {
+	margin: 0px; padding: 0px; outline: 0px; border: 0px currentColor; font-size: 100%; vertical-align: baseline;
+}
+.fht_parent tfoot {
+	margin: 0px; padding: 0px; outline: 0px; border: 0px currentColor; font-size: 100%; vertical-align: baseline;
+}
+.fht_parent thead {
+	margin: 0px; padding: 0px; outline: 0px; border: 0px currentColor; font-size: 100%; vertical-align: baseline;
+}
+.fht_parent tr {
+	margin: 0px; padding: 0px; outline: 0px; border: 0px currentColor; font-size: 100%; vertical-align: baseline;
+}
+.fht_parent th {
+	margin: 0px; padding: 0px; outline: 0px; border: 0px currentColor; font-size: 100%; vertical-align: baseline;
+}
+.fht_parent td {
+	margin: 0px; padding: 0px; outline: 0px; border: 0px currentColor; font-size: 100%; vertical-align: baseline;
+}
+.fht_parent ol {
+	list-style: none;
+}
+.fht_parent ul {
+	list-style: none;
+}
+.fht_parent table {
+	border-collapse: collapse; border-spacing: 0; border-width:1px;border:1px;
+}
+.fht_parent table thead tr th div.tableHeader a {
+	 font-family: Helvetica, Arial, "sans-sarif"; font-size: 12px; font-weight:bold; text-decoration:underline;
+}
+.fht_parent table tbody tr td div.tableData {
+	color: rgb(34, 34, 34); font-family: Helvetica, Arial, "sans-sarif"; font-size: 12px; font-weight: normal; text-decoration: none;
+}
+.fht_parent p {
+	color: rgb(34, 34, 34); font-family: Helvetica, Arial, "sans-sarif"; font-size: 12px; font-weight: normal; text-decoration: none;
+}
+.fht_parent table thead tr th div.tableHeader {
+	text-align: left;
+}
+.fht_loader {
+	background: url("images/loadingdata.png") no-repeat center rgb(255, 255, 255); border: 1px solid rgb(51, 51, 51); left: 0px; top: 0px; width: 100%; height: 100%; display: block; position: absolute; z-index: 1;
+}
+.fht_table_block {
+	overflow: hidden; float: left; position: relative;
+}
+.fht_parent div.fht_parent {
+	margin: 0px auto;
+}
+.fht_fixed_header_table_parent {
+	width: 100%; overflow-x: hidden;
+}
+.fht_fixed_col_fixed_header {
+	width: 100%;  overflow-x: hidden;
+}
+.fht_parent div.fht_table_body {
+	border-width:thin ; border-style:solid rgb(153, 153, 153) ; border-color: currentColor rgb(153, 153, 153); overflow-x: auto; overflow-y: auto;
+}
+.fht_parent div.fht_fixed_header_table_parent {
+	 background:url(images/section_header_bg.gif) repeat-x left top;border: 1px solid rgb(153, 153, 153); position: relative; -webkit-border-top-left-radius: 3px; -webkit-border-top-right-radius: 3px; -moz-border-radius-topleft: 3px; -moz-border-radius-topright: 3px; border-radius-topleft: 3px; border-radius-topright: 3px;
+}
+.fht_parent div.fht_fixed_col_fixed_header {
+	background:url(images/section_header_bg.gif) repeat-x left top; border: 1px solid rgb(153, 153, 153); position: relative; -webkit-border-top-left-radius: 3px; -webkit-border-top-right-radius: 3px; -moz-border-radius-topleft: 3px; -moz-border-radius-topright: 3px; border-radius-topleft: 3px; border-radius-topright: 3px;
+}
+.fht_top_right_header {
+	 top: -1px; width: 10px; height: 10px; right: -2px; display: block; position: absolute; z-index: 1;
+}
+.fht_top_left_header {
+	 top: -1px; width: 10px; height: 10px; right: -2px; display: block; position: absolute; z-index: 1;
+}
+.fht_top_left_header {
+	left: -1px; 
+}
+.fht_bottom_left_header {
+	left: -1px; width: 10px; height: 10px; bottom: -2px; display: block; position: absolute;
+}
+.fht_bottom_right_header {
+	width: 10px; height: 10px; right: -2px; bottom: -2px; display: block; position: absolute;
+}
+.fht_fixed_footer_border {
+	padding: 0px;
+}
+.fht_parent table thead tr th {
+	padding: 10px 0px;
+}
+.fht_parent .even {
+	background-color: #FFFFFF;  border:1px solid ; border-color:rgb(153, 153, 153);
+}
+.fht_parent .odd {
+	background-color: #EEEEEE; border:1px solid ;border-color:rgb(153, 153, 153);
+}
+.fht_parent table tbody tr td {
+	padding: 0px;
+}
+.fht_parent table tbody tr.even td {
+	padding: 0px;
+}
+.fht_parent table tbody tr.odd td {
+	padding: 0px;
+}
+.fht_parent table thead tr th {
+	padding: 0px;
+}
+.fht_parent table thead tr th div.tableHeader {
+	padding: 5px 0px; width: auto; height: auto;
+}
+.fht_parent table tbody tr td div.tableData {
+	padding: 5px 0px; width: auto; height: auto; 
+}
+.fht_parent table thead tr th div.tableHeader p {
+	word-wrap: no break-word, left aligned text;
+}
+.fht_parent table tbody tr td div.tableData {
+	word-wrap: no break-word, left aligned text;
+}
+.fht_parent .borderRight {
+	border-right-color: rgb(153, 153, 153); border-right-width: 1px; border-right-style:solid;
+}
+.fht_parent p.tableData {
+	padding: 0px 5px; margin-top: 0px;  margin-bottom: 0px;
+}
+.fht_parent p.tableHeader {
+	padding: 0px 5px; margin-top: 0px; margin-bottom: 0px;
+}
+div.fht_fixed_col {
+	margin: 0px; padding: 0px; float: left; position: relative; border-right-color: rgb(153, 153, 153); border-right-width: 1px; border-right-style:solid;
+}
+div.fht_fixed_col {
+	float: left; display: block; position: relative;
+}
+div.fht_fixed_col_fulltable {
+	float: left; display: block; position: relative;
+}
+div.fht_fixed_col_body {
+	float: left; display: block; position: relative;
+}
+div.fht_fixed_col_fixed_header {
+	float: left; display: block; position: relative;
+}
+div.fht_fixed_col_body {
+	overflow: hidden;
+}
+.fht_parent div.fht_cloned_footer {
+	background: rgb(204, 204, 204); border: 1px solid rgb(153, 153, 153); overflow: hidden; position: relative; -webkit-border-bottom-left-radius: 3px; -webkit-border-bottom-right-radius: 3px; -moz-border-radius-bottomleft: 3px; -moz-border-radius-bottomright: 3px; border-radius-bottomleft: 3px; border-radius-bottomright: 3px;
+}

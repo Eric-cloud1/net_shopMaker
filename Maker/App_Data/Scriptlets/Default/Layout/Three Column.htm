@@ -1,0 +1,24 @@
+<!--
+<Description>
+Displays headers, footers, a left sidebar, a right sidebar, and a main content area.
+</Description>
+-->
+[[layout:header]]
+<div id="outerContentWrapper">
+	<div id="innerContentWrapper">
+		<table cellspacing="0" cellpadding="0" id="contentLayout">
+			<tr>
+				<td align="left" valign="top" id="leftSidebarPanel">
+					[[layout:leftsidebar]]
+				</td>
+				<td align="left" valign="top" id="mainPanel">
+					[[layout:content]]
+				</td>
+				<td align="left" valign="top" id="rightSidebarPanel">
+					[[layout:rightsidebar]]
+				</td>
+			</tr>
+		</table>
+	</div>
+	[[layout:footer]]
+</div>

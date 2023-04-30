@@ -1,0 +1,33 @@
+﻿<%@ Master Language="C#" %>
+<%@ Register Assembly="MakerShop.Web" Namespace="MakerShop.Web.UI.WebControls.WebParts" TagPrefix="cb" %>
+<%@ Register Src="~/Layouts/AdminPanel.ascx" TagName="AdminPanel" TagPrefix="uc" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head id="head1" runat="server">
+    <meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+</head>
+<body onload="initAjaxProgress();">
+    <form id="form1" runat="server">
+    <ajax:ScriptManager ID="ScriptManager1" runat="server" EnablePartialRendering="true">
+        <Scripts>
+            <ajax:ScriptReference Path="~/js/WebKitFix.js" />
+            <ajax:ScriptReference Path="~/js/common.js" />
+        </Scripts>
+    </ajax:ScriptManager>
+    <ajax:UpdateProgress ID="UpdateProgress1" runat="server" DisplayAfter="2000">
+        <ProgressTemplate>
+            <div id="ajaxProgressBg"></div>
+            <div id="ajaxProgress"></div>
+        </ProgressTemplate>
+    </ajax:UpdateProgress>
+    <asp:WebPartManager ID="wpm" runat="server"></asp:WebPartManager>
+    <cb:ScriptletZone ID="ContentZone" runat="server" HeaderText="Content" PartChromeType="None" Width="100%">
+        <ZoneTemplate>
+            <asp:contentplaceholder id="PageContent" runat="server">
+            </asp:contentplaceholder>
+        </ZoneTemplate>
+    </cb:ScriptletZone>
+    <uc:AdminPanel ID="AdminPanel" runat="server" />
+    </form>
+</body>
+</html>

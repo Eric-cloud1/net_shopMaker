@@ -1,0 +1,61 @@
+using System;
+using System.Collections.Generic;
+using System.Text;
+using System.Text.RegularExpressions;
+
+namespace MakerShop.Shipping
+{
+    /// <summary>
+    /// Utility class for validating postal codes
+    /// </summary>
+    public static class PostalCodeValidator
+    {
+        /// <summary>
+        /// Does the given postal code match the given pattern
+        /// </summary>
+        /// <param name="pattern">The pattern to match</param>
+        /// <param name="postalCode">The postal code to validate</param>
+        /// <returns><b>true</b> if postal code matches the given pattern, <b>false</b> otherwise</returns>
+        public static bool IsMatch(string pattern, string postalCode)
+        {
+            if (string.IsNullOrEmpty(pattern)) return true;
+            if (string.IsNullOrEmpty(postalCode)) return false;
+            //IF STRING STARTS WITH @, IT INDICATES TO USE THE ALTERNATIVE HANDLING
+            if (pattern.StartsWith("@"))
+            {
+                return IsMatch2(pattern.Substring(1), postalCode);
+            }
+            string[] tokens = pattern.Split(",".ToCharArray());
+            foreach (string token in tokens)
+            {
+                if (!string.IsNullOrEmpty(token))
+                {
+                    if (token.Contains("*"))
+                    {
+                        if (Regex.IsMatch(postalCode, token.Replace("*", ".*"))) return true;
+                    }
+                    else
+                    {
+                        if (token.Equals(postalCode)) return true;
+                    }
+                }
+            }
+            return false;
+        }
+
+        private static bool IsMatch2(string pattern, string postalCode)
+        {
+            if (string.IsNullOrEmpty(pattern)) return true;
+            if (string.IsNullOrEmpty(postalCode)) return false;
+            string[] tokens = pattern.Split(";".ToCharArray());
+            foreach (string token in tokens)
+            {
+                if (!string.IsNullOrEmpty(token))
+                {
+                    if (Regex.IsMatch(postalCode, token)) return true;
+                }
+            }
+            return false;
+        }
+    }
+}

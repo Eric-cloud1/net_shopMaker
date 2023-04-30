@@ -1,0 +1,94 @@
+<html>
+<head>
+<style type="text/css">
+TABLE.Email {
+width: 640px;
+padding: 5px;
+margin: 0px;
+border: 1px solid #5872CB;
+}
+TABLE.Email TH {
+font-weight: bold;
+font-size: 12px;
+color: #ffffff;
+font-family: Arial, Verdana, Sans-Serif;
+font-style: strong;
+background-color: #304FBA;
+text-align: center;
+text-decoration: none;
+padding: 5px;
+}
+TABLE.Email TD {
+font-weight: normal;
+font-size: 12px;
+color: #000000;
+font-family: Arial, Verdana, Sans-Serif;
+background-color: #ffffff;
+text-align: left;
+text-decoration: none;
+padding: 3px;
+}
+</style>
+</head>
+<body>
+<table class="Email">
+<tr>
+<td class="Email">
+<p><strong>LOW INVENTORY WARNING</strong></p>
+<p>$store.Name has items Low in Inventory.
+</p>
+<p>
+The following products were just purchased and are currently  at, or
+below, their re-order level:
+<p>
+</td>
+</tr>
+<tr>
+<td>
+<table width="100%" border="2" align="center">
+<tr>
+<th>SKU</th>
+<th>Product Name</th>
+<th>Qty in Stock</th>
+<th>Re-order Level</th>
+</tr>
+<tr>
+#foreach ($product in $products)
+<td style="text-align: center;">$product.SKU</td>
+<td>$product.Name</td>
+<td style="text-align: center;">$product.Instock</td>
+<td style="text-align: center;">$product.InstockWarningLevel</td>
+</tr>
+#end
+</table>
+</td>
+</tr>
+<tr>
+<td>
+<p>&nbsp;
+<p><strong>To Manage your Inventory</strong>:         
+<p>Go to  the <a href="${store.StoreURL}Admin/Reports/LowInventory.aspx">Low
+Inventory Report</a> to view and change all items meeting the low inventory
+stock level.
+<p>You can change the inventory options for a product from the Edit Product
+page.       
+<ul>
+<li>Enable/Disable Inventory Tracking</li>
+<li>Change Quantity in stock</li>
+<li>Change the level at which you will start receiving email notifications</li>
+<li>Enable/Disable Backorder for a product that is out of stock</li>
+</ul>
+<p>You can change the store's global inventory settings from the Configure
+&gt; Store page. </p>
+<ul>
+<li> Enable/Disable Inventory management</li>
+<li>Change the In-Stock  message displayed to
+your customer</li>
+<li>Change the Out-of-Stock message displayed to your customer</li>
+<li>Enable/Disable inventory messages shown to your customer</li>
+</ul>
+<p>&nbsp;</p></td>
+</tr>
+</table>
+</body>
+</html>

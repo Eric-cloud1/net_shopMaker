@@ -1,0 +1,33 @@
+.TreeView 
+{ 
+  background-color:White;
+  padding-top:4px; 
+  padding-left:1px; 
+  border: #7C7C94 1px solid; 
+  cursor:default; 
+}
+
+.TreeView_Node
+{
+	/*margin:5px 5px 190px 5px;
+	background: url(images/bullet1.gif) no-repeat 0 7px;*/
+	display: block;
+	text-align: left;
+	/*width: 175px;*/
+	/*padding:3px 3px 3px 3px;*/
+	list-style-type:none;
+	border-bottom:dotted 1px #C6C6C6;
+	font-weight: bold;
+	font-size:11px;
+	color:#575757;
+}
+
+.TreeView_HoverNode
+{
+	color:#FFFFFF;
+}
+
+.TreeView_SelectedNode
+{
+	color:#AF0501;
+}

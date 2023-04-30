@@ -1,0 +1,17 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/Admin/Admin.master" %>
+<%@ Register Src="AffiliateMenu.ascx" TagName="AffiliateMenu" TagPrefix="uc1" %>
+<asp:Content ID="AffiliateContent" runat="server" ContentPlaceHolderID="MainContent">
+    <table class="innerLayout" width="100%">
+        <tr>
+            <td class="menuPanel" valign="top">
+                <uc1:AffiliateMenu ID="AffiliateMenu" runat="server" />
+                <asp:ContentPlaceHolder ID="PrimarySidebarContent" runat="server">
+                </asp:ContentPlaceHolder>
+            </td>
+            <td class="innerLayoutContent" valign="top">
+                <asp:contentplaceholder ID="MainContent" runat="server">
+                </asp:contentplaceholder>
+            </td>
+        </tr>
+    </table>
+</asp:Content>

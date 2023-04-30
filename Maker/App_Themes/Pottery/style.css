@@ -1,0 +1,2221 @@
+@media screen {
+
+/******************************************************************************************/
+/* global styles common to all pages [ Pottery Theme ]                                    */
+/******************************************************************************************/
+
+/* force a vertical scrollbar in firefox, prevents horizontal page shifting */
+html { min-height: 100%; margin-bottom:1px; }
+
+/* styling for the page body */
+body
+{
+	text-decoration:none;
+	padding:0px;
+	margin:0px;
+	background:url(images/body_bg.gif) left top;
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:11px;
+}
+
+/* default styling for block elements */
+td, p, form
+{
+	text-decoration:none;
+	margin:0px;
+}
+
+ul { margin: 2px 0 2px 20px; }
+/* li { list-style-type: circle; } */
+
+/* special styling for validation summary lists */
+.validationSummary ul { padding-left:0px; }
+
+/* default styling for links */
+a { color:#8C0901; }
+a:hover { color:#000000; }
+
+/* link styling for links that are highlighted on a page */
+a.highlight { font-weight:bold; color:#575757; padding-top:5px; margin-top:5px; text-decoration:none; }
+
+/* default styling for input elements */
+input { vertical-align:middle; }
+
+/* styling for subclassed textbox elements */
+input.textBox
+{
+	background-color:#FFFFFF;
+	border:1px solid #B2AF7D;
+	width:190px;
+	height:16px;
+	margin:0 3px 0 15px;
+}
+
+.buyProductForm a.button{ margin-left:14px; line-height:20px; padding:2px 7px;}
+
+/* style for buttons */
+input.button, a.button
+{
+	font-family: Tahoma, Arial, Helvetica, sans-serif;
+	background-color: #8C0901;
+	font-size: 9px;
+	text-transform: uppercase;
+	color: #FFFFFF !important;
+	padding: 2px 5px 2px 5px;
+	border: 1px solid #6F0701;
+	font-weight: bold;
+	cursor:hand;
+	margin: 0;
+	text-align:center;
+	text-decoration:none;
+	vertical-align: middle;
+}
+
+/* style for button hover state */
+input.button:hover, a.button:hover
+{
+	color: #FFFFFF; text-decoration:none;
+}
+
+/* style for a paragraph element to highlight */
+p.highlight
+{
+	font-weight:bold;
+	color:#575757;
+	padding-top:5px;
+	margin-top:5px;
+	text-decoration:none;
+}
+
+/* Text styles used to provide status information */
+.goodCondition{font-weight: bold; color: #008000; padding-bottom: 3px;}
+.warnCondition{font-weight: bold; color: #FFA500; padding-bottom: 3px;}
+.errorCondition{font-weight: bold; color: #FF0000; padding-bottom: 3px;}
+
+/* style for element that acts as a spacer between other elements */
+.spacer
+{
+	clear:both;
+	font-size: 1px;
+	line-height: 1px;
+	height: 1px;
+	padding: 0;
+	margin: 0;
+}
+
+/* container for the breadcrumbs trail */
+.breadCrumbPanel {margin-top:4px;}
+
+/* link in the breadcrumbs trail */
+.breadCrumbLink{text-decoration: underline; text-indent: 0px; color:#8C0901;}
+
+/* generic styling for a suggested retail price */
+.msrp { text-decoration:line-through; }
+
+/* applied to ajax progress update */
+#centeredProgress
+{
+	width: 300px;
+	height: 200px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-left: -150px;
+	margin-top: -200px;
+	z-index: 99;
+	color: #FFFFFF;
+	border: 5px solid #C1C1C1;
+	background: #FFFFFF url(images/processing.gif) no-repeat 50%;
+}
+
+/* background style for the screen when an ajax progress update is displayed */
+#ajaxProgressBg
+{
+    border: 0px;
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
+    position: absolute;
+    background-color: #000000;
+    opacity: 0.3;
+    filter: Alpha(opacity:30);
+    z-index: 0;
+}
+
+/* style for the ajax progress indicator */
+#ajaxProgress
+{
+    border: 0px;
+    padding: 0px;
+    position: absolute;
+    background-color: #FFFFFF;
+	background: #FFFFFF url(images/processing.gif) no-repeat 50%;
+    z-index: 1;
+    left:50%;
+    margin-left:-100px;
+    width:200px;
+    height:200px;
+    border: solid 2px grey;
+}
+
+hr { width:100%; }
+
+h2 { font-size:11px; }
+
+h2.sectionHeader
+{
+	background:#efefef;
+	padding: 0 2px;
+	border:1px solid black;
+	margin:0 0 12px 0;
+	height:27px;
+	line-height:27px;
+	font-size:14px;
+	color:Black;
+	font-weight:bold;
+}
+
+.welcomeImage 
+{
+}
+.welcomeText
+{
+}
+
+/******************************************************************************************/
+/* styles to support the page layout                                                      */
+/******************************************************************************************/
+
+/* container for the left sidebar content */
+#leftSidebarPanel
+{
+	border-right:solid 1px #CFCFCF;
+	background-color: #DCDCDC;
+	width: 200px;
+	padding: 0;
+	text-align:left;
+	margin: 0;
+}
+
+/* content section in the left sidebar */
+#leftSidebarPanel .section
+{
+	margin: 0px 0px 2px 0px;
+	background: #DCDCDC url(images/category_bg.gif) repeat-x left top;
+	border-top:solid 1px #FFFFFF;
+	padding:2px 0px 0 0px;
+}
+
+/* heading in left sidebar content section */
+#leftSidebarPanel .header
+{
+	height: 26px;
+	color: #0E0A01;
+	margin: 0 0 0 0;
+	padding: 0 0 0 0;
+	/*font-size:14px;
+	font-weight:bold;
+	height:24px;
+	line-height:24px;
+	color:#1E1E1E;
+	padding: 0 0 4px 3px;
+	margin: 1px 0 0 0;*/
+}
+#leftSidebarPanel .header h2.header
+{
+	text-indent: 15px;
+	font-size: 14px; 
+	font-weight: bold;
+	line-height: 26px;
+	padding: 0 0 0 5px;
+	margin: 0 0 0 0;
+	/*background: #F99132 url(images/black_arrow.gif) no-repeat 0 0;*/
+}
+
+/*---------------------------------------*/
+/*- styles for right sidebar            -*/
+/*---------------------------------------*/
+
+/* container for the right sidebar content */
+#rightSidebarPanel
+{
+	width:200px;
+}
+
+/* content section in the right sidebar */
+#rightSidebarPanel .section
+{
+	background:#DCDCDC;
+	border-top:solid 1px #FFFFFF;
+	border-right: solid 1px #636363;
+	border-left: solid 1px #636363;
+	margin-bottom:1em;
+	
+}
+
+/* header in right sidebar content section */
+#rightSidebarPanel .section .header
+{
+	background: #DCDCDC url(images/category_bg.gif) repeat-x left top;
+	height:24px;
+	line-height:24px;
+	padding: 0px 4px;
+	margin:0px;
+}
+
+/* caption in right sidebar content section header */
+#rightSidebarPanel .section .header h2
+{
+	
+	background: #DCDCDC url(images/category_bg.gif) repeat-x left top;
+	line-height:24px;
+	padding: 0px 4px;
+	color:#8C0901;
+	margin:0px;
+	font-weight:bold;
+	font-size:12px;
+	float:left;
+	width: auto;
+}
+
+/* link in right sidebar content section header */
+#rightSidebarPanel .section .header a
+{
+	float:right;
+	text-decoration:underline;
+	color:#000000;
+}
+
+/* link (hover) in right sidebar content section header */
+#rightSidebarPanel .section .header a:hover
+{
+	float:right;
+	text-decoration:underline;
+	color:#8C0901;
+}
+
+/* content section in the left sidebar */
+#rightSidebarPanel .section .content { padding:4px; }
+
+
+/* additional styling usually applied to content area when no footer is displayed */
+#rightSidebarPanel .section .nofooter
+{
+	/*border-bottom: solid 1px #636363;*/
+}
+
+/* footer for firhg sidebar content section */
+#rightSidebarPanel .section .footer
+{
+	background: #DCDCDC url(images/sectionFooterBackground.gif) repeat-x left top;
+	height:24px;
+	line-height:24px;
+	margin:0px;
+	color:#8C0901;
+	margin-top:8px;
+	padding: 0 2px;
+}
+.onePageCheckoutCell { padding: 10px;}
+.expressCheckoutCell {padding:5px;}
+.ourDepartmentsCell{ padding:5px; line-height:18px;}
+.Cell{padding: 10px;}
+
+/*---------------------------------------*/
+/*- styles for main content panel       -*/
+/*---------------------------------------*/
+
+/* container for the main panel content */
+#mainPanel 
+{
+	padding: 0 4px;
+}
+
+/* used to display a content section in the main panel */
+#mainPanel .section { margin-bottom:5px; }
+
+/* header for content section in the main panel */
+#mainPanel .section .header 
+{
+	border: 1px solid #C4C4C4;
+	background-color: #E8E8E8;
+	padding: 0 2px;
+}
+
+/* the header / caption of a content section */
+#mainPanel .section .header H2
+{
+	margin:0px;
+	height:25px;
+	line-height:25px;
+	font-size:12px;
+}
+
+/* the content area of the content section */
+#mainPanel .section .content { padding:2px; }
+
+/*---------------------------------------*/
+/*- end styles for content section      -*/
+/*---------------------------------------*/
+
+/*---------------------------------------*/
+/*- styles for dialog section           -*/
+/*---------------------------------------*/
+
+/* used to display a dialog box in the main panel */
+#mainPanel .dialogSection
+{
+	background: #FFFFFF;
+	border-top:solid 1px #FFFFFF;
+	/*border-right: solid 1px #636363;
+	border-left: solid 1px #636363;*/
+}
+
+/* header for dialog box in the main panel */
+#mainPanel .dialogSection .header
+{
+	background: #FFFFFF url(images/category_bg.gif) repeat-x left top;
+	height:24px;
+	line-height:24px;
+	padding: 0px 4px;
+	margin:0px;
+	border:1px solid #636363;
+}
+
+/* the header / caption of a dialog box */
+#mainPanel .dialogSection .header h2
+{
+	color:#1E1E1E;
+	margin:0 0 0 0;
+	font-weight:bold;
+	font-size:12px;
+	float:left;
+}
+
+/* link style within the header of a dialog box */
+#mainPanel .dialogSection .header a
+{
+	float:right;
+	text-decoration:underline;
+	color:#000000;
+}
+
+/* link style within the header of a dialog box (hover) */
+#mainPanel .dialogSection .header a:hover
+{
+	float:right;
+	text-decoration:underline;
+	color:#8C0901;
+}
+
+/* the content area of the dialog box */
+#mainPanel .dialogSection .content { padding:2px; border:1px solid #636363; margin-top:2px; min-height:180px; }
+#mainPanel .dialogSection .content table th.rowheader{background-color:White;}
+#mainPanel .dialogSection .content table td.txt{}
+
+
+/* additional styling usually applied to content area when no footer is displayed */
+#mainPanel .dialogSection .nofooter { border-bottom: solid 1px #636363; }
+
+/* footer for dialog box */
+#mainPanel .dialogSection .footer
+{
+	background: #DCDCDC url(images/sectionFooterBackground.gif) repeat-x left top;
+	height:24px;
+	line-height:24px;
+	margin:0px;
+	color:#8C0901;
+	margin-top:8px;
+}
+
+/*---------------------------------------*/
+/*- end styles for dialog section       -*/
+/*---------------------------------------*/
+
+/* styling for validation summaries that appear in the main panel */
+#mainPanel .validationSummary { margin-bottom:6px; }
+
+/* outer wrapper for the main page content */
+#outerContentWrapper
+{
+	text-align: center;
+	width: 100%;
+	float: left;
+}
+
+/* inner wrapper for the main page content */
+#innerContentWrapper
+{
+	background-color:#FFFFFF;
+	margin: 0 auto;
+	text-align: left;
+}
+
+/* container for the page content */
+#contentLayout
+{
+	border: 4px solid #FFFFFF;
+}
+
+/* additional style required when container is a table */
+table#contentLayout
+{
+	width:100%;
+}
+
+/******************************************************************************************/
+/* end styles to support the page layout                                                  */
+/******************************************************************************************/
+
+/******************************************************************************************/
+/* styles for the store header section                                                    */
+/******************************************************************************************/
+
+/* style for the outer store header container */
+#storeHeader
+{
+	background: url(images/storeHeaderBackground.jpg) repeat-x left top;
+	margin:0;
+	text-align: left;
+	width:100%;
+	height:127px;
+	position:relative;
+}
+
+/* styling attached to the container for the linked logo image */
+#storeHeader .logo
+{
+	margin: 0px;
+	width: 300px;
+	height:47px;
+	text-align: left;
+	padding:15px 0 0 0;
+}
+
+/* additional styling for the logo image tag */
+#storeHeader .logo img { margin: 5px 0 0 20px; }
+
+/* used for any content besides the logo in the header */
+#storeHeader .headerContent
+{
+	height: 95px;
+	margin: 0px;
+	width: 500px;
+	position: absolute;
+	top: 0px;
+	right: 20px;
+}
+
+/* style for container of shortcut links that can appear in the header */
+#storeHeader div.shortcuts 
+{
+	margin-top:25px;
+	height:20px;
+}
+
+/* style for links within shortcuts container */
+#storeHeader div.shortcuts  a
+{
+	font-family: Tahoma, Arial, Verdana, Helvetica, sans-serif;
+	display: block;
+	width: auto;
+	float: right;
+	font-size: 9px;
+	font-weight: bold;
+	text-transform: uppercase;
+	color: #DBDBDB;
+	text-decoration: none;
+	text-align: center;
+	margin:0px 6px;
+	text-decoration:underline;
+}
+#storeHeader div.shortcuts a:hover {color: #EBBB03;}
+
+/* style for specific shortcuts */
+#storeHeader div.shortcuts a.basket{ }
+#storeHeader div.shortcuts a.acct{ }
+#storeHeader div.shortcuts a.admin{ }
+#storeHeader div.shortcuts a.wishlist{ }
+#storeHeader div.shortcuts a.login{ }
+
+/* style for the search container */
+#storeHeader div.search 
+{
+	text-align:left;
+	width:210px;	
+	height:28px;
+	padding: 0px 0px 0px 20px;
+	margin-right:3px;
+	float:right;
+}
+
+/* style for search text box within the search area */
+#storeHeader div.search input.searchPhrase 
+{
+	font-size: 12px;
+	color: #000000;
+	background-color:#cccccc;
+	border: solid 1px #FFF;
+	width: 140px;
+	height:18px;
+	line-height:28px;
+	margin:0px;
+	margin-top:3px;
+}
+
+/* style for the search button */
+#storeHeader div.search .searchButton
+{
+	font-family: Tahoma, Arial, Helvetica, sans-serif;
+	background-color: #8C0901;
+	font-size: 9px;
+	text-transform: uppercase;
+	color: #EFEFEF;
+	border: solid 1px white;
+	padding: 0px 2px;
+	font-weight: bold;
+	cursor:hand;
+	margin:3px 0px 0px -3px;
+	width:55px;
+	height:22px;
+	text-align:center;
+	line-height:20px;
+}
+
+/* styling for the navigation container */
+#storeHeader .navigation
+{
+	padding: 0;
+	width:100%;
+	background-color: #000000;
+	border-top: 1px solid #000000;
+	border-bottom: 1px solid #000000;
+	height:30px;
+	text-align:left;
+	/*padding-left:30px;*/
+}
+
+/* styling for the link container in the navigation bar */
+#storeHeader .navigation.content
+{
+	margin:0 auto;
+	width:760px;
+	margin-top:0px;
+	padding:0 0 0 35px;
+	
+}
+
+/* styling for tab links in the navigation bar content */
+#storeHeader .navigation a.tab
+{
+	display: block;
+	float: left;
+	width: auto;
+	height:14px;
+	background:#636363 url(images/nav1_divider.gif) no-repeat right top;
+	padding:5px 16px 7px 20px;
+	margin:0 2px 0 0;
+	font-weight:bold;
+	text-decoration:none;
+	color: #DFDFDF;
+}
+
+/* styling for tab links in the navigation bar content */
+#storeHeader .navigation a.tab:hover
+{
+	background:#D1D1D1 url(images/nav1_divider_hover.gif) no-repeat right top;
+	color: #636363;
+}
+
+/******************************************************************************************/
+/* end styles for the store header section                                                */
+/******************************************************************************************/
+
+/******************************************************************************************/
+/* styles for the store footer section                                                    */
+/******************************************************************************************/
+
+/* container for the store footer */
+#footer
+{
+	width: 100%;
+	height: 79px;
+	color: #000000;
+	text-align: center;
+	background:url(images/footer_bg.gif) repeat-x left top;
+}
+
+/* paragraph within the store footer */
+#footer p
+{
+	padding: 30px 0 0 0;
+	text-align: center;
+	color: #000000;
+}
+
+/* link within paragraph in the store footer */
+#footer p a
+{
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	color:#FFFFFF;
+	text-decoration:none;
+	font-weight:bold;
+	padding: 0 5px;
+	border-left: 1px solid #FFFFFF;
+}
+
+/* alter styling of first link within paragraph in the store footer */
+#footer p a:first-child
+{
+	border-left: none;
+}
+
+/******************************************************************************************/
+/* end styles for the store footer section                                                */
+/******************************************************************************************/
+
+/******************************************************************************************/
+/* styles for the store navigation section                                                */
+/******************************************************************************************/
+
+/* container for the store navigation links */
+#storeNav { margin: 0 0 0 0; width: 193px; }
+
+/* default style for hyperlink in store navigation */
+#storeNav a
+{
+	background-color: #787878;
+	color:#DCDCDC;
+	font-weight:bold;
+	text-decoration:none;
+	display:block;
+	padding: 8px 3px 8px 35px;
+	border-bottom: 1px solid #FFFFFF;
+}
+
+/* additional style for basket link */
+#storeNav a.basket { background: #787878 url(images/my_basket.gif) no-repeat 5px 3px; }
+/* additional style for wishlist link */
+#storeNav a.wishlist { background: #787878 url(images/my_wish.gif) no-repeat 5px 3px; }
+/* additional style for account link */
+#storeNav a.account { background: #787878 url(images/my_acct.gif) no-repeat 5px 3px; }
+/* additional style for login link */
+#storeNav a.login { background: #787878 url(images/login.gif) no-repeat 5px 3px; }
+/* additional style for logout link */
+#storeNav a.logout { background: #787878 url(images/login.gif) no-repeat 5px 3px; }
+/* additional style for admin link */
+#storeNav a.admin { background: #787878 url(images/admin_icon.gif) no-repeat 5px 3px; }
+
+/******************************************************************************************/
+/* end styles for the store navigation section                                            */
+/******************************************************************************************/
+
+/******************************************************************************************/
+/* styles for the store search dialog                                                     */
+/******************************************************************************************/
+
+/* styling for the search dialog container */
+#storeSearch
+{
+	background:#F4F1B7 url(images/storeSearchBackground.gif) no-repeat left top;
+	border-bottom:solid #FFFFFF 2px;
+	padding:45px 0px 8px 0px;
+}
+
+/* styling for the search keywords text box */
+#storeSearch input.keywords
+{
+	background-color:#FFFFFF;
+	border:1px solid #B2AF7D;
+	width:131px;
+	height:18px;
+	margin: 0 0 0 304px;
+	padding:2px 0 0 4px;
+	
+}
+
+/* styling for the search button */
+#storeSearch input.searchButton
+{
+	margin:0;
+	vertical-align: middle;
+}
+
+/* styling for the tagline in the search image */
+#storeSearch span.tagline
+{
+	font-family:Arial;
+	font-size:24px;
+	color:#4A4A48;
+	margin-top:30px;
+	margin-left:215px;
+	margin-bottom: 45px;
+	display:block;
+}
+
+/******************************************************************************************/
+/* end styles for the store search dialog                                                 */
+/******************************************************************************************/
+
+/******************************************************************************************/
+/* styles for the page header                                                             */
+/******************************************************************************************/
+
+/* standard page header */
+div.pageHeader
+{
+	margin-bottom:8px;
+}
+
+/* standard page header caption */
+div.pageHeader H1
+{
+	font-size: 18px; 
+	color: #575757;
+	padding: 3px 0;
+	margin: 3px 0;
+	text-indent: 25px;
+	border-bottom: 1px solid #e1e1e1;
+}
+
+/* standard page header content */
+div.pageHeader div.content
+{
+	padding:3px;
+}
+
+/******************************************************************************************/
+/* end styles for the page header                                                         */
+/******************************************************************************************/
+
+/******************************************************************************************/
+/* default styling for generic input forms                                                */
+/******************************************************************************************/
+
+/* container for form */
+table.inputForm { }
+
+/* default styles for cells in form*/
+table.inputForm th, table.inputForm td {padding:2px;} 
+
+/* styling for row headers in form */
+table.inputForm .rowHeader
+{
+	background: #FFFFFF;
+	color: #333333;
+	padding: 6px;
+	text-align:right;
+}
+
+/* style for links that appear within rowheader */
+table.inputForm .rowHeader a {
+	border:1px solid #650101;
+	width:100%;
+	color: #000000;
+	font-weight: normal;
+	font-size: 10px;
+	font-weight:bold;
+	text-align:left;
+	padding: 6px;
+}
+
+/* set style for other elements within rowheader */
+table.inputForm .rowHeader * {	font-weight: bold; font-size: 12px; }
+
+/******************************************************************************************/
+/* end default styling for generic input forms                                            */
+/******************************************************************************************/
+
+/******************************************************************************************/
+/* styling for pager controls                                                             */
+/******************************************************************************************/
+
+/* style for paging container */
+.paging { text-align: right; padding: 15px 5px 5px 5px; margin: 15px 0 5px 0; background:url(images/h_dot1.gif) repeat-x 0 0; }
+/* span (text) within the paging container */
+.paging span , .paging .current{ padding: 1px 3px; border: 1px solid #666666; font-weight: bold; font-family: Tahoma, Arial, Helvetica, sans-serif; font-size: 9px; margin: 3px 0 3px 1px; background-color: #E3E3E3; color: #666666; }
+/* link within paging container */
+.paging a { padding: 1px 3px; border: 1px solid #666666; font-weight: bold; font-family: Tahoma, Arial, Helvetica, sans-serif; font-size: 9px; margin: 3px 0 3px 1px; background-color: #F5F5F5; color: #700000; text-decoration:none; }
+/* link(hover) within paging container */
+.paging a:hover { background-color: #f1f1f1; color: #333333; }
+
+/******************************************************************************************/
+/* end styling for pager controls                                                         */
+/******************************************************************************************/
+
+/******************************************************************************************/
+/* styles for the simple category list (such as might show on the home page)              */
+/******************************************************************************************/
+
+/* list container for categories */
+ul.category
+{
+	padding:3px 0 3px 0;
+	margin: 0px 5px 2px 0px;
+	list-style-type: none;
+	/*list-style-image: url(images/bullet1.gif);*/
+	
+}
+
+/* category list item */
+ul.category li
+{
+	padding: 0 0 0 15px ;
+	margin:0 0 0 7px;
+	border-bottom: solid 1px #DCDCDC;
+	color:#8C0901;
+	background: url(images/bullet1.gif) no-repeat 0px 5px;
+	/*background: url(images/bullet2.gif) no-repeat 0px 5px;*/
+}
+
+/* link within the category list item */
+ul.category li a
+{
+	border-bottom: dotted 1px #C6C6C6;
+	padding: 3px 0 3px 0;
+	display: block;
+	color:#8C0901;
+	text-decoration:none;
+}
+
+/* link within the category list item (hover) */
+ul.category li a:Hover { color:#575757; }
+/* link within the category list item (selected) */
+ul.category li a:Selected { color:#AF0501; }
+
+/******************************************************************************************/
+/* end styles for the simple category list (such as might show on the home page)          */
+/******************************************************************************************/
+
+/******************************************************************************************/
+/* styles for the buy product form                                                        */
+/******************************************************************************************/
+
+/* container for the buy product form */
+table.buyProductForm { }
+
+/* default style for cells within the buy product form */
+table.buyProductForm td, table.buyProductForm th
+{
+	padding:3px;
+}
+
+/* style for row header in buy product form */
+table.buyProductForm .rowHeader
+{
+	background-color: #FFFFFF;
+	color: #333333;
+	font-weight: bold;
+	font-size: 12px;
+	border: 0px solid #CCCCCC;
+	text-align: right;
+}
+
+/******************************************************************************************/
+/* end styles for the buy product form                                                    */
+/******************************************************************************************/
+
+/******************************************************************************************/
+/* styles for the catalog nodes                                                           */
+/******************************************************************************************/
+
+/* wrapper for the catalog container */
+.catalogWrapper { padding: 15px 5px 5px 5px; margin: 15px 0 5px 0; }
+
+/* container for catalog display */
+.catalog { padding: 0px; }
+
+/* node in the catalog display - used in flow layouts */
+.catalog .flowNode
+{
+	text-align:center;
+	margin:0px;
+	padding:5px;
+	float:left;
+	width:238px;
+	height:180px;
+	border:1px solid #C4C4C4;
+}
+
+/* node in the catalog display - used in table layouts */
+.catalog .tableNode {padding: 12px;}
+.catalog .tableNode div { margin-top:10px;}
+.catalog .tableNode img { margin-top:6px;}
+
+/* thumbnail image within the catalog display */
+.catalog .thumbnail 
+{
+	display: block;
+	width: auto;
+	margin: 0 auto 5px;
+	color:#8C0901;
+}
+
+/* style for item separator */
+.catalog .separator { }
+
+/******************************************************************************************/
+/* end styles for the catalog nodes                                                       */
+/******************************************************************************************/
+
+/******************************************************************************************/
+/* styles for featured products grid                                                      */
+/******************************************************************************************/
+
+/* container for the products grid */
+table.productsGrid { }
+.featuredProductContainer {	padding-bottom: 8px; }
+
+/* cell that contains the product thumbnail */
+td.thumbnail
+{
+	padding-bottom:2px;
+	margin-bottom:2px;
+	/* border:solid 1px #C4C4C4; */
+}
+
+/* cell that displays the product details */
+td.details
+{
+	padding-left:5px;
+}
+
+/* style for separators in the grid */
+.rowSeparator{padding-bottom: 3px; padding-top: 3px; background: url(images/h_dot1.gif) repeat-x left bottom;}
+.itemSeparator{background: url(images/v_dot.gif) repeat-y left top; padding-right:5px;}
+
+/******************************************************************************************/
+/* end styles for featured products grid                                                  */
+/******************************************************************************************/
+
+/******************************************************************************************/
+/* styles for product display pages                                                       */
+/******************************************************************************************/
+
+/* container for the product header */
+div.productHeader { }
+
+/* product page header caption */
+div.pageHeader H1
+{
+	font-size: 18px; 
+	color: #575757;
+	padding: 3px 0;
+	margin: 3px 0;
+	border-bottom: 1px solid #D0D0D0;
+}
+
+/* container for content associated with product tab */
+div.productTabDetail
+{
+	min-height:200px;
+	border:1px solid black;
+	padding:4px;
+}
+
+/* header within content associated with product tab */
+div.productTabDetail H2
+{
+	background:#C4C4C4;
+	border:solid 1px black;
+	font-size:12px;
+	font-weight:bold;
+	padding:4px;
+	margin:2px 0px 4px 0px;
+}
+
+/******************************************************************************************/
+/* end styles for product display pages                                                   */
+/******************************************************************************************/
+
+/******************************************************************************************/
+/* styles for search page                                                                 */
+/******************************************************************************************/
+
+/* container for the search filter controls */
+.searchFilterPanel { }
+
+/* header for the search filter panel */
+.searchFilterHeader
+{
+	background: #DCDCDC url(images/category_bg.gif) repeat-x left top;
+	height:24px;
+	line-height:24px;
+	padding:0px;
+	color:#1E1E1E;
+	border-bottom-style:groove;
+	border-bottom-color:#EFEFEF;
+	text-align:center;
+	margin:0px;
+}
+
+/* caption for the search filter panel header */
+.searchFilterHeader h2
+{
+	margin:0px;
+	font-weight:bold;
+	font-size:12px;
+}
+
+/* used for the show all link in the search filter panel */
+.showAll { color:#800000; font-weight: bold; text-align: right; width: auto; display: block; padding: 2px; }
+.showAll:hover { color:#000000; }
+
+/* links used to apply a different search criteria */
+a.searchCriteria { text-decoration: none; margin: 3px 5px; text-indent: 0px; padding: 0 0 0 10px; color:#8C0901; display: block; }
+a.searchCriteria:hover { color:#000000; }
+
+/* style applied to search criteria caption in search panel */
+h3.searchCriteria
+{
+	color:#000000;
+	padding: 2px 0 2px 5px;
+	margin-left: 5px;
+	font-weight:bold;
+	text-indent: 5px;
+	font-size:11px;
+}
+
+/* header for the search sort header */
+.searchSortHeader
+{
+	background: #DCDCDC url(images/category_bg.gif) repeat-x left top;
+	height:24px;
+	line-height:24px;
+	padding: 0px 4px;
+	margin:0px;
+	color:#1E1E1E;
+	margin-left:-5px;
+	border-left-style:groove;
+	border-left-color:#EFEFEF;
+	border-bottom-style:groove;
+	border-bottom-color:#EFEFEF;
+}
+
+/* styling for span tag (text) within the search sort header */
+.searchSortHeader span
+{
+	font-weight:bold;
+}
+
+/******************************************************************************************/
+/* end styles for search page                                                             */
+/******************************************************************************************/
+
+/******************************************************************************************/
+/* styles for the mini basket                                                             */
+/******************************************************************************************/
+
+#miniBasketMainBox {
+	border : 1px #999900 solid;
+	background-color : transparent;
+	padding : 0px;
+	font-size : 11px;
+	position:relative;
+	width: 100%;
+}
+.miniBasketItemBox {
+	border-bottom : 1px #999900 solid;
+	padding : 3px;
+	background-color : white;
+	float:left;
+	position:relative;
+	width:152px;
+}
+
+.miniBasketIconBox {width:35%; float:left;}
+.miniBasketItemTitleBox {float: none; position:inherit;}
+.miniBasketItemTitleNoIconBox {padding-left:5px;}
+
+.miniBasketItemTitle {font-size: 11px;}
+.miniBasketItemTitle a{font-size: 11px;	color: #8C0901;}
+.miniBasketItemTitle a:hover { color:#000000; text-decoration:underline; }
+
+.miniBasketSubItemTitle {font-size: 10px; padding: 0; margin: 15px 5px 0 10px;}
+.miniBasketSubItemTitle li {font-size: 9px;	margin: 0 0 0 10px;}
+
+.miniBasketQtyDeleteLine {
+	padding : 1px 10px 10px 10px;
+	background-color : transparent;
+	clear: both; 
+	text-align:center;
+}
+
+.miniBasketQtyInput {
+	padding : 1px;
+	margin-right : 3px;
+	margin-top: 1px;
+	width : 15px;
+	Height : 12px;
+	border : 1px gray solid;
+	font-size : 9px;
+}
+
+.miniBasketPriceLabel, .miniBasketPrice  {
+	font-size : 14px;
+	font-weight : bold;
+}
+.miniBasketPrice {color : red;}
+
+#miniBasketSubTotalBox {
+  border-top : 1px #999900 solid;
+  background-color : white;
+  padding : 3px;
+  border-bottom : 2px #999900 solid;
+}
+
+#miniBasketSubTotalBox #tax_label,#ship_label {
+	font-weight : bold;
+	font-size : 11px;
+	width : 45%;
+	float : left;
+	text-align : right;
+}
+#miniBasketSubTotalBox #sub_label {
+    float : left;
+	font-weight : bold;
+	font-size : 12px;
+	width : 45%;
+	text-align : right;
+}
+#miniBasketSubTotalBox #tax_num,#ship_num {
+	font-weight : normal;
+	font-size : 11px;
+	padding-left : 3px;
+	width : 49%;
+	float : left;
+}
+
+#miniBasketSubTotalBox #sub_num {
+	font-weight : bold;
+	font-size : 12px;
+	color : red;
+	padding-left : 3px;
+	width : 49%;
+	float : left;
+}
+
+#miniBasketShippingEstimateBox {
+  background-color : white;
+  padding : 3px 0 3px 0;
+}
+
+#miniBasketCheckoutButtonBox {
+  background-color : white;
+  padding : 10px 0 8px 0;
+  text-align:center;  
+}
+
+/******************************************************************************************/
+/* styles for the basket                                                                  */
+/******************************************************************************************/
+
+/* container for message that displays when a basket is empty */
+.emptyBasketPanel
+{
+	margin: 0;
+	background:url(images/empty_shop.gif) no-repeat 15%;
+	padding-top: 20px;
+	padding-left: 60px;
+	margin: 20px 35px 35px 35px;
+	height: 50px;
+	text-align:center;
+}
+/*.emptyWishlistPanel
+{
+	margin: 0;
+	background:url(images/wish_list.gif) no-repeat 15%;
+	padding-top: 20px;
+	padding-left: 60px;
+	margin: 20px 35px 35px 35px;
+	height: 50px;
+	text-align:center;
+}*/
+
+/* message that displays when a basket is empty */
+.emptyBasketPanel span.message
+{
+	font-size: 18px;
+	font-weight: normal;
+	color: #666666;
+}
+
+/* links to products that are displayed in the basket contents */
+a.basketProductLink {text-decoration: none; color:#636363; font-weight:bolder;}
+a.basketProductLink:hover {color:#000000;}
+
+/* price that appears within a basket dialog */
+.basketDialogPrice { font-weight:bold; }
+
+/* container for message that displays when a basket dialog is empty */
+div.emptyBasketDialogPanel { }
+
+/* message that displays when a basket dialog is empty */
+div.emptyBasketDialogPanel span.message
+{
+	text-align:center;
+	font-style:italic;
+	padding:5px;
+}
+
+/******************************************************************************************/
+/* end styles for the basket                                                              */
+/******************************************************************************************/
+
+/******************************************************************************************/
+/* styles for the wishlist                                                                  */
+/******************************************************************************************/
+
+/* container for message that displays when a wishlist is empty */
+div.emptyWishlistPanel
+{
+	margin: 0;
+	background:url(images/wish_list.gif) no-repeat 15%;
+	padding-top: 20px;
+	padding-left: 60px;
+	margin: 20px 35px 35px 35px;
+	height: 50px;
+	text-align:center;
+}
+
+/* message that displays when a wishlist is empty */
+div.emptyWishlistPanel span.message
+{
+	font-size: 18px;
+	font-weight: normal;
+	color: #666666;
+}
+
+/* links to products that are displayed in the wishlist contents */
+a.wishlistProductLink {text-decoration: none; color:#636363; font-weight:bolder;}
+a.wishlistProductLink:hover {color:#000000;}
+
+/* price that appears within a wishlist dialog */
+.wishlistDialogPrice { font-weight:bold; }
+
+/* container for message that displays when a wishlist dialog is empty */
+div.emptyWishlistDialogPanel { }
+
+/* message that displays when a wishlist dialog is empty */
+div.emptyWishlistDialogPanel span.message
+{
+	text-align:center;
+	font-style:italic;
+	padding:5px;
+}
+
+/******************************************************************************************/
+/* end styles for the wishlist                                                              */
+/******************************************************************************************/
+	
+/******************************************************************************************/
+/* styles common to all checkout pages                                                    */
+/******************************************************************************************/
+
+/* checkout page header */
+div.checkoutPageHeader
+{
+	margin:0 0 0 0;
+}
+
+/* checkout page header caption */
+div.checkoutPageHeader H1
+{	
+	font-size: 18px; 
+	color: #575757;
+	padding: 3px 0;
+	margin: 3px 0 6px 0;
+	text-indent: 25px;
+	border-bottom: 1px solid #e1e1e1;
+}
+
+/* chekcout page header - styling for checkout steps */
+div.checkoutPageHeader div.checkoutSteps
+{
+	background-color:#E5DECA;
+	border:1px solid #BEB49D;
+	padding:0;
+	margin:4px 5px 4px 4px;
+	float:right;
+}
+
+/* checkout page header content */
+div.checkoutPageHeader div.content
+{
+	padding:2px;
+}
+
+/* used to contain the details for an individual shipment, used wherever information is organized by shipment */
+div.shipmentSection
+{
+	margin-bottom:5px;
+	border: solid 1px black;
+	border-collapse:collapse;
+}
+
+div.shipmentSection div.header
+{
+	border: solid 1px black;
+}
+
+/* the header / caption of a shipment section, identifies which shipment is displayed */
+div.shipmentSection H2
+{
+	margin:0px;
+	/*border: 1px solid #C4C4C4;
+	background-color: #E8E8E8;*/
+	padding: 0 2px;
+	height:25px;
+	line-height:25px;
+	font-size:12px;
+}
+
+/* the content of the shipment section */
+div.shipmentSection .content
+{
+	padding:2px;
+}
+
+/* used wherever a list of order items is displayed */
+table.itemList { width:100%; }
+
+/* default column header styling for item list */
+table.itemList th {	margin:0px;background-color:#EFEFEF;padding:2px; }
+
+/* default data cell styling for item list*/
+table.itemList td { padding:3px 2px; } 
+table.itemList td a{color: #8C0901;}
+
+/* header styling for items column */
+table.itemList th.items { }
+
+/* styling for items column */
+table.itemList td.items { }
+
+/* header styling for items column */
+table.itemList th.price { }
+
+/* styling for price column */
+table.itemList td.price { }
+
+/* used when checkout navigation buttons (e.g. continue, back) appear by themselves 
+outside of any  other container.  */
+.checkoutNavigation { margin-top:4px; margin-bottom:8px; }
+
+/* used when the checkout navigation section has a validation summary.  */
+.checkoutNavigation span.validation { display:block;margin-bottom:12px; }
+
+/* contains the buttons or links in the checkout navigation section */
+.checkoutNavigation span.buttons { }
+
+/******************************************************************************************/
+/* end styles common to all checkout pages                                                */
+/******************************************************************************************/
+
+/******************************************************************************************/
+/* styles for table that lays out a form of data (such as an invoice)                     */
+/******************************************************************************************/
+
+/* table style */
+table.form 
+{
+	margin: 4px 0px;
+	border:solid 1px black;
+	border-collapse:collapse;
+ 	page-break-inside:avoid;
+	width:100%;
+}
+
+/* style common to headers and cells */
+table.form td, table.form th
+{
+	padding:4px 8px;
+}
+
+/* styling for header cells  */
+table.form th { font-weight:bold; font-size:14px; }
+
+/* styling for header cell intended for vertical text */
+table.form th.verticalText
+{
+	width:10px;
+	font-size:10px;
+	text-align:center;
+	vertical-align:middle;
+}
+
+/* additional styling for header cell */
+table.form th.header { text-align:left; }
+
+/* additional styling for caption */
+table.form th.header span.caption { font-size:20px; }
+
+/* style for cell that contains an address */
+table.form td.address { width:180px; }
+
+/* style for cell on right that should expand to the full width possible */
+table.form td.expand { width:504px; }
+
+/* style for cell that contains a datasheet */
+table.form td.dataSheet { padding:0px; }
+
+/* style for font within the datasheet */
+table.form td.dataSheet * { font-size:12px; }
+
+/* additional styling for datasheet that appears within a form */
+table.form table.dataSheet { margin-bottom:-1px; }
+
+/* styling for the total row */
+table.dataSheet tr.totalRow td, table.dataSheet tr.totalRow th
+{
+	border-top: double 3px gray;
+	border-bottom: double 3px gray;
+}
+
+/* this is the container for the order summary on the view order page */
+table.form td.orderSummary { width:202px;padding:10px; }
+
+/* style for the caption of the order summary panel */
+table.form td.orderSummary h3 { margin: 0 0 2px 0; }
+
+/* style for the invoice caption */
+h1.invoice 
+{
+	margin: 0 0 6px 0;
+	font-size:24px;
+	font-weight:bold;
+}
+
+/* style for the store name */
+h1.storeName
+{
+	margin: 0 0 6px 0;
+	font-size:18px;
+	font-weight:bold;
+}
+
+/******************************************************************************************/
+/* end styles for table that lays out a form of data (such as an invoice)                 */
+/******************************************************************************************/
+
+/******************************************************************************************/
+/* styles for checkout progress indicator                                                 */
+/******************************************************************************************/
+
+/* container for the checkout progress indicator */
+.checkoutProgress
+{
+	background:url(images/checkoutProgressBackground.gif) repeat-x;
+	border-left:1px solid #BEB49D;
+	border-right:1px solid #BEB49D;
+	height: 25px;
+	font-size:10px;
+	font-family:Arial, Helvetica, sans-serif;
+	font-weight:bold;
+	text-transform:uppercase;
+	color:#B1A892;
+	margin:0 4px;
+	display:block;
+	float:right;
+}
+
+/* default styling for span tags within the progress indicator */
+.checkoutProgress span
+{
+	display: block;
+	float: left;
+	width: auto;
+}
+
+/* styling for checkout stage container when it is active */
+.checkoutProgress span.on
+{
+	padding: 3px 2px;
+	background: url(images/checkoutProgressActive.gif) no-repeat 50%;
+	border: 1px solid #6B6149;
+	margin: 1px;
+}
+
+/* styling for checkout stage container when it is inactive */
+.checkoutProgress span.off
+{
+	padding: 2px;
+	margin: 1px;
+}
+
+/* style for checkout stage label when it is active */
+.checkoutProgress span.on span
+{
+	border: 1px solid #6B6149;
+	padding: 1px 6px;
+	color: #6B6149;
+}
+
+/* style for checkout stage label when it is inactive */
+.checkoutProgress span.off span
+{
+	padding: 3px 6px 2px 6px;
+}
+
+/******************************************************************************************/
+/* end styles for checkout progress indicator                                             */
+/******************************************************************************************/
+
+/******************************************************************************************/
+/* styles for checkout steps                                                              */
+/******************************************************************************************/
+
+/* style for the outer container for checkout steps */
+#storeHeader div.checkoutSteps
+{
+	background-color:#E5DECA;
+	border:1px solid #BEB49D;
+	padding:0px 0px 0px 0px;
+	width:100%;
+}
+
+/******************************************************************************************/
+/* end styles for checkout steps                                                          */
+/******************************************************************************************/
+
+/******************************************************************************************/
+/* styles for select shipping address                                                     */
+/* NOTE: This is used on both checkout/ShipAddress and Members/AddressBook                */
+/******************************************************************************************/
+
+/* style for the address book table */
+table.addressBook
+{
+	width:98%;
+	border: 1px solid #C4C4C4;
+}
+
+/* caption for the address book */
+table.addressBook th.caption
+{
+	border: 1px solid #C4C4C4;
+	background-color: #E8E8E8;
+	padding: 0 2px;
+	height:25px;
+	margin: 5px 0 0 0;
+	line-height:25px;
+}
+
+/* styling for the text container inside the caption */
+table.addressBook th.caption .text
+{
+	float:left;
+	display:block;
+}
+
+/* styling for the button container inside the caption */
+table.addressBook th.caption .buttons
+{
+	float: right;
+	display: block;
+}
+
+/* container for address book entries */
+table.addressBook td.entries {border: 1px solid #C4C4C4; text-align: left; padding: 5px;}
+
+/* entry in the address book container */
+table.addressBook .entry
+{
+	background:url(images/shipping_address_bg.gif) no-repeat;
+	vertical-align:middle;
+	text-align:left;
+	margin:0px;
+	padding:5px 0px 0px 0;
+	/*border: 1px solid #FF0000;*/
+	display: block;
+	width: 350px;
+	height:195px;
+	float: left;
+}
+
+/* container for address data in an address entry */
+.addressBook .address
+{
+	text-align:left;
+	padding:47px 0px 0px 50px;
+	color: #000000;
+	font-weight: bold;
+	line-height: 15px;
+	width:200px;
+	float: left;
+	/*border-left: 1px dashed #8698B2;*/
+}
+
+/* container for buttons in an address entry */
+.addressBook td .buttons
+{
+	margin-top:5px;
+	text-align:left;
+	padding:60px 0px 0px 0;
+	width: 100px;
+	float: right;
+}
+.addressBook td .buttons a{display:block; margin-bottom: 5px; width: 40px;}
+
+/* styling for button element inside the buttons container */
+table.addressBook td .buttons .button {margin-right: 5px;}
+
+/******************************************************************************************/
+/* end styles for select shipping address (checkout/shipaddress.aspx)                     */
+/******************************************************************************************/
+
+/******************************************************************************************/
+/* styles for select multiple shipping addresses (checkout/shipaddresses.aspx)            */
+/******************************************************************************************/
+
+/* NOTE: items table on this page will use default styling from the common itemList class,
+you can override or add to the styling attributes below */
+
+/* styling for shipping addreses table */
+table.setShippingAddresses { }
+
+/* table will use default itemList styling, you can override th attributes here */
+table.setShippingAddresses th { }
+
+/* header styling for items column */
+table.setShippingAddresses th.items { }
+
+/* styling for items column */
+table.setShippingAddresses td.items { }
+
+/* header styling for items column */
+table.setShippingAddresses th.price { }
+
+/* styling for price column */
+table.setShippingAddresses td.price { }
+
+/* header styling for address column */
+table.setShippingAddresses th.address { }
+
+/* styling for address column */
+table.setShippingAddresses th.address { }
+
+/******************************************************************************************/
+/* end styles for select multiple shipping addresses (checkout/shipaddresses.aspx)        */
+/******************************************************************************************/
+
+/******************************************************************************************/
+/* styles for select shipping method (checkout/shipmethod.aspx)                           */
+/******************************************************************************************/
+
+/* the outer table to select shipping methods */
+table.selectShippingMethod { }
+
+/* default header style for shipping method table */
+table.selectShippingMethod td.dataSheet { padding-top:1px; }
+
+/* default header style for shipping method table */
+table.selectShippingMethod td.dataSheet th { padding: 5px 2px; }
+
+/* the table cell that displays the shipment items grid */
+table.selectShippingMethod td.items{ }
+
+/* the table cell that displays the available shipping methods */
+table.selectShippingMethod td.methods
+{
+	padding: 4px; 
+	text-align:left; 
+	border-left:1px solid #C4C4C4;
+	width:200px;
+}
+
+table.selectShippingMethod td.methods h3
+{
+	padding: 5px 2px; 
+	border: 1px solid #C4C4C4; 
+	background-color:#EFEFEF;
+	display:block;
+	font-weight:bold;
+	font-size:100%;
+	text-align:center;
+	margin: -2px -2px 6px -2px;
+}
+
+.summarySection h3 { font-size:100%; }
+
+/* the caption for available shipping methods */
+table.selectShippingMethod td.methods .caption
+{
+	display:block;
+	font-weight:bold;
+	margin-bottom:6px;
+	text-align:center;
+}
+
+/* section to ask the customer whether to set gift options for an order */
+.addGiftOptions
+{
+	background:url(images/giftbox2.jpg) no-repeat left top;
+	/*margin: 10px 0 5px 185px;*/
+	margin: 0;
+	width:400px;
+	height:85px;
+	border: solid 1px #6B0000;
+	float:right;
+}
+
+/* caption of the add gift options section */
+.addGiftOptions h3
+{
+	/*margin-top:10px;
+	margin-left:60px;*/
+	margin: 10px 10px 5px 62px;
+	font-size:100%; 
+}
+
+/* content of the add gift options section, including input field and text */
+.addGiftOptions .content
+{
+	margin: 0 0 10px 60px;
+}
+
+/* contains any navigation buttons (such as continue or back) that appear within the section */
+.addGiftOptions .buttons
+{
+	margin-left:60px;
+	margin-top:5px;
+}
+
+.VisiblePanel 
+{
+	display:block;
+}
+
+.HiddenPanel 
+{
+	display:none;
+}
+
+/******************************************************************************************/
+/* end styles for select shipping method (checkout/shipmethod.aspx)                       */
+/******************************************************************************************/
+
+/******************************************************************************************/
+/* styles for select gift options (checkout/giftoptions.aspx)                             */
+/******************************************************************************************/
+
+/* container for the gift option controls */
+.giftOptions { }
+
+/* the container for controls to choose gift wrap if available */
+.giftOptions div.giftWrap { margin-top:2px;margin-bottom:6px; }
+
+/* displays when no gift wrap is available for an item */
+.giftOptions div.giftWrap div.noGiftWrap { font-style:italic; }
+
+/* displays when only one style of gift wrap is available for an item */
+.giftOptions div.giftWrap div.oneGiftWrap { }
+
+/* styling for the name of the available gift wrap style */
+.giftOptions div.giftWrap div.oneGiftWrap span.name { font-weight:bold }
+
+/* styling for the price of the available gift wrap style */
+.giftOptions div.giftWrap div.oneGiftWrap span.price { }
+
+/* displays when two or more gift wrap styles are available for an item */
+.giftOptions div.giftWrap div.multiGiftWrap { }
+
+/* styling for the title of the gift wrap selection box */
+.giftOptions div.giftWrap div.multiGiftWrap span.title { font-weight:bold }
+
+/* styling for the gift wrap selection box */
+.giftOptions div.giftWrap div.multiGiftWrap select { }
+
+/* the container for controls to enter a gift message */
+.giftOptions div.giftMessage { }
+
+/* styling for the gift message title */
+.giftOptions div.giftMessage span.title { font-weight:bold; }
+
+/* styling for the gift message cost */
+.giftOptions div.giftMessage span.price { }
+
+/* styling for the gift message entry area */
+.giftOptions div.giftMessage textarea { width:98%;height:40px; }
+
+/* styling for the characters remaining countdown */
+.giftOptions div.giftMessage span.count { }
+
+/* styling for the characters remaining countdown text */
+.giftOptions div.giftMessage span.countText { }
+
+
+/******************************************************************************************/
+/* end styles for select gift options (checkout/giftoptions.aspx)                         */
+/******************************************************************************************/
+
+/******************************************************************************************/
+/* styles for confirm and pay (checkout/payment.aspx)                                     */
+/******************************************************************************************/
+
+/*---------------------------------------*/
+/*- styles for layout of payment page -- */
+/*---------------------------------------*/
+
+/* style for the summary pane of the payment information section */
+.paymentMethodSummary { width:170px;padding: 10px; }
+div.paymentMethodSummary { float:left; }
+
+/* style for the payment method listing of the payment information section */
+.paymentMethodList { width:545px;border-left:1px dashed #000000; }
+div.paymentMethodList { float:right; }
+
+/* style for a content section in the summary pane */
+.paymentMethodSummary div.section { margin-bottom:20px; }
+
+/* style for the header of the summary section */
+.paymentMethodSummary div.section div.header { }
+
+/* style for the caption of the section header */
+.paymentMethodSummary div.section div.header h3 { margin: 0 0 2px 0; }
+
+/* style for the content of the summary section */
+paymentMethodSummary div.section div.content { }
+
+/*---------------------------------------*/
+/*- styles for order summary ----------- */
+/*---------------------------------------*/
+
+/* style for the order summary that appears in a summary section */
+table.orderSummary { width:100%; }
+
+/* column that displays the heading for the amounts in the order summary table */
+table.orderSummary th { text-align:right;font-weight:normal; white-space:nowrap; }
+
+/* column that displays amounts in the order summary table */
+table.orderSummary td { text-align:right; width:80px; }
+
+/* row that contains the divider between subtotals and total */
+table.orderSummary tr.totalDivider { }
+
+/* cell that contains the divider between subtotals and total */
+table.orderSummary tr.totalDivider td { width:100%; }
+
+/* divider between subtotals and total */
+table.orderSummary tr.totalDivider td hr { }
+
+/*---------------------------------------*/
+/*- styles for payment forms ----------- */
+/*---------------------------------------*/
+
+/* styles the table for the entry form of a payment method */
+table.paymentForm {	width:100%; margin-bottom:20px; margin-left:5px; }
+
+/* style for default table cell in entry form */
+table.paymentForm td { padding: 2px; }
+
+/* header cell that provides the caption for the form, states type of payment method */
+table.paymentForm th.caption 
+{
+	padding-top:8px;
+	border-bottom:dotted 1px black;
+}
+
+/* header cell that provides the label for an input row */
+table.paymentForm th.rowHeader { text-align:right; }
+
+/* cell that contains the submit button for a payment form */
+table.paymentForm td.submit { text-indent:10px; }
+
+/* container for the submit button */
+table.paymentForm td.submit span.button { }
+
+/******************************************************************************************/
+/* end styles for confirm and pay (checkout/payment.aspx)                                 */
+/******************************************************************************************/
+
+/******************************************************************************************/
+/* styles for your account (Members/MyAccount.aspx)                                       */
+/******************************************************************************************/
+
+ul.columns {
+  margin: 0 0 0 30px;
+  padding: 0;
+  list-style: none;
+}
+ 
+ul.columns li {
+  margin: 2px;
+  background-image: url(images/bullet1.gif);
+  background-position: 0 3px;
+  background-repeat: no-repeat;
+  text-indent:15px;
+}
+
+/******************************************************************************************/
+/* end styles for your account (Members/MyAccount.aspx)                                   */
+/******************************************************************************************/
+
+/******************************************************************************************/
+/* styles for view order page (Members/MyOrder.aspx)                                    */
+/******************************************************************************************/
+
+/* container for the order summary table */
+div.orderSummaryPanel
+{
+	background-color: #DBDADA;
+	border: 1px solid #000000;
+	margin: 4px 0px;
+}
+
+table.orderSummaryTable
+{
+	width:100%;
+}
+
+table.orderSummaryTable th.rowHeader
+{
+	width:16%;
+	text-align:right;
+}
+
+/******************************************************************************************/
+/* end styles for view order page (Members/MyOrder.aspx)                                */
+/******************************************************************************************/
+
+/******************************************************************************************/
+/* styles for view row-style of my account page (Members/My Account.aspx)                 */
+/******************************************************************************************/
+.odd{background-color: #DBDADA;padding: 6px 2px 6px 6px; border-bottom:1px solid #A4A4A4;}
+.even{background-color: #F5F5F5;padding: 6px 2px 6px 6px; border-bottom:1px solid #A4A4A4;}
+.altodd{background-color: #FFF;padding: 6px 2px 6px 6px; border-bottom:1px solid #A4A4A4;}
+.alteven{background-color: #F5F5F5;padding: 6px 2px 6px 6px; border-bottom:1px solid #A4A4A4;}
+/******************************************************************************************/
+/* end styles for view row-style of my account page (Members/My Account.aspx)             */
+/******************************************************************************************/
+
+
+/******************************************************************************************/
+/* styles for view "ship to" in ViewOrder page (Members/MyOrder.aspx)                   */
+/******************************************************************************************/
+.ship_to{writing-mode: tb-rl; filter: flipv fliph;}
+/******************************************************************************************/
+/* end styles for view "ship to" in ViewOrder page (Members/MyOrder.aspx)               */
+/******************************************************************************************/
+
+/******************************************************************************************/
+/* styles for paged list of data                                                          */
+/******************************************************************************************/
+
+/* table style */
+table.pagedList { min-width:300px; }
+
+/* style common to headers and cells */
+table.pagedList td
+{
+	padding:2px 4px;
+}
+
+/* styling for header cells  */
+table.pagedList th 
+{
+	padding: 6px 4px;
+	font-weight:bold;
+	margin:0px;
+	color:White;
+	background-color:#6B0000;
+}
+
+/* styling for links in header cells  (such as for sorting columns) */
+table.pagedList th a
+{
+	color:white;
+	text-decoration:underline;
+}
+
+/* hover styling for links in header cells  (such as for sorting columns) */
+table.pagedList th a:hover
+{
+	color: #DBDADA;
+	text-decoration:underline;
+}
+
+/* styling for alternating rows */
+table.pagedList tr.oddRow { }
+table.pagedList tr.evenRow { background-color: #F5F5F5; }
+
+/* style for the empty result message */
+table.pagedList tr.empty td
+{
+	 width:300px;
+	 text-align:center;
+	 padding: 10px;
+	 font-style:italic;
+	 border: solid 1px black;
+}
+
+
+/******************************************************************************************/
+/* end styles for paged list of data                                                      */
+/******************************************************************************************/
+/************** Style for the Product Image ******************/
+.productimg
+{
+	vertical-align:top;
+	text-align:center
+}
+
+
+/******************************************************************************************/
+/* begin styles for modal popup dialogs                                                   */
+/******************************************************************************************/
+
+/* background for main page when modal popup is visible */
+.modalBackground {
+	background-color:Gray;
+	filter:alpha(opacity=70);
+	opacity:0.7;
+}
+
+/* style for modal popup dialog */
+.modalPopup {
+	background-color:#ffffdd;
+	border-width:3px;
+	border-style:solid;
+	border-color:Gray;
+	padding:3px;
+	width:600px;
+}
+
+/* style for header of modal popup dialog */
+.modalPopupHeader 
+{
+	cursor:move;
+	background-color:#DDDDDD;
+	border:solid 1px Gray;
+	color:Black;
+}
+
+/* style for text of modal popup dialog */
+.modalPopupText 
+{
+    padding:10px;
+}
+
+/* enable scrolling within modal popup dialog */
+.modalPopupText .modalPopupScroller
+{
+	margin:-10px;padding:10px;overflow:scroll;height:400px;
+}
+
+/* style for the click to view price popup */
+.pricePopup
+{
+	background-color:#ffffdd;
+	border-width:3px;
+	border-style:solid;
+	border-color:Gray;
+	padding:3px;
+	width:300px;
+	position:absolute;
+    left:50%;
+    margin-left:-150px;
+    z-index:99;
+}
+
+/* style for header of modal popup dialog */
+.pricePopupHeader
+{
+	background-color:#DDDDDD;
+	border:solid 1px Gray;
+	color:Black;
+	margin:-3px;
+	padding:6px;
+	font-weight:bold;
+}
+
+/* used on the click to view price display */
+.pricePopup span.fieldHeader { display:block;float:left;width:135px;text-align:right;margin-right:6px; }
+.pricePopup span.fieldValue { display:block;float:left; }
+
+/******************************************************************************************/
+/* end styles for modal popup dialogs                                                     */
+/******************************************************************************************/
+
+/******************************************************************************************/
+/* begin styles for one page checkout                                                     */
+/******************************************************************************************/
+
+/* outer frame of the one page checkout form */
+.opcFrame
+{
+	margin:0 auto;
+	width:800px;
+}
+
+/* main content panel of the one page checkout form */
+.opcMainPanel
+{
+	width:600px;
+	padding-right:10px;
+}
+
+/* sidebar panel of the one page checkout form */
+.opcSidebar
+{
+	width:200px;
+	background:#efefef;
+	border:solid 1px #c4c4c4;
+	border-top:none;
+}
+
+/* frame for the payment section of the one page checkout form */
+.opcPaymentFrame { }
+
+/* panel that contains the list of available payment methods */
+.opcPaymentMethods
+{
+	background-color:#efefef;
+	width:130px;
+}
+
+/* panel that contains the payment form for the selected method */
+.opcPaymentForm { }
+
+/******************************************************************************************/
+/* end styles for one page checkout                                                       */
+/******************************************************************************************/
+
+/*********** img-description *******/
+p.image_desc
+{
+	margin-left:3px;
+	margin-right:3px	
+}
+
+.ProductItemView { width:194px; padding: 5px; padding-bottom:15px;}
+.ProductItemView div{ background: #FFFFFF; padding: 5px; border: solid 1px #b9b9b9; }
+.ProductItemViewOdd { background: #efefef; border: solid 1px #b9b9b9; width:194px; padding: 5px;padding-bottom:15px;}
+.ProductItemViewOdd div { background: #FFFFFF; padding: 5px; border: solid 1px #b9b9b9; }
+.AgreementView
+{
+	background-color: #FFFFFF;
+	margin: 5px 5px 5px 5px;
+	padding: 10px 10px 10px 10px;
+	border:solid 1px #92A7EC;
+}
+
+.welcomeImage {
+
+}
+.welcomeText{
+}
+/* used to display reviews message  */
+pre.Reviews 
+{
+    font-family: Arial, Verdana, Helvetica, sans-serif;
+	font-size: 12px;
+	white-space: pre-wrap;       /* css-3 */
+    white-space: -moz-pre-wrap !important;  /* Mozilla, since 1999 */
+    white-space: -pre-wrap;      /* Opera 4-6 */
+    white-space: -o-pre-wrap;    /* Opera 7 */
+    word-wrap: break-word;       /* Internet Explorer 5.5+ */
+}
+.nodeSummaryLink{text-decoration: underline; text-indent: 0px; color:#5872CB; margin:4px 0 8px 0; padding:4px 0 8px 0; cursor:pointer;}
+/*************************************************************/
+/* close the screen media selector */
+}

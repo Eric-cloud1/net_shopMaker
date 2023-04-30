@@ -1,0 +1,86 @@
+﻿/* begin with the @media rule to specify media */
+@media screen {
+
+/******************************************************************************************/
+/* styles for webparts                                                                    */
+/******************************************************************************************/
+
+/* styling for part title */
+.WebPart_PartTitle
+{
+	border: 1px solid #41538F;
+	background-color: #88A3FF;
+	padding: 0 2px;
+	height:25px;
+	margin: 5px 0 0 0;
+}
+
+/* this adds a little margin to the verb icons */
+.WebPart_PartTitle a
+{
+	margin: 0 3px 0 0;
+	background: none;
+}
+
+/* styling for admin part */
+.WebPart_AdminPart
+{
+	border: 1px solid #41538F;
+	padding: 8px;
+	margin: 2px 0 0 0;
+}
+
+
+.WebPart_AdminPart a {
+	color:#ab1030; 
+	background :transparent url(images/Icons/link-arrow2.png) no-repeat scroll right center; 
+	padding-right:14px;
+	font-size: 100%;
+}
+
+.gridHeader a
+{
+	color: black;
+	background :transparent;
+	font-weight: bold; 
+    font-size: 12px; 
+}
+
+
+.WebPart_AdminPart a:hover {color:#2810FF; background-color: #e0e0e0;}
+
+
+.WebPart_AdminPart a.header .rowHeader th  {
+	background:transparent;
+	font-weight: bold; 
+    font-size: 12px; 
+    color: Black;
+}
+
+
+/* container for the webpart editor */
+.WebPartEditorPanel
+{
+}
+
+table.WebPartEditor
+{
+	width:40%;
+	border: solid 1px black;
+	margin-top:10px;
+}
+
+table.WebPartEditor th.editorHeader
+{
+	background-color: #E8E8E8;
+	text-align:left;
+	height:24px;
+	line-height:24px;
+}
+
+/******************************************************************************************/
+/* end styles for webparts                                                                */
+/******************************************************************************************/
+
+/* close the @media screen rule */
+}

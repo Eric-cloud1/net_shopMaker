@@ -1,0 +1,2409 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+To Generate Schema objects use the XSD command, for example:
+ _____________________________________________________
+E:\MakerShop\DataPort\trunk\Api\Schema>xsd ClientApiSchema.xsd /c /n:MakerShop.DataClient.Api.Schema
+
+NOTE: KNOWN BUG: while genrating code from schema
+_____________________________________________________
+
+NOTE: KNOWN BUG: while genrating code from schema
+While generating schema the field with name "RecurringChargeSpecified" is generated with name "RecurringChargeSpecified1", It is a known bug, and have to be corrected manually each time the code is generated from schema
+-->
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  
+  
+  
+  <xs:complexType name="Product">
+    <xs:sequence>
+      <xs:element name="ProductId" type="xs:int" />
+      <xs:element name="StoreId" type="xs:int" />
+      <xs:element name="Name" type="xs:string" />
+      <xs:element name="Price" type="xs:decimal" />
+      <xs:element name="CostOfGoods" type="xs:decimal" />
+      <xs:element name="MSRP" type="xs:decimal" />
+      <xs:element name="Weight" type="xs:decimal" />
+      <xs:element name="Length" type="xs:decimal" />
+      <xs:element name="Width" type="xs:decimal" />
+      <xs:element name="Height" type="xs:decimal" />
+      <xs:element name="ManufacturerId" type="xs:int" />
+      <xs:element name="Manufacturer" type="xs:string" />
+      <xs:element name="Sku" type="xs:string" />
+      <xs:element name="ModelNumber" type="xs:string" />
+      <xs:element name="DisplayPage" type="xs:string" />
+      <xs:element name="TaxCodeId" type="xs:int" />
+      <xs:element name="TaxCode" type="xs:string" />
+      <xs:element name="ShippableId" type="xs:unsignedByte" />
+      <xs:element name="Shippable" type="xs:string" />
+      <xs:element name="WarehouseId" type="xs:int" />
+      <xs:element name="Warehouse" type="xs:string" />
+      <xs:element name="InventoryModeId" type="xs:unsignedByte" />
+      <xs:element name="InStock" type="xs:int" />
+      <xs:element name="InStockWarningLevel" type="xs:int" />
+      <xs:element name="ThumbnailUrl" type="xs:string" />
+      <xs:element name="ThumbnailAltText" type="xs:string" />
+      <xs:element name="ImageUrl" type="xs:string" />
+      <xs:element name="ImageAltText" type="xs:string" />
+      <xs:element name="Summary" type="xs:string" />
+      <xs:element name="Description" type="xs:string" />
+      <xs:element name="VendorId" type="xs:int" />
+      <xs:element name="Vendor" type="xs:string" />
+      <xs:element name="CreatedDate" type="xs:dateTime" />
+      <xs:element name="LastModifiedDate" type="xs:dateTime" />
+      <!-- Legacy Field (upto 7.3) "ProductTemplateId" -->
+      <xs:element name="ProductTemplateId" type="xs:int" />
+      <!-- Legacy Field (upto 7.3) "ProductTemplateId" -->
+      <xs:element name="ProductTemplate" type="xs:string" />
+      <xs:element name="IsFeatured" type="xs:boolean" />
+      <xs:element name="IsProhibited" type="xs:boolean" />
+      <xs:element name="AllowReviews" type="xs:boolean" />
+      <xs:element name="AllowBackorder" type="xs:boolean" />
+      <xs:element name="WrapGroupId" type="xs:int" />
+      <xs:element name="WrapGroup" type="xs:string" />
+      <xs:element name="ExcludeFromFeed" type="xs:boolean" />
+      <xs:element name="DisablePurchase" type="xs:boolean" />
+      <xs:element name="MinQuantity" type="xs:short" />
+      <xs:element name="MaxQuantity" type="xs:short" />
+      <xs:element name="VisibilityId" type="xs:unsignedByte" />
+      <xs:element name="Theme" type="xs:string" />
+      <xs:element name="IconUrl" type="xs:string" />
+      <xs:element name="IconAltText" type="xs:string" />
+      <xs:element name="IsGiftCertificate" type="xs:boolean" />
+      <xs:element name="CouponProduct" type="xs:string" />
+      <xs:element name="ExtendedDescription" type="xs:string" />
+      <xs:element name="HtmlHead" type="xs:string" />
+      <xs:element name="UseVariablePrice" type="xs:boolean" />
+      <xs:element name="MinimumPrice" type="xs:decimal" />
+      <xs:element name="MaximumPrice" type="xs:decimal" />
+      <xs:element name="SearchKeywords" type="xs:string" />
+      <xs:element name="HidePrice" type="xs:boolean" />
+      <xs:element name="Kit" type="Kit"/>
+      <xs:element name="Assets">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="ProductAsset" type="ProductAsset" minOccurs="0" maxOccurs="unbounded" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="CustomFields">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="ProductCustomField" type="ProductCustomField" minOccurs="0" maxOccurs="unbounded" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="DigitalGoods">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="ProductDigitalGood" type="ProductDigitalGood" minOccurs="0" maxOccurs="unbounded" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="Images">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="ProductImage" type="ProductImage" minOccurs="0" maxOccurs="unbounded" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>      
+      <xs:element name="ProductOptions">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="ProductOption" type="ProductOption" minOccurs="0" maxOccurs="unbounded" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="ProductVolumeDiscounts">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="ProductVolumeDiscount" type="ProductVolumeDiscount" minOccurs="0" maxOccurs="unbounded" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="Reviews">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="Review" type="ProductReview" minOccurs="0" maxOccurs="unbounded" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="TemplateFields">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="ProductTemplateField" type="ProductTemplateField" minOccurs="0" maxOccurs="unbounded" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="Variants">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="ProductVariant" type="ProductVariant" minOccurs="0" maxOccurs="unbounded" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="Specials">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="Special" type="Special" minOccurs="0" maxOccurs="unbounded" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="SubscriptionPlan" type="SubscriptionPlan"/>      
+      <xs:element name="Categories">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="Category" type="ProductCategory" minOccurs="0" maxOccurs="unbounded" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <!-- NEW FIELD "ProductProductTemplates" ADDED SINCE 7.4 -->
+      <xs:element name="ProductProductTemplates">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="ProductProductTemplate" type="ProductProductTemplate" minOccurs="0" maxOccurs="unbounded" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <!-- NEW FIELD "ProductProductTemplates" ADDED SINCE 7.4 -->
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="User">
+    <xs:sequence>
+      <xs:element name="UserId" type="xs:int" />
+      <xs:element name="StoreId" type="xs:int" />
+      <xs:element name="UserName" type="xs:string" />
+      <xs:element name="FirstName" type="xs:string" />
+      <xs:element name="LastName" type="xs:string" />
+      <xs:element name="Email" type="xs:string" />
+      <!-- <xs:element name="LoweredEmail" type="xs:string" />-->
+      <xs:element name="ReferringAffiliateId" type="xs:int" />
+      <xs:element name="AffiliateId" type="xs:int" />
+      <xs:element name="AffiliateReferralDate" type="xs:dateTime" />
+      <xs:element name="Affiliate" type="xs:string" />
+      <xs:element name="PrimaryAddressId" type="xs:int" />
+      <xs:element name="PrimaryWishlistId" type="xs:int" />
+      <xs:element name="PayPalId" type="xs:string" />
+      <xs:element name="PasswordQuestion" type="xs:string" />
+      <xs:element name="PasswordAnswer" type="xs:string" />
+      <xs:element name="IsApproved" type="xs:boolean" />
+      <xs:element name="IsAnonymous" type="xs:boolean" />
+      <xs:element name="IsLockedOut" type="xs:boolean" />
+      <xs:element name="CreateDate" type="xs:dateTime" />
+      <xs:element name="LastActivityDate" type="xs:dateTime" />
+      <xs:element name="LastLoginDate" type="xs:dateTime" />
+      <xs:element name="LastPasswordChangedDate" type="xs:dateTime" />
+      <xs:element name="LastLockoutDate" type="xs:dateTime" />
+      <xs:element name="FailedPasswordAttemptCount" type="xs:int" />
+      <xs:element name="FailedPasswordAttemptWindowStart" type="xs:dateTime" />
+      <xs:element name="FailedPasswordAnswerAttemptCount" type="xs:int" />
+      <xs:element name="FailedPasswordAnswerAttemptWindowStart" type="xs:dateTime" />
+      <xs:element name="Comment" type="xs:string" />
+      <!-- CSV IMPORT / EXPORT RELATED FIELDS -->
+      <xs:element name="PasswordPlainText" type="xs:string"  />
+      <xs:element name="PasswordEncrypted" type="xs:string" />
+      <xs:element name="Nickname" type="xs:string" />      
+      <xs:element name="Company" type="xs:string" />
+      <xs:element name="Address1" type="xs:string" />
+      <xs:element name="Address2" type="xs:string" />
+      <xs:element name="City" type="xs:string" />
+      <xs:element name="Province" type="xs:string" />
+      <xs:element name="PostalCode" type="xs:string" />
+      <xs:element name="CountryCode" type="xs:string" />
+      <xs:element name="Phone" type="xs:string" />
+      <xs:element name="Fax" type="xs:string" />      
+      <xs:element name="AddressIsResidence" type="xs:boolean" default="true" />            
+      <!-- <xs:element name="Location" type="xs:string" /> -->
+      <xs:element name="Addresses">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="Address" type="Address" minOccurs="0" maxOccurs="unbounded" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="Baskets">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="Basket" type="Basket" minOccurs="0" maxOccurs="unbounded" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="Passwords">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="UserPassword" type="UserPassword" minOccurs="0" maxOccurs="unbounded" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="ReviewerProfile" type="ReviewerProfile" />
+      <xs:element name="Settings">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="UserSetting" type="UserSetting" minOccurs="0" maxOccurs="unbounded" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="UserGroups">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="UserGroup" type="UserGroup" minOccurs="0" maxOccurs="unbounded" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="UserPersonalizations">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="UserPersonalization" type="UserPersonalization" minOccurs="0" maxOccurs="unbounded" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="Wishlists">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="Wishlist" type="Wishlist" minOccurs="0" maxOccurs="unbounded" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="Profile" type="Profile" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="UserPassword">
+    <xs:sequence>
+      <xs:element name="UserId" type="xs:int" />
+      <xs:element name="PasswordNumber" type="xs:unsignedByte" />
+      <xs:element name="Password" type="xs:string" />
+      <xs:element name="PasswordFormat" type="xs:string" />
+      <xs:element name="CreateDate" type="xs:dateTime" />
+      <!-- ForceExpiration ADDED IN 7.4 -->
+      <xs:element name="ForceExpiration" type="xs:boolean" />
+      <!-- ForceExpiration ADDED IN 7.4 -->
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="Address">
+    <xs:sequence>
+      <xs:element name="Nickname" type="xs:string" />
+      <xs:element name="FirstName" type="xs:string" />
+      <xs:element name="LastName" type="xs:string" />
+      <xs:element name="Company" type="xs:string" />
+      <xs:element name="Address1" type="xs:string" />
+      <xs:element name="Address2" type="xs:string" />
+      <xs:element name="City" type="xs:string" />
+      <xs:element name="Province" type="xs:string" />
+      <xs:element name="PostalCode" type="xs:string" />
+      <xs:element name="CountryCode" type="xs:string" />
+      <xs:element name="Phone" type="xs:string" />
+      <xs:element name="Fax" type="xs:string" />
+      <xs:element name="Email" type="xs:string" />
+      <xs:element name="Residence" type="xs:boolean" />
+      <xs:element name="Validated" type="xs:boolean" />
+      <xs:element name="UserId" type="xs:int" />
+      <xs:element name="AddressId" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  
+  <xs:complexType name="Order">
+    <xs:sequence>
+      <xs:element name="OrderId" type="xs:int" />
+      <xs:element name="OrderNumber" type="xs:int" />
+      <xs:element name="UserName" type="xs:string" />
+      <xs:element name="OrderDate" type="xs:dateTime" />
+      <xs:element name="StoreId" type="xs:int" />
+      <xs:element name="UserId" type="xs:int" />
+      <xs:element name="AffiliateId" type="xs:int" />
+      <xs:element name="Affiliate" type="xs:string" />
+      <xs:element name="BillToFirstName" type="xs:string" />
+      <xs:element name="BillToLastName" type="xs:string" />
+      <xs:element name="BillToCompany" type="xs:string" />
+      <xs:element name="BillToAddress1" type="xs:string" />
+      <xs:element name="BillToAddress2" type="xs:string" />
+      <xs:element name="BillToCity" type="xs:string" />
+      <xs:element name="BillToProvince" type="xs:string" />
+      <xs:element name="BillToPostalCode" type="xs:string" />
+      <xs:element name="BillToCountryCode" type="xs:string" />
+      <xs:element name="BillToPhone" type="xs:string" />
+      <xs:element name="BillToFax" type="xs:string" />
+      <xs:element name="BillToEmail" type="xs:string" />
+      <xs:element name="ProductSubtotal" type="xs:decimal" />
+      <xs:element name="TotalCharges" type="xs:decimal" />
+      <xs:element name="TotalPayments" type="xs:decimal" />
+      <xs:element name="OrderStatusId" type="xs:int" />
+      <xs:element name="OrderStatus" type="xs:string" />
+      <xs:element name="Exported" type="xs:boolean" />
+      <xs:element name="RemoteIP" type="xs:string" />
+      <xs:element name="Referrer" type="xs:string" />
+      <xs:element name="GoogleOrderNumber" type="xs:string" />
+      <xs:element name="PaymentStatusId" type="xs:unsignedByte" />
+      <xs:element name="ShipmentStatusId" type="xs:unsignedByte" />
+      <xs:element name="OrderItems">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="OrderItem" type="OrderItem" minOccurs="0" maxOccurs="unbounded" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="Payments">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="Payment" type="Payment" minOccurs="0" maxOccurs="unbounded" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="Notes">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="OrderNote" type="OrderNote" minOccurs="0" maxOccurs="unbounded" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="Shipments">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="OrderShipment" type="OrderShipment" minOccurs="0" maxOccurs="unbounded" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="Coupons">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="OrderCoupon" type="OrderCoupon" minOccurs="0" maxOccurs="unbounded" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="OrderShipment">
+    <xs:sequence>
+      <xs:element name="OrderId" type="xs:int" />
+      <xs:element name="WarehouseId" type="xs:int" />
+      <xs:element name="ShipToFirstName" type="xs:string" />
+      <xs:element name="ShipToLastName" type="xs:string" />
+      <xs:element name="ShipToCompany" type="xs:string" />
+      <xs:element name="ShipToAddress1" type="xs:string" />
+      <xs:element name="ShipToAddress2" type="xs:string" />
+      <xs:element name="ShipToCity" type="xs:string" />
+      <xs:element name="ShipToProvince" type="xs:string" />
+      <xs:element name="ShipToPostalCode" type="xs:string" />
+      <xs:element name="ShipToCountryCode" type="xs:string" />
+      <xs:element name="ShipToPhone" type="xs:string" />
+      <xs:element name="ShipToFax" type="xs:string" />
+      <xs:element name="ShipToEmail" type="xs:string" />
+      <xs:element name="ShipToResidence" type="xs:boolean" />
+      <xs:element name="ShipMethodId" type="xs:int" />
+      <xs:element name="ShipMethodName" type="xs:string" />
+      <xs:element name="ShipMessage" type="xs:string" />
+      <xs:element name="ShipDate" type="xs:dateTime" />
+      <xs:element name="OrderShipmentId" type="xs:int" />
+      <xs:element name="TrackingNumbers">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="TrackingNumber" type="TrackingNumber" minOccurs="0" maxOccurs="unbounded" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="OrderItem">
+    <xs:sequence>
+      <xs:element name="OrderItemId" type="xs:int" />
+      <xs:element name="OrderId" type="xs:int" />
+      <xs:element name="ParentItemId" type="xs:int" />
+      <xs:element name="OrderItemTypeId" type="xs:short" />
+      <xs:element name="ShippableId" type="xs:unsignedByte" />
+      <xs:element name="OrderShipmentId" type="xs:int" />
+      <xs:element name="ProductId" type="xs:int" />
+      <xs:element name="Name" type="xs:string" />
+      <xs:element name="OptionList" type="xs:string" />
+      <xs:element name="VariantName" type="xs:string" />
+      <xs:element name="Sku" type="xs:string" />
+      <xs:element name="Price" type="xs:decimal" />
+      <xs:element name="Weight" type="xs:decimal" />
+      <xs:element name="Quantity" type="xs:short" />
+      <xs:element name="LineMessage" type="xs:string" />
+      <xs:element name="OrderBy" type="xs:short" />
+      <xs:element name="GiftMessage" type="xs:string" />
+      <xs:element name="TaxCodeId" type="xs:int" />
+      <xs:element name="WrapStyleId" type="xs:int" />
+      <xs:element name="WishlistItemId" type="xs:int" />
+      <xs:element name="InventoryStatusId" type="xs:short" />
+      <xs:element name="CostOfGoods" type="xs:decimal" />
+      <xs:element name="TaxRate" type="xs:decimal" />
+      <xs:element name="TaxAmount" type="xs:decimal" />
+      <xs:element name="KitList" type="xs:string" />
+      <xs:element name="CustomFields" type="xs:string" />
+      <xs:element name="Inputs">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="OrderItemInput" type="OrderItemInput" minOccurs="0" maxOccurs="unbounded" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="GiftCertificates">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="GiftCertificate" type="GiftCertificate" minOccurs="0" maxOccurs="unbounded" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="OrderItemDigitalGoods">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="OrderItemDigitalGood" type="OrderItemDigitalGood" minOccurs="0" maxOccurs="unbounded" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="Subscriptions">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="Subscription" type="Subscription" minOccurs="0" maxOccurs="unbounded" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="Affiliate">
+    <xs:sequence>
+      <xs:element name="AffiliateId" type="xs:int" />
+      <xs:element name="StoreId" type="xs:int" />
+      <xs:element name="Name" type="xs:string" />
+      <xs:element name="PayeeName" type="xs:string" />
+      <xs:element name="FirstName" type="xs:string" />
+      <xs:element name="LastName" type="xs:string" />
+      <xs:element name="Company" type="xs:string" />
+      <xs:element name="Address1" type="xs:string" />
+      <xs:element name="Address2" type="xs:string" />
+      <xs:element name="City" type="xs:string" />
+      <xs:element name="Province" type="xs:string" />
+      <xs:element name="PostalCode" type="xs:string" />
+      <xs:element name="CountryCode" type="xs:string" />
+      <xs:element name="PhoneNumber" type="xs:string" />
+      <xs:element name="FaxNumber" type="xs:string" />
+      <xs:element name="MobileNumber" type="xs:string" />
+      <xs:element name="WebsiteUrl" type="xs:string" />
+      <xs:element name="Email" type="xs:string" />
+      <xs:element name="CommissionRate" type="xs:decimal" />
+      <xs:element name="CommissionIsPercent" type="xs:boolean" />
+      <xs:element name="CommissionOnTotal" type="xs:boolean" />
+      <xs:element name="ReferralDays" type="xs:short" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="Category">
+    <xs:sequence>
+      <xs:element name="StoreId" type="xs:int" />
+      <xs:element name="Name" type="xs:string" />
+      <xs:element name="Summary" type="xs:string" />
+      <xs:element name="DisplayPage" type="xs:string" />
+      <xs:element name="ThumbnailUrl" type="xs:string" />
+      <xs:element name="ThumbnailAltText" type="xs:string" />
+      <xs:element name="VisibilityId" type="xs:unsignedByte" />
+      <xs:element name="Description" type="xs:string" />
+      <xs:element name="CategoryId" type="xs:int" />
+      <xs:element name="ParentId" type="xs:int" />
+      <xs:element name="Theme" type="xs:string" />
+      <xs:element name="HtmlHead" type="xs:string" />
+      <xs:element name="CategoryVolumeDiscounts">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="CategoryVolumeDiscount" type="CategoryVolumeDiscount" minOccurs="0" maxOccurs="unbounded" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="CatalogNodes">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="CatalogNode" type="CatalogNode" minOccurs="0" maxOccurs="unbounded" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="Parents">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="CategoryParent" type="CategoryParent" minOccurs="0" maxOccurs="unbounded" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="Warehouse">
+    <xs:sequence>
+      <xs:element name="StoreId" type="xs:int" />
+      <xs:element name="Name" type="xs:string" />
+      <xs:element name="Address1" type="xs:string" />
+      <xs:element name="Address2" type="xs:string" />
+      <xs:element name="City" type="xs:string" />
+      <xs:element name="Province" type="xs:string" />
+      <xs:element name="PostalCode" type="xs:string" />
+      <xs:element name="CountryCode" type="xs:string" />
+      <xs:element name="Phone" type="xs:string" />
+      <xs:element name="Fax" type="xs:string" />
+      <xs:element name="Email" type="xs:string" />
+      <xs:element name="NavigateUrl" type="xs:string" />
+      <xs:element name="WarehouseId" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="UserSetting">
+    <xs:sequence>
+      <xs:element name="UserId" type="xs:int" />
+      <xs:element name="FieldName" type="xs:string" />
+      <xs:element name="FieldValue" type="xs:string" />
+      <xs:element name="UserSettingId" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="ReviewerProfile">
+    <xs:sequence>
+      <xs:element name="DisplayName" type="xs:string" />
+      <xs:element name="Email" type="xs:string" />
+      <xs:element name="EmailVerified" type="xs:boolean" />
+      <xs:element name="EmailVerificationCode" type="xs:string" />
+      <xs:element name="ReviewerProfileId" type="xs:int" />
+      <xs:element name="Location" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:element name="MakerShopExport">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="ExportVersion" type="xs:string" />
+        <xs:element name="ExportBuildNumber" type="xs:string" />
+        <xs:element name="Store" type="Store"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  
+  <!--<xs:complexType name="MakerShopExport">
+    <xs:sequence>
+      <xs:element name="ExportVersion" type="xs:string" />      
+      <xs:element name="ExportBuildNumber" type="xs:string" />
+      <xs:element name="Store" type="Store">
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>-->
+  <xs:complexType name="Store">
+    <xs:sequence>
+      <xs:element name="StoreId" type="xs:int" />
+      <xs:element name="Name" type="xs:string" />
+      <xs:element name="ApplicationName" type="xs:string" />
+      <xs:element name="LicenseKey" type="xs:string" />
+      <xs:element name="DefaultWarehouseId" type="xs:int" />
+      <xs:element name="Summary" type="xs:string" />
+      <xs:element name="Keywords" type="xs:string" />
+      <xs:element name="Theme" type="xs:string" />
+      <xs:element name="MasterPage" type="xs:string" />
+      <xs:element name="HomePageText" type="xs:string" />
+      <xs:element name="WeightUnitId" type="xs:short" />
+      <xs:element name="MeasurementUnitId" type="xs:short" />
+      <xs:element name="NextOrderId" type="xs:int" />
+      <xs:element name="OrderIdIncrement " type="xs:short" />
+      <xs:element name="Affiliates">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="Affiliate" type="Affiliate" minOccurs="0" maxOccurs="unbounded" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="AuditEvents">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="AuditEvent" type="AuditEvent" minOccurs="0" maxOccurs="unbounded" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="BannedIPs">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="BannedIP" type="BannedIP" minOccurs="0" maxOccurs="unbounded" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="Categories">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="Category" type="Category" minOccurs="0" maxOccurs="unbounded" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="Countries">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="Country" type="Country" minOccurs="0" maxOccurs="unbounded">
+            </xs:element>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="Coupons">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="Coupon" type="Coupon" minOccurs="0" maxOccurs="unbounded" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="Currencies">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="Currency" type="Currency" minOccurs="0" maxOccurs="unbounded" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="CustomFields">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="CustomField" type="CustomField" minOccurs="0" maxOccurs="unbounded" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="DigitalGoods">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="DigitalGood" type="DigitalGood" minOccurs="0" maxOccurs="unbounded" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="EmailLists">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="EmailList" type="EmailList" minOccurs="0" maxOccurs="unbounded" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="EmailTemplates">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="EmailTemplate" type="EmailTemplate" minOccurs="0" maxOccurs="unbounded" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="ErrorMessages">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="ErrorMessage" type="ErrorMessage" minOccurs="0" maxOccurs="unbounded" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="GiftCertificates">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="GiftCertificate" type="GiftCertificate" minOccurs="0" maxOccurs="unbounded" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="Roles">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="Role" type="Role" minOccurs="0" maxOccurs="unbounded" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="Groups">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="Group" type="Group" minOccurs="0" maxOccurs="unbounded" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="KitComponents">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="KitComponent" type="KitComponent" minOccurs="0" maxOccurs="unbounded" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="LicenseAgreements">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="LicenseAgreement" type="LicenseAgreement" minOccurs="0" maxOccurs="unbounded" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="Links">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="Link" type="Link" minOccurs="0" maxOccurs="unbounded" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="Manufacturers">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="Manufacturer" type="Manufacturer" minOccurs="0" maxOccurs="unbounded" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="Orders">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="Order" type="Order" minOccurs="0" maxOccurs="unbounded" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="OrderStatuses">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="OrderStatus" type="OrderStatus" minOccurs="0" maxOccurs="unbounded" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="PageViews">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="PageView" type="PageView" minOccurs="0" maxOccurs="unbounded" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="PaymentGateways">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="PaymentGateway" type="PaymentGateway" minOccurs="0" maxOccurs="unbounded" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="PaymentMethods">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="PaymentMethod" type="PaymentMethod" minOccurs="0" maxOccurs="unbounded" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="PersonalizationPaths">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="PersonalizationPath" type="PersonalizationPath" minOccurs="0" maxOccurs="unbounded" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="Products">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="Product" type="Product" minOccurs="0" maxOccurs="unbounded" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="ProductAssociations" type="ProductAssociations"></xs:element>      
+      <xs:element name="ProductTemplates">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="ProductTemplate" type="ProductTemplate" minOccurs="0" maxOccurs="unbounded" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="Readmes">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="Readme" type="Readme" minOccurs="0" maxOccurs="unbounded" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="ShipGateways">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="ShipGateway" type="ShipGateway" minOccurs="0" maxOccurs="unbounded" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="ShipMethods">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="ShipMethod" type="ShipMethod" minOccurs="0" maxOccurs="unbounded" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="ShipZones">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="ShipZone" type="ShipZone" minOccurs="0" maxOccurs="unbounded" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="Settings">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="StoreSetting" type="StoreSetting" minOccurs="0" maxOccurs="unbounded" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="TaxGateways">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="TaxGateway" type="TaxGateway" minOccurs="0" maxOccurs="unbounded" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="TaxCodes">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="TaxCode" type="TaxCode" minOccurs="0" maxOccurs="unbounded" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="TaxRules">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="TaxRule" type="TaxRule" minOccurs="0" maxOccurs="unbounded" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="Users">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="User" type="User" minOccurs="0" maxOccurs="unbounded" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="Vendors">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="Vendor" type="Vendor" minOccurs="0" maxOccurs="unbounded" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="VolumeDiscounts">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="VolumeDiscount" type="VolumeDiscount" minOccurs="0" maxOccurs="unbounded" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="Warehouses">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="Warehouse" type="Warehouse" minOccurs="0" maxOccurs="unbounded" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="Webpages">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="Webpage" type="Webpage" minOccurs="0" maxOccurs="unbounded" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="WrapGroups">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="WrapGroup" type="WrapGroup" minOccurs="0" maxOccurs="unbounded" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="UserIdList" type="xs:string" />
+      <xs:element name="ProductIdList" type="xs:string" />
+      <xs:element name="OrderIdList" type="xs:string" />
+      <xs:element name="ProductMatchFields" type="xs:string"/>
+      <xs:element name="ProductCSVFields" type="xs:string"/>
+      <xs:element name="UserMatchFields" type="xs:string"/>
+      <xs:element name="UserCSVFields" type="xs:string"/>
+      <xs:element name="OrderMatchFields" type="xs:string"/>
+      <xs:element name="OrderCSVFields" type="xs:string"/>
+      <xs:element name="CategoryMatchFields" type="xs:string"/>
+      <xs:element name="CategoryCSVFields" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+  
+  
+  <xs:complexType name="Special">
+    <xs:sequence>
+      <xs:element name="SpecialId" type="xs:int" />
+      <xs:element name="ProductId" type="xs:int" />
+      <xs:element name="Price" type="xs:decimal" />
+      <xs:element name="StartDate" type="xs:dateTime" />
+      <xs:element name="EndDate" type="xs:dateTime" />
+      <xs:element name="SpecialGroups">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="SpecialGroup" type="SpecialGroup" minOccurs="0" maxOccurs="unbounded" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="ProductReview">
+    <xs:sequence>
+      <xs:element name="ProductReviewId" type="xs:int" />
+      <xs:element name="ProductId" type="xs:int" />
+      <xs:element name="ReviewerProfileId" type="xs:int" />
+      <xs:element name="ReviewDate" type="xs:dateTime" />
+      <xs:element name="Rating" type="xs:unsignedByte" />
+      <xs:element name="ReviewTitle" type="xs:string" />
+      <xs:element name="ReviewBody" type="xs:string" />
+      <xs:element name="IsApproved" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="OrderNote">
+    <xs:sequence>
+      <xs:element name="OrderNoteId" type="xs:int" />
+      <xs:element name="OrderId" type="xs:int" />
+      <xs:element name="UserId" type="xs:int" />
+      <xs:element name="CreatedDate" type="xs:dateTime" />
+      <xs:element name="Comment" type="xs:string" />
+      <xs:element name="NoteTypeId" type="xs:unsignedByte" />
+    </xs:sequence>
+  </xs:complexType>
+  
+  <xs:complexType name="ProductCustomField">
+    <xs:sequence>
+      <xs:element name="ProductFieldId" type="xs:int" />
+      <xs:element name="ProductId" type="xs:int" />
+      <xs:element name="IsUserDefined" type="xs:boolean" />
+      <xs:element name="IsVisible" type="xs:boolean" />
+      <xs:element name="FieldName" type="xs:string" />
+      <xs:element name="FieldValue" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="DigitalGood">
+    <xs:sequence>
+      <xs:element name="DigitalGoodId" type="xs:int" />
+      <xs:element name="StoreId" type="xs:int" />
+      <xs:element name="Name" type="xs:string" />
+      <xs:element name="FileName" type="xs:string" />
+      <xs:element name="FileSize" type="xs:int" />
+      <xs:element name="MaxDownloads" type="xs:unsignedByte" />
+      <xs:element name="DownloadTimeout" type="xs:string" />
+      <xs:element name="ActivationTimeout" type="xs:string" />
+      <xs:element name="MediaKey" type="xs:string" />
+      <xs:element name="SerialKeyProviderId" type="xs:string" />
+      <xs:element name="SerialKeyConfigData" type="xs:string" />
+      <xs:element name="ActivationModeId" type="xs:unsignedByte" />
+      <xs:element name="FulfillmentModeId" type="xs:unsignedByte" />
+      <xs:element name="ActivationEmailId" type="xs:int" />
+      <xs:element name="FulfillmentEmailId" type="xs:int" />
+      <xs:element name="ServerFileName" type="xs:string" />
+      <!-- EnableSerialKeys ADDED IN 7.4 -->
+      <xs:element name="EnableSerialKeys" type="xs:boolean"/>
+      <!-- EnableSerialKeys ADDED IN 7.4 -->
+      <xs:element name="ReadmeId" type="xs:int" />
+      <xs:element name="LicenseAgreementId" type="xs:int" />
+      <xs:element name="LicenseAgreementModeId" type="xs:unsignedByte" />
+      <!-- Legacy Field (7.0, 7.1) "UseAutomaticFulfillment" -->
+      <xs:element name="UseAutomaticFulfillment" type="xs:boolean"/>
+      <!-- Legacy Field (7.0, 7.1) "UseAutomaticFulfillment" -->
+      <xs:element name="SerialKeys">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="SerialKey" type="SerialKey" minOccurs="0" maxOccurs="unbounded" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="Manufacturer">
+    <xs:sequence>
+      <xs:element name="ManufacturerId" type="xs:int" />
+      <xs:element name="StoreId" type="xs:int" />
+      <xs:element name="Name" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="TaxCode">
+    <xs:sequence>
+      <xs:element name="TaxCodeId" type="xs:int" />
+      <xs:element name="StoreId" type="xs:int" />
+      <xs:element name="Name" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="TaxRule">
+    <xs:sequence>
+      <xs:element name="TaxRuleId" type="xs:int" />
+      <xs:element name="StoreId" type="xs:int" />
+      <xs:element name="CountryCode" type="xs:string" />
+      <xs:element name="ProvinceId" type="xs:int" />
+      <xs:element name="Name" type="xs:string" />
+      <xs:element name="PostalCodeFilter" type="xs:string" />
+      <xs:element name="TaxRate" type="xs:decimal" />
+      <xs:element name="UseBillingAddress" type="xs:boolean" />
+      <xs:element name="GroupRuleId" type="xs:unsignedByte" />
+      <xs:element name="TaxCodeId" type="xs:int" />
+      <xs:element name="Priority" type="xs:short" />
+      <xs:element name="RoundingRuleId" type="xs:unsignedByte" />
+      <!-- UsePerItemTax ADDED IN 7.4 -->
+      <xs:element name="UsePerItemTax" type="xs:boolean" />
+      <!-- UsePerItemTax ADDED IN 7.4 -->
+      <xs:element name="TaxRuleTaxCodes">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="TaxRuleTaxCode" type="TaxRuleTaxCode" minOccurs="0" maxOccurs="unbounded" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="TaxRuleGroups">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="TaxRuleGroup" type="TaxRuleGroup" minOccurs="0" maxOccurs="unbounded" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="TaxRuleShipZones">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="TaxRuleShipZone" type="TaxRuleShipZone" minOccurs="0" maxOccurs="unbounded" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="Vendor">
+    <xs:sequence>
+      <xs:element name="VendorId" type="xs:int" />
+      <xs:element name="StoreId" type="xs:int" />
+      <xs:element name="Name" type="xs:string" />
+      <xs:element name="Email" type="xs:string" />
+      <xs:element name="VendorGroups">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="VendorGroup" type="VendorGroup" minOccurs="0" maxOccurs="unbounded" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="ProductKitComponent">
+    <xs:sequence>
+      <xs:element name="ProductId" type="xs:int" />
+      <xs:element name="KitComponentId" type="xs:int" />
+      <xs:element name="OrderBy" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="ProductVariant">
+    <xs:sequence>
+      <xs:element name="Available" type="xs:boolean" />
+      <xs:element name="ProductVariantId" type="xs:int" />
+      <xs:element name="ProductId" type="xs:int" />
+      <xs:element name="Option1" type="xs:int" />
+      <xs:element name="Option2" type="xs:int" />
+      <xs:element name="Option3" type="xs:int" />
+      <xs:element name="Option4" type="xs:int" />
+      <xs:element name="Option5" type="xs:int" />
+      <xs:element name="Option6" type="xs:int" />
+      <xs:element name="Option7" type="xs:int" />
+      <xs:element name="Option8" type="xs:int" />
+      <xs:element name="VariantName" type="xs:string" />
+      <xs:element name="Sku" type="xs:string" />
+      <xs:element name="Price" type="xs:decimal" />
+      <xs:element name="PriceModeId" type="xs:unsignedByte" />
+      <xs:element name="Weight" type="xs:decimal" />
+      <xs:element name="WeightModeId" type="xs:unsignedByte" />
+      <xs:element name="CostOfGoods" type="xs:decimal" />
+      <xs:element name="InStock" type="xs:int" />
+      <xs:element name="InStockWarningLevel" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="ProductAsset">
+    <xs:sequence>
+      <xs:element name="ProductAssetId" type="xs:int" />
+      <xs:element name="ProductId" type="xs:int" />
+      <xs:element name="AssetUrl" type="xs:string" />
+      <xs:element name="OrderBy" type="xs:short" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="BannedIP">
+    <xs:sequence>
+      <xs:element name="BannedIPId" type="xs:int" />
+      <xs:element name="StoreId" type="xs:int" />
+      <xs:element name="DottedIPRangeEnd" type="xs:string" />
+      <xs:element name="DottedIPRangeStart" type="xs:string" />
+      <xs:element name="IPRangeStart" type="xs:long" />
+      <xs:element name="IPRangeEnd" type="xs:long" />
+      <xs:element name="Comment" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="StoreSetting">
+    <xs:sequence>
+      <xs:element name="FieldName" type="xs:string" />
+      <xs:element name="FieldValue" type="xs:string" />
+      <xs:element name="StoreId" type="xs:int" />
+      <xs:element name="StoreSettingId" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="CustomField">
+    <xs:sequence>
+      <xs:element name="CustomFieldId" type="xs:int" />
+      <xs:element name="FieldName" type="xs:string" />
+      <xs:element name="FieldValue" type="xs:string" />
+      <xs:element name="ForeignKeyId" type="xs:int" />
+      <xs:element name="StoreId" type="xs:int" />
+      <xs:element name="TableName" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="Currency">
+    <xs:sequence>
+      <xs:element name="CurrencyId" type="xs:int" />
+      <xs:element name="StoreId" type="xs:int" />
+      <xs:element name="Name" type="xs:string" />
+      <xs:element name="CurrencySymbol" type="xs:string" />
+      <xs:element name="DecimalDigits" type="xs:int" />
+      <xs:element name="DecimalSeparator" type="xs:string" />
+      <xs:element name="GroupSeparator" type="xs:string" />
+      <xs:element name="GroupSizes" type="xs:string" />
+      <xs:element name="NegativePattern" type="xs:unsignedByte" />
+      <xs:element name="NegativeSign" type="xs:string" />
+      <xs:element name="PositivePattern" type="xs:unsignedByte" />
+      <xs:element name="ISOCode" type="xs:string" />
+      <xs:element name="ISOCodePattern" type="xs:unsignedByte" />
+      <xs:element name="ExchangeRate" type="xs:decimal" />
+      <xs:element name="AutoUpdate" type="xs:boolean" />
+      <xs:element name="LastUpdate" type="xs:dateTime" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="Country">
+    <xs:sequence>
+      <xs:element name="CountryCode" type="xs:string" />
+      <xs:element name="StoreId" type="xs:int" />
+      <xs:element name="Name" type="xs:string" />
+      <xs:element name="AddressFormat" type="xs:string" />
+      <xs:element name="ShipZoneCountries" type="xs:string" />
+      <xs:element name="Provinces">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="Province" type="Province" minOccurs="0" maxOccurs="unbounded" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="Province">
+    <xs:sequence>
+      <xs:element name="ProvinceId" type="xs:int" />
+      <xs:element name="CountryCode" type="xs:string" />
+      <xs:element name="Name" type="xs:string" />
+      <xs:element name="ProvinceCode" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="ShipZone">
+    <xs:sequence>
+      <xs:element name="ShipZoneId" type="xs:int" />
+      <xs:element name="StoreId" type="xs:int" />
+      <xs:element name="Name" type="xs:string" />
+      <xs:element name="PostalCodeFilter" type="xs:string" />
+      <xs:element name="CountryRuleId" type="xs:unsignedByte" />
+      <xs:element name="ProvinceRuleId" type="xs:unsignedByte" />
+      <!-- ExcludePostalCodeFilter ADDED IN 7.4 -->
+      <xs:element name="ExcludePostalCodeFilter" type="xs:string" />
+      <!-- ExcludePostalCodeFilter ADDED IN 7.4 -->
+      <xs:element name="ShipZoneCountries">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="ShipZoneCountry" type="ShipZoneCountry" minOccurs="0" maxOccurs="unbounded" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="ShipZoneProvinces">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="ShipZoneProvince" type="ShipZoneProvince" minOccurs="0" maxOccurs="unbounded" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="ShipZoneCountry">
+    <xs:sequence>
+      <xs:element name="ShipZoneId" type="xs:int" />
+      <xs:element name="CountryCode" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="ShipZoneProvince">
+    <xs:sequence>
+      <xs:element name="ProvinceId" type="xs:int" />
+      <xs:element name="ShipZoneId" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="TaxRuleTaxCode">
+    <xs:sequence>
+      <xs:element name="TaxRuleId" type="xs:int" />
+      <xs:element name="TaxCodeId" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="ShipMethod">
+    <xs:sequence>
+      <xs:element name="ShipMethodId" type="xs:int" />
+      <xs:element name="StoreId" type="xs:int" />
+      <xs:element name="ShipMethodTypeId" type="xs:short" />
+      <xs:element name="Name" type="xs:string" />
+      <xs:element name="Surcharge" type="xs:decimal" />
+      <xs:element name="ShipGatewayId" type="xs:int" />
+      <xs:element name="ServiceCode" type="xs:string" />
+      <xs:element name="MinPurchase" type="xs:decimal" />
+      <xs:element name="SurchargeIsVisible" type="xs:boolean" />
+      <xs:element name="SurchargeIsPercent" type="xs:boolean" />
+      <xs:element name="OrderBy" type="xs:short" />
+      <xs:element name="TaxCodeId" type="xs:int" />
+      <xs:element name="ShipMethodWarehouses">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="ShipMethodWarehouse" type="ShipMethodWarehouse" minOccurs="0" maxOccurs="unbounded" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="ShipMethodGroups">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="ShipMethodGroup" type="ShipMethodGroup" minOccurs="0" maxOccurs="unbounded" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="ShipMethodShipZones">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="ShipMethodShipZone" type="ShipMethodShipZone" minOccurs="0" maxOccurs="unbounded" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="ShipRateMatrices">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="ShipRateMatrix" type="ShipRateMatrix" minOccurs="0" maxOccurs="unbounded" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="ShipMethodShipZone">
+    <xs:sequence>
+      <xs:element name="ShipMethodId" type="xs:int" />
+      <xs:element name="ShipZoneId" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="WrapStyle">
+    <xs:sequence>
+      <xs:element name="WrapStyleId" type="xs:int" />
+      <xs:element name="WrapGroupId" type="xs:int" />
+      <xs:element name="Name" type="xs:string" />
+      <xs:element name="TaxCodeId" type="xs:int" />
+      <xs:element name="Price" type="xs:decimal" />
+      <xs:element name="ThumbnailUrl" type="xs:string" />
+      <xs:element name="ImageUrl" type="xs:string" />
+      <xs:element name="OrderBy" type="xs:short" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="WrapGroup">
+    <xs:sequence>
+      <xs:element name="WrapGroupId" type="xs:int" />
+      <xs:element name="StoreId" type="xs:int" />
+      <xs:element name="Name" type="xs:string" />
+      <xs:element name="WrapStyles">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="WrapStyle" type="WrapStyle" minOccurs="0" maxOccurs="unbounded" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="Link">
+    <xs:sequence>
+      <xs:element name="LinkId" type="xs:int" />
+      <xs:element name="StoreId" type="xs:int" />
+      <xs:element name="Name" type="xs:string" />
+      <xs:element name="Summary" type="xs:string" />
+      <xs:element name="DisplayPage" type="xs:string" />
+      <xs:element name="ThumbnailUrl" type="xs:string" />
+      <xs:element name="ThumbnailAltText" type="xs:string" />
+      <xs:element name="VisibilityId" type="xs:unsignedByte" />
+      <xs:element name="Theme" type="xs:string" />
+      <xs:element name="Description" type="xs:string" />
+      <xs:element name="TargetUrl" type="xs:string" />
+      <xs:element name="TargetWindow" type="xs:string" />
+      <xs:element name="HtmlHead" type="xs:string" />
+      <xs:element name="Summary" type="xs:string" />
+      <xs:element name="Categories" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="Webpage">
+    <xs:sequence>
+      <xs:element name="WebpageId" type="xs:int" />
+      <xs:element name="StoreId" type="xs:int" />
+      <xs:element name="Name" type="xs:string" />
+      <xs:element name="Summary" type="xs:string" />
+      <xs:element name="DisplayPage" type="xs:string" />
+      <xs:element name="ThumbnailUrl" type="xs:string" />
+      <xs:element name="ThumbnailAltText" type="xs:string" />
+      <xs:element name="Categories" type="xs:string" />
+      <xs:element name="VisibilityId" type="xs:unsignedByte" />
+      <xs:element name="Description" type="xs:string" />
+      <xs:element name="Theme" type="xs:string" />
+      <xs:element name="HtmlHead" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="ProductTemplate">
+    <xs:sequence>
+      <xs:element name="ProductTemplateId" type="xs:int" />
+      <xs:element name="StoreId" type="xs:int" />
+      <xs:element name="Name" type="xs:string" />
+      <xs:element name="InputFields">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="InputField" type="InputField" minOccurs="0" maxOccurs="unbounded" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="InputField">
+    <xs:sequence>
+      <xs:element name="InputFieldId" type="xs:int" />
+      <xs:element name="ProductTemplateId" type="xs:int" />
+      <xs:element name="Name" type="xs:string" />
+      <xs:element name="UserPrompt" type="xs:string" />
+      <xs:element name="InputTypeId" type="xs:short" />
+      <xs:element name="Rows" type="xs:unsignedByte" />
+      <xs:element name="Columns" type="xs:unsignedByte" />
+      <xs:element name="MaxLength" type="xs:short" />
+      <xs:element name="IsRequired" type="xs:boolean" />
+      <xs:element name="RequiredMessage" type="xs:string" />
+      <xs:element name="IsMerchantField" type="xs:boolean" />
+      <!-- PersistWithOrder,PromptCssClass, ControlCssClass, AdditionalData ADDED IN 7.4 -->
+      <xs:element name="PersistWithOrder" type="xs:boolean" />
+      <xs:element name="PromptCssClass" type="xs:string" />
+      <xs:element name="ControlCssClass" type="xs:string" />
+      <xs:element name="AdditionalData" type="xs:string" />
+      <!-- PersistWithOrder,PromptCssClass, ControlCssClass, AdditionalData ADDED IN 7.4 -->
+      <xs:element name="OrderBy" type="xs:short" />
+      <xs:element name="InputChoices">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="InputChoice" type="InputChoice" minOccurs="0" maxOccurs="unbounded" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="Group">
+    <xs:sequence>
+      <xs:element name="GroupId" type="xs:int" />
+      <xs:element name="StoreId" type="xs:int" />
+      <xs:element name="Name" type="xs:string" />
+      <xs:element name="Description" type="xs:string" />
+      <xs:element name="IsTaxExempt" type="xs:boolean" />
+      <xs:element name="IsReadOnly" type="xs:boolean" />
+      <xs:element name="GroupRoles">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="GroupRole" type="GroupRole" minOccurs="0" maxOccurs="unbounded" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="Wishlist">
+    <xs:sequence>
+      <xs:element name="WishlistId" type="xs:int" />
+      <xs:element name="UserId" type="xs:int" />
+      <xs:element name="Name" type="xs:string" />
+      <xs:element name="ViewPassword" type="xs:string" />
+      <xs:element name="Items">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="Item" type="WishlistItem" minOccurs="0" maxOccurs="unbounded" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="WishlistItem">
+    <xs:sequence>
+      <xs:element name="WishlistItemId" type="xs:int" />
+      <xs:element name="WishlistId" type="xs:int" />
+      <xs:element name="ProductId" type="xs:int" />
+      <xs:element name="OptionList" type="xs:string" />
+      <xs:element name="LineMessage" type="xs:string" />
+      <xs:element name="CreatedDate" type="xs:dateTime" />
+      <xs:element name="LastModifiedDate" type="xs:dateTime" />
+      <xs:element name="Desired" type="xs:short" />
+      <xs:element name="Received" type="xs:short" />
+      <xs:element name="Priority" type="xs:unsignedByte" />
+      <xs:element name="Comment" type="xs:string" />
+      <xs:element name="Price" type="xs:decimal" />
+      <xs:element name="KitList" type="xs:string" />
+      <xs:element name="Inputs">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="Input" type="WishlistItemInput" minOccurs="0" maxOccurs="unbounded" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <!-- Legacy Field (7.0, 7.1, 7.2) "WishlistItemKitProducts" -->
+      <xs:element name="WishlistItemKitProducts">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="WishlistItemKitProduct" type="WishlistItemKitProduct" minOccurs="0" maxOccurs="unbounded" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <!-- Legacy Field (7.0, 7.1, 7.2) "WishlistItemKitProducts" -->
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="WishlistItemInput">
+    <xs:sequence>
+      <xs:element name="WishlistItemInputId" type="xs:int" />
+      <xs:element name="WishlistItemId" type="xs:int" />
+      <xs:element name="InputFieldId" type="xs:int" />
+      <xs:element name="InputValue" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="Coupon">
+    <xs:sequence>
+      <xs:element name="CouponId" type="xs:int" />
+      <xs:element name="StoreId" type="xs:int" />
+      <xs:element name="CouponTypeId" type="xs:unsignedByte" />
+      <xs:element name="Name" type="xs:string" />
+      <xs:element name="CouponCode" type="xs:string" />
+      <xs:element name="DisplayName" type="xs:string" />
+      <xs:element name="DiscountAmount" type="xs:decimal" />
+      <xs:element name="IsPercent" type="xs:boolean" />
+      <xs:element name="MaxValue" type="xs:decimal" />
+      <xs:element name="MinPurchase" type="xs:decimal" />
+      <xs:element name="MinQuantity" type="xs:short" />
+      <xs:element name="MaxQuantity" type="xs:short" />
+      <xs:element name="QuantityInterval" type="xs:short" />
+      <xs:element name="MaxUses" type="xs:short" />
+      <xs:element name="MaxUsesPerCustomer" type="xs:short" />
+      <xs:element name="StartDate" type="xs:dateTime" />
+      <xs:element name="EndDate" type="xs:dateTime" />
+      <xs:element name="ProductRuleId" type="xs:unsignedByte" />
+      <xs:element name="AllowCombine" type="xs:boolean" />
+      <xs:element name="CouponGroups">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="CouponGroup" type="CouponGroup" minOccurs="0" maxOccurs="unbounded" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="CouponProducts">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="CouponProduct" type="CouponProduct" minOccurs="0" maxOccurs="unbounded" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="CouponShipMethods">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="CouponShipMethod" type="CouponShipMethod" minOccurs="0" maxOccurs="unbounded" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="EmailList">
+    <xs:sequence>
+      <xs:element name="EmailListId" type="xs:int" />
+      <xs:element name="StoreId" type="xs:int" />
+      <xs:element name="Name" type="xs:string" />
+      <xs:element name="Description" type="xs:string" />
+      <xs:element name="IsPublic" type="xs:boolean" />
+      <xs:element name="SignupRuleId" type="xs:short" />
+      <xs:element name="SignupEmailTemplateId" type="xs:int" />
+      <xs:element name="LastSendDate" type="xs:dateTime" />
+      <xs:element name="Users">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="EmailListUser" type="EmailListUser" minOccurs="0" maxOccurs="unbounded" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="Signups">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="EmailListSignup" type="EmailListSignup" minOccurs="0" maxOccurs="unbounded" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="EmailListUser">
+    <xs:sequence>
+      <xs:element name="EmailListId" type="xs:int" />
+      <xs:element name="Email" type="xs:string" />
+      <xs:element name="LastSendDate" type="xs:dateTime" />
+      <xs:element name="SignupDate" type="xs:dateTime" />
+      <xs:element name="FailureCount" type="xs:short" />
+      <xs:element name="SignupIP" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="EmailListSignup">
+    <xs:sequence>
+      <xs:element name="EmailListSignupId" type="xs:int" />
+      <xs:element name="EmailListId" type="xs:int" />
+      <xs:element name="SignupDate" type="xs:dateTime" />
+      <xs:element name="Email" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="VolumeDiscount">
+    <xs:sequence>
+      <xs:element name="VolumeDiscountId" type="xs:int" />
+      <xs:element name="StoreId" type="xs:int" />
+      <xs:element name="IsValueBased" type="xs:boolean" />
+      <xs:element name="Name" type="xs:string" />
+      <xs:element name="IsGlobal" type="xs:boolean" />
+      <xs:element name="VolumeDiscountGroups">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="VolumeDiscountGroup" type="VolumeDiscountGroup" minOccurs="0" maxOccurs="unbounded" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="Levels">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="VolumeDiscountLevel" type="VolumeDiscountLevel" minOccurs="0" maxOccurs="unbounded" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="VolumeDiscountLevel">
+    <xs:sequence>
+      <xs:element name="VolumeDiscountLevelId" type="xs:int" />
+      <xs:element name="VolumeDiscountId" type="xs:int" />
+      <xs:element name="MinValue" type="xs:decimal" />
+      <xs:element name="MaxValue" type="xs:decimal" />
+      <xs:element name="DiscountAmount" type="xs:decimal" />
+      <xs:element name="IsPercent" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="EmailTemplate">
+    <xs:sequence>
+      <xs:element name="EmailTemplateId" type="xs:int" />
+      <xs:element name="StoreId" type="xs:int" />
+      <xs:element name="Name" type="xs:string" />
+      <xs:element name="ToAddress" type="xs:string" />
+      <xs:element name="FromAddress" type="xs:string" />
+      <xs:element name="ReplyToAddress" type="xs:string" />
+      <xs:element name="CCList" type="xs:string" />
+      <xs:element name="BCCList" type="xs:string" />
+      <xs:element name="Subject" type="xs:string" />
+      <xs:element name="ContentFileName" type="xs:string" />
+      <xs:element name="IsHTML" type="xs:boolean" />
+      <!-- Legacy Field (7.0, 7.1, 7.2) "Body" -->
+      <xs:element name="Body" type="xs:string" />
+      <!-- Legacy Field (7.0, 7.1, 7.2) "Body" -->
+      <xs:element name="Triggers">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="EmailTemplateTrigger" type="EmailTemplateTrigger" minOccurs="0" maxOccurs="unbounded" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="GiftCertificate">
+    <xs:sequence>
+      <xs:element name="Name" type="xs:string" />
+      <xs:element name="OrderItemId" type="xs:int" />
+      <xs:element name="GiftCertificateId" type="xs:int" />
+      <xs:element name="StoreId" type="xs:int" />
+      <xs:element name="SerialNumber" type="xs:string" />
+      <xs:element name="CreatedBy" type="xs:int" />
+      <xs:element name="CreateDate" type="xs:dateTime" />
+      <xs:element name="ExpirationDate" type="xs:dateTime" />
+      <xs:element name="Balance" type="xs:decimal" />
+      <xs:element name="Transactions">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="Transaction" type="GiftCertificateTransaction" minOccurs="0" maxOccurs="unbounded" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="GiftCertificateTransaction">
+    <xs:sequence>
+      <xs:element name="GiftCertificateTransactionId" type="xs:int" />
+      <xs:element name="GiftCertificateId" type="xs:int" />
+      <xs:element name="OrderId" type="xs:int" />
+      <xs:element name="TransactionDate" type="xs:dateTime" />
+      <xs:element name="Amount" type="xs:decimal" />
+      <xs:element name="Description" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="PaymentGateway">
+    <xs:sequence>
+      <xs:element name="PaymentGatewayId" type="xs:int" />
+      <xs:element name="StoreId" type="xs:int" />
+      <xs:element name="Name" type="xs:string" />
+      <xs:element name="ClassId" type="xs:string" />
+      <xs:element name="ConfigData" type="xs:string" />
+      <xs:element name="ReCrypt" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="Transaction">
+    <xs:sequence>
+      <xs:element name="TransactionId" type="xs:int" />
+      <xs:element name="TransactionTypeId" type="xs:short" />
+      <xs:element name="PaymentId" type="xs:int" />
+      <xs:element name="PaymentGatewayId" type="xs:int" />
+      <xs:element name="ProviderTransactionId" type="xs:string" />
+      <xs:element name="TransactionDate" type="xs:dateTime" />
+      <xs:element name="Amount" type="xs:decimal" />
+      <xs:element name="TransactionStatusId" type="xs:short" />
+      <xs:element name="ResponseCode" type="xs:string" />
+      <xs:element name="ResponseMessage" type="xs:string" />
+      <xs:element name="AuthorizationCode" type="xs:string" />
+      <xs:element name="AVSResultCode" type="xs:string" />
+      <xs:element name="CVVResultCode" type="xs:string" />
+      <xs:element name="CAVResultCode" type="xs:string" />
+      <xs:element name="RemoteIP" type="xs:string" />
+      <xs:element name="Referrer" type="xs:string" />
+      <xs:element name="AdditionalData" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="PaymentMethod">
+    <xs:sequence>
+      <xs:element name="PaymentMethodId" type="xs:int" />
+      <xs:element name="StoreId" type="xs:int" />
+      <xs:element name="Name" type="xs:string" />
+      <xs:element name="PaymentInstrumentId" type="xs:short" />
+      <xs:element name="PaymentGatewayId" type="xs:int" />
+      <xs:element name="OrderBy" type="xs:short" />
+      <xs:element name="PaymentMethodGroups">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="PaymentMethodGroup" type="PaymentMethodGroup" minOccurs="0" maxOccurs="unbounded" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="Payment">
+    <xs:sequence>
+      <xs:element name="PaymentId" type="xs:int" />
+      <xs:element name="OrderId" type="xs:int" />
+      <xs:element name="SubscriptionId" type="xs:int" />
+      <xs:element name="PaymentMethodId" type="xs:int" />
+      <xs:element name="PaymentMethodName" type="xs:string" />
+      <xs:element name="ReferenceNumber" type="xs:string" />
+      <xs:element name="Amount" type="xs:decimal" />
+      <xs:element name="CurrencyCode" type="xs:string" />
+      <xs:element name="PaymentDate" type="xs:dateTime" />
+      <xs:element name="PaymentStatusId" type="xs:short" />
+      <xs:element name="PaymentStatusReason" type="xs:string" />
+      <xs:element name="CompletedDate" type="xs:dateTime" />
+      <xs:element name="EncryptedAccountData" type="xs:string" />
+      <xs:element name="ReCrypt" type="xs:boolean" />
+      <xs:element name="Transactions">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="Transaction" type="Transaction" minOccurs="0" maxOccurs="unbounded" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="OrderStatus">
+    <xs:sequence>
+      <xs:element name="OrderStatusId" type="xs:int" />
+      <xs:element name="StoreId" type="xs:int" />
+      <xs:element name="Name" type="xs:string" />
+      <xs:element name="DisplayName" type="xs:string" />
+      <xs:element name="InventoryActionId" type="xs:short" />
+      <xs:element name="IsActive" type="xs:boolean" />
+      <xs:element name="IsValid" type="xs:boolean" />
+      <xs:element name="OrderBy" type="xs:short" />
+      <xs:element name="Actions">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="OrderStatusAction" type="OrderStatusAction" minOccurs="0" maxOccurs="unbounded" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="OrderStatusEmails">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="OrderStatusEmail" type="OrderStatusEmail" minOccurs="0" maxOccurs="unbounded" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="Triggers">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="OrderStatusTrigger" type="OrderStatusTrigger" minOccurs="0" maxOccurs="unbounded" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="ProductCategory">
+    <xs:sequence>
+      <xs:element name="CategoryId" type="xs:int" />
+      <xs:element name="Path" type="xs:string" />
+      <xs:element name="OrderBy" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="TrackingNumber">
+    <xs:sequence>
+      <xs:element name="TrackingNumberId" type="xs:int" />
+      <xs:element name="OrderShipmentId" type="xs:int" />
+      <xs:element name="ShipGatewayId" type="xs:int" />
+      <xs:element name="TrackingNumberData" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="OrderItemInput">
+    <xs:sequence>
+      <xs:element name="OrderItemInputId" type="xs:int" />
+      <xs:element name="OrderItemId" type="xs:int" />
+      <!-- IsMerchantField ADDED IN 7.4 -->
+      <xs:element name="IsMerchantField" type="xs:boolean" />
+      <!-- IsMerchantField ADDED IN 7.4 -->
+      <xs:element name="Name" type="xs:string" />
+      <xs:element name="InputValue" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  
+  
+
+  <xs:complexType name="EmailTemplateTrigger">
+    <xs:sequence>
+      <xs:element name="EmailTemplateId" type="xs:int" />
+      <xs:element name="StoreEventId" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="ProductVolumeDiscount">
+    <xs:sequence>
+      <xs:element name="ProductId" type="xs:int" />
+      <xs:element name="VolumeDiscountId" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="CategoryVolumeDiscount">
+    <xs:sequence>
+      <xs:element name="CategoryId" type="xs:int" />
+      <xs:element name="VolumeDiscountId" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="Option">
+    <xs:sequence>
+      <xs:element name="OptionId" type="xs:int" />
+      <xs:element name="Name" type="xs:string" />
+      <xs:element name="ShowThumbnails" type="xs:boolean" />
+      <xs:element name="ThumbnailColumns" type="xs:unsignedByte" />
+      <xs:element name="ThumbnailWidth" type="xs:short" />
+      <xs:element name="ThumbnailHeight" type="xs:short" />
+      <xs:element name="CreatedDate" type="xs:dateTime" />
+      <xs:element name="HeaderText" type="xs:string" />
+      <xs:element name="Choices">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="Choice" type="OptionChoice" minOccurs="0" maxOccurs="unbounded" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="OptionChoice">
+    <xs:sequence>
+      <xs:element name="OptionChoiceId" type="xs:int" />
+      <xs:element name="OptionId" type="xs:int" />
+      <xs:element name="Name" type="xs:string" />
+      <xs:element name="ThumbnailUrl" type="xs:string" />
+      <xs:element name="ImageUrl" type="xs:string" />
+      <xs:element name="PriceModifier" type="xs:decimal" />
+      <xs:element name="CogsModifier" type="xs:decimal" />
+      <xs:element name="WeightModifier" type="xs:decimal" />
+      <xs:element name="SkuModifier" type="xs:string" />
+      <xs:element name="OrderBy" type="xs:short" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="ProductOption">
+    <xs:sequence>
+      <xs:element name="ProductId" type="xs:int" />
+      <xs:element name="OptionId" type="xs:int" />
+      <xs:element name="OrderBy" type="xs:short" />
+      <xs:element name="Option" type="Option" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="ProductTemplateField">
+    <xs:sequence>
+      <xs:element name="ProductTemplateFieldId" type="xs:int" />
+      <xs:element name="ProductId" type="xs:int" />
+      <xs:element name="InputFieldId" type="xs:int" />
+      <xs:element name="InputValue" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="SerialKey">
+    <xs:sequence>
+      <xs:element name="SerialKeyId" type="xs:int" />
+      <xs:element name="DigitalGoodId" type="xs:int" />
+      <xs:element name="SerialKeyData" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="LicenseAgreement">
+    <xs:sequence>
+      <xs:element name="LicenseAgreementId" type="xs:int" />
+      <xs:element name="StoreId" type="xs:int" />
+      <xs:element name="DisplayName" type="xs:string" />
+      <xs:element name="AgreementText" type="xs:string" />
+      <xs:element name="IsHTML" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="ProductDigitalGood">
+    <xs:sequence>
+      <xs:element name="ProductDigitalGoodId" type="xs:int" />
+      <xs:element name="ProductId" type="xs:int" />
+      <xs:element name="OptionList" type="xs:string" />
+      <xs:element name="DigitalGoodId" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="OrderItemDigitalGood">
+    <xs:sequence>
+      <xs:element name="OrderItemDigitalGoodId" type="xs:int" />
+      <xs:element name="OrderItemId" type="xs:int" />
+      <xs:element name="DigitalGoodId" type="xs:int" />
+      <xs:element name="Name" type="xs:string" />
+      <xs:element name="ActivationDate" type="xs:dateTime" />
+      <xs:element name="DownloadDate" type="xs:dateTime" />
+      <xs:element name="SerialKeyData" type="xs:string" />
+      <xs:element name="Downloads">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="Download" type="Download" minOccurs="0" maxOccurs="unbounded" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <!-- START DEFINITION OF NEW OBJECTS  -->
+  <xs:complexType name="AuditEvent">
+    <xs:sequence>
+      <xs:element name="AuditEventId" type="xs:int" />
+      <xs:element name="StoreId" type="xs:int" />
+      <xs:element name="EventDate" type="xs:dateTime" />
+      <xs:element name="EventTypeId" type="xs:int" />
+      <xs:element name="Successful" type="xs:boolean" />
+      <xs:element name="UserId" type="xs:int" />
+      <xs:element name="RelatedId" type="xs:int" />
+      <xs:element name="RemoteIP" type="xs:string" />
+      <xs:element name="Comment" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="BasketCoupon">
+    <xs:sequence>
+      <xs:element name="BasketId" type="xs:int" />
+      <xs:element name="CouponId" type="xs:int" />
+      <xs:element name="AppliedDate" type="xs:dateTime" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="BasketItemInput">
+    <xs:sequence>
+      <xs:element name="BasketItemInputId" type="xs:int" />
+      <xs:element name="BasketItemId" type="xs:int" />
+      <xs:element name="InputFieldId" type="xs:int" />
+      <xs:element name="InputValue" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>  
+  <xs:complexType name="BasketItem">
+    <xs:sequence>
+      <xs:element name="BasketItemId" type="xs:int" />
+      <xs:element name="ParentItemId" type="xs:int" />
+      <xs:element name="BasketId" type="xs:int" />
+      <xs:element name="BasketShipmentId" type="xs:int" />
+      <xs:element name="ProductId" type="xs:int" />
+      <xs:element name="OptionList" type="xs:string" />
+      <xs:element name="TaxCodeId" type="xs:int" />
+      <xs:element name="Name" type="xs:string" />
+      <xs:element name="Sku" type="xs:string" />
+      <xs:element name="Price" type="xs:decimal" />
+      <xs:element name="Weight" type="xs:decimal" />
+      <xs:element name="Quantity" type="xs:short" />
+      <xs:element name="LineMessage" type="xs:string" />
+      <xs:element name="OrderItemTypeId" type="xs:short" />
+      <xs:element name="OrderBy" type="xs:short" />
+      <xs:element name="WrapStyleId" type="xs:int" />
+      <xs:element name="GiftMessage" type="xs:string" />
+      <xs:element name="WishlistItemId" type="xs:int" />
+      <xs:element name="ShippableId" type="xs:unsignedByte" />
+      <xs:element name="LastModifiedDate" type="xs:dateTime" />
+      <xs:element name="TaxRate" type="xs:decimal" />
+      <xs:element name="TaxAmount" type="xs:decimal" />
+      <xs:element name="KitList" type="xs:string" />
+      <xs:element name="CustomFields" type="xs:string" />
+      <xs:element name="Inputs">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="BasketItemInput" type="BasketItemInput" minOccurs="0" maxOccurs="unbounded" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <!-- Legacy Field (7.0, 7.1, 7.2) "BasketItemKitProducts" -->
+      <xs:element name="BasketItemKitProducts">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="BasketItemKitProduct" type="BasketItemKitProduct" minOccurs="0" maxOccurs="unbounded" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <!-- Legacy Field (7.0, 7.1, 7.2) "BasketItemKitProducts" -->
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="Basket">
+    <xs:sequence>
+      <xs:element name="BasketId" type="xs:int" />
+      <xs:element name="UserId" type="xs:int" />
+      <xs:element name="ContentHash" type="xs:string" />
+      <xs:element name="BasketCoupons">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="BasketCoupon" type="BasketCoupon" minOccurs="0" maxOccurs="unbounded" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="Items">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="BasketItem" type="BasketItem" minOccurs="0" maxOccurs="unbounded" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="Shipments">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="BasketShipment" type="BasketShipment" minOccurs="0" maxOccurs="unbounded" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="BasketShipment">
+    <xs:sequence>
+      <xs:element name="BasketShipmentId" type="xs:int" />
+      <xs:element name="BasketId" type="xs:int" />
+      <xs:element name="WarehouseId" type="xs:int" />
+      <xs:element name="ShipMethodId" type="xs:int" />
+      <xs:element name="AddressId" type="xs:int" />
+      <xs:element name="ShipMessage" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="CatalogNode">
+    <xs:sequence>
+      <xs:element name="CategoryId" type="xs:int" />
+      <xs:element name="CatalogNodeId" type="xs:int" />
+      <xs:element name="CatalogNodeTypeId" type="xs:unsignedByte" />
+      <xs:element name="OrderBy" type="xs:short" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="CategoryParent">
+    <xs:sequence>
+      <xs:element name="CategoryId" type="xs:int" />
+      <xs:element name="ParentId" type="xs:int" />
+      <xs:element name="ParentLevel" type="xs:unsignedByte" />
+      <xs:element name="ParentNumber" type="xs:unsignedByte" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="CouponCombo">
+    <xs:sequence>
+      <xs:element name="CouponId" type="xs:int" />
+      <xs:element name="ComboCouponId" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="CouponGroup">
+    <xs:sequence>
+      <xs:element name="CouponId" type="xs:int" />
+      <xs:element name="GroupId" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="CouponProduct">
+    <xs:sequence>
+      <xs:element name="CouponId" type="xs:int" />
+      <xs:element name="ProductId" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="CouponShipMethod">
+    <xs:sequence>
+      <xs:element name="CouponId" type="xs:int" />
+      <xs:element name="ShipMethodId" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>  
+  <xs:complexType name="Download">
+    <xs:sequence>
+      <xs:element name="DownloadId" type="xs:int" />
+      <xs:element name="OrderItemDigitalGoodId" type="xs:int" />
+      <xs:element name="DownloadDate" type="xs:dateTime" />
+      <xs:element name="RemoteAddr" type="xs:string" />
+      <xs:element name="UserAgent" type="xs:string" />
+      <xs:element name="Referrer" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="ErrorMessage">
+    <xs:sequence>
+      <xs:element name="ErrorMessageId" type="xs:int" />
+      <xs:element name="EntryDate" type="xs:dateTime" />
+      <xs:element name="StoreId" type="xs:int" />
+      <xs:element name="MessageSeverityId" type="xs:unsignedByte" />
+      <xs:element name="Text" type="xs:string" />
+      <xs:element name="DebugData" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="GroupRole">
+    <xs:sequence>
+      <xs:element name="GroupId" type="xs:int" />
+      <xs:element name="RoleId" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="InputChoice">
+    <xs:sequence>
+      <xs:element name="InputChoiceId" type="xs:int" />
+      <xs:element name="InputFieldId" type="xs:int" />
+      <xs:element name="ChoiceText" type="xs:string" />
+      <xs:element name="ChoiceValue" type="xs:string" />
+      <xs:element name="IsSelected" type="xs:boolean" />
+      <xs:element name="OrderBy" type="xs:short" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="IPLocation">
+    <xs:sequence>
+      <xs:element name="IPRangeStart" type="xs:long" />
+      <xs:element name="IPRangeEnd" type="xs:long" />
+      <xs:element name="CountryCode" type="xs:string" />
+      <xs:element name="Region" type="xs:string" />
+      <xs:element name="City" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="KitComponent">
+    <xs:sequence>
+      <xs:element name="KitComponentId" type="xs:int" />
+      <xs:element name="StoreId" type="xs:int" />
+      <xs:element name="Name" type="xs:string" />
+      <xs:element name="UserPrompt" type="xs:string" />
+      <xs:element name="InputTypeId" type="xs:short" />
+      <xs:element name="Columns" type="xs:unsignedByte" />
+      <xs:element name="HeaderOption" type="xs:string" />
+      <xs:element name="KitProducts">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="KitProduct" type="KitProduct" minOccurs="0" maxOccurs="unbounded" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="KitProduct">
+    <xs:sequence>
+      <xs:element name="KitProductId" type="xs:int" />
+      <xs:element name="KitComponentId" type="xs:int" />
+      <xs:element name="ProductId" type="xs:int" />
+      <xs:element name="OptionList" type="xs:string" />
+      <xs:element name="Name" type="xs:string" />
+      <xs:element name="Quantity" type="xs:short" />
+      <xs:element name="Price" type="xs:decimal" />
+      <xs:element name="PriceModeId" type="xs:unsignedByte" />
+      <xs:element name="Weight" type="xs:decimal" />
+      <xs:element name="WeightModeId" type="xs:unsignedByte" />
+      <xs:element name="IsSelected" type="xs:boolean" />
+      <xs:element name="OrderBy" type="xs:short" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="OrderCoupon">
+    <xs:sequence>
+      <xs:element name="OrderId" type="xs:int" />
+      <xs:element name="CouponCode" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="OrderStatusAction">
+    <xs:sequence>
+      <xs:element name="OrderStatusId" type="xs:int" />
+      <xs:element name="OrderActionId" type="xs:short" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="OrderStatusEmail">
+    <xs:sequence>
+      <xs:element name="OrderStatusId" type="xs:int" />
+      <xs:element name="EmailTemplateId" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="OrderStatusTrigger">
+    <xs:sequence>
+      <xs:element name="StoreEventId" type="xs:int" />
+      <xs:element name="OrderStatusId" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="PageView">
+    <xs:sequence>
+      <xs:element name="PageViewId" type="xs:int" />
+      <xs:element name="StoreId" type="xs:int" />
+      <xs:element name="ActivityDate" type="xs:dateTime" />
+      <xs:element name="RemoteIP" type="xs:string" />
+      <xs:element name="RequestMethod" type="xs:string" />
+      <xs:element name="UserId" type="xs:int" />
+      <xs:element name="UriStem" type="xs:string" />
+      <xs:element name="UriQuery" type="xs:string" />
+      <xs:element name="TimeTaken" type="xs:int" />
+      <xs:element name="UserAgent" type="xs:string" />
+      <xs:element name="Referrer" type="xs:string" />
+      <xs:element name="CatalogNodeId" type="xs:int" />
+      <xs:element name="CatalogNodeTypeId" type="xs:short" />
+      <xs:element name="Browser" type="xs:string" />
+      <xs:element name="BrowserName" type="xs:string" />
+      <xs:element name="BrowserPlatform" type="xs:string" />
+      <xs:element name="BrowserVersion" type="xs:string" />
+      <xs:element name="AffiliateId" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="PaymentMethodGroup">
+    <xs:sequence>
+      <xs:element name="PaymentMethodId" type="xs:int" />
+      <xs:element name="GroupId" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="PersonalizationPath">
+    <xs:sequence>
+      <xs:element name="PersonalizationPathId" type="xs:int" />
+      <xs:element name="StoreId" type="xs:int" />
+      <xs:element name="Path" type="xs:string" />
+      <xs:element name="SharedPersonalization" type="SharedPersonalization" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="ProductImage">
+    <xs:sequence>
+      <xs:element name="ProductImageId" type="xs:int" />
+      <xs:element name="ProductId" type="xs:int" />
+      <xs:element name="ImageUrl" type="xs:string" />
+      <xs:element name="ImageAltText" type="xs:string" />
+      <xs:element name="OrderBy" type="xs:short" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="Profile">
+    <xs:sequence>
+      <xs:element name="UserId" type="xs:int" />
+      <xs:element name="PropertyNames" type="xs:string" />
+      <xs:element name="PropertyValuesString" type="xs:string" />
+      <xs:element name="PropertyValuesBinary" type="xs:string" />
+      <xs:element name="LastUpdatedDate" type="xs:dateTime" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="Readme">
+    <xs:sequence>
+      <xs:element name="ReadmeId" type="xs:int" />
+      <xs:element name="StoreId" type="xs:int" />
+      <xs:element name="DisplayName" type="xs:string" />
+      <xs:element name="ReadmeText" type="xs:string" />
+      <xs:element name="IsHTML" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="RelatedProduct">
+    <xs:sequence>
+      <xs:element name="ProductId" type="xs:int" />
+      <xs:element name="OrderBy" type="xs:short" />
+      <xs:element name="ChildProductId" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="Role">
+    <xs:sequence>
+      <xs:element name="RoleId" type="xs:int" />
+      <xs:element name="Name" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="SharedPersonalization">
+    <xs:sequence>
+      <xs:element name="PersonalizationPathId" type="xs:int" />
+      <xs:element name="PageSettings" type="xs:byte" minOccurs="0" maxOccurs="unbounded" />
+      <xs:element name="Theme" type="xs:string" />
+      <xs:element name="MasterPageFile" type="xs:string" />
+      <xs:element name="LastUpdatedDate" type="xs:dateTime" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="ShipGateway">
+    <xs:sequence>
+      <xs:element name="ShipGatewayId" type="xs:int" />
+      <xs:element name="StoreId" type="xs:int" />
+      <xs:element name="Name" type="xs:string" />
+      <xs:element name="ClassId" type="xs:string" />
+      <xs:element name="ConfigData" type="xs:string" />
+      <xs:element name="ReCrypt" type="xs:boolean" />
+      <xs:element name="Enabled" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="ShipMethodGroup">
+    <xs:sequence>
+      <xs:element name="ShipMethodId" type="xs:int" />
+      <xs:element name="GroupId" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="ShipMethodWarehouse">
+    <xs:sequence>
+      <xs:element name="ShipMethodId" type="xs:int" />
+      <xs:element name="WarehouseId" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="ShipRateMatrix">
+    <xs:sequence>
+      <xs:element name="ShipRateMatrixId" type="xs:int" />
+      <xs:element name="ShipMethodId" type="xs:int" />
+      <xs:element name="RangeStart" type="xs:decimal" />
+      <xs:element name="RangeEnd" type="xs:decimal" />
+      <xs:element name="Rate" type="xs:decimal" />
+      <xs:element name="IsPercent" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="SpecialGroup">
+    <xs:sequence>
+      <xs:element name="SpecialId" type="xs:int" />
+      <xs:element name="GroupId" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="SubscriptionPlan">
+    <xs:sequence>
+      <xs:element name="ProductId" type="xs:int" />
+      <xs:element name="Name" type="xs:string" />
+      <xs:element name="NumberOfPayments" type="xs:short" />
+      <xs:element name="RecurringChargeSpecified" type="xs:boolean" />
+      <xs:element name="PaymentFrequency" type="xs:short" />
+      <xs:element name="PaymentFrequencyUnitId" type="xs:unsignedByte" />
+      <xs:element name="RecurringCharge" type="xs:decimal" />
+      <xs:element name="GroupId" type="xs:int" />
+      <!-- TaxCodeId ADDED IN 7.4 -->
+      <xs:element name="TaxCodeId" type="xs:int" />
+      <!-- TaxCodeId ADDED IN 7.4 -->
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="Subscription">
+    <xs:sequence>
+      <xs:element name="SubscriptionId" type="xs:int" />
+      <xs:element name="ProductId" type="xs:int" />
+      <xs:element name="UserId" type="xs:int" />
+      <xs:element name="OrderItemId" type="xs:int" />
+      <xs:element name="TransactionId" type="xs:int" />
+      <xs:element name="IsActive" type="xs:boolean" />
+      <xs:element name="ExpirationDate" type="xs:dateTime" />
+      <!-- GroupId ADDED IN 7.4 -->
+      <xs:element name="GroupId" type="xs:int" />
+      <!-- GroupId ADDED IN 7.4 -->
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="TaxGateway">
+    <xs:sequence>
+      <xs:element name="TaxGatewayId" type="xs:int" />
+      <xs:element name="StoreId" type="xs:int" />
+      <xs:element name="Name" type="xs:string" />
+      <xs:element name="ClassId" type="xs:string" />
+      <xs:element name="ConfigData" type="xs:string" />
+      <xs:element name="ReCrypt" type="xs:boolean" />      
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="UpsellProduct">
+    <xs:sequence>
+      <xs:element name="ProductId" type="xs:int" />
+      <xs:element name="ChildProductId" type="xs:int" />
+      <xs:element name="OrderBy" type="xs:short" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="UpsOrigin">
+    <xs:sequence>
+      <xs:element name="CountryCode" type="xs:string" />
+      <xs:element name="CountryName" type="xs:string" />
+      <xs:element name="CurrencyName" type="xs:string" />
+      <xs:element name="CurrencyCode" type="xs:string" />
+      <xs:element name="EuroAllowed" type="xs:short" />
+      <xs:element name="MIVDollar" type="xs:decimal" />
+      <xs:element name="MIVEuro" type="xs:decimal" />
+      <xs:element name="UOM" type="xs:short" />
+      <xs:element name="MaxWeight" type="xs:decimal" />
+      <xs:element name="MaxMetricWeight" type="xs:decimal" />
+      <xs:element name="EUMember" type="xs:short" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="UserGroup">
+    <xs:sequence>
+      <xs:element name="UserId" type="xs:int" />
+      <xs:element name="GroupId" type="xs:int" />
+      <xs:element name="SubscriptionId" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="UserPersonalization">
+    <xs:sequence>
+      <xs:element name="PersonalizationPathId" type="xs:int" />
+      <xs:element name="UserId" type="xs:int" />
+      <xs:element name="PageSettings" type="xs:byte" minOccurs="0" maxOccurs="unbounded" />
+      <xs:element name="Theme" type="xs:string" />
+      <xs:element name="MasterPageFile" type="xs:string" />
+      <xs:element name="LastUpdatedDate" type="xs:dateTime" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="VendorGroup">
+    <xs:sequence>
+      <xs:element name="VendorId" type="xs:int" />
+      <xs:element name="GroupId" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="VolumeDiscountGroup">
+    <xs:sequence>
+      <xs:element name="VolumeDiscountId" type="xs:int" />
+      <xs:element name="GroupId" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>  
+  <xs:complexType name="ProductAssociations">
+    <xs:sequence>
+      <xs:element name="RelatedProducts">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="RelatedProduct" type="RelatedProduct" minOccurs="0" maxOccurs="unbounded" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="UpsellProducts">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="UpsellProduct" type="UpsellProduct" minOccurs="0" maxOccurs="unbounded" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="ProductKitComponents">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="ProductKitComponent" type="ProductKitComponent" minOccurs="0" maxOccurs="unbounded" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="TaxRuleGroup">
+    <xs:sequence>
+      <xs:element name="TaxRuleId" type="xs:int" />
+      <xs:element name="GroupId" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="TaxRuleShipZone">
+    <xs:sequence>
+      <xs:element name="TaxRuleId" type="xs:int" />
+      <xs:element name="ShipZoneId" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="Kit">
+    <xs:sequence>
+      <xs:element name="ProductId" type="xs:int" />
+      <xs:element name="ItemizeDisplay" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  
+  <!-- ProductProductTemplates ADDED IN 7.4 -->
+  <xs:complexType name="ProductProductTemplate">
+    <xs:sequence>
+      <xs:element name="ProductId" type="xs:int" />
+      <xs:element name="ProductTemplateId" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  
+  <!-- END DEFINITION OF NEW OBJECTS  -->
+  <!-- START LEGACY TYPES -->
+  <!-- Legacy Type (7.0, 7.1, 7.2) "BasketItemKitProduct" -->
+  <xs:complexType name="BasketItemKitProduct">
+    <xs:sequence>
+      <xs:element name="BasketItemId" type="xs:int" />
+      <xs:element name="KitProductId" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <!-- Legacy Type (7.0, 7.1, 7.2) "BasketItemKitProduct" -->
+  <!-- Legacy Type (7.0, 7.1, 7.2) "DhlWarehouse" -->
+  <xs:complexType name="DhlWarehouse">
+    <xs:sequence>
+      <xs:element name="WarehouseId" type="xs:int" />
+      <xs:element name="AccountNumber" type="xs:string" />
+      <xs:element name="ShippingKey" type="xs:string" />
+      <xs:element name="PostalCode" type="xs:string" />
+      <xs:element name="Services" type="xs:string" />
+      <xs:element name="DaysToShip" type="xs:unsignedByte" />
+      <xs:element name="Insurance" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <!-- Legacy Type (7.0, 7.1, 7.2) "DhlWarehouse" -->
+  <!-- Legacy Type (7.0, 7.1, 7.2) "WishlistItemKitProduct" -->
+  <xs:complexType name="WishlistItemKitProduct">
+    <xs:sequence>
+      <xs:element name="WishlistItemId" type="xs:int" />
+      <xs:element name="KitProductId" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <!-- Legacy Type (7.0, 7.1, 7.2) "WishlistItemKitProduct" -->
+  <!-- END LEGACY TYPES -->
+</xs:schema>

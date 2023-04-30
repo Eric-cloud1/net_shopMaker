@@ -1,0 +1,13 @@
+<!--
+<Description>
+Displays the contents of a Link catalog object.
+</Description>
+-->
+[[ConLib:CategoryBreadCrumbs HideLastNode="False"]]
+<div class="pageHeader">
+<h1 class="heading">$Link.Name</h1>
+</div>
+#if ($Link.Description != "")
+$Link.Description<br />
+#end
+<a href="$Link.TargetUrl" target="$Link.TargetWindow">$Link.TargetUrl</a>

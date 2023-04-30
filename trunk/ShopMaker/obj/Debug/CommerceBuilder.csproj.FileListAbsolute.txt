@@ -1,0 +1,13 @@
+E:\XMAble\trunk\Website\bin\MakerShop.dll
+E:\XMAble\trunk\Website\bin\MakerShop.pdb
+E:\XMAble\trunk\Website\bin\en-US\MakerShop.resources.dll
+E:\XMAble\trunk\MakerShop\obj\Debug\ResolveAssemblyReference.cache
+E:\XMAble\trunk\MakerShop\obj\Debug\MakerShop.Properties.Resources.resources
+E:\XMAble\trunk\MakerShop\obj\Debug\MakerShop.Resources.StringResources.resources
+E:\XMAble\trunk\MakerShop\obj\Debug\MakerShop.Resources.Tracing.resources
+E:\XMAble\trunk\MakerShop\obj\Debug\MakerShop.Properties.Resources.en-US.resources
+E:\XMAble\trunk\MakerShop\obj\Debug\GenerateResource.read.1.tlog
+E:\XMAble\trunk\MakerShop\obj\Debug\GenerateResource.write.1.tlog
+E:\XMAble\trunk\MakerShop\obj\Debug\en-US\MakerShop.resources.dll
+E:\XMAble\trunk\MakerShop\obj\Debug\MakerShop.dll
+E:\XMAble\trunk\MakerShop\obj\Debug\MakerShop.pdb

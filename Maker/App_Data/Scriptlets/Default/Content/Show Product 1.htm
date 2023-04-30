@@ -1,0 +1,55 @@
+<!--
+<Description>
+Displays a product, including description and reviews (if enabled).
+</Description>
+-->
+## NO CONTENTS IF PRODUCT IS NULL
+#if($Product)
+[[ConLib:CategoryBreadCrumbs HideLastNode="False"]]
+<div class="pageHeader"><h1>$Product.Name</h1></div>
+<table style="margin-bottom:8px">
+<tr>
+<td class="productimg">
+[[ConLib:ProductImage ShowImage="Image"]]<br />
+#if($Product.Images.Count > 0)
+<a href="#" onclick="window.open('ProductImages.aspx?ProductId=$Product.ProductId', 'productImages', 'status=0,toolbar=0,location=0,menubar=0,directories=0,resizable=yes,scrollbars=1,height=650,width=850')">
+More Images
+</a>
+#end
+</td>
+<td valign="top" style="padding-left:20px">
+#if ($Product.ManufacturerId != 0)
+Other products by <a href="Search.aspx?m=$Product.ManufacturerId">$Product.Manufacturer.Name</a><br />
+#end
+#if($store.Settings.ProductReviewEnabled != "None")
+#if($store.Settings.ProductReviewEnabled == "Registered")
+#if($customer.IsAnonymous == false)		
+[[ConLib:ProductRatingImage]] <a href="#reviews">reviews</a>
+#end
+#end
+#if($store.Settings.ProductReviewEnabled == "Anonymous")
+#if($customer.IsAnonymous == true)		
+[[ConLib:ProductRatingImage]] <a href="#reviews">reviews</a>
+#end
+#end
+#if($store.Settings.ProductReviewEnabled == "All")
+[[ConLib:ProductRatingImage]] <a href="#reviews">reviews</a>
+#end
+#end
+<hr />
+[[ConLib:ProductDiscountsDialog]]
+[[ConLib:BuyProductDialog]]
+</td>
+</tr>
+</table>
+<a name="desc"></a>
+[[ConLib:ProductDescription ShowCustomFields="true"]]
+#if($store.Settings.ProductReviewEnabled != "None")
+<a name="reviews"></a>
+<div class="section">
+<div class="header"><h2>Reviews</h2></div>
+<div class="content">[[ConLib:ProductReviewsPanel]]</div>
+</div>
+#end
+[[ConLib:MoreCategoryItems Caption="More Items in $Category.Name" Orientation="Horizontal" MaxItems="4" DisplayMode="Sequential"]]
+#end

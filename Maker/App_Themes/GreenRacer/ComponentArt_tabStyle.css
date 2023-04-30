@@ -1,0 +1,72 @@
+﻿@media screen {
+.TopGroup
+{
+  z-index:99;
+  position:relative;
+  text-align: right;
+}
+/*.TopGroup1
+{
+  z-index:99;
+  position:relative;
+  text-align: left;
+}*/
+
+.DefaultTab 
+{
+  color:black; 
+  background-image: url(ComponentArt/tab_bg.gif);
+  font-family:Tahoma;
+  font-size:9px; 
+  font-weight: bold;
+  cursor:pointer;
+  background-color: #C2C2C2;
+}
+
+.DefaultTabHover 
+{
+  color:black; 
+  background-image: url(ComponentArt/hover_tab_bg.gif);
+  font-family:Tahoma;
+  font-size:9px; 
+  font-weight: bold;
+  text-decoration: underline;
+  cursor:pointer;
+  background-color: #EEFECE;
+}
+
+.SelectedTab 
+{
+  color:black; 
+  background-image: url(ComponentArt/selected_tab_bg.gif);
+  font-family:Tahoma;
+  font-size:9px; 
+  font-weight: bold;
+  cursor:default;
+  background-color: #E9C79B;
+}
+
+.DisabledTab 
+{
+  color:#AAAAAA; 
+  background-image: url(ComponentArt/tab_bg.gif);
+  font-family:Tahoma;
+  font-size:9px; 
+  font-weight: bold;
+  cursor:default;
+}
+
+.MultiPage
+{
+  background-color:White;
+  border: 1px solid #919B9C;
+  width:487px;
+  height:250px;
+  position:relative;
+  top:-1px;
+  z-index:98;
+}
+}
+
+
+

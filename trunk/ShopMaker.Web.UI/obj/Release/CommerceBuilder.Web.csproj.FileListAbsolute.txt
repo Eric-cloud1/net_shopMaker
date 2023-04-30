@@ -1,0 +1,5 @@
+E:\XMAble\trunk\Website\bin\MakerShop.Web.dll
+E:\XMAble\trunk\Website\bin\MakerShop.Web.pdb
+E:\XMAble\trunk\MakerShop.Web.UI\obj\Release\ResolveAssemblyReference.cache
+E:\XMAble\trunk\MakerShop.Web.UI\obj\Release\MakerShop.Web.dll
+E:\XMAble\trunk\MakerShop.Web.UI\obj\Release\MakerShop.Web.pdb

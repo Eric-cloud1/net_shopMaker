@@ -1,0 +1,647 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!--
+To Generate Schema objects use the XSD command, for example:
+ _____________________________________________________
+E:\MakerShop\DataPort\trunk\Api\Schema>xsd ApiRequests.xsd /c /n:MakerShop.DataClient.Api.Schema
+
+NOTE: KNOWN BUG: while genrating code from schema
+_____________________________________________________
+
+NOTE: KNOWN BUG: while genrating code from schema
+While generating schema the field with name "RecurringChargeSpecified" is generated with name "RecurringChargeSpecified1", It is a known bug, and have to be corrected manually each time the code is generated from schema
+-->
+<xs:schema id="ApiRequests" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <xs:complexType name="ImportRequest">
+    <xs:sequence>
+      <xs:element name="Data" type="xs:base64Binary" />
+      <xs:element name="ImportOption" type="xs:string" />
+      <xs:element name="IsLastChunkRequest" type="xs:boolean" default="false" />
+    </xs:sequence>
+    <xs:attribute name="RequestId" type="xs:string" use="required" />
+  </xs:complexType>
+  <xs:complexType name="StandardExportRequest">
+    <xs:sequence>
+      <xs:element name="ExportOptions" type="ExportOptions">
+      </xs:element>
+    </xs:sequence>
+    <xs:attribute name="RequestId" type="xs:string" use="required" />
+  </xs:complexType>
+  <xs:complexType name="ImportResponse">
+    <xs:sequence>
+      <xs:element name="Log" type="Log" />
+      <xs:element name="IDMappingData" type="xs:base64Binary"/>
+    </xs:sequence>
+    <xs:attribute name="ResponseId" type="xs:string" use="required" />
+  </xs:complexType>
+  <xs:complexType name="ExportResponse">
+    <xs:sequence>
+      <xs:element name="Data" type="xs:base64Binary" />
+      <xs:element name="Log" type="Log" />
+    </xs:sequence>
+    <xs:attribute name="ResponseId" type="xs:string" use="required" />
+  </xs:complexType>
+  <xs:element name="AC5xImportRequest">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="AC55Data" type="xs:base64Binary" />
+        <xs:element name="ImportOptions" type="xs:string" />
+        <xs:element name="RequestId" type="xs:string" />
+        <xs:element name="InChunks" type="xs:boolean" default="false" />
+        <xs:element name="PreserveIdOption" type="xs:int" default="1" />
+        <xs:element name="IDMappingData" type="xs:base64Binary"/>
+        <xs:element name="TimeZoneOffset" type="xs:decimal" />
+        <xs:element name="UpdateTimeZone" type="xs:boolean" default="false" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ACImportRequest">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element type="ImportRequest" name="ImportRequest" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ACExportRequest">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="StandardExportRequest" type="StandardExportRequest" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ACImportResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="ImportResponse" type="ImportResponse" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ACExportResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="ExportResponse" type="ExportResponse" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:complexType name="ProductCriteria">
+    <xs:sequence>
+      <xs:element name="Category">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="IncludeSubCategory" type="xs:boolean" />
+            <xs:element name="CategoryId" type="xs:int" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="Name">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="Option" type="xs:string" />
+            <xs:element name="Value" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="Description">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="Option" type="xs:string" />
+            <xs:element name="Value" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="Price">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="Option" type="xs:string" />
+            <xs:element name="Value" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="SKU">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="Option" type="xs:string" />
+            <xs:element name="Value" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="Vendor">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="VendorId" type="xs:int" />
+            <xs:element name="StoreId" type="xs:int" />
+            <xs:element name="Name" type="xs:string" />
+            <xs:element name="Email" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="Manufacturer">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="ManufacturerId" type="xs:int" />
+            <xs:element name="StoreId" type="xs:int" />
+            <xs:element name="Name" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="ShippableStatus">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="Value" type="xs:int" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="Warehouse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="WarehouseId" type="xs:int" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="TaxCode">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="TaxCodeId" type="xs:int" />
+            <xs:element name="StoreId" type="xs:int" />
+            <xs:element name="Name" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="CustomField">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="Option" type="xs:string" />
+            <xs:element name="Value" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="SortBy">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="Option" type="xs:string" />
+            <xs:element name="Value" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="Include">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="Public" type="xs:boolean" />
+            <xs:element name="Hidden" type="xs:boolean" />
+            <xs:element name="Private" type="xs:boolean" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="ResultLimit">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="Value" type="xs:int" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="PreLoadTaxCode">
+    <xs:sequence>
+      <xs:element name="Name" type="xs:string" />
+      <xs:element name="TaxCodeId" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="PreLoadWarehouse">
+    <xs:sequence>
+      <xs:element name="Name" type="xs:string" />
+      <xs:element name="WarehouseId" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="PreLoadVendor">
+    <xs:sequence>
+      <xs:element name="Name" type="xs:string" />
+      <xs:element name="VendorId" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="PreLoadManufacturer">
+    <xs:sequence>
+      <xs:element name="Name" type="xs:string" />
+      <xs:element name="ManufacturerId" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="PreLoadOrderStatus">
+    <xs:sequence>
+      <xs:element name="Name" type="xs:string" />
+      <xs:element name="OrderStatusId" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="PreLoadCategory">
+    <xs:sequence>
+      <xs:element name="Name" type="xs:string" />
+      <xs:element name="ParentId" type="xs:int" />
+      <xs:element name="CategoryId" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="OrdersPreloadResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="OrderStatuses">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="OrderStatus" type="PreLoadOrderStatus" minOccurs="0" maxOccurs="unbounded" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:complexType name="ResponseForProductsCriteria">
+    <xs:sequence>
+      <xs:element name="Categories">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="Category" type="PreLoadCategory" minOccurs="0" maxOccurs="unbounded" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="Vendors">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="Vendor" type="PreLoadVendor" minOccurs="0" maxOccurs="unbounded" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="Manufacturers">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="Manufacturer" type="PreLoadManufacturer" minOccurs="0" maxOccurs="unbounded" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="Warehouses">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="Warehouse" type="PreLoadWarehouse" minOccurs="0" maxOccurs="unbounded" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="TaxCodes">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="TaxCode" type="PreLoadTaxCode" minOccurs="0" maxOccurs="unbounded" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="ShippableStatus">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="Shippable" type="PreLoadShippableStatus" minOccurs="0" maxOccurs="unbounded" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="OrdersPreLoadRequest">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="Request" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ACRequestForProductsCriteria">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="ProductPreLoadRequest" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ACResponseForProductsCriteria">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="ResponseForProductsCriteria" type="ResponseForProductsCriteria" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:complexType name="ExportRequestCustomizedProducts">
+    <xs:sequence>
+      <xs:element name="RequestId" type="xs:string" />
+      <xs:element name="ProductCriteria" type="ProductCriteria" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="ExportRequestCustomizedOrders">
+    <xs:sequence>
+      <xs:element name="RequestId" type="xs:string" />
+      <xs:element name="OrderCriteria" type="OrderCriteria" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ACCustomizedProductRequest">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="RequestId" type="xs:string" />
+        <xs:element name="ProductCriteria" type="ProductCriteria" />
+        <xs:element name="ChunkSize" type="xs:int" />
+        <xs:element name="IdList" type="xs:string" />
+        <xs:element name="IsCSVRequst" type="xs:boolean" default="false" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ACCustomizedOrderRequest">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="RequestId" type="xs:string" />
+        <xs:element name="OrderCriteria" type="OrderCriteria" />
+        <xs:element name="ChunkSize" type="xs:int" />
+        <xs:element name="IdList" type="xs:string" />
+        <xs:element name="IsUPSWSRequest" type="xs:boolean" default="false" />
+        <xs:element name="IsCSVRequst" type="xs:boolean" default="false" />
+        <xs:element name="DownloadCCData" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ACCustomizedUserRequest">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="RequestId" type="xs:string" />
+        <xs:element name="UserCriteria" type="UserCriteria" />
+        <xs:element name="ChunkSize" type="xs:int" />
+        <xs:element name="IdList" type="xs:string" />
+        <xs:element name="IsCSVRequst" type="xs:boolean" default="false" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:complexType name="PreLoadShippableStatus">
+    <xs:sequence>
+      <xs:element name="Name" type="xs:string" />
+      <xs:element name="ShippableId" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="OrderCriteria">
+    <xs:sequence>
+      <xs:element name="OrderNumberFilter" type="OrderNumberFilter">
+      </xs:element>
+      <xs:element name="OrderDateFilter" type="OrderDateFilter">
+      </xs:element>
+      <xs:element name="OrderStatusFilter" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="OrderNumberFilter">
+    <xs:sequence>
+      <xs:element name="Option" type="xs:string" />
+      <xs:element name="Value1" type="xs:int" />
+      <xs:element name="Value2" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="OrderDateFilter">
+    <xs:sequence>
+      <xs:element name="StartDate" type="xs:date" />
+      <xs:element name="EndDate" type="xs:date" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="PreLoadGroup">
+    <xs:sequence>
+      <xs:element name="Id" type="xs:int" />
+      <xs:element name="Name" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="UsersPreLoadResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="PreLoadGroups">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Groups" type="PreLoadGroup" minOccurs="0" maxOccurs="unbounded" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UsersPreLoadRequest">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="Request" type="xs:string" />
+        <xs:element name="UserCriteria" type="UserCriteria">
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:complexType name="ProfileFilter">
+    <xs:sequence>
+      <xs:element name="Name" type="STRPair" />
+      <xs:element name="Email" type="STRPair" />
+      <xs:element name="Address" type="STRPair" />
+      <xs:element name="Country" type="xs:string" />
+      <xs:element name="Province" type="xs:string" />
+      <xs:element name="ZipCode" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="ActivityFilter">
+    <xs:sequence>
+      <xs:element name="LastDate" type="xs:dateTime" />
+      <xs:element name="Sales" type="xs:double" />
+      <xs:element name="LastDateOption" type="xs:string" />
+      <xs:element name="SalesOption" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="STRPair">
+    <xs:sequence>
+      <xs:element name="Option" type="xs:string" />
+      <xs:element name="value" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="UserCriteria">
+    <xs:sequence>
+      <xs:element name="ProfileFilter" type="ProfileFilter" />
+      <xs:element name="ActivityFilter" type="ActivityFilter" />
+      <xs:element name="GroupFilter" type="xs:string" />
+      <xs:element name="SortFilter">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="OrderBy" type="xs:string" />
+            <xs:element name="Asc" type="xs:boolean" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="Log">
+    <xs:sequence>
+      <xs:element name="Message" type="xs:string" />
+      <xs:element name="ErrorMessages" type="xs:string" />
+      <xs:element name="WarningMessages" type="xs:string" />
+      <xs:element name="Error" type="Error" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="Error">
+    <xs:sequence>
+      <xs:element name="Code" type="xs:int" />
+      <xs:element name="Message" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ACAuthenticationResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="Log" type="Log" />
+        <xs:element name="VersionInfo" type="VersionInfo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:complexType name="VersionInfo">
+    <xs:sequence>
+      <xs:element name="StoreName" type="xs:string" />
+      <xs:element name="Platform" type="xs:string" />
+      <xs:element name="StoreVersion" type="xs:string" />
+      <xs:element name="ClientApiVersion" type="xs:string" />
+      <xs:element name="DataPortVersion" type="xs:string" />
+      <xs:element name="BuildNumber" type="xs:string" />
+      <xs:element name="BuildDate" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ACAuthenticationRequest">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:complexType name="ExportOptions">
+    <xs:sequence>
+      <xs:element name="Data" type="xs:string" />
+      <xs:element name="ChunkSize" type="xs:int" />
+      <xs:element name="DownloadCCData" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="UpsWsImportRequest">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="ShipmentTrackingRecords">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ShipmentTrackingRecord" type="ShipmentTrackingRecord" minOccurs="0" maxOccurs="unbounded" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="RequestId" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:complexType name="ShipmentTrackingRecord">
+    <xs:sequence>
+      <xs:element name="ShipmentId" type="xs:int" />
+      <xs:element name="TrackingNumber" type="xs:string" />
+      <xs:element name="Void" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="UpdateDatabaseFieldsRequest">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="RequestId" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateDatabaseFieldsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="RequestId" type="xs:string" />
+        <xs:element name="LogMessage" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <!-- START PRODUCT VARIANTS CSV IMPORT-->
+  <xs:element name="ProductVariantsImportRequest">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="Products">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Product" type="CsvProduct" minOccurs="0" maxOccurs="unbounded" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="CsvFields" type="xs:string"/>
+      </xs:sequence>
+      <xs:attribute name="RequestId" type="xs:string" use="required" />
+      <xs:attribute name="IsLastChunkRequest" type="xs:boolean" default="false" />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ProductVariantsImportResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="Log" type="Log" />
+      </xs:sequence>
+      <xs:attribute name="ResponseId" type="xs:string" use="required" />
+    </xs:complexType>
+  </xs:element>
+  <!-- END PRODUCT VARIANTS CSV IMPORT-->
+  <!-- START PRODUCT VARIANTS CSV EXPORT-->
+  <xs:element name="ProductVariantsExportRequest">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="ProductCriteria" type="ProductCriteria" />
+        <xs:element name="RequestId" type="xs:string" />
+        <xs:element name="ChunkSize" type="xs:int" />
+        <xs:element name="IdList" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ProductVariantsExportResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="Products">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Product" type="CsvProduct" minOccurs="0" maxOccurs="unbounded" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="ProductIdList" type="xs:string" />
+        <xs:element name="ResponseId" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:complexType name="CsvProduct">
+    <xs:sequence>
+      <xs:element name="ProductId" type="xs:int" />
+      <xs:element name="Name" type="xs:string" />
+      <xs:element name="Sku" type="xs:string" />
+      <xs:element name="Categories">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="CategoryPath" type="xs:string" minOccurs="0" maxOccurs="unbounded" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="Price" type="xs:decimal" />
+      <xs:element name="MSRP" type="xs:decimal" />
+      <xs:element name="CostOfGoods" type="xs:decimal" />
+      <xs:element name="InventoryMode" type="xs:string" />
+      <xs:element name="InStock" type="xs:int" />
+      <xs:element name="InStockWarningLevel" type="xs:int" />
+      <xs:element name="AllowBackorder" type="xs:boolean" />
+      <xs:element name="Options" type="xs:string"/>
+      <xs:element name="Variants">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="Variant" type="CsvVariant" minOccurs="0" maxOccurs="unbounded" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="CsvVariant">
+    <xs:sequence>
+      <xs:element name="VariantName" type="xs:string" />
+      <xs:element name="Sku" type="xs:string" />
+      <xs:element name="Price" type="xs:decimal" />
+      <xs:element name="PriceMode" type="xs:string" />
+      <xs:element name="Weight" type="xs:decimal" />
+      <xs:element name="WeightMode" type="xs:string" />
+      <xs:element name="CostOfGoods" type="xs:decimal" />
+      <xs:element name="InStock" type="xs:int" />
+      <xs:element name="InStockWarningLevel" type="xs:int" />
+      <xs:element name="Available" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <!--<xs:complexType name="CategoryPath">
+    <xs:sequence>
+      <xs:element name="Path" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>-->
+  <!-- END PRODUCT VARIANTS CSV EXPORT -->
+</xs:schema>

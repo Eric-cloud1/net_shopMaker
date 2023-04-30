@@ -1,0 +1,28 @@
+<p><style type="text/css">
+TABLE.Email {
+width: 640px;
+padding: 5px;
+margin: 0px;
+border: 1px solid #5872CB;
+}
+TABLE.Email TH {
+font-weight: bold;
+font-size: 12px;
+color: #ffffff;
+font-family: Arial, Verdana, Sans-Serif;
+font-style: strong;
+background-color: #304FBA;
+text-align: center;
+text-decoration: none;
+padding: 5px;
+}
+TABLE.Email TD {
+font-weight: normal;
+font-size: 12px;
+color: #000000;
+font-family: Arial, Verdana, Sans-Serif;
+background-color: #ffffff;
+text-align: left;
+text-decoration: none;
+padding: 3px;
+}</style></p><table class="Email"><tbody><tr><td class="Email"><p><strong>Hello!</strong></p><p>A message has been added to your Order Number ${order.OrderNumber}.&nbsp;</p><p><b>Message from $store.Name on ${note.CreatedDate} : </b></p><p>${note.Comment}</p><p>&nbsp;</p><p><strong>To respond to this message, you will need to login and <a href="${store.StoreUrl}Members/MyOrder.aspx?OrderNumber=${order.OrderNumber}&OrderId=${order.OrderId}">view Order $order.OrderNumber.</a></strong></p><p><strong>Thank you for visiting $store.Name!</strong><br /><a href="${store.StoreUrl}"><strong>$store.Name</strong></a></p><p>&nbsp;</p></td></tr></tbody></table>

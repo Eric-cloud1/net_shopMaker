@@ -1,0 +1,63 @@
+<%@ Master Language="C#" %>
+<%@ Register Assembly="MakerShop.Web" Namespace="MakerShop.Web.UI.WebControls.WebParts" TagPrefix="cb" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<script runat="server">
+
+</script>
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head id="Head1" runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+    <title>MakerShop: Software that Sells!(TM)</title>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <ajax:ScriptManager ID="ScriptManager1" runat="server" EnablePartialRendering="true"></ajax:ScriptManager>
+    <asp:WebPartManager ID="wpm" runat="server"></asp:WebPartManager>
+    <asp:contentplaceholder id="HeaderContent" runat="server">
+        <asp:WebPartZone ID="HeaderZone" runat="server" HeaderText="Page Header" Width="100%">
+            <ZoneTemplate>
+                <cb:ScriptletPartEx ID="StandardHeader" runat="server" Identifier="Standard Header" ScriptletType="Header" Title="Store Header Scriptlet" />
+            </ZoneTemplate>
+        </asp:WebPartZone>
+    </asp:contentplaceholder>
+    <asp:contentplaceholder id="NavigationContent" runat="server">
+    </asp:contentplaceholder>
+    <div id="outerContentWrapper">
+        <div id="innerContentWrapper">
+			<table cellspacing="0" cellpadding="0" id="contentLayout">
+         	 	<tr>
+				    <td align="left" valign="top" id="leftSidebarPanel">
+                        <asp:WebPartZone ID="SidebarZone" runat="server" HeaderText="Sidebar" PartChromeType="TitleOnly" Width="100%">
+                            <ZoneTemplate>
+                                <asp:contentplaceholder id="PrimarySidebarContent" runat="server">
+                                </asp:contentplaceholder>
+                                <asp:contentplaceholder id="SecondarySidebarContent" runat="server">
+                                </asp:contentplaceholder>
+                            </ZoneTemplate>
+                        </asp:WebPartZone>
+    		        </td>
+      				<td align="left" valign="top" id="mainPanel">
+                        <asp:WebPartZone ID="ContentZone" runat="server" HeaderText="Content" PartChromeType="TitleOnly" Width="100%">
+                            <ZoneTemplate>
+                                <asp:contentplaceholder id="MainContent" runat="server">
+                                </asp:contentplaceholder>
+                            </ZoneTemplate>
+                        </asp:WebPartZone>
+    		        </td>
+    		    </tr>
+    		</table>
+        </div>
+        <asp:contentplaceholder id="FooterContent" runat="server">
+            <asp:WebPartZone ID="FooterZone" runat="server" HeaderText="Page Footer" PartChromeType="TitleOnly" Width="100%">
+                <ZoneTemplate>
+                    <cb:ScriptletPartEx ID="StandardFooter" runat="server" Identifier="Standard Footer" ScriptletType="Footer" Title="Store Footer Scriptlet" />
+                </ZoneTemplate>
+            </asp:WebPartZone>
+        </asp:contentplaceholder>
+    </div>
+    </form>
+</body>
+</html>

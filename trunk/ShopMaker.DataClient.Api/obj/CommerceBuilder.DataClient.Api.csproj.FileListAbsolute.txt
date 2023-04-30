@@ -1,0 +1,9 @@
+E:\XMAble\trunk\Website\bin\MakerShop.DataClient.Api.dll
+E:\XMAble\trunk\Website\bin\MakerShop.DataClient.Api.pdb
+E:\XMAble\trunk\MakerShop.DataClient.Api\obj\Debug\ResolveAssemblyReference.cache
+E:\XMAble\trunk\MakerShop.DataClient.Api\obj\Debug\MakerShop.DataClient.Api.Properties.Resources.resources
+E:\XMAble\trunk\MakerShop.DataClient.Api\obj\Debug\MakerShop.DataClient.Api.csproj.GenerateResource.Cache
+E:\XMAble\trunk\MakerShop.DataClient.Api\obj\Debug\MakerShop.DataClient.Api.dll
+E:\XMAble\trunk\MakerShop.DataClient.Api\obj\Debug\MakerShop.DataClient.Api.pdb
+E:\XMAble\trunk\MakerShop.DataClient.Api\obj\Debug\ResGen.read.1.tlog
+E:\XMAble\trunk\MakerShop.DataClient.Api\obj\Debug\ResGen.write.1.tlog

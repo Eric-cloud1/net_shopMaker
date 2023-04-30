@@ -1,0 +1,467 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+  <siteMapNode url="~/Admin/Default.aspx" title="Administration"  description="Merchant Administration">
+    <siteMapNode title="Manage">
+      <siteMapNode url="~/Admin/People/Subscriptions/Default.aspx" title="Subscriptions">
+        <siteMapNode url="~/Admin/People/Subscriptions/SubscriptionPlans.aspx" title="Plans" />
+      </siteMapNode>
+      <siteMapNode url="~/Admin/Products/Assets/UnusedProductImages.aspx" title="Unused Product Images"/>
+      <siteMapNode url="~/Admin/Products/Reviews/Default.aspx" title="Product Reviews">
+        <siteMapNode url="~/Admin/Products/Reviews/EditReview.aspx" title="Edit Review" />
+      </siteMapNode>
+      <siteMapNode url="~/Admin/Products/Batching/BatchEdit.aspx" title="Product Batch Edit"/>
+    </siteMapNode>
+	  <siteMapNode title="Campaign">
+		  <siteMapNode  url="~/Call/Default.aspx"  title="Call Disposition"  />
+	  </siteMapNode>
+	  
+    <siteMapNode title="Catalog" url="~/Admin/Catalog/Browse.aspx" description="Browse the store catalog" catalog="true">
+      <siteMapNode url="~/Admin/Catalog/AddCategory.aspx" title="Add Category"  description="Add a category in the store catalog." visible="false" />
+      <siteMapNode url="~/Admin/Catalog/EditCategory.aspx" title="Edit Category"  description="Edit a category in the store catalog." visible="false" />
+      <siteMapNode url="~/Admin/Catalog/SortCategory.aspx" title="Sort Category"  description="Sort catalog items." visible="false" />
+      <siteMapNode url="~/Admin/products/AddProduct.aspx" title="Add Product"  description="" visible="false" />
+      <siteMapNode url="~/Admin/Catalog/OrphanedItems.aspx" title="Orphaned Items" />
+      <siteMapNode title="Import Data">
+        <siteMapNode url="~/Admin/Data/ImportAC5x.aspx" title="Import AC5x Data" />
+      </siteMapNode>
+      <siteMapNode url="~/Admin/products/EditProduct.aspx" title="{0}"  description="" visible="false">
+        <siteMapNode url="~/Admin/Products/Assets/Images.aspx" title="Images and Assets" visible="false">
+          <siteMapNode url="~/Admin/Products/Assets/UploadImage.aspx" title="Upload Images" visible="false" />
+          <siteMapNode url="~/Admin/Products/Assets/UploadAdditionalImage.aspx" title="Upload Additional Images" visible="false" />
+          <siteMapNode url="~/Admin/Products/Assets/AdditionalImages.aspx" title="Additional Images" visible="false" />
+          <siteMapNode url="~/Admin/Products/Assets/AdvancedImages.aspx" title="Pick or Edit Images" visible="false" />
+        </siteMapNode>
+        <siteMapNode url="~/Admin/Products/Variants/Variants.aspx" title="Variants">
+          <siteMapNode url="~/Admin/Products/Variants/Options.aspx" title="Options">
+            <siteMapNode url="~/Admin/Products/Variants/EditOptions.aspx" title="Edit Options" />
+            <siteMapNode url="~/Admin/Products/Variants/Choices.aspx" title="{0}">
+              <siteMapNode url="~/Admin/Products/Variants/EditChoices.aspx" title="Edit Choices" />
+            </siteMapNode>
+          </siteMapNode>
+        </siteMapNode>
+        <siteMapNode url="~/Admin/Products/Specials/Default.aspx" title="Pricing Rules" visible="false" />
+        <siteMapNode url="~/Admin/Products/Specials/EditSpecial.aspx" title="Edit Pricing Rule" visible="false"/>
+        <siteMapNode url="~/Admin/Products/Specials/AddSpecial.aspx" title="Add Special" description="Add a special price to the product." visible="false" />
+        <siteMapNode url="~/Admin/Products/EditSimilarProducts.aspx" title="Similar Products" visible="false" />
+        <siteMapNode url="~/Admin/Products/EditProductAccessories.aspx" title="Product Accessories" visible="false" />
+        <siteMapNode url="~/Admin/Products/EditProductCategories.aspx" title="Categories" visible="false" />
+        <siteMapNode url="~/Admin/Products/EditSubscription.aspx" title="Subscriptions" visible="false" />
+        <siteMapNode url="~/Admin/Products/EditDownsell.aspx" title="Down Sell" visible="false" />
+        <siteMapNode url="~/Admin/Products/EditGateway.aspx" title="Gateway" visible="false" />
+        <siteMapNode url="~/Admin/Products/ProductDiscounts.aspx" title="Discounts" description="Edit the discounts for this product." visible="false" />
+        <siteMapNode url="~/Admin/Products/DigitalGoods/DigitalGoods.aspx" title="Digital Goods" description="Edit the digital goods for this product." visible="false">
+          <siteMapNode url="~/Admin/Products/DigitalGoods/AttachDigitalGood.aspx" title="Attach Digital Good" />
+          <siteMapNode url="~/Admin/Products/DigitalGoods/SelectVariant.aspx" title="Select Variant" />
+        </siteMapNode>
+        <siteMapNode url="~/Admin/Products/Kits/EditKit.aspx" title="Kitting"  description="Edit a kit in the store catalog." visible="false">
+          <siteMapNode url="~/Admin/Products/Kits/AttachComponent.aspx" title="Attach Component" description="Attach an existing component to your kit." visible="false" />
+          <siteMapNode url="~/Admin/Products/Kits/AddComponent.aspx" title="Add Component" description="Add a component to your kit." visible="false" />
+          <siteMapNode url="~/Admin/Products/Kits/EditComponent.aspx" title="Edit Component" description="Add a component to your kit." visible="false" />
+          <siteMapNode url="~/Admin/Products/Kits/AddKitProducts.aspx" title="Add Product(s) to Kit" visible="false" />
+          <siteMapNode url="~/Admin/Products/Kits/EditPart.aspx" title="Edit Part" />
+          <siteMapNode url="~/Admin/Products/Kits/ViewPart.aspx" title="View Part" />
+          <siteMapNode url="~/Admin/Products/Kits/SortComponents.aspx" title="Sort Components" />
+          <siteMapNode url="~/Admin/Products/Kits/SortParts.aspx" title="Sort Parts" />
+          <siteMapNode url="~/Admin/Products/Kits/ViewComponent.aspx" title="View Component" />
+          <siteMapNode url="~/Admin/Products/Kits/DeleteSharedComponent.aspx" title="Delete Component" />
+        </siteMapNode>
+        <siteMapNode url="~/Admin/Products/EditProductTemplate.aspx" title="Template" />
+      </siteMapNode>
+      <siteMapNode url="~/Admin/Catalog/AddWebpage.aspx" title="Add Webpage"  description="Add a webpage in the store catalog." visible="false" />
+      <siteMapNode url="~/Admin/Catalog/EditWebpage.aspx" title="Edit Webpage"  description="Edit a webpage in the store catalog." visible="false">
+        <siteMapNode url="~/Admin/Catalog/EditWebpageCategories.aspx" title="Categories"  visible="false"/>
+      </siteMapNode>
+      <siteMapNode url="~/Admin/Catalog/AddLink.aspx" title="Add Link"  description="Add a link in the store catalog." visible="false" />
+      <siteMapNode url="~/Admin/Catalog/EditLink.aspx" title="Edit Link"  description="Edit a link in the store catalog." visible="false" >
+        <siteMapNode url="~/Admin/Catalog/EditLinkCategories.aspx" title="Categories"  visible="false"/>
+      </siteMapNode>
+      <siteMapNode url="~/Admin/Products/Kits/Search.aspx" title="Find Kits" description="Search for kits in the store catalog." visible="false" />
+      <siteMapNode url="~/Admin/Products/ProductTemplates/Default.aspx" title="Product Templates">
+        <siteMapNode url="~/Admin/Products/ProductTemplates/EditProductTemplate.aspx" title="{0}">
+          <siteMapNode title="Add Input" url="~/Admin/Products/ProductTemplates/AddInputField.aspx" />
+          <siteMapNode title="Edit Input" url="~/Admin/Products/ProductTemplates/EditInputField.aspx" />
+          <siteMapNode title="Assigned Products" url="~/Admin/Products/ProductTemplates/ViewProducts.aspx" />
+        </siteMapNode>
+      </siteMapNode>
+      <siteMapNode url="~/Admin/Products/GiftWrap/Default.aspx" title="Gift Wrap">
+        <siteMapNode url="~/Admin/Products/GiftWrap/EditWrapGroup.aspx" title="{0}">
+          <siteMapNode url="~/Admin/Products/GiftWrap/ViewProducts.aspx" title="View Assigned Products" />
+        </siteMapNode>
+      </siteMapNode>
+      <siteMapNode title="Digital Goods" url="~/Admin/DigitalGoods/Default.aspx">
+        <siteMapNode title="Find Digital Goods" url="~/Admin/DigitalGoods/FindDigitalGoods.aspx" />
+        <siteMapNode title="Manage Digital Goods" url="~/Admin/DigitalGoods/DigitalGoods.aspx">
+          <siteMapNode title="Edit Digital Good" url="~/Admin/DigitalGoods/EditDigitalGood.aspx" />
+          <siteMapNode title="Delete Digital Good" url="~/Admin/DigitalGoods/DeleteDigitalGood.aspx" />
+          <siteMapNode title="View Products" url="~/Admin/DigitalGoods/ViewProducts.aspx" />
+          <siteMapNode title="View Orders" url="~/Admin/DigitalGoods/ViewOrders.aspx" />
+          <siteMapNode title="Serial Key Provider">
+            <siteMapNode title="Configure Serial Keys" url="~/Admin/Products/DigitalGoods/SerialKeyProviders/DefaultProvider/Configure.aspx" />
+            <siteMapNode title="Edit Serial Key" url="~/Admin/Products/DigitalGoods/SerialKeyProviders/DefaultProvider/EditSerialKey.aspx" />
+            <siteMapNode title="Add Keys" url="~/Admin/Products/DigitalGoods/SerialKeyProviders/DefaultProvider/AddKeys.aspx" />
+          </siteMapNode>
+        </siteMapNode>
+        <siteMapNode title="Digital Good Files" url="~/Admin/DigitalGoods/DigitalGoodFiles.aspx" />
+        <siteMapNode title="Readmes" url="~/Admin/DigitalGoods/Readmes.aspx">
+          <siteMapNode title="Edit Readme" url="~/Admin/DigitalGoods/EditReadme.aspx" />
+          <siteMapNode title="Delete Readme" url="~/Admin/DigitalGoods/DeleteReadme.aspx" />
+        </siteMapNode>
+        <siteMapNode title="License Agreements" url="~/Admin/DigitalGoods/Agreements.aspx">
+          <siteMapNode title="Edit Agreement" url="~/Admin/DigitalGoods/EditAgreement.aspx" />
+          <siteMapNode title="Delete Agreement" url="~/Admin/DigitalGoods/DeleteAgreement.aspx" />
+        </siteMapNode>
+      </siteMapNode>
+    </siteMapNode>
+    <siteMapNode url="~/Admin/Payment/GiftCertificates.aspx" title="Gift Certificates">
+      <siteMapNode url="~/Admin/Payment/EditGiftCertificate.aspx" title="Edit Certificate"/>
+      <siteMapNode url="~/Admin/Payment/AddGiftCertificate.aspx" title="Add Certificate"/>
+      <siteMapNode url="~/Admin/Reports/GiftCertTransactions.aspx" title="Gift Certificate Transactions"/>
+    </siteMapNode>
+    <siteMapNode url="~/Admin/Products/Assets/AssetManager.aspx" title="Asset Manager"/>
+    <siteMapNode url="~/Admin/Orders/Default.aspx" title="Orders">
+      <siteMapNode url="~/Admin/Orders/Batch/Ship.aspx" title="Ship" />
+      <siteMapNode url="~/Admin/Orders/Batch/Cancel.aspx" title="Cancel" />
+      <siteMapNode url="~/Admin/Orders/ViewOrder.aspx" title="View Order #{0}" >
+        <siteMapNode url="~/Admin/Orders/Email/SendMail.aspx" title="Send Email" />
+        <siteMapNode url="~/Admin/Orders/Payments/Default.aspx" title="Payments">
+          <siteMapNode url="~/Admin/Orders/Payments/AddPayment.aspx" title="Add Payment" />
+          <siteMapNode url="~/Admin/Orders/Payments/EditPayment.aspx" title="Edit Payment" />
+          <siteMapNode url="~/Admin/Orders/Payments/CapturePayment.aspx" title="Capture Payment" />
+          <siteMapNode url="~/Admin/Orders/Payments/RefundPayment.aspx" title="Refund Payment" />
+          <siteMapNode url="~/Admin/Orders/Payments/VoidPayment.aspx" title="Void Payment" />
+        </siteMapNode>
+        <siteMapNode url="~/Admin/Orders/Shipments/Default.aspx" title="Shipments">
+          <siteMapNode url="~/Admin/Orders/Shipments/AddShipment.aspx" title="Add Shipment" />
+          <siteMapNode url="~/Admin/Orders/Shipments/DeleteShipment.aspx" title="Delete Shipment" />
+          <siteMapNode url="~/Admin/Orders/Shipments/EditShipment.aspx" title="Edit Shipment" >
+            <siteMapNode url="~/Admin/Orders/Shipments/AddProduct.aspx" title="Add Prodcut" />
+            <siteMapNode url="~/Admin/Orders/Shipments/FindProduct.aspx" title="Find Product" />
+            <siteMapNode url="~/Admin/Orders/Shipments/AddOther.aspx" title="Add Item" />
+          </siteMapNode>
+          <siteMapNode url="~/Admin/Orders/Shipments/MergeShipment.aspx" title="Merge Shipments" />
+          <siteMapNode url="~/Admin/Orders/Shipments/ReturnShipment.aspx" title="Return Shipment" />
+          <siteMapNode url="~/Admin/Orders/Shipments/ShipOrder.aspx" title="Ship Order" />
+          <siteMapNode url="~/Admin/Orders/Shipments/SplitShipment.aspx" title="Split Shipment" />
+          <siteMapNode url="~/Admin/Orders/Shipments/PackingList.aspx" title="Packing List" />
+        </siteMapNode>
+        <siteMapNode url="~/Admin/Orders/OrderHistory.aspx" title="History and Notes" />
+        <siteMapNode url="~/Admin/Orders/ViewGiftCertificates.aspx" title="Gift Certificates" />
+        <siteMapNode url="~/Admin/Orders/RelatedOrders.aspx" title="Related Orders" />
+        <siteMapNode url="~/Admin/Orders/ViewDigitalGoods.aspx" title="Digital Goods">
+          <siteMapNode url="~/Admin/Orders/AddDigitalGoods.aspx" title="Add Digital Goods" />
+          <siteMapNode url="~/Admin/Orders/ViewDownloads.aspx" title="Downloads" />
+          <siteMapNode url="~/Admin/Orders/AddDigitalGoodSerialKey.aspx" title="Add Serial Key" />
+          <siteMapNode url="~/Admin/Orders/ViewDigitalGoodSerialKey.aspx" title="View Serial Key" />
+        </siteMapNode>
+        <siteMapNode url="~/Admin/Orders/ViewSubscriptions.aspx" title="Subscriptions" />
+        <siteMapNode url="~/Admin/Orders/EditAddresses.aspx" title="Edit Addresses" />
+        <siteMapNode url="~/Admin/Orders/Edit/EditOrderItems.aspx" title="Edit Order Items">
+          <siteMapNode url="~/Admin/Orders/Edit/FindProduct.aspx" title="Add Product" />
+          <siteMapNode url="~/Admin/Orders/Edit/AddProduct.aspx" title="Add Product" />
+          <siteMapNode url="~/Admin/Orders/Edit/AddOther.aspx" title="Add Other Item" />
+        </siteMapNode>
+        <siteMapNode url="~/Admin/Orders/CancelOrder.aspx" title="Cancel Order" />
+      </siteMapNode>
+      <siteMapNode url="~/Admin/Orders/Create/CreateOrder.ashx" title="Create Order">
+        <siteMapNode url="~/Admin/Orders/Create/CreateOrder1.aspx" title="Step 1 of 4" />
+        <siteMapNode url="~/Admin/Orders/Create/CreateOrder2.aspx" title="Step 2 of 4" />
+        <siteMapNode url="~/Admin/Orders/Create/CreateOrder3.aspx" title="Step 3 of 4" />
+        <siteMapNode url="~/Admin/Orders/Create/CreateOrder4.aspx" title="Step 4 of 4" />
+      </siteMapNode>
+    </siteMapNode>
+    <siteMapNode title="People" description="Settings to manage the customers, vendors, and manufacturers for the store." DefaultSubItemLookId="Level2ItemLook" SubGroupCssClass="Level2Group" SubGroupItemSpacing="5">
+      <siteMapNode url="~/Admin/People/Users/Default.aspx" title="Users" description="Manage the users in the store.">
+        <siteMapNode url="~/Admin/People/Users/AddUser.aspx" title="Add User" description="Add a user to the store." visible="false" />
+        <siteMapNode url="~/Admin/People/Users/EditUser.aspx" title="Edit User" description="Edit a user in the store." visible="false" />
+        <siteMapNode title="Send Message" url="~/Admin/People/Users/SendMail.aspx" />
+      </siteMapNode>
+      <siteMapNode url="~/Admin/People/Groups/Default.aspx" title="User Groups">
+        <siteMapNode url="~/Admin/People/Groups/ManageUsers.aspx" title="Manage Users in Group" />
+      </siteMapNode>
+      <siteMapNode url="~/Admin/People/Vendors/Default.aspx" title="Vendors" description="Manage the vendors available for products in your store.">
+        <siteMapNode url="~/Admin/People/Vendors/EditVendor.aspx" title="Edit Vendor" description="Edit a vendor in your store." visible="false" />
+      </siteMapNode>
+      <siteMapNode url="~/Admin/People/Manufacturers/Default.aspx" title="Manufacturers" description="Manage the manufacturers available for products in your store.">
+        <siteMapNode url="~/Admin/People/Manufacturers/EditManufacturer.aspx" title="Edit Manufacturer" description="Edit a vendor in your store." visible="false" />
+      </siteMapNode>
+      <siteMapNode title="Affiliates" url="~/Admin/Marketing/Affiliates/AffiliateSearch.aspx">
+        <siteMapNode title="Edit Affiliate" url="~/Admin/Marketing/Affiliates/EditAffiliate.aspx" />
+		  <siteMapNode title="Add Affiliate" url="~/Admin/Marketing/Affiliates/Default.aspx" />
+		  <siteMapNode title="Affiliate Payment" url="~/Admin/Marketing/Affiliates/AffiliatePayment.aspx" />
+		  <siteMapNode title="Edit Gateway" url="~/Admin/Marketing/Affiliates/EditGateway.aspx" />
+      </siteMapNode>
+    </siteMapNode>
+    <siteMapNode title="Configure">
+      <siteMapNode url="~/Admin/Store/StoreSettings.aspx" title="Store" />
+      <siteMapNode url="~/Admin/Store/Maintenance.aspx" title="Maintenance" />
+      <siteMapNode url="~/Admin/Store/Currencies/Default.aspx" title="Currencies" />
+		<siteMapNode url="~/Admin/Store/Regions/Default.aspx" title="Language Translations" />
+      <siteMapNode url="~/Admin/Store/PageTracking/Default.aspx" title="Page Tracking">
+        <siteMapNode url="~/Admin/Store/PageTracking/ViewLog.aspx" title="View Log" />
+        <siteMapNode url="~/AddByPassCardRule.aspx" title="Whitelist" />
+      </siteMapNode>
+      <siteMapNode title="Security">
+        <siteMapNode url="~/Admin/Store/Security/Default.aspx" title="General" />
+        <siteMapNode url="~/Admin/Store/Security/Licensing.aspx" title="Licensing" />
+        <siteMapNode url="~/Admin/Store/Security/Connection.aspx" title="Database" />
+        <siteMapNode url="~/Admin/Store/Security/BlockedIPs.aspx" title="IP Firewall" />
+        <siteMapNode url="~/Admin/Store/Security/PasswordPolicy.aspx" title="Password Policy" />
+        <siteMapNode url="~/Admin/Store/Security/EncryptionKey.aspx" title="Encryption Key" />
+        <siteMapNode url="~/Admin/Store/Security/SystemSettings.aspx" title="System Settings" />
+      </siteMapNode>
+      <siteMapNode url="~/Admin/Payment/Default.aspx" title="Payments">
+        <siteMapNode url="~/Admin/Payment/Methods.aspx" title="Methods">
+          <siteMapNode url="~/Admin/Payment/AddMethod.aspx" title="Add Method" />
+          <siteMapNode url="~/Admin/Payment/EditMethod.aspx" title="Edit Method" />
+        </siteMapNode>
+        <siteMapNode url="~/Admin/Payment/Gateways.aspx" title="Gateways">
+          <siteMapNode url="~/Admin/Payment/AddGateway.aspx" title="Add Gateway" visible="false" />
+          <siteMapNode url="~/Admin/Payment/AddGateway2.aspx" title="Add Gateway" visible="false" />
+          <siteMapNode url="~/Admin/Payment/EditGateway.aspx" title="Edit Gateway" visible="false" />
+        </siteMapNode>
+        <siteMapNode url="~/Admin/Payment/GatewayTemplates.aspx" title="Gateway Templates">
+          <siteMapNode url="~/Admin/Payment/EditGatewayTemplate.aspx" title="Edit Gateway Template" visible="false" />
+        </siteMapNode>
+        <siteMapNode title="Gateway Failover" url="~/Admin/Payment/GatewayFailover/GatewayFailover.aspx" />
+
+        <siteMapNode title="Gateway Group" url="~/Admin/Payment/GatewayGroups/Templates.aspx" />
+        <siteMapNode title="Gateway Response" url="~/Admin/Payment/GatewayResponse/GatewayResponse.aspx" />
+        <siteMapNode title="Gateway Templates" url="~/Admin/Payment/Templates.aspx" />
+        <siteMapNode url="~/Admin/Payment/Settings.aspx" title="Settings"/>
+      </siteMapNode>
+      <siteMapNode title="Regions" url="~/Admin/Shipping/Regions.aspx">
+        <siteMapNode url="~/Admin/Shipping/Countries/Default.aspx" title="Countries">
+          <siteMapNode url="~/Admin/Shipping/Countries/EditProvinces.aspx" title="Provinces" />
+        </siteMapNode>
+        <siteMapNode title="Zones" url="~/Admin/Shipping/Zones/Default.aspx" description="Edit the shipping zones for your store.">
+          <siteMapNode title="Edit Ship Zone" url="~/Admin/Shipping/Zones/EditShipZone.aspx" description="Edit a shipping zone." visible="false" />
+        </siteMapNode>
+      </siteMapNode>
+      <siteMapNode title="Shipping" url="~/Admin/Shipping/Default.aspx">
+        <siteMapNode url="~/Admin/Shipping/Methods/Default.aspx" title="Methods" description="Manage the shipping methods available for customers of your store.">
+          <siteMapNode title="Edit Method" url="~/Admin/Shipping/Methods/EditShipMethodFixed.aspx" description="Edit a shipping method." visible="false" />
+          <siteMapNode title="Edit Method" url="~/Admin/Shipping/Methods/EditShipMethodMatrix.aspx" description="Edit a shipping method." visible="false" />
+          <siteMapNode title="Edit Method" url="~/Admin/Shipping/Methods/EditShipMethodProvider.aspx" description="Edit a shipping method." visible="false" />
+        </siteMapNode>
+        <siteMapNode url="~/Admin/Shipping/Providers/Default.aspx" title="Integrated Carriers" description="Configure your store to use the integrated shipping providers.">
+          <siteMapNode title="Add Carrier" url="~/Admin/Shipping/Providers/AddGateway.aspx" description="Add a new shipping provider." visible="false" />
+          <siteMapNode  title="CanadaPost" description="Configure shipping methods using the CanadaPost gateway.">
+            <siteMapNode title="Register" url="~/Admin/Shipping/Providers/CanadaPost/Register.aspx" description="Register CanadaPost Account." visible="false" />
+            <siteMapNode title="Activate" url="~/Admin/Shipping/Providers/CanadaPost/Activate.aspx" description="Activate CanadaPost Account." visible="false" />
+            <siteMapNode title="Configure" url="~/Admin/Shipping/Providers/CanadaPost/Configure.aspx" description="Configure CanadaPost Shipping Provider." visible="false" />
+            <siteMapNode title="Delete Confirmation" url="~/Admin/Shipping/Providers/CanadaPost/DeleteConfirm.aspx" description="Delete confirmation for CanadaPost Shipping Provider." visible="false" />
+          </siteMapNode>
+          <siteMapNode title="DHL" description="Configure shipping methods using the DHL gateway." >
+            <siteMapNode title="Register" url="~/Admin/Shipping/Providers/DHL/Register.aspx" description="Register DHL Account." visible="false" />
+            <siteMapNode title="Activate" url="~/Admin/Shipping/Providers/DHL/Activate.aspx" description="Activate DHL Account." visible="false" />
+            <siteMapNode title="Configure" url="~/Admin/Shipping/Providers/DHL/Configure.aspx" description="Configure DHL Shipping Provider." visible="false" />
+            <siteMapNode title="Delete Confirmation" url="~/Admin/Shipping/Providers/DHL/DeleteConfirm.aspx" description="Delete confirmation for DHL Shipping Provider." visible="false" />
+          </siteMapNode>
+          <siteMapNode title="FedEx" description="Configure shipping methods using the FedEx gateway." >
+            <siteMapNode title="Register (Step 1 of 2)" url="~/Admin/Shipping/Providers/FedEx/Register.aspx" description="Register FedEx Account." visible="false" />
+            <siteMapNode title="Register (Step 2 of 2)" url="~/Admin/Shipping/Providers/FedEx/Register1.aspx" description="Register FedEx Account." visible="false" />
+            <siteMapNode title="Register (Step 2 of 2)" url="~/Admin/Shipping/Providers/FedEx/Register2.aspx" description="Register FedEx Account." visible="false" />
+            <siteMapNode title="Configure" url="~/Admin/Shipping/Providers/FedEx/Configure.aspx" description="Configure FedEx Shipping Provider." visible="false" />
+            <siteMapNode title="Delete Confirmation" url="~/Admin/Shipping/Providers/FedEx/DeleteConfirm.aspx" description="Delete confirmation for FedEx Shipping Provider." visible="false" />
+          </siteMapNode>
+          <siteMapNode title="UPS OnLine(R) Tools" description="Configure shipping methods with UPS OnLine(R) Tools.">
+            <siteMapNode title="Register (Step 1 of 2)" url="~/Admin/Shipping/Providers/UPS/Register.aspx" description="Register for UPS OnLine(R) Tools." visible="false" />
+            <siteMapNode title="Register (Step 2 of 2)" url="~/Admin/Shipping/Providers/UPS/Register1.aspx" description="Register for UPS OnLine(R) Tools." visible="false" />
+            <siteMapNode title="Register (Direct)" url="~/Admin/Shipping/Providers/UPS/Register3.aspx" description="Register for UPS OnLine(R) Tools." visible="false" />
+            <siteMapNode title="Confirm Registration" url="~/Admin/Shipping/Providers/UPS/RegisterConfirm.aspx" description="Registration confirmation for UPS OnLine(R) Tools." visible="false" />
+            <siteMapNode title="Configure" url="~/Admin/Shipping/Providers/UPS/Configure.aspx" description="Configure UPS OnLine(R) Tools." visible="false" />
+            <siteMapNode title="Delete Confirmation" url="~/Admin/Shipping/Providers/UPS/DeleteConfirm.aspx" description="Delete confirmation for UPS OnLine(R) Tools." visible="false" />
+          </siteMapNode>
+          <siteMapNode  title="U.S. Postal Service" description="Configure shipping methods using the U.S. Postal Service gateway.">
+            <siteMapNode title="Register" url="~/Admin/Shipping/Providers/USPS/Register.aspx" description="Register USPS Account." visible="false" />
+            <siteMapNode title="Activate" url="~/Admin/Shipping/Providers/USPS/Activate.aspx" description="Activate USPS services." visible="false" />
+            <siteMapNode title="Configure" url="~/Admin/Shipping/Providers/USPS/Configure.aspx" description="Configure the USPS services." visible="false" />
+            <siteMapNode title="Delete Confirmation" url="~/Admin/Shipping/Providers/USPS/DeleteConfirm.aspx" description="Delete confirmation for USPS Shipping Provider." visible="false" />
+          </siteMapNode>
+        </siteMapNode>
+        <siteMapNode title="Warehouses" url="~/Admin/Shipping/Warehouses/Default.aspx">
+          <siteMapNode title="Edit Warehouse" url="~/Admin/Shipping/Warehouses/EditWarehouse.aspx" />
+          <siteMapNode title="Add Warehouse" url="~/Admin/Shipping/Warehouses/AddWarehouse.aspx" />
+          <siteMapNode title="Products in Warehouse" url="~/Admin/Shipping/Warehouses/ViewProducts.aspx" />
+        </siteMapNode>
+      </siteMapNode>
+      <siteMapNode title="Taxes" url="~/Admin/Taxes/Default.aspx">
+        <siteMapNode url="~/Admin/Taxes/Settings.aspx" title="Settings" />
+        <siteMapNode url="~/Admin/Taxes/TaxRules.aspx" title="Tax Rules">
+          <siteMapNode url="~/Admin/Taxes/AddTaxRule.aspx" title="Add Tax Rule" />
+          <siteMapNode url="~/Admin/Taxes/EditTaxRule.aspx" title="Edit Tax Rule" />
+        </siteMapNode>
+        <siteMapNode url="~/Admin/Taxes/TaxCodes.aspx" title="Tax Codes">
+          <siteMapNode url="~/Admin/Taxes/TaxCodeProducts.aspx" title="Assigned Products" />
+          <siteMapNode url="~/Admin/Taxes/TaxCodeTaxRules.aspx" title="Linked Tax Rules" />
+        </siteMapNode>
+        <siteMapNode url="~/Admin/taxes/Providers/Default.aspx" title="Third Party Providers" >
+          <siteMapNode url="~/Admin/taxes/Providers/CCH/Default.aspx" title="CertiTAX" />
+          <siteMapNode url="~/Admin/taxes/Providers/CyberSource/Default.aspx" title="CyberSource" />
+        </siteMapNode>
+      </siteMapNode>
+      <siteMapNode url="~/Admin/Store/Settings.aspx" title="Settings" description="View and edit the store settings in a grid layout." />
+      <siteMapNode title="Email">
+        <siteMapNode title="Settings" url="~/Admin/Store/EmailTemplates/Settings.aspx" />
+        <siteMapNode title="Templates" url="~/Admin/Store/EmailTemplates/Default.aspx">
+          <siteMapNode title="Add Email Template" url="~/Admin/Store/EmailTemplates/AddTemplate.aspx" />
+          <siteMapNode title="Edit Email Template" url="~/Admin/Store/EmailTemplates/EditTemplate.aspx" />
+        </siteMapNode>
+      </siteMapNode>
+      <siteMapNode url="~/Admin/Store/WrapGroups.aspx" title="Gift Wrap" description="Configure the gift wrap options for your store.">
+        <siteMapNode url="~/Admin/store/WrapStyles.aspx" title="Styles"  description="" visible="false" />
+      </siteMapNode>
+      <siteMapNode title="Order Statuses" url="~/Admin/Store/OrderStatuses/Default.aspx">
+        <siteMapNode title="Add Status" url="~/Admin/Store/OrderStatuses/AddOrderStatus.aspx" />
+        <siteMapNode title="Edit Status" url="~/Admin/Store/OrderStatuses/EditOrderStatus.aspx" />
+        <siteMapNode title="Delete Status" url="~/Admin/Store/OrderStatuses/DeleteOrderStatus.aspx" />
+      </siteMapNode>
+      <siteMapNode url="~/Admin/Store/ProductReviewSettings.aspx" title="Configure Product Reviews" />
+    </siteMapNode>
+    <siteMapNode title="Marketing" description="Provides tools to help market the products in your store.">
+      <siteMapNode title="Coupons" description="Manage the coupons available in your store." url="~/Admin/Marketing/Coupons/Default.aspx">
+        <siteMapNode title="Add Coupon (Step 1 of 2)" description="Add a coupon to your store." url="~/Admin/Marketing/Coupons/AddCoupon.aspx" visible="false" />
+        <siteMapNode title="Add Coupon (Step 2 of 2)" description="Add a coupon to your store." url="~/Admin/Marketing/Coupons/AddCoupon2.aspx" visible="false" />
+        <siteMapNode title="{0}" description="Edit a coupon for your store." url="~/Admin/Marketing/Coupons/EditCoupon.aspx" visible="false">
+          <siteMapNode title="Linked Products" description="Manage the product associations for a coupon." url="~/Admin/Marketing/Coupons/CouponProducts.aspx" visible="false" />
+        </siteMapNode>
+      </siteMapNode>
+      <siteMapNode title="Volume Discounts" description="Manage the volume discounts available in your store." url="~/Admin/Marketing/Discounts/Default.aspx">
+        <siteMapNode title="{0}" description="Edit a discount for your store." url="~/Admin/Marketing/Discounts/EditDiscount.aspx" visible="false">
+          <siteMapNode title="Discount Scope" description="Edit the scope of the discount." url="~/Admin/Marketing/Discounts/EditDiscountScope.aspx" visible="false" />
+        </siteMapNode>
+      </siteMapNode>
+      <siteMapNode title="Featured Products" description="Manage the featured products in your store." url="~/Admin/Marketing/FeaturedProducts.aspx" visible="false" />
+      <siteMapNode title="Email Lists" url="~/Admin/Marketing/Email/Default.aspx">
+        <siteMapNode title="{0}" url="~/Admin/Marketing/Email/ManageList.aspx">
+          <siteMapNode title="Manage Users" url="~/Admin/Marketing/Email/ManageUsers.aspx" />
+          <siteMapNode title="Send Message" url="~/Admin/Marketing/Email/SendMail.aspx" />
+        </siteMapNode>
+      </siteMapNode>
+      <siteMapNode title="Feeds" url="~/Admin/Marketing/Feeds/Default.aspx" >
+        <siteMapNode title="Google Base" url="~/Admin/Marketing/Feeds/GoogleBase.aspx" />
+        <siteMapNode title="Yahoo Shopping" url="~/Admin/Marketing/Feeds/YahooShopping.aspx" />
+        <siteMapNode title="Shopping.com" url="~/Admin/Marketing/Feeds/Shopping.com.aspx" />
+      </siteMapNode>
+    </siteMapNode>
+
+    <siteMapNode title="Tools">
+      <siteMapNode title="Shipping">
+        <siteMapNode  url="~/Admin/Tools/Shipping/ShippingSummary.aspx" title="Shipping Summary"/>
+        <siteMapNode url="~/Admin/Tools/Shipping/Returns.aspx" title="Returns" />
+
+      </siteMapNode>
+		<siteMapNode title="Report" >
+			<siteMapNode url="~/Admin/Tools/Report/ReportSchedule.aspx" title="Schedule" />
+		</siteMapNode>
+		
+      <siteMapNode url="~/Admin/Tools/Export/CustomerExport.aspx" title="Customer Export" />
+      <siteMapNode url="~/Admin/Tools/QuickLookup.aspx" title="Quick Lookup" />
+      <siteMapNode url="~/Admin/Tools/Import/AffiliateCounts.aspx" title="Import Affiliate Counts"/>
+    </siteMapNode>
+
+
+    <siteMapNode title="Reports" url="~/Admin/Reports/Default.aspx">
+
+      <siteMapNode title="Continuity" Look-RightIconUrl="arrow.gif" url="~/Admin/Reports/Continuity/Default.aspx" roles="*">
+        <siteMapNode title="Conversions Performance" url="~/Admin/Reports/Continuity/ConversionsPerformance.aspx" />
+        <siteMapNode title="Gateways Performance" url="~/Admin/Reports/Continuity/GatewaysPerformance.aspx" />
+      </siteMapNode>
+
+      <siteMapNode title="Billing" url="~/Admin/Reports/Billing/Default.aspx" >
+        <siteMapNode title="Daily Billing" url="~/Admin/Reports/Billing/DailyBillingReport.aspx"  />
+        <siteMapNode title="Initial Billing"  url="~/Admin/Reports/Billing/TrialStatus.aspx" />
+        <siteMapNode title="Rebilling Authorize" url="~/Admin/Reports/Billing/RebillAuthorizeReport.aspx"  />
+        <siteMapNode title="Rebilling Capture" url="~/Admin/Reports/Billing/RebillCaptureReport.aspx"  />
+        <siteMapNode title="Forecast Authorized" url="~/Admin/Reports/Billing/ForecastAuthorizedReport.aspx"  />
+        <siteMapNode title="Forecast Captured" url="~/Admin/Reports/Billing/ForecastCapturedReport.aspx"  />
+        <siteMapNode title="Transactions" url="~/Admin/Reports/Billing/Transaction.aspx" />
+        <siteMapNode title="Queue" url="~/Admin/Payment/Reschedule.aspx" />
+      </siteMapNode>
+
+      <siteMapNode title="Charts" url="~/Admin/Reports/Chart/Default.aspx">
+		  <siteMapNode title="Conversion">
+          <siteMapNode title="Click to Order" url="~/Admin/Reports/Chart/Conversion.aspx" />
+          <siteMapNode title="Click to Lead" url="~/Admin/Reports/Chart/ConversionLead.aspx" />
+          <siteMapNode title="Leads to Order" url="~/Admin/Reports/Chart/ConversionLeadsOrder.aspx" />
+        </siteMapNode>
+        <siteMapNode title="Order">
+          <siteMapNode title="Current Sales" url="~/Admin/Reports/Chart/SalesCurrent.aspx" />
+          <siteMapNode title="Sales Abandoned" url="~/Admin/Reports/Chart/SalesAbandon.aspx" />
+          <siteMapNode title="Sales Failed" url="~/Admin/Reports/Chart/SalesFailedCurrent.aspx" />
+          <siteMapNode title="Forecast" url="~/Admin/Reports/Chart/ForecastChart.aspx" />
+        </siteMapNode>
+      </siteMapNode>
+
+      <siteMapNode title="Shipping" >
+        <siteMapNode title="Pending Shipments" url="~/Admin/Reports/Shipping/PendingShipment.aspx" />
+        <siteMapNode title="Forecast Shipments" url="~/Admin/Reports/Shipping/ForecastShipment.aspx" />
+        <siteMapNode title="Product Shipments" url="~/Admin/Reports/Shipping/ProductShipment.aspx" />
+      </siteMapNode>
+
+
+      <siteMapNode title="Sales" >
+        <siteMapNode url="~/Admin/Reports/SalesSummary.aspx" title="Sales Summary" />
+        <siteMapNode url="~/Admin/Reports/DailySales.aspx" title="Daily Sales" />
+        <siteMapNode url="~/Admin/Reports/MonthlySales.aspx" title="Monthly Sales" />
+        <siteMapNode url="~/Admin/Reports/Taxes.aspx" title="Taxes">
+          <siteMapNode url="~/Admin/Reports/TaxDetail.aspx" title="Tax Detail" />
+        </siteMapNode>
+      </siteMapNode>
+
+      <siteMapNode title="Gateway"  url="~/Admin/Reports/Gateway/Default.aspx">
+        <siteMapNode title="Status Summary" url="~/Admin/Reports/Gateway/GatewayStatusSummary.aspx" />
+        <siteMapNode title="Breakdown" url="~/Admin/Reports/Gateway/GatewayBreakdown.aspx" />
+        <siteMapNode title="ChargeBack" url="~/Admin/Reports/ChargeBack/Chargeback.aspx" />
+        <siteMapNode title="ChargeBack Count" url="~/Admin/Reports/ChargeBack/ChargeBackCount.aspx" />
+      </siteMapNode>
+
+      <siteMapNode title="Products" >
+        <siteMapNode url="~/Admin/Reports/TopProducts.aspx" title="Sales by Product" />
+        <siteMapNode url="~/Admin/Reports/PopularProducts.aspx" title="Product Popularity" />
+        <siteMapNode url="~/Admin/Reports/PopularCategories.aspx" title="Category Popularity" />
+        <siteMapNode url="~/Admin/Reports/LowInventory.aspx" title="Low Inventory" />
+        <siteMapNode url="~/Admin/Reports/ProductBreakdown.aspx" title="Product Sales Breakdown" />
+        <siteMapNode url="~/Admin/Reports/Products/Digitalgoods.aspx" title="Digital Goods" />
+        <siteMapNode url="~/Admin/Reports/Products/Overall.aspx" title="Product Overall Status " />
+      </siteMapNode>
+      <siteMapNode title="Customers" >
+        <siteMapNode url="~/Admin/Reports/TopCustomers.aspx" title="Sales by Customer" />
+        <siteMapNode url="~/Admin/Reports/MonthlyAbandonedBaskets.aspx" title="Abandoned Baskets" />
+        <siteMapNode url="~/Admin/Reports/PopularBrowsers.aspx" title="Browser Popularity" />
+        <siteMapNode url="~/Admin/Reports/CustomerHistory.aspx" title="Customer History" />
+      </siteMapNode>
+      <siteMapNode title="Marketing">
+        <siteMapNode url="~/Admin/Reports/SalesByAffiliate.aspx" title="Sales By Affiliate" />
+        <siteMapNode url="~/Admin/Reports/SalesByAffiliateDetail.aspx" title="Sales By Affiliate Details" />
+        <siteMapNode url="~/Admin/Reports/SalesByReferrer.aspx" title="Sales By Referrer" />
+        <siteMapNode url="~/Admin/Reports/CouponUsage.aspx" title="Coupon Usage" />
+        <siteMapNode url="~/Admin/Reports/CouponUsageDetail.aspx" title="Coupon Usage Detail" />
+      </siteMapNode>
+
+      <!-- additional unlinked reports -->
+      <siteMapNode url="~/Admin/Reports/WhoIsOnline.aspx" title="Who Is Online?" />
+      <siteMapNode url="~/Admin/Store/Security/AuditLog.aspx" title="Audit Log" />
+    </siteMapNode>
+    <siteMapNode title="Website" description="Settings to control the look and feel of the store.">
+      <siteMapNode url="~/Admin/Website/LogoAndImages.aspx" title="Logo and Images" />
+      <siteMapNode url="~/Admin/Website/Scriptlets/Default.aspx" title="Content and Layout">
+        <siteMapNode url="~/Admin/Website/Scriptlets/EditScriptlet.aspx" title="Edit Scriptlet" />
+      </siteMapNode>
+      <siteMapNode url="~/Admin/Website/Scriptlets/Content.aspx" title="Content Scriptlets">
+        <siteMapNode url="~/Admin/Website/Scriptlets/EditContentScriptlet.aspx" title="Edit Scriptlet" />
+      </siteMapNode>
+      <siteMapNode url="~/Admin/Website/ThemesAndLayouts.aspx" title="Themes and Display Pages" />
+      <siteMapNode url="~/Admin/Website/CustomizedPages.aspx" title="Customized Pages" />
+      <siteMapNode url="~/Admin/Website/ThemeManager.aspx" title="Themes File Manager" />
+      <siteMapNode url="~/Admin/Website/CommonXmlSiteMap.aspx" title="XML Site Map" />
+    </siteMapNode>
+    <siteMapNode title="Help">
+      <siteMapNode title="Error Log" url="~/Admin/Help/ErrorLog.aspx" />
+      <siteMapNode title="ConLib Reference" url="~/Admin/Website/Scriptlets/ConLibHelp2.aspx" />
+      <siteMapNode title="ConLib Reference" url="~/Admin/Website/Scriptlets/ConLibHelpAll2.aspx" />
+    </siteMapNode>
+    <siteMapNode url="~/Logout.aspx" title="Logout" description="Log Out" />
+    <siteMapNode url="~/Admin/Search.aspx" title="Search" description="Admin Search" />
+  </siteMapNode>
+</siteMap>

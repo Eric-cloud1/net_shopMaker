@@ -1,0 +1,358 @@
+<%@ Register Assembly="MakerShop.Web" Namespace="MakerShop.Web.UI.WebControls" TagPrefix="cb" %>
+<%@ Register Assembly="MakerShop.Web" Namespace="MakerShop.Web.UI.WebControls" TagPrefix="cb" %>
+<%@ register tagprefix="web" namespace="WebChart" assembly="WebChart"%>
+
+<asp:Image SkinId="StoreLogo" runat="server" ImageUrl="images/logo.png" />
+<asp:Image SkinId="StoreLogoGray" runat="server" ImageUrl="images/logo_gray.jpg" />
+
+<asp:Image SkinId="SearchButton" runat="server" ImageUrl="images/search_btn.gif" />
+<asp:ImageButton SkinId="SearchButton" runat="server" ImageUrl="images/search_btn.gif" />
+
+<asp:Image SkinId="GoButton" runat="server" ImageUrl="images/go_btn.gif" ImageAlign="AbsMiddle" />
+<asp:ImageButton SkinId="GoButton" runat="server" ImageUrl="images/go_btn.gif" />
+<asp:TreeView SkinId="Categories" runat="server" ImageSet="Arrows" />
+
+<%-- THE THUMBNAIL SKINS WILL SET A DEFAULT IMAGE URL FROM THIS THEME --%>
+<%-- THE SETTING CAN BE OVERRIDDEN WHEN A VALID IMAGE URL IS PROVIDED IN THE CONTROL --%>
+<asp:Image SkinId="CategoryThumbnail" runat="server" ImageUrl="~/images/thumbs/CategoryThumbnail.gif" />
+<asp:Image SkinId="ProductThumbnail" runat="server" ImageUrl="~/images/thumbs/ProductThumbnail.gif" />
+<asp:Image SkinId="WebpageThumbnail" runat="server" Imagerl="~/images/thumbs/WebpageThumbnail.gif" />
+<asp:Image SkinId="LinkThumbnail" runat="server" ImageUrl="~/images/thumbs/LinkThumbnail.gif" />
+
+<%-- All buttons should have this CssClass unless otherwise specified. --%>
+<asp:Button runat="server" CssClass="button" />
+<asp:HyperLink SkinId="Button" runat="server" CssClass="button" />
+<asp:LinkButton SkinId="Button" runat="server" CssClass="button" />
+<asp:Button runat="server" SkinId="AdminButton" CssClass="button"/>
+
+<%-- link that should show like a standard HTML link. --%>
+<asp:HyperLink SkinId="Link" runat="server" CssClass="link" />
+<asp:LinkButton SkinId="Link" runat="server" CssClass="link" />
+
+<%-- link that appears within a table or grid . --%>
+<asp:HyperLink SkinId="GridLink" runat="server" CssClass="link" />
+<asp:LinkButton SkinId="GridLink" runat="server" CssClass="link" />
+
+<%-- helper styles for tooltip displays --%>
+<cb:ToolTipLabel runat="server" CssClass="toolTip" />
+<cb:ToolTipLabel SkinId="FieldHeader" runat="server" CssClass="toolTip" LabelCssClass="inlineCaption" />
+<cb:ToolTipLabel SkinId="ColHeader" runat="server" CssClass="toolTipHeader" />
+
+<%-- ADDED BY LOGAN --%>
+<asp:ImageButton SkinId="LoginButton" runat="server" ImageUrl="images/go_btn.gif" />
+<asp:ImageButton SkinId="RegisterButton" runat="server" ImageUrl="images/go_btn.gif" />
+<%-- Add by Rajib ---%>
+<asp:ImageButton SkinId="SaveButton" runat="server" ImageUrl="Images/save_btn.gif" ImageAlign="AbsMiddle" />
+
+<%-- SKIN FOR LABEL THAT ACTS AS AN INLINE CAPTION --%>
+<asp:Label SkinId="FieldHeader" runat="server" CssClass="inlineCaption" />
+
+<%-- SKIN FOR LABEL / TEXT THAT INDICATE STATUS OR CONDITION --%>
+<asp:Label SkinId="GoodCondition" runat="server" CssClass="goodCondition" />
+<asp:Label SkinId="PendingCondition" runat="server" CssClass="pendingCondition" />
+<asp:Label SkinId="WarnCondition" runat="server" CssClass="warnCondition" />
+<asp:Label SkinId="ErrorCondition" runat="server" CssClass="errorCondition" />
+
+<asp:Label SkinId="PageCaption" runat="server" CssClass="PageCaption" />
+<asp:Label SkinId="PageSubCaption" runat="server" CssClass="PageSubCaption" />
+<asp:Label SkinId="SidebarCaption" runat="server" CssClass="SidebarCaption" />
+
+<%-- ***************************************************************** --%>
+<%-- ** SKINNING FOR ICONS, ASP:IMAGEBUTTON                         ** --%>
+<%-- ***************************************************************** --%>
+
+<%-- THESE ICONS HAVE BEEN UPDATED TO 24X24 GIF --%>
+<asp:ImageButton SkinId="CategoryIcon" runat="server" ImageUrl="Images/Icons/category.gif" ImageAlign="AbsMiddle" />
+<asp:ImageButton SkinId="ProductIcon" runat="server" ImageUrl="Images/Icons/product.gif" ImageAlign="AbsMiddle" />
+<asp:ImageButton SkinId="WebpageIcon" runat="server" ImageUrl="Images/Icons/webpage.gif" ImageAlign="AbsMiddle" />
+<asp:ImageButton SkinId="LinkIcon" runat="server" ImageUrl="Images/Icons/link.gif" ImageAlign="AbsMiddle" />
+<asp:ImageButton SkinId="BigCategoryIcon" runat="server" ImageUrl="Images/Icons/BigCategory.gif" ImageAlign="AbsMiddle" />
+<asp:ImageButton SkinId="BigProductIcon" runat="server" ImageUrl="Images/Icons/BigProduct.gif" ImageAlign="AbsMiddle" />
+<asp:ImageButton SkinId="BigWebpageIcon" runat="server" ImageUrl="Images/Icons/BigWebpage.gif" ImageAlign="AbsMiddle" />
+<asp:ImageButton SkinId="BigLinkIcon" runat="server" ImageUrl="Images/Icons/BigLink.gif" ImageAlign="AbsMiddle" />
+<asp:ImageButton SkinId="UpIcon" runat="server" ImageUrl="Images/Icons/arrow_up.gif" ImageAlign="AbsMiddle" />
+<asp:ImageButton SkinId="DownIcon" runat="server" ImageUrl="Images/Icons/arrow_down.gif" ImageAlign="AbsMiddle" />
+<asp:ImageButton SkinId="EditIcon" runat="server" ImageUrl="Images/Icons/edit.gif" ImageAlign="AbsMiddle" />
+<asp:ImageButton SkinId="MoveIcon" runat="server" ImageUrl="Images/Icons/Move.gif" ImageAlign="AbsMiddle" />
+<asp:ImageButton SkinId="DeleteIcon" runat="server" ImageUrl="Images/Icons/delete.gif" ImageAlign="AbsMiddle" />
+<asp:ImageButton SkinId="SearchIcon" runat="server" ImageUrl="Images/Icons/search.gif" ImageAlign="AbsMiddle" />
+<asp:ImageButton SkinId="CmsPublicIcon" runat="server" ImageUrl="Images/Icons/CmsPublic.gif" ImageAlign="AbsBottom" />
+<asp:ImageButton SkinId="CmsHiddenIcon" runat="server" ImageUrl="Images/Icons/CmsHidden.gif" ImageAlign="AbsBottom" />
+<asp:ImageButton SkinId="CmsPrivateIcon" runat="server" ImageUrl="Images/Icons/CmsPrivate.gif" ImageAlign="AbsBottom" />
+<asp:ImageButton SkinId="AddIcon" runat="server" ImageUrl="Images/Icons/add.gif" ImageAlign="AbsMiddle" />
+<asp:ImageButton SkinId="BlockIcon" runat="server" ImageUrl="Images/Icons/block.gif" ImageAlign="AbsMiddle" />
+<asp:ImageButton SkinId="CancelIcon" runat="server" ImageUrl="Images/Icons/cancel.gif" ImageAlign="AbsMiddle" />
+<asp:ImageButton SkinId="CopyIcon" runat="server" ImageUrl="Images/Icons/copy.gif" ImageAlign="AbsMiddle" />
+<asp:ImageButton SkinId="DownloadIcon" runat="server" ImageUrl="Images/Icons/download.gif" ImageAlign="AbsMiddle" />
+<asp:ImageButton SkinId="EmailIcon" runat="server" ImageUrl="Images/Icons/email.gif" ImageAlign="AbsMiddle" />
+<asp:ImageButton SkinId="FindIcon" runat="server" ImageUrl="Images/Icons/find.gif" ImageAlign="AbsMiddle" />
+<asp:ImageButton SkinId="GroupIcon" runat="server" ImageUrl="Images/Icons/group.gif" ImageAlign="AbsMiddle" />
+<asp:ImageButton SkinId="PreviewIcon" runat="server" ImageUrl="Images/Icons/preview.gif" ImageAlign="AbsMiddle" />
+<asp:ImageButton SkinId="SaveIcon" runat="server" ImageUrl="Images/Icons/save.gif" ImageAlign="AbsMiddle" />
+<asp:ImageButton SkinId="GoIcon" runat="server" ImageUrl="Images/Icons/play.gif" ImageAlign="AbsMiddle" />
+<asp:ImageButton SkinId="CodeYellow" runat="server" ImageUrl="Images/Icons/CodeYellow.gif" ImageAlign="AbsMiddle" />
+<asp:ImageButton SkinId="CodeRed" runat="server" ImageUrl="Images/Icons/CodeRed.gif" ImageAlign="AbsMiddle" />
+<asp:ImageButton SkinId="CodeGreen" runat="server" ImageUrl="Images/Icons/CodeGreen.gif" ImageAlign="AbsMiddle" />
+<asp:ImageButton SkinId="UpdateRate" runat="server" ImageUrl="Images/Icons/Update_Rate.gif" ImageAlign="AbsMiddle" />
+<asp:ImageButton SkinId="HelpIcon" runat="server" ImageUrl="Images/Icons/help.gif" ImageAlign="AbsMiddle" />
+<asp:ImageButton SkinId="LoginIcon" runat="server" ImageUrl="Images/Icons/login.gif" ImageAlign="AbsMiddle" />
+
+<asp:ImageButton SkinId="Amex" runat="server" ImageUrl="Images/Icons/payment/amex.gif" ImageAlign="AbsMiddle" />
+<asp:ImageButton SkinId="Check" runat="server" ImageUrl="Images/Icons/payment/check.gif" ImageAlign="AbsMiddle" />
+<asp:ImageButton SkinId="Diners" runat="server" ImageUrl="Images/Icons/payment/diners.gif" ImageAlign="AbsMiddle" />
+<asp:ImageButton SkinId="Discover" runat="server" ImageUrl="Images/Icons/payment/discover.gif" ImageAlign="AbsMiddle" />
+<asp:ImageButton SkinId="GiftCard" runat="server" ImageUrl="Images/Icons/payment/gift_card.gif" ImageAlign="AbsMiddle" />
+<asp:ImageButton SkinId="Google" runat="server" ImageUrl="Images/Icons/payment/google.gif" ImageAlign="AbsMiddle" />
+<asp:ImageButton SkinId="Jcb" runat="server" ImageUrl="Images/Icons/payment/jcb.gif" ImageAlign="AbsMiddle" />
+<asp:ImageButton SkinId="Maestro" runat="server" ImageUrl="Images/Icons/payment/maestro.gif" ImageAlign="AbsMiddle" />
+<asp:ImageButton SkinId="Mail" runat="server" ImageUrl="Images/Icons/payment/mail.gif" ImageAlign="AbsMiddle" />
+<asp:ImageButton SkinId="MasterCard" runat="server" ImageUrl="Images/Icons/payment/mastercard.gif" ImageAlign="AbsMiddle" />
+<asp:ImageButton SkinId="Paypal" runat="server" ImageUrl="Images/Icons/payment/paypal.gif" ImageAlign="AbsMiddle" />
+<asp:ImageButton SkinId="Phone" runat="server" ImageUrl="Images/Icons/payment/phone.gif" ImageAlign="AbsMiddle" />
+<asp:ImageButton SkinId="PurchaseOrder" runat="server" ImageUrl="Images/Icons/payment/purchaseorder.gif" ImageAlign="AbsMiddle" />
+<asp:ImageButton SkinId="Solo" runat="server" ImageUrl="Images/Icons/payment/Solo.gif" ImageAlign="AbsMiddle" />
+<asp:ImageButton SkinId="Unknown" runat="server" ImageUrl="Images/Icons/payment/unknown.gif" ImageAlign="AbsMiddle" />
+<asp:ImageButton SkinId="Visa" runat="server" ImageUrl="Images/Icons/payment/visa.gif" ImageAlign="AbsMiddle" />
+<asp:ImageButton SkinId="VisaDebit" runat="server" ImageUrl="Images/Icons/payment/visaDebit.gif" ImageAlign="AbsMiddle" />
+
+
+<%-- THESE ICONS NEED FURTHER INVESTIGATION --%>
+
+
+<asp:ImageButton SkinId="YellowFlashing" runat="server" ImageUrl="Images/Icons/lights/Traffic-Lights-Yellow-flashing.gif" ImageAlign="AbsMiddle" />
+<asp:ImageButton SkinId="Yellow" runat="server" ImageUrl="Images/Icons/lights/Traffic-Lights-Yellow.gif" ImageAlign="AbsMiddle" />
+<asp:ImageButton SkinId="Red" runat="server" ImageUrl="Images/Icons/lights/Traffic-Lights-Red.gif" ImageAlign="AbsMiddle" />
+<asp:ImageButton SkinId="RedYellowGreen" runat="server" ImageUrl="Images/Icons/lights/Traffic-Lights-RedYellowGreen.gif" ImageAlign="AbsMiddle" />
+<asp:ImageButton SkinId="Green" runat="server" ImageUrl="Images/Icons/lights/Traffic-Lights-Green.gif" ImageAlign="AbsMiddle" />
+
+
+<%-- ***************************************************************** --%>
+<%-- ** SKINNING FOR ICONS, ASP:IMAGE                               ** --%>
+<%-- ***************************************************************** --%>
+<%-- THESE ICONS HAVE BEEN UPDATED TO 24X24 GIF --%>
+<asp:Image SkinId="CategoryIcon" runat="server" ImageUrl="Images/Icons/category.gif" ImageAlign="AbsMiddle" />
+<asp:Image SkinId="ProductIcon" runat="server" ImageUrl="Images/Icons/product.gif" ImageAlign="AbsMiddle" />
+<asp:Image SkinId="ImageIcon" runat="server" ImageUrl="Images/Icons/image_icon.gif" ImageAlign="AbsMiddle" />
+<asp:Image SkinId="WebpageIcon" runat="server" ImageUrl="Images/Icons/webpage.gif" ImageAlign="AbsMiddle" />
+<asp:Image SkinId="LinkIcon" runat="server" ImageUrl="Images/Icons/link.gif" ImageAlign="AbsMiddle" />
+<asp:Image SkinId="BigCategoryIcon" runat="server" ImageUrl="Images/Icons/BigCategory.gif" ImageAlign="AbsMiddle" />
+<asp:Image SkinId="BigProductIcon" runat="server" ImageUrl="Images/Icons/BigProduct.gif" ImageAlign="AbsMiddle" />
+<asp:Image SkinId="BigWebpageIcon" runat="server" ImageUrl="Images/Icons/BigWebpage.gif" ImageAlign="AbsMiddle" />
+<asp:Image SkinId="BigLinkIcon" runat="server" ImageUrl="Images/Icons/BigLink.gif" ImageAlign="AbsMiddle" />
+<asp:Image SkinId="UpIcon" runat="server" ImageUrl="Images/Icons/arrow_up.gif" ImageAlign="AbsMiddle" />
+<asp:Image SkinId="DownIcon" runat="server" ImageUrl="Images/Icons/arrow_down.gif" ImageAlign="AbsMiddle" />
+<asp:Image SkinId="EditIcon" runat="server" ImageUrl="Images/Icons/edit.gif" ImageAlign="AbsMiddle" />
+<asp:Image SkinId="MoveIcon" runat="server" ImageUrl="Images/Icons/Move.gif" ImageAlign="AbsMiddle" />
+<asp:Image SkinId="DeleteIcon" runat="server" ImageUrl="Images/Icons/delete.gif" ImageAlign="AbsMiddle" />
+<asp:Image SkinId="SearchIcon" runat="server" ImageUrl="Images/Icons/search.gif" ImageAlign="AbsMiddle" />
+<asp:Image SkinId="CmsPublicIcon" runat="server" ImageUrl="Images/Icons/CmsPublic.gif" ImageAlign="AbsBottom" />
+<asp:Image SkinId="CmsHiddenIcon" runat="server" ImageUrl="Images/Icons/CmsHidden.gif" ImageAlign="AbsBottom" />
+<asp:Image SkinId="CmsPrivateIcon" runat="server" ImageUrl="Images/Icons/CmsPrivate.gif" ImageAlign="AbsBottom" />
+
+<%-- THESE ICONS HAVE NOT BEEN UPDATED --%>
+<asp:Image SkinId="AddIcon" runat="server" ImageUrl="Images/Icons/add.gif" ImageAlign="AbsMiddle" />
+<asp:Image SkinId="BlockIcon" runat="server" ImageUrl="Images/Icons/block.gif" ImageAlign="AbsMiddle" />
+<asp:Image SkinId="CancelIcon" runat="server" ImageUrl="Images/Icons/cancel.gif" ImageAlign="AbsMiddle" />
+<asp:Image SkinId="CopyIcon" runat="server" ImageUrl="Images/Icons/copy.gif" ImageAlign="AbsMiddle" />
+<asp:Image SkinId="DownloadIcon" runat="server" ImageUrl="Images/Icons/download.gif" ImageAlign="AbsMiddle" />
+<asp:Image SkinId="EmailIcon" runat="server" ImageUrl="Images/Icons/email.gif" ImageAlign="AbsMiddle" />
+<asp:Image SkinId="FindIcon" runat="server" ImageUrl="Images/Icons/find.gif" ImageAlign="AbsMiddle" />
+<asp:Image SkinId="GroupIcon" runat="server" ImageUrl="Images/Icons/group.gif" ImageAlign="AbsMiddle" />
+<asp:Image SkinId="PreviewIcon" runat="server" ImageUrl="Images/Icons/preview.gif" ImageAlign="AbsMiddle" />
+<asp:Image SkinId="SaveIcon" runat="server" ImageUrl="Images/Icons/save.gif" ImageAlign="AbsMiddle" />
+<asp:Image SkinId="GoIcon" runat="server" ImageUrl="Images/Icons/play.gif" ImageAlign="AbsMiddle" />
+<asp:Image SkinId="CodeYellow" runat="server" ImageUrl="Images/Icons/CodeYellow.gif" ImageAlign="AbsMiddle" />
+<asp:Image SkinId="CodeRed" runat="server" ImageUrl="Images/Icons/CodeRed.gif" ImageAlign="AbsMiddle" />
+<asp:Image SkinId="CodeGreen" runat="server" ImageUrl="Images/Icons/CodeGreen.gif" ImageAlign="AbsMiddle" />
+<asp:Image SkinId="LoginIcon" runat="server" ImageUrl="Images/Icons/login.gif" ImageAlign="AbsMiddle" />
+
+<asp:Image SkinId="Amex" runat="server" ImageUrl="Images/Icons/payment/amex.gif" ImageAlign="AbsMiddle" />
+<asp:Image SkinId="Check" runat="server" ImageUrl="Images/Icons/payment/check.gif" ImageAlign="AbsMiddle" />
+<asp:Image SkinId="Diners" runat="server" ImageUrl="Images/Icons/payment/diners.gif" ImageAlign="AbsMiddle" />
+<asp:Image SkinId="Discover" runat="server" ImageUrl="Images/Icons/payment/discover.gif" ImageAlign="AbsMiddle" />
+<asp:Image SkinId="GiftCard" runat="server" ImageUrl="Images/Icons/payment/gift_card.gif" ImageAlign="AbsMiddle" />
+<asp:Image SkinId="Google" runat="server" ImageUrl="Images/Icons/payment/google.gif" ImageAlign="AbsMiddle" />
+<asp:Image SkinId="Jcb" runat="server" ImageUrl="Images/Icons/payment/jcb.gif" ImageAlign="AbsMiddle" />
+<asp:Image SkinId="Maestro" runat="server" ImageUrl="Images/Icons/payment/maestro.gif" ImageAlign="AbsMiddle" />
+<asp:Image SkinId="Mail" runat="server" ImageUrl="Images/Icons/payment/mail.gif" ImageAlign="AbsMiddle" />
+<asp:Image SkinId="MasterCard" runat="server" ImageUrl="Images/Icons/payment/mastercard.gif" ImageAlign="AbsMiddle" />
+<asp:Image SkinId="Paypal" runat="server" ImageUrl="Images/Icons/payment/paypal.gif" ImageAlign="AbsMiddle" />
+<asp:Image SkinId="Phone" runat="server" ImageUrl="Images/Icons/payment/phone.gif" ImageAlign="AbsMiddle" />
+<asp:Image SkinId="PurchaseOrder" runat="server" ImageUrl="Images/Icons/payment/purchaseorder.gif" ImageAlign="AbsMiddle" />
+<asp:Image SkinId="Solo" runat="server" ImageUrl="Images/Icons/payment/solo.gif" ImageAlign="AbsMiddle" />
+<asp:Image SkinId="Unknown" runat="server" ImageUrl="Images/Icons/payment/unknown.gif" ImageAlign="AbsMiddle" />
+<asp:Image SkinId="Visa" runat="server" ImageUrl="Images/Icons/payment/visa.gif" ImageAlign="AbsMiddle" />
+<asp:Image SkinId="VisaDebit" runat="server" ImageUrl="Images/Icons/payment/visadebit.gif" ImageAlign="AbsMiddle" />
+
+<asp:Image SkinId="YellowFlashing" runat="server" ImageUrl="Images/Icons/lights/Traffic-Lights-Yellow-flashing.gif" ImageAlign="AbsMiddle" />
+<asp:Image SkinId="Yellow" runat="server" ImageUrl="Images/Icons/lights/Traffic-Lights-Yellow.gif" ImageAlign="AbsMiddle" />
+<asp:Image SkinId="Red" runat="server" ImageUrl="Images/Icons/lights/Traffic-Lights-Red.gif" ImageAlign="AbsMiddle" />
+<asp:Image SkinId="RedYellowGreen" runat="server" ImageUrl="Images/Icons/lights/Traffic-Lights-RedYellowGreen.gif" ImageAlign="AbsMiddle" />
+<asp:Image SkinId="Green" runat="server" ImageUrl="Images/Icons/lights/Traffic-Lights-Green.gif" ImageAlign="AbsMiddle" />
+
+
+
+<%-- THESE ICONS NEED FURTHER INVESTIGATION --%>
+<asp:Image SkinId="ParentCategoryIcon" runat="server" ImageUrl="Images/Icons/ParentCategory.png" ImageAlign="AbsMiddle" />
+<asp:Image SkinId="PlusIcon" runat="server" ImageUrl="Images/Icons/plus.png" ImageAlign="AbsMiddle" />
+<asp:Image SkinId="MinusIcon" runat="server" ImageUrl="Images/Icons/minus.png" ImageAlign="AbsMiddle" />
+<asp:Image SkinId="GiftCertIcon" runat="server" ImageUrl="Images/Icons/icon_giftcertificate.gif" ImageAlign="AbsMiddle" />
+<asp:Image SkinId="DigitalGoodIcon" runat="server" ImageUrl="Images/Icons/download.gif" ImageAlign="AbsMiddle" />
+
+<%-- ***************************************************************** --%>
+<%-- ** END SKINNING FOR ICONS                                      ** --%>
+<%-- ***************************************************************** --%>
+
+<%-- default style for all validation summaries --%>
+<asp:ValidationSummary runat="server" CssClass="validationSummary" />
+
+<%-- style for generic table of data, suitable for printing --%>
+<asp:GridView SkinId="DataSheet" runat="server" CssClass="dataSheet" GridLines="Both">
+    <RowStyle CssClass="oddRow" />
+    <AlternatingRowStyle CssClass="evenRow" />
+    <PagerStyle CssClass="paging" />
+</asp:GridView>
+<cb:SortedGridView SkinID="DataSheet" runat="server" CssClass="dataSheet" GridLines="Both" PagerSettings-Mode="NumericFirstLast"
+    SortAscImageUrl="~/App_Themes/MakerShopAdmin/images/sort-order-ascending.gif" SortDescImageUrl="~/App_Themes/MakerShopAdmin/images/sort-order-descending.gif" >
+    <RowStyle CssClass="oddRow" />
+    <AlternatingRowStyle CssClass="evenRow" />
+    <PagerStyle CssClass="paging" />
+</cb:SortedGridView>
+
+<%-- style for summary table --%>
+<asp:GridView SkinId="Summary" runat="server" CssClass="summary" CellSpacing="0" GridLines="Both">
+    <RowStyle CssClass="oddRow" />
+    <AlternatingRowStyle CssClass="evenRow" />
+    <PagerStyle CssClass="paging" />
+    <EmptyDataRowStyle CssClass="empty" />
+</asp:GridView>
+<cb:SortedGridView SkinID="Summary" runat="server" CssClass="summary" GridLines="Both" PagerSettings-Mode="Numeric"
+    SortAscImageUrl="~/App_Themes/MakerShopAdmin/images/sort-order-ascending.gif" SortDescImageUrl="~/App_Themes/MakerShopAdmin/images/sort-order-descending.gif" >
+    <RowStyle CssClass="oddRow" />
+    <AlternatingRowStyle CssClass="evenRow" />
+    <PagerStyle CssClass="paging" />
+    <EmptyDataRowStyle CssClass="empty" />
+</cb:SortedGridView>
+
+<%-- style for data intended for admin display to sort and page through --%>
+<asp:GridView SkinId="PagedList" runat="server" CssClass="pagedList" CellSpacing="0" GridLines="Both">
+    <RowStyle CssClass="oddRow" />
+    <AlternatingRowStyle CssClass="evenRow" />
+    <PagerStyle CssClass="paging" HorizontalAlign="right" />
+    <EmptyDataRowStyle CssClass="empty" />
+</asp:GridView>
+<cb:SortedGridView SkinID="PagedList" runat="server" GridLines="Both" CssClass="pagedList" CellSpacing="0"  PagerSettings-Mode="Numeric"
+    SortAscImageUrl="~/App_Themes/MakerShopAdmin/images/sort-order-ascending.gif" SortDescImageUrl="~/App_Themes/MakerShopAdmin/images/sort-order-descending.gif">
+    <RowStyle CssClass="oddRow" />
+    <AlternatingRowStyle CssClass="evenRow" />
+    <PagerStyle CssClass="paging" />
+    <EmptyDataRowStyle CssClass="empty" />
+</cb:SortedGridView>
+
+<%-- style for data intended for admin display that is nested within a larger --%>
+<asp:GridView SkinId="NestedList" runat="server" CssClass="nestedList" CellSpacing="1" GridLines="Both">
+    <RowStyle CssClass="oddRow" />
+    <AlternatingRowStyle CssClass="evenRow" />
+    <PagerStyle CssClass="paging" HorizontalAlign="center" />
+    <EmptyDataRowStyle CssClass="empty" />
+</asp:GridView>
+<cb:SortedGridView SkinID="NestedList" runat="server" CssClass="nestedList" GridLines="Both" PagerSettings-Mode="NumericFirstLast"
+    SortAscImageUrl="~/App_Themes/MakerShopAdmin/images/sort-order-ascending.gif" SortDescImageUrl="~/App_Themes/MakerShopAdmin/images/sort-order-descending.gif" >
+    <RowStyle CssClass="oddRow" />
+    <AlternatingRowStyle CssClass="evenRow" />
+    <PagerStyle CssClass="paging" />
+    <EmptyDataRowStyle CssClass="empty" />
+</cb:SortedGridView>
+
+<%-- default style for webcharts --%>
+<web:chartcontrol runat="server" SkinID="Column" BorderStyle="None" Padding="0" ChartPadding="20" TopPadding="0">
+    <Border Color="#dddddd" />
+    <PlotBackground Color="#E3EFFF" Type="Solid" ForeColor="#0163BE" LinearGradientMode="Horizontal" />
+    <Background Color="#E3EFFF" Type="Solid" ForeColor="#E3EFFF" />
+    <YAxisFont ForeColor="#0162BE" Font="Arial, 7pt" Alignment="Far" LineAlignment="Far" Trimming="None" FormatFlags="NoClip" />
+    <XAxisFont ForeColor="#0162BE" Font="Arial, 7pt" Alignment="Center" LineAlignment="Center" Trimming="None" FormatFlags="NoClip,NoWrap" />
+    <charts>
+        <web:ColumnChart ShowLineMarkers="False">
+            <DataLabels Position="Top" Visible="true" ShowValue="true" ShowLegend="true" ShowZeroValues="false" Font="Arial, 8pt" ForeColor="Black" NumberFormat="0,0"></DataLabels>
+            <Fill Color="#0162BE" ForeColor="#8CC7FE" Type="LinearGradient" LinearGradientMode="Vertical" Angle="90" StartPoint="0,0" EndPoint="440,300" ></Fill>
+            <Line Color="#0162BE" StartCap="Flat" EndCap="Flat" DashStyle="Solid" LineJoin="Miter"></Line>
+        </web:ColumnChart>
+    </charts>
+</web:chartcontrol>
+
+
+<web:chartcontrol runat="server" SkinID="AlertLine" BorderStyle="None" Padding="0" ChartPadding="20" TopPadding="0">
+    <Border Color="#dddddd" />
+    <PlotBackground Color="yellow" Type="Solid" ForeColor="#0163BE" LinearGradientMode="Horizontal" />
+    <Background Color="#E3EFFF" Type="Solid" ForeColor="#E3EFFF" />
+    <YAxisFont ForeColor="#0162BE" Font="Arial, 7pt" Alignment="Far" LineAlignment="Far" Trimming="None" FormatFlags="NoClip" />
+    <XAxisFont ForeColor="#0162BE" Font="Arial, 7pt" Alignment="Center" LineAlignment="Center" Trimming="None" FormatFlags="NoClip,NoWrap" />
+    <charts>
+         <web:LineChart ShowLineMarkers="False">
+            <DataLabels Position="Top" Visible="true" ShowValue="true" ShowLegend="true" ShowZeroValues="false" Font="Arial, 8pt" ForeColor="Black" NumberFormat="0,0"></DataLabels>
+            <Fill Color="yellow" ForeColor="#8CC7FE" Type="LinearGradient" LinearGradientMode="Vertical" Angle="90" StartPoint="0,0" EndPoint="440,300" ></Fill>
+            <Line Color="#0162BE" StartCap="Flat" EndCap="Flat" DashStyle="Solid" LineJoin="Miter"></Line>
+        </web:LineChart>
+    </charts>
+</web:chartcontrol>
+
+
+<web:chartcontrol runat="server" SkinID="Line" BorderStyle="None" Padding="0" ChartPadding="20" TopPadding="0">
+    <Border Color="#dddddd" />
+    <PlotBackground Color="#E3EFFF" Type="Solid" ForeColor="#0163BE" LinearGradientMode="Horizontal" />
+    <Background Color="#E3EFFF" Type="Solid" ForeColor="#E3EFFF" />
+    <YAxisFont ForeColor="#0162BE" Font="Arial, 7pt" Alignment="Far" LineAlignment="Far" Trimming="None" FormatFlags="NoClip" />
+    <XAxisFont ForeColor="#0162BE" Font="Arial, 7pt" Alignment="Center" LineAlignment="Center" Trimming="None" FormatFlags="NoClip,NoWrap" />
+    <charts>
+         <web:LineChart ShowLineMarkers="False">
+            <DataLabels Position="Top" Visible="true" ShowValue="true" ShowLegend="true" ShowZeroValues="false" Font="Arial, 8pt" ForeColor="Black" NumberFormat="0,0"></DataLabels>
+            <Fill Color="yellow" ForeColor="#8CC7FE" Type="LinearGradient" LinearGradientMode="Vertical" Angle="90" StartPoint="0,0" EndPoint="440,300" ></Fill>
+            <Line Color="#0162BE" StartCap="Flat" EndCap="Flat" DashStyle="Solid" LineJoin="Miter"></Line>
+        </web:LineChart>
+    </charts>
+</web:chartcontrol>
+
+<web:chartcontrol runat="server" SkinID="CompactColumn" BorderStyle="None" Padding="0" ChartPadding="20" TopPadding="0">
+    <Border Color="#dddddd" />
+    <PlotBackground Color="#E3EFFF" Type="Solid" ForeColor="#0163BE" LinearGradientMode="Horizontal" />
+    <Background Color="#E3EFFF" Type="Solid" ForeColor="#E3EFFF" />
+    <YAxisFont ForeColor="#0162BE" Font="Arial, 7pt" Alignment="Far" LineAlignment="Far" Trimming="None" FormatFlags="NoClip" />
+    <XAxisFont ForeColor="#0162BE" Font="Arial, 6pt" Alignment="Center" LineAlignment="Center" Trimming="None" FormatFlags="NoClip,NoWrap" />
+    <charts>
+        <web:ColumnChart ShowLineMarkers="False">
+            <DataLabels Position="Top" Visible="false" ShowValue="true" ShowLegend="true" ShowZeroValues="false" Font="Arial, 8pt" ForeColor="Black" NumberFormat="0,0"></DataLabels>
+            <Fill Color="#0162BE" ForeColor="#8CC7FE" Type="LinearGradient" LinearGradientMode="Vertical" Angle="90" StartPoint="0,0" EndPoint="440,300" ></Fill>
+            <Line Color="#0162BE" StartCap="Flat" EndCap="Flat" DashStyle="Solid" LineJoin="Miter"></Line>
+        </web:ColumnChart>
+    </charts>
+</web:chartcontrol>
+
+<web:chartcontrol runat="server" SkinID="HorizontalBar" BorderStyle="None" RenderHorizontally="True" Padding="0" ChartPadding="4" TopChartPadding="40" TopPadding="0">
+    <Border Color="#dddddd" />
+    <PlotBackground Color="#E3EFFF" Type="Solid" ForeColor="#0163BE" LinearGradientMode="Horizontal" />
+    <Background Color="#E3EFFF" Type="Solid" ForeColor="#E3EFFF" />
+    <YAxisFont ForeColor="#0162BE" Font="Arial, 7pt" Alignment="Near" LineAlignment="Center" Trimming="None" FormatFlags="NoClip" />
+    <XAxisFont ForeColor="#0162BE" Font="Arial, 7pt" Alignment="Near" LineAlignment="Center" Trimming="None" FormatFlags="NoClip,NoWrap,DirectionVertical" />
+    <charts>
+        <web:ColumnChart ShowLineMarkers="False">
+            <DataLabels Visible="false"></DataLabels>
+            <Fill Color="#0162BE" ForeColor="#8CC7FE" Type="LinearGradient" LinearGradientMode="Vertical" Angle="90"></Fill>
+            <Line Color="#0162BE" StartCap="Flat" EndCap="Flat" DashStyle="Solid" LineJoin="Miter"></Line>
+        </web:ColumnChart>
+    </charts>
+</web:chartcontrol>
+
+<web:chartcontrol runat="server" SkinID="Pie" BorderStyle="Outset" GridLines="Both" TopPadding="0" ChartPadding="0" Padding="0" HasChartLegend="true" ShowTitlesOnBackground="true">
+    <Border Color="#dddddd" />
+    <PlotBackground Color="#E3EFFF" Type="Solid" ForeColor="#0163BE" LinearGradientMode="Horizontal" />
+    <Background Color="#E3EFFF" Type="Solid" ForeColor="#E3EFFF" />
+    <YAxisFont ForeColor="#0162BE" Font="Arial, 7pt" Alignment="Near" LineAlignment="Center" Trimming="None" FormatFlags="NoClip" />
+    <XAxisFont ForeColor="#0162BE" Font="Arial, 7pt" Alignment="Near" LineAlignment="Center" Trimming="None" FormatFlags="NoClip,NoWrap,DirectionVertical" />
+    <Legend Position="Left" Width="200" Font="Arial, 8pt"><Background Color="#E3EFFF" /></Legend>
+    <charts>
+        <web:PieChart ShowLineMarkers="true" Explosion="10">
+            <DataLabels Visible="true" ShowXTitle="false" ShowValue="true" ShowLegend="false"></DataLabels>
+            <Shadow OffsetY="3" Color="Gray" Visible="True"></Shadow>
+        </web:PieChart>
+    </charts>
+</web:chartcontrol>

@@ -1,0 +1,2 @@
+<!-- defines the clickable image for the reorder list -->
+<asp:Image SkinId="ReorderHandle" runat="server" ImageUrl="images/right_head_arrow.gif" />

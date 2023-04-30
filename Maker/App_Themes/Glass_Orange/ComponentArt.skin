@@ -1,0 +1,122 @@
+<%-- This file is reserved for skins applied to ComponentArt controls --%>
+<%@ Register Assembly="ComponentArt.Web.UI" Namespace="ComponentArt.Web.UI" TagPrefix="ComponentArt" %>
+
+<%-- Default Menu Style --%>
+<ComponentArt:Menu runat="server"
+    Orientation="Horizontal"
+    CssClass="MenuGroup"
+    DefaultGroupCssClass="MenuGroup"
+    DefaultItemLookID="DefaultItemLook"
+    TopGroupItemSpacing="0"
+    DefaultGroupItemSpacing="1"
+    ImagesBaseUrl="~/App_Themes/Glass_Orange/images/ComponentArt/Menu"
+    ExpandTransition="None"
+    CollapseTransition="None"
+    ExpandDelay="50"
+    Height="24px">
+    <ItemLooks>
+        <ComponentArt:ItemLook LookID="TopItemLook" CssClass="TopMenuItem" HoverCssClass="TopMenuItemHover" ActiveCssClass="TopMenuItemActive" ExpandedCssClass="TopMenuItemExpanded" LeftIconUrl="blueDots.gif" HoverLeftIconUrl="blueDots.gif" ExpandedLeftIconUrl="blueDots.gif" LeftIconWidth="17" LeftIconHeight="12" LabelPaddingLeft="5" LabelPaddingRight="15" LabelPaddingTop="4" LabelPaddingBottom="5" />
+        <ComponentArt:ItemLook LookID="DefaultItemLook" CssClass="MenuItem" HoverCssClass="MenuItemHover" ActiveCssClass="MenuItemActive" ExpandedCssClass="MenuItemExpanded" LeftIconUrl="blueDots.gif" HoverLeftIconUrl="blueDots.gif" ExpandedLeftIconUrl="blueDots.gif" LeftIconWidth="17" LeftIconHeight="12" LabelPaddingLeft="5" LabelPaddingRight="15" LabelPaddingTop="4" LabelPaddingBottom="5" />
+        <ComponentArt:ItemLook LookID="ItemBreak" ImageUrl="break.gif" CssClass="MenuBreak" />
+    </ItemLooks>
+</ComponentArt:Menu>
+
+<%-- Default TreeView Style --%>
+<ComponentArt:TreeView 
+    DragAndDropEnabled="false" 
+    NodeEditingEnabled="false" 
+    KeyboardEnabled="true"
+    CssClass="TreeView" 
+    NodeCssClass="TreeNode" 
+    SelectedNodeCssClass="SelectedTreeNode" 
+    HoverNodeCssClass="HoverTreeNode" 
+    NodeEditCssClass="NodeEdit"
+    LineImageWidth="19" 
+    LineImageHeight="20"
+    DefaultImageWidth="16" 
+    DefaultImageHeight="16"
+    NodeLabelPadding="3"
+    ItemSpacing="0" 
+    ImagesBaseUrl="~/App_Themes/Glass_Orange/images/ComponentArt/TreeView"
+    ShowLines="true" 
+    LineImagesFolderUrl="~/App_Themes/Glass_Orange/images/ComponentArt/TreeView/lines"
+    runat="server" />
+    
+    
+<%-- Default TabStrip Style --%>
+<ComponentArt:TabStrip runat="server"
+    CssClass="TopGroup"
+    DefaultItemLookId="DefaultTabLook"
+    DefaultSelectedItemLookId="SelectedTabLook"
+    DefaultDisabledItemLookId="DisabledTabLook"
+    DefaultGroupTabSpacing="0"
+    ImagesBaseUrl="~/App_Themes/Glass_Orange/images/ComponentArt/Tabs">
+    <ItemLooks>
+        <ComponentArt:ItemLook LookId="DefaultTabLook" CssClass="DefaultTab" HoverCssClass="DefaultTabHover" LabelPaddingLeft="10" LabelPaddingRight="10" LabelPaddingTop="0" LabelPaddingBottom="0" LeftIconUrl="tab_left_icon.gif" RightIconUrl="tab_right_icon.gif" HoverLeftIconUrl="hover_tab_left_icon.gif" HoverRightIconUrl="hover_tab_right_icon.gif" />
+        <ComponentArt:ItemLook LookId="SelectedTabLook" CssClass="SelectedTab" LabelPaddingLeft="11" LabelPaddingRight="10" LabelPaddingTop="0" LabelPaddingBottom="0" LeftIconUrl="selected_tab_left_icon.gif" RightIconUrl="selected_tab_right_icon.gif" />
+        <ComponentArt:ItemLook LookId="DisabledTabLook" CssClass="DisabledTab" LabelPaddingLeft="11" LabelPaddingRight="10" LabelPaddingTop="0" LabelPaddingBottom="0" LeftIconUrl="tab_left_icon.gif" RightIconUrl="tab_right_icon.gif" />
+    </ItemLooks>
+</ComponentArt:TabStrip>
+
+<%-- Vertical Tab Style --%>
+<ComponentArt:TabStrip SkinID="VerticalTab" runat="server">
+</ComponentArt:TabStrip>
+
+<%-- Horizontal Tab Style --%>
+<ComponentArt:TabStrip SkinID="HorizontalTab" runat="server"
+    ImagesBaseUrl="~/App_Themes/Glass_Orange/images/ComponentArt/hTabs">
+    
+</ComponentArt:TabStrip>
+
+<%-- Style for Calendar (not picker) --%>
+<ComponentArt:Calendar SkinID="Calendar" runat="server"
+  AllowMultipleSelection="false"
+  AllowWeekSelection="false"
+  AllowMonthSelection="false"
+  ControlType="Calendar"
+  PopUp="Custom"
+  TitleCssClass="title" 
+  DayHeaderCssClass="dayheader" 
+  DayCssClass="day" 
+  DayHoverCssClass="dayhover" 
+  OtherMonthDayCssClass="othermonthday" 
+  SelectedDayCssClass="selectedday" 
+  CalendarCssClass="calendar" 
+  NextPrevCssClass="nextprev" 
+  MonthCssClass="month"
+  SwapSlide="Linear"
+  SwapDuration="300"
+  DayNameFormat="FirstTwoLetters"
+  ImagesBaseUrl="~/App_Themes/Glass_Orange/images/ComponentArt/Calendar/"
+  PrevImageUrl="cal_prevMonth.gif" 
+  NextImageUrl="cal_nextMonth.gif" />
+
+<%-- Style for picker (not Calendar) --%>
+<ComponentArt:Calendar SkinID="Picker" runat="server" 
+    PickerFormat="Custom" 
+    PickerCustomFormat="MM/dd/yyyy" 
+    ControlType="Picker" 
+    PickerCssClass="picker" />
+    
+<ComponentArt:Grid SkinID="Default" runat="server"
+    EditOnClickSelectedItem="false"
+    RunningMode="Callback" 
+    CssClass="Grid" 
+    FooterCssClass="GridFooter" 
+    PagerStyle="Slider"
+    PagerTextCssClass="GridFooterText" 
+    SearchTextCssClass="GridHeaderText"
+    PagerButtonWidth="41"
+    PagerButtonHeight="22"
+    SliderHeight="20"
+    SliderWidth="150" 
+    SliderGripWidth="9" 
+    SliderPopupOffsetX="35"
+    SliderPopupClientTemplateId="SliderTemplate" 
+    PageSize="11"
+    ImagesBaseUrl="~/App_Themes/Glass_Orange/images/ComponentArt/Grid/"
+    PagerImagesFolderUrl="~/App_Themes/Glass_Orange/images/ComponentArt/Grid/Pager/" 
+    LoadingPanelClientTemplateId="LoadingFeedbackTemplate"
+    LoadingPanelPosition="MiddleCenter"    
+    />
+    

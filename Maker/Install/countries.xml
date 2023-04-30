@@ -1,0 +1,720 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<Countries xml:lang="en">
+	<Country Code="AF" Name="Afghanistan">
+		<AddressFormat>[Company]%0D%0A[Name]%0D%0A[Address1]%0D%0A[Address2]%0D%0A[City_U] [PostalCode]%0D%0A[Country_U]</AddressFormat>
+	</Country>
+	<Country Code="AX" Name="Aland Islands">
+		<AddressFormat>[Company]%0D%0A[Name]%0D%0A[Address1]%0D%0A[Address2]%0D%0AAX-[PostalCode] [City_U]%0D%0AÅLAND%0D%0AFINLAND</AddressFormat>
+	</Country>
+	<Country Code="AL" Name="Albania">
+		<AddressFormat>[Company]%0D%0A[Name]%0D%0A[Address1]%0D%0A[Address2]%0D%0A[City_U] [PostalCode]%0D%0A[Country_U]</AddressFormat>
+	</Country>
+	<Country Code="DZ" Name="Algeria">
+		<AddressFormat>[Company]%0D%0A[Name]%0D%0A[Address1]%0D%0A[Address2]%0D%0A[PostalCode] [City_U]%0D%0A[Country_U]</AddressFormat>
+	</Country>
+	<Country Code="AS" Name="American Samoa">
+		<AddressFormat>[Company]%0D%0A[Name]%0D%0A[Address1]%0D%0A[Address2]%0D%0A[City_U], AS [PostalCode]%0D%0AUNITED STATES OF AMERICA</AddressFormat>
+	</Country>
+	<Country Code="AD" Name="Andorra">
+		<AddressFormat>[Company]%0D%0A[Name]%0D%0A[Address1]%0D%0A[Address2]%0D%0A[PostalCode] [City_U]%0D%0A[Country_U]</AddressFormat>
+	</Country>
+	<Country Code="AO" Name="Angola">
+		<AddressFormat>[Company]%0D%0A[Name]%0D%0A[Address1]%0D%0A[Address2]%0D%0A[PostalCode] [City_U]%0D%0A[Country_U]</AddressFormat>
+	</Country>
+	<Country Code="AI" Name="Anguilla">
+		<AddressFormat>[Company]%0D%0A[Name]%0D%0A[Address1]%0D%0A[Address2]%0D%0A[PostalCode] [City_U]%0D%0A[Country_U]</AddressFormat>
+	</Country>
+	<Country Code="AQ" Name="Antarctica">
+		<AddressFormat>[Company]%0D%0A[Name]%0D%0A[Address1]%0D%0A[Address2]%0D%0A[PostalCode] [City_U]%0D%0A[Country_U]</AddressFormat>
+	</Country>
+	<Country Code="AG" Name="Antigua and Barbuda">
+		<AddressFormat>[Company]%0D%0A[Name]%0D%0A[Address1]%0D%0A[Address2]%0D%0A[PostalCode] [City_U]%0D%0A[Country_U]</AddressFormat>
+	</Country>
+	<Country Code="AR" Name="Argentina">
+		<AddressFormat>[Company]%0D%0A[Name]%0D%0A[Address1]%0D%0A[Address2]%0D%0A[PostalCode] [City_U]%0D%0A[Country_U]</AddressFormat>
+	</Country>
+	<Country Code="AM" Name="Armenia">
+		<AddressFormat>[Company]%0D%0A[Name]%0D%0A[Address1]%0D%0A[Address2]%0D%0A[PostalCode] [City_U]%0D%0A[Country_U]</AddressFormat>
+	</Country>
+	<Country Code="AW" Name="Aruba">
+		<AddressFormat>[Company]%0D%0A[Name]%0D%0A[Address1]%0D%0A[Address2]%0D%0A[PostalCode] [City_U]%0D%0A[Country_U]</AddressFormat>
+	</Country>
+	<Country Code="AU" Name="Australia">
+		<AddressFormat>[Company]%0D%0A[Name]%0D%0A[Address1]%0D%0A[Address2]%0D%0A[City_U] [Province_U] [PostalCode]%0D%0A[Country_U]</AddressFormat>
+	</Country>
+	<Country Code="AT" Name="Austria">
+		<AddressFormat>[Company]%0D%0A[Name]%0D%0A[Address1]%0D%0A[Address2]%0D%0A[PostalCode] [City_U] [Province_U]%0D%0A[Country_U]</AddressFormat>
+	</Country>
+	<Country Code="AZ" Name="Azerbaijan">
+		<AddressFormat>[Company]%0D%0A[Name]%0D%0A[Address1]%0D%0A[Address2]%0D%0A[PostalCode] [City_U] [Province_U]%0D%0A[Country_U]</AddressFormat>
+	</Country>
+	<Country Code="BS" Name="Bahamas">
+		<AddressFormat>[Company]%0D%0A[Name]%0D%0A[Address1]%0D%0A[Address2]%0D%0A[PostalCode]%0D%0A[City_U] [Province_U]%0D%0A[Country_U]</AddressFormat>
+	</Country>
+	<Country Code="BH" Name="Bahrain">
+		<AddressFormat>[Company]%0D%0A[Name]%0D%0A[Address1]%0D%0A[Address2]%0D%0A[City_U] [PostalCode]%0D%0A[Country_U]</AddressFormat>
+	</Country>
+	<Country Code="BD" Name="Bangladesh">
+		<AddressFormat>[Company]%0D%0A[Name]%0D%0A[Address1]%0D%0A[Address2]%0D%0A[City_U] [PostalCode]%0D%0A[Country_U]</AddressFormat>
+	</Country>
+	<Country Code="BB" Name="Barbados">
+		<AddressFormat>[Company]%0D%0A[Name]%0D%0A[Address1]%0D%0A[Address2]%0D%0A[City_U]%0D%0A[Country_U]</AddressFormat>
+	</Country>
+	<Country Code="BY" Name="Belarus">
+		<AddressFormat>[Company]%0D%0A[Name]%0D%0A[Address1]%0D%0A[Address2]%0D%0A[PostalCode] [City_U]%0D%0A[Country_U]</AddressFormat>
+	</Country>
+	<Country Code="BE" Name="Belgium">
+		<AddressFormat>[Company]%0D%0A[Name]%0D%0A[Address1]%0D%0A[Address2]%0D%0A[PostalCode] [City_U]%0D%0A[Country_U]</AddressFormat>
+	</Country>
+	<Country Code="BZ" Name="Belize">
+		<AddressFormat>[Company]%0D%0A[Name]%0D%0A[Address1]%0D%0A[Address2]%0D%0A[City_U]%0D%0A[Province_U]%0D%0A[Country_U]</AddressFormat>
+	</Country>
+	<Country Code="BJ" Name="Benin">
+		<AddressFormat>[Company]%0D%0A[Name]%0D%0A[Address1]%0D%0A[Address2]%0D%0A[City_U]%0D%0A[Country_U]</AddressFormat>
+	</Country>
+	<Country Code="BM" Name="Bermuda">
+		<AddressFormat>[Company]%0D%0A[Name]%0D%0A[Address1]%0D%0A[Address2]%0D%0A[City_U] [PostalCode]%0D%0A[Country_U]</AddressFormat>
+	</Country>
+	<Country Code="BT" Name="Bhutan">
+		<AddressFormat>[Company]%0D%0A[Name]%0D%0A[Address1]%0D%0A[Address2]%0D%0A[City_U]%0D%0A[Country_U]</AddressFormat>
+	</Country>
+	<Country Code="BO" Name="Bolivia">
+		<AddressFormat>[Company]%0D%0A[Name]%0D%0A[Address1]%0D%0A[Address2]%0D%0A[City_U]%0D%0A[Country_U]</AddressFormat>
+	</Country>
+	<Country Code="BA" Name="Bosnia and Herzegovina">
+		<AddressFormat>[Company]%0D%0A[Name]%0D%0A[Address1]%0D%0A[Address2]%0D%0A[PostalCode] [City_U]%0D%0A[Country_U]</AddressFormat>
+	</Country>
+	<Country Code="BW" Name="Botswana">
+		<AddressFormat>[Company]%0D%0A[Name]%0D%0A[Address1]%0D%0A[Address2]%0D%0A[City_U]%0D%0A[Country_U]</AddressFormat>
+	</Country>
+	<Country Code="BV" Name="Bouvet Island" />
+	<Country Code="BR" Name="Brazil">
+		<AddressFormat>[Company]%0D%0A[Name]%0D%0A[Address1]%0D%0A[Address2]%0D%0A[City_U] [Province_U]%0D%0A[PostalCode]%0D%0A[Country_U]</AddressFormat>
+	</Country>
+	<Country Code="BN" Name="Brunei Darussalam">
+		<AddressFormat>[Company]%0D%0A[Name]%0D%0A[Address1]%0D%0A[Address2]%0D%0A[City_U] [PostalCode]%0D%0A[Country_U]</AddressFormat>
+	</Country>
+	<Country Code="BG" Name="Bulgaria">
+		<AddressFormat>[Company]%0D%0A[Name]%0D%0A[Address1]%0D%0A[Address2]%0D%0A[PostalCode] [City_U]%0D%0A[Country_U]</AddressFormat>
+	</Country>
+	<Country Code="BF" Name="Burkina Faso">
+		<AddressFormat>[Company]%0D%0A[Name]%0D%0A[Address1]%0D%0A[Address2]%0D%0A[City_U]%0D%0A[Country_U]</AddressFormat>
+	</Country>
+	<Country Code="BI" Name="Burundi">
+		<AddressFormat>[Company]%0D%0A[Name]%0D%0A[Address1]%0D%0A[Address2]%0D%0A[City_U]%0D%0A[Country_U]</AddressFormat>
+	</Country>
+	<Country Code="KH" Name="Cambodia">
+		<AddressFormat>[Company]%0D%0A[Name]%0D%0A[Address1]%0D%0A[Address2]%0D%0A[City_U] [PostalCode]%0D%0A[Country_U]</AddressFormat>
+	</Country>
+	<Country Code="CM" Name="Cameroon">
+		<AddressFormat>[Company]%0D%0A[Name]%0D%0A[Address1]%0D%0A[Address2]%0D%0A[City_U]%0D%0A[Country_U]</AddressFormat>
+	</Country>
+	<Country Code="CA" Name="Canada">
+		<AddressFormat>[Company]%0D%0A[Name]%0D%0A[Address1]%0D%0A[Address2]%0D%0A[City_U] [Province_U] [PostalCode]%0D%0A[Country_U]</AddressFormat>
+	</Country>
+	<Country Code="CV" Name="Cape Verde">
+		<AddressFormat>[Company]%0D%0A[Name]%0D%0A[Address1]%0D%0A[Address2]%0D%0A[PostalCode] [City_U]%0D%0A[Province_U]%0D%0A[Country_U]</AddressFormat>
+	</Country>
+	<Country Code="KY" Name="Cayman Islands">
+		<AddressFormat>[Company]%0D%0A[Name]%0D%0A[Address1]%0D%0A[Address2]%0D%0A[City_U]%0D%0A[Country_U]</AddressFormat>
+	</Country>
+	<Country Code="CF" Name="Central African Republic">
+		<AddressFormat>[Company]%0D%0A[Name]%0D%0A[Address1]%0D%0A[Address2]%0D%0A[PostalCode]%0D%0A[City_U]%0D%0A[Country_U]</AddressFormat>
+	</Country>
+	<Country Code="TD" Name="Chad">
+		<AddressFormat>[Company]%0D%0A[Name]%0D%0A[Address1]%0D%0A[Address2]%0D%0A[City_U]%0D%0A[Country_U]</AddressFormat>
+	</Country>
+	<Country Code="CL" Name="Chile">
+		<AddressFormat>[Company]%0D%0A[Name]%0D%0A[Address1]%0D%0A[Address2]%0D%0A[PostalCode] [City_U]%0D%0A[Country_U]</AddressFormat>
+	</Country>
+	<Country Code="CN" Name="China">
+		<AddressFormat>[Company]%0D%0A[Name]%0D%0A[Address1]%0D%0A[Address2] [City_U]%0D%0A[PostalCode] [Province_U] %0D%0A[Country_U]</AddressFormat>
+	</Country>
+	<Country Code="CX" Name="Christmas Island">
+		<AddressFormat>[Company]%0D%0A[Name]%0D%0A[Address1]%0D%0A[Address2]%0D%0A[City_U] [Province_U] [PostalCode]%0D%0A[Country_U]</AddressFormat>
+	</Country>
+	<Country Code="CC" Name="Cocos (Keeling) Islands">
+		<AddressFormat>[Company]%0D%0A[Name]%0D%0A[Address1]%0D%0A[Address2]%0D%0A[City_U] [Province_U] [PostalCode]%0D%0A[Country_U]</AddressFormat>
+	</Country>
+	<Country Code="CO" Name="Colombia">
+		<AddressFormat>[Company]%0D%0A[Name]%0D%0A[Address1]%0D%0A[Address2]%0D%0A[City_U] [Province_U]%0D%0A[Country_U]</AddressFormat>
+	</Country>
+	<Country Code="KM" Name="Comoros">
+		<AddressFormat>[Company]%0D%0A[Name]%0D%0A[Address1]%0D%0A[Address2]%0D%0A[City_U]%0D%0A[Country_U]</AddressFormat>
+	</Country>
+	<Country Code="CG" Name="Congo - Brazzaville">
+		<AddressFormat>[Company]%0D%0A[Name]%0D%0A[Address1]%0D%0A[Address2]%0D%0A[City_U]%0D%0A[Country_U]</AddressFormat>
+	</Country>
+	<Country Code="CD" Name="Congo - Kinshasa">
+		<AddressFormat>[Company]%0D%0A[Name]%0D%0A[Address1]%0D%0A[Address2]%0D%0A[City_U]%0D%0A[Country_U]</AddressFormat>
+	</Country>
+	<Country Code="CK" Name="Cook Islands">
+		<AddressFormat>[Company]%0D%0A[Name]%0D%0A[Address1]%0D%0A[Address2]%0D%0A[City_U] [PostalCode]%0D%0A[Country_U]</AddressFormat>
+	</Country>
+	<Country Code="CR" Name="Costa Rica">
+		<AddressFormat>[Company]%0D%0A[Name]%0D%0A[Address1]%0D%0A[Address2]%0D%0A[PostalCode] [City_U] %0D%0A[Country_U]</AddressFormat>
+	</Country>
+	<Country Code="CI" Name="Cote d'Ivoire">
+		<AddressFormat>[Company]%0D%0A[Name]%0D%0A[Address1]%0D%0A[Address2]%0D%0A[City_U] %0D%0A[Country_U]</AddressFormat>
+	</Country>
+	<Country Code="HR" Name="Croatia">
+		<AddressFormat>[Company]%0D%0A[Name]%0D%0A[Address1]%0D%0A[Address2]%0D%0A[PostalCode] [City_U] %0D%0A[Country_U]</AddressFormat>
+	</Country>
+	<Country Code="CU" Name="Cuba">
+		<AddressFormat>[Company]%0D%0A[Name]%0D%0A[Address1]%0D%0A[Address2]%0D%0A[PostalCode] [City_U] %0D%0A[Country_U]</AddressFormat>
+	</Country>
+	<Country Code="CY" Name="Cyprus">
+		<AddressFormat>[Company]%0D%0A[Name]%0D%0A[Address1]%0D%0A[Address2]%0D%0A[PostalCode] [City_U] %0D%0A[Country_U]</AddressFormat>
+	</Country>
+	<Country Code="CZ" Name="Czech Republic">
+		<AddressFormat>[Company]%0D%0A[Name]%0D%0A[Address1]%0D%0A[Address2]%0D%0A[PostalCode] [City_U] %0D%0A[Country_U]</AddressFormat>
+	</Country>
+	<Country Code="DK" Name="Denmark">
+		<AddressFormat>[Company]%0D%0A[Name]%0D%0A[Address1]%0D%0A[Address2]%0D%0A[PostalCode] [City_U] %0D%0A[Country_U]</AddressFormat>
+	</Country>
+	<Country Code="DJ" Name="Djibouti">
+		<AddressFormat>[Company]%0D%0A[Name]%0D%0A[Address1]%0D%0A[Address2]%0D%0A[City_U] %0D%0A[Country_U]</AddressFormat>
+	</Country>
+	<Country Code="DM" Name="Dominica">
+		<AddressFormat>[Company]%0D%0A[Name]%0D%0A[Address1]%0D%0A[Address2]%0D%0A[City_U] %0D%0A[Country_U]</AddressFormat>
+	</Country>
+	<Country Code="DO" Name="Dominican Republic">
+		<AddressFormat>[Company]%0D%0A[Name]%0D%0A[Address1]%0D%0A[Address2]%0D%0A[PostalCode] [City_U] %0D%0A[Country_U]</AddressFormat>
+	</Country>
+	<Country Code="EC" Name="Ecuador">
+		<AddressFormat>[Company]%0D%0A[Name]%0D%0A[Address1]%0D%0A[Address2]%0D%0A[PostalCode]%0D%0A[City_U]%0D%0A[Country_U]</AddressFormat>
+	</Country>
+	<Country Code="EG" Name="Egypt">
+		<AddressFormat>[Company]%0D%0A[Name]%0D%0A[Address1]%0D%0A[Address2]%0D%0A[City_U]%0D%0A[PostalCode]%0D%0A[Country_U]</AddressFormat>
+	</Country>
+	<Country Code="SV" Name="El Salvador">
+		<AddressFormat>[Company]%0D%0A[Name]%0D%0A[Address1]%0D%0A[Address2]%0D%0A[PostalCode] [City_U] %0D%0A[Province_U]%0D%0A[Country_U]</AddressFormat>
+	</Country>
+	<Country Code="GQ" Name="Equatorial Guinea">
+		<AddressFormat>[Company]%0D%0A[Name]%0D%0A[Address1]%0D%0A[Address2]%0D%0A[City_U] %0D%0A[Country_U]</AddressFormat>
+	</Country>
+	<Country Code="ER" Name="Eritrea">
+		<AddressFormat>[Company]%0D%0A[Name]%0D%0A[Address1]%0D%0A[Address2]%0D%0A[City_U] %0D%0A[Country_U]</AddressFormat>
+	</Country>
+	<Country Code="EE" Name="Estonia">
+		<AddressFormat>[Company]%0D%0A[Name]%0D%0A[Address1]%0D%0A[Address2]%0D%0A[PostalCode] [City_U] %0D%0A[Country_U]</AddressFormat>
+	</Country>
+	<Country Code="ET" Name="Ethiopia">
+		<AddressFormat>[Company]%0D%0A[Name]%0D%0A[Address1]%0D%0A[Address2]%0D%0A[PostalCode] [City_U] %0D%0A[Country_U]</AddressFormat>
+	</Country>
+	<Country Code="FK" Name="Falkland Islands">
+		<AddressFormat>[Company]%0D%0A[Name]%0D%0A[Address1]%0D%0A[Address2]%0D%0A[City_U]%0D%0A[PostalCode]%0D%0A[Country_U]</AddressFormat>
+	</Country>
+	<Country Code="FO" Name="Faroe Islands">
+		<AddressFormat>[Company]%0D%0A[Name]%0D%0A[Address1]%0D%0A[Address2]%0D%0A[PostalCode] [City_U] %0D%0A[Country_U]</AddressFormat>
+	</Country>
+	<Country Code="FJ" Name="Fiji">
+		<AddressFormat>[Company]%0D%0A[Name]%0D%0A[Address1]%0D%0A[Address2]%0D%0A[City_U] %0D%0A[Country_U]</AddressFormat>
+	</Country>
+	<Country Code="FI" Name="Finland">
+		<AddressFormat>[Company]%0D%0A[Name]%0D%0A[Address1]%0D%0A[Address2]%0D%0A[PostalCode] [City_U] %0D%0A[Country_U]</AddressFormat>
+	</Country>
+	<Country Code="FR" Name="France">
+		<AddressFormat>[Company]%0D%0A[Name]%0D%0A[Address1]%0D%0A[Address2]%0D%0A[PostalCode] [City_U] %0D%0A[Country_U]</AddressFormat>
+	</Country>
+	<Country Code="GF" Name="French Guiana">
+		<AddressFormat>[Company]%0D%0A[Name]%0D%0A[Address1]%0D%0A[Address2]%0D%0A[PostalCode] [City_U] %0D%0AFRANCE</AddressFormat>
+	</Country>
+	<Country Code="PF" Name="French Polynesia">
+		<AddressFormat>[Company]%0D%0A[Name]%0D%0A[Address1]%0D%0A[Address2]%0D%0A[PostalCode] [City_U] %0D%0A[Country_U]</AddressFormat>
+	</Country>
+	<Country Code="GA" Name="Gabon">
+		<AddressFormat>[Company]%0D%0A[Name]%0D%0A[Address1]%0D%0A[Address2]%0D%0A[City_U] %0D%0A[Country_U]</AddressFormat>
+	</Country>
+	<Country Code="GM" Name="Gambia">
+		<AddressFormat>[Company]%0D%0A[Name]%0D%0A[Address1]%0D%0A[Address2]%0D%0A[City_U] %0D%0A[Country_U]</AddressFormat>
+	</Country>
+	<Country Code="GE" Name="Georgia">
+		<AddressFormat>[Company]%0D%0A[Name]%0D%0A[Address1]%0D%0A[Address2]%0D%0A[PostalCode] [City_U] %0D%0A[Country_U]</AddressFormat>
+	</Country>
+	<Country Code="DE" Name="Germany">
+		<AddressFormat>[Company]%0D%0A[Name]%0D%0A[Address1]%0D%0A[Address2]%0D%0A[PostalCode] [City_U] %0D%0A[Country_U]</AddressFormat>
+	</Country>
+	<Country Code="GH" Name="Ghana">
+		<AddressFormat>[Company]%0D%0A[Name]%0D%0A[Address1]%0D%0A[Address2]%0D%0A[City_U] %0D%0A[Country_U]</AddressFormat>
+	</Country>
+	<Country Code="GI" Name="Gibraltar">
+		<AddressFormat>[Company]%0D%0A[Name]%0D%0A[Address1]%0D%0A[Address2]%0D%0A[City_U]%0D%0A[PostalCode]%0D%0A[Country_U]</AddressFormat>
+	</Country>
+	<Country Code="GR" Name="Greece">
+		<AddressFormat>[Company]%0D%0A[Name]%0D%0A[Address1]%0D%0A[Address2]%0D%0A[PostalCode] [City_U] %0D%0A[Country_U]</AddressFormat>
+	</Country>
+	<Country Code="GL" Name="Greenland">
+		<AddressFormat>[Company]%0D%0A[Name]%0D%0A[Address1]%0D%0A[Address2]%0D%0A[PostalCode] [City_U] %0D%0A[Country_U]</AddressFormat>
+	</Country>
+	<Country Code="GD" Name="Grenada">
+		<AddressFormat>[Company]%0D%0A[Name]%0D%0A[Address1]%0D%0A[Address2]%0D%0A[City_U] %0D%0A[Country_U] (WEST INDIES)</AddressFormat>
+	</Country>
+	<Country Code="GP" Name="Guadeloupe">
+		<AddressFormat>[Company]%0D%0A[Name]%0D%0A[Address1]%0D%0A[Address2]%0D%0A[PostalCode] [City_U] %0D%0AFRANCE</AddressFormat>
+	</Country>
+	<Country Code="GU" Name="Guam">
+		<AddressFormat>[Company]%0D%0A[Name]%0D%0A[Address1]%0D%0A[Address2]%0D%0A[City_U], GU [PostalCode]%0D%0AUNITED STATES OF AMERICA</AddressFormat>
+	</Country>
+	<Country Code="GT" Name="Guatemala">
+		<AddressFormat>[Company]%0D%0A[Name]%0D%0A[Address1]%0D%0A[Address2]%0D%0A[PostalCode] [City_U] %0D%0A[Country_U]</AddressFormat>
+	</Country>
+	<Country Code="GG" Name="Guernsey">
+		<AddressFormat>[Company]%0D%0A[Name]%0D%0A[Address1]%0D%0A[Address2]%0D%0A[City_U]%0D%0A[PostalCode]%0D%0A[Country_U]</AddressFormat>
+	</Country>
+	<Country Code="GN" Name="Guinea">
+		<AddressFormat>[Company]%0D%0A[Name]%0D%0A[Address1]%0D%0A[Address2]%0D%0A[PostalCode] [City_U] %0D%0A[Country_U]</AddressFormat>
+	</Country>
+	<Country Code="GW" Name="Guinea-bissau">
+		<AddressFormat>[Company]%0D%0A[Name]%0D%0A[Address1]%0D%0A[Address2]%0D%0A[PostalCode] [City_U] %0D%0A[Country_U]</AddressFormat>
+	</Country>
+	<Country Code="GY" Name="Guyana">
+		<AddressFormat>[Company]%0D%0A[Name]%0D%0A[Address1]%0D%0A[Address2]%0D%0A[City_U] %0D%0A[Country_U]</AddressFormat>
+	</Country>
+	<Country Code="HT" Name="Haiti">
+		<AddressFormat>[Company]%0D%0A[Name]%0D%0A[Address1]%0D%0A[Address2]%0D%0A[PostalCode] [City_U] %0D%0A[Country_U]</AddressFormat>
+	</Country>
+	<Country Code="VA" Name="Vatican City (Holy See)">
+		<AddressFormat>[Company]%0D%0A[Name]%0D%0A[Address1]%0D%0A[Address2]%0D%0A[PostalCode] [City_U]%0D%0A[Country_U]</AddressFormat>
+	</Country>
+	<Country Code="HN" Name="Honduras">
+		<AddressFormat>[Company]%0D%0A[Name]%0D%0A[Address1]%0D%0A[Address2]%0D%0A[PostalCode] [City_U] %0D%0A[Country_U]</AddressFormat>
+	</Country>
+	<Country Code="HK" Name="Hong Kong">
+		<AddressFormat>[Company]%0D%0A[Name]%0D%0A[Address1]%0D%0A[Address2]%0D%0A[City_U] %0D%0A[Country_U]</AddressFormat>
+	</Country>
+	<Country Code="HU" Name="Hungary">
+		<AddressFormat>[Company]%0D%0A[Name]%0D%0A[Address1]%0D%0A[Address2]%0D%0A[City_U]%0D%0A[PostalCode]%0D%0A[Country_U]</AddressFormat>
+	</Country>
+	<Country Code="IS" Name="Iceland">
+		<AddressFormat>[Company]%0D%0A[Name]%0D%0A[Address1]%0D%0A[Address2]%0D%0A[PostalCode] [City_U] %0D%0A[Country_U]</AddressFormat>
+	</Country>
+	<Country Code="IN" Name="India">
+		<AddressFormat>[Company]%0D%0A[Name]%0D%0A[Address1]%0D%0A[Address2]%0D%0A[City_U] [PostalCode]%0D%0A[Country_U]</AddressFormat>
+	</Country>
+	<Country Code="ID" Name="Indonesia">
+		<AddressFormat>[Company]%0D%0A[Name]%0D%0A[Address1]%0D%0A[Address2]%0D%0A[City_U] [PostalCode]%0D%0A[Country_U]</AddressFormat>
+	</Country>
+	<Country Code="IR" Name="Iran">
+		<AddressFormat>[Company]%0D%0A[Name]%0D%0A[Address1]%0D%0A[Address2]%0D%0A[PostalCode] [City_U]%0D%0A[Country_U]</AddressFormat>
+	</Country>
+	<Country Code="IQ" Name="Iraq">
+		<AddressFormat>[Company]%0D%0A[Name]%0D%0A[Address1]%0D%0A[Address2]%0D%0A[City_U] [Province_U]%0D%0A[PostalCode]%0D%0A[Country_U]</AddressFormat>
+	</Country>
+	<Country Code="IE" Name="Ireland">
+		<AddressFormat>[Company]%0D%0A[Name]%0D%0A[Address1]%0D%0A[Address2]%0D%0A[City_U]%0D%0A[Country_U]</AddressFormat>
+	</Country>
+	<Country Code="IM" Name="Isle of Man">
+		<AddressFormat>[Company]%0D%0A[Name]%0D%0A[Address1]%0D%0A[Address2]%0D%0A[City_U]%0D%0A[PostalCode]%0D%0A[Country_U]</AddressFormat>
+	</Country>
+	<Country Code="IL" Name="Israel">
+		<AddressFormat>[Company]%0D%0A[Name]%0D%0A[Address1]%0D%0A[Address2]%0D%0A[PostalCode] [City_U]%0D%0A[Country_U]</AddressFormat>
+	</Country>
+	<Country Code="IT" Name="Italy">
+		<AddressFormat>[Company]%0D%0A[Name]%0D%0A[Address1]%0D%0A[Address2]%0D%0A[PostalCode] [City_U] [Province_U]%0D%0A[Country_U]</AddressFormat>
+	</Country>
+	<Country Code="JM" Name="Jamaica">
+		<AddressFormat>[Company]%0D%0A[Name]%0D%0A[Address1]%0D%0A[Address2]%0D%0A[City_U]%0D%0A[Country_U]</AddressFormat>
+	</Country>
+	<Country Code="JP" Name="Japan">
+		<AddressFormat>[Company]%0D%0A[Name]%0D%0A[Address1]%0D%0A[Address2]%0D%0A[City_U]%0D%0A[PostalCode] [Country_U]</AddressFormat>
+	</Country>
+	<Country Code="JE" Name="Jersey">
+		<AddressFormat>[Company]%0D%0A[Name]%0D%0A[Address1]%0D%0A[Address2]%0D%0A[City_U]%0D%0A[PostalCode]%0D%0A[Country_U]</AddressFormat>
+	</Country>
+	<Country Code="JO" Name="Jordan">
+		<AddressFormat>[Company]%0D%0A[Name]%0D%0A[Address1]%0D%0A[Address2]%0D%0A[City_U] [PostalCode]%0D%0A[Country_U]</AddressFormat>
+	</Country>
+	<Country Code="KZ" Name="Kazakhstan">
+		<AddressFormat>[Company]%0D%0A[Name]%0D%0A[Address1]%0D%0A[Address2]%0D%0A[City_U]%0D%0A[Country_U]%0D%0A[PostalCode]</AddressFormat>
+	</Country>
+	<Country Code="KE" Name="Kenya">
+		<AddressFormat>[Company]%0D%0A[Name]%0D%0A[Address1]%0D%0A[Address2]%0D%0A[City_U]%0D%0A[PostalCode]%0D%0A[Country_U]</AddressFormat>
+	</Country>
+	<Country Code="KI" Name="Kiribati">
+		<AddressFormat>[Company]%0D%0A[Name]%0D%0A[Address1]%0D%0A[Address2]%0D%0A[City_U]%0D%0A[Country_U]</AddressFormat>
+	</Country>
+	<Country Code="KP" Name="Korea, North">
+		<AddressFormat>[Company]%0D%0A[Name]%0D%0A[Address1]%0D%0A[Address2]%0D%0A[City_U]%0D%0A[Country_U]</AddressFormat>
+	</Country>
+	<Country Code="KR" Name="Korea, South">
+		<AddressFormat>[Company]%0D%0A[Name]%0D%0A[Address1]%0D%0A[Address2]%0D%0A[City_U] [PostalCode]%0D%0A[Country_U]</AddressFormat>
+	</Country>
+	<Country Code="KW" Name="Kuwait">
+		<AddressFormat>[Company]%0D%0A[Name]%0D%0A[Address1]%0D%0A[Address2]%0D%0A[PostalCode] [City_U]%0D%0A[Country_U]</AddressFormat>
+	</Country>
+	<Country Code="KG" Name="Kyrgyzstan">
+		<AddressFormat>[Company]%0D%0A[Name]%0D%0A[PostalCode] [City_U]%0D%0A[Address1]%0D%0A[Address2]%0D%0A[Country_U]</AddressFormat>
+	</Country>
+	<Country Code="LA" Name="Laos">
+		<AddressFormat>[Company]%0D%0A[Name]%0D%0A[Address1]%0D%0A[Address2]%0D%0A[PostalCode] [City_U]%0D%0A[Country_U]</AddressFormat>
+	</Country>
+	<Country Code="LV" Name="Latvia">
+		<AddressFormat>[Company]%0D%0A[Name]%0D%0A[Address1]%0D%0A[Address2]%0D%0A[City_U] [PostalCode]%0D%0A[Country_U]</AddressFormat>
+	</Country>
+	<Country Code="LB" Name="Lebanon">
+		<AddressFormat>[Company]%0D%0A[Name]%0D%0A[Address1]%0D%0A[Address2]%0D%0A[City_U] [PostalCode]%0D%0A[Country_U]</AddressFormat>
+	</Country>
+	<Country Code="LS" Name="Lesotho">
+		<AddressFormat>[Company]%0D%0A[Name]%0D%0A[Address1]%0D%0A[Address2]%0D%0A[City_U] [PostalCode]%0D%0A[Country_U]</AddressFormat>
+	</Country>
+	<Country Code="LR" Name="Liberia">
+		<AddressFormat>[Company]%0D%0A[Name]%0D%0A[Address1]%0D%0A[Address2]%0D%0A[PostalCode] [City_U]%0D%0A[Country_U]</AddressFormat>
+	</Country>
+	<Country Code="LY" Name="Libya">
+		<AddressFormat>[Company]%0D%0A[Name]%0D%0A[Address1]%0D%0A[Address2]%0D%0A[City_U]%0D%0A[Country_U]</AddressFormat>
+	</Country>
+	<Country Code="LI" Name="Liechtenstein">
+		<AddressFormat>[Company]%0D%0A[Name]%0D%0A[Address1]%0D%0A[Address2]%0D%0A[PostalCode] [City_U]%0D%0A[Country_U]</AddressFormat>
+	</Country>
+	<Country Code="LT" Name="Lithuania">
+		<AddressFormat>[Company]%0D%0A[Name]%0D%0A[Address1]%0D%0A[Address2]%0D%0A[PostalCode] [City_U]%0D%0A[Country_U]</AddressFormat>
+	</Country>
+	<Country Code="LU" Name="Luxembourg">
+		<AddressFormat>[Company]%0D%0A[Name]%0D%0A[Address1]%0D%0A[Address2]%0D%0A[PostalCode] [City_U]%0D%0A[Country_U]</AddressFormat>
+	</Country>
+	<Country Code="MO" Name="Macao">
+		<AddressFormat>[Company]%0D%0A[Name]%0D%0A[Address1]%0D%0A[Address2]%0D%0A[City_U]%0D%0A[Country_U]</AddressFormat>
+	</Country>
+	<Country Code="MK" Name="Macedonia">
+		<AddressFormat>[Company]%0D%0A[Name]%0D%0A[Address1]%0D%0A[Address2]%0D%0A[PostalCode] [City_U]%0D%0A[Country_U]</AddressFormat>
+	</Country>
+	<Country Code="MG" Name="Madagascar">
+		<AddressFormat>[Company]%0D%0A[Name]%0D%0A[Address1]%0D%0A[Address2]%0D%0A[PostalCode] [City_U]%0D%0A[Country_U]</AddressFormat>
+	</Country>
+	<Country Code="MW" Name="Malawi">
+		<AddressFormat>[Company]%0D%0A[Name]%0D%0A[Address1]%0D%0A[Address2]%0D%0A[City_U]%0D%0A[Country_U]</AddressFormat>
+	</Country>
+	<Country Code="MY" Name="Malaysia">
+		<AddressFormat>[Company]%0D%0A[Name]%0D%0A[Address1]%0D%0A[Address2]%0D%0A[PostalCode] [City_U]%0D%0A[Country_U]</AddressFormat>
+	</Country>
+	<Country Code="MV" Name="Maldives">
+		<AddressFormat>[Company]%0D%0A[Name]%0D%0A[Address1]%0D%0A[Address2]%0D%0A[City_U] [PostalCode]%0D%0A[Country_U]</AddressFormat>
+	</Country>
+	<Country Code="ML" Name="Mali">
+		<AddressFormat>[Company]%0D%0A[Name]%0D%0A[Address1]%0D%0A[Address2]%0D%0A[City_U]%0D%0A[Country_U]</AddressFormat>
+	</Country>
+	<Country Code="MT" Name="Malta">
+		<AddressFormat>[Company]%0D%0A[Name]%0D%0A[Address1]%0D%0A[Address2]%0D%0A[City_U] %0D%0A[PostalCode]%0D%0A[Country_U]</AddressFormat>
+	</Country>
+	<Country Code="MH" Name="Marshall Islands">
+		<AddressFormat>[Company]%0D%0A[Name]%0D%0A[Address1]%0D%0A[Address2]%0D%0A[City_U], MH [PostalCode]%0D%0AUNITED STATES OF AMERICA</AddressFormat>
+	</Country>
+	<Country Code="MQ" Name="Martinique">
+		<AddressFormat>[Company]%0D%0A[Name]%0D%0A[Address1]%0D%0A[Address2]%0D%0A[PostalCode] [City_U]%0D%0AFRANCE</AddressFormat>
+	</Country>
+	<Country Code="MR" Name="Mauritania">
+		<AddressFormat>[Company]%0D%0A[Name]%0D%0A[Address1]%0D%0A[Address2]%0D%0A[City_U]%0D%0A[Country_U]</AddressFormat>
+	</Country>
+	<Country Code="MU" Name="Mauritius">
+		<AddressFormat>[Company]%0D%0A[Name]%0D%0A[Address1]%0D%0A[Address2]%0D%0A[PostalCode]%0D%0A[City_U]%0D%0A[Country_U]</AddressFormat>
+	</Country>
+	<Country Code="YT" Name="Mayotte">
+		<AddressFormat>[Company]%0D%0A[Name]%0D%0A[Address1]%0D%0A[Address2]%0D%0A[PostalCode] [City_U]%0D%0AFRANCE</AddressFormat>
+	</Country>
+	<Country Code="MX" Name="Mexico">
+		<AddressFormat>[Company]%0D%0A[Name]%0D%0A[Address1]%0D%0A[Address2]%0D%0A[PostalCode] [City_U], [Province_U]%0D%0A[Country_U]</AddressFormat>
+	</Country>
+	<Country Code="FM" Name="Micronesia">
+		<AddressFormat>[Company]%0D%0A[Name]%0D%0A[Address1]%0D%0A[Address2]%0D%0A[City_U], FM [PostalCode]%0D%0AUNITED STATES OF AMERICA</AddressFormat>
+	</Country>
+	<Country Code="MD" Name="Moldova">
+		<AddressFormat>[Company]%0D%0A[Name]%0D%0A[Address1]%0D%0A[Address2]%0D%0A[PostalCode] [City_U]%0D%0A[Country_U]</AddressFormat>
+	</Country>
+	<Country Code="MC" Name="Monaco">
+		<AddressFormat>[Company]%0D%0A[Name]%0D%0A[Address1]%0D%0A[Address2]%0D%0A[PostalCode] [City_U]%0D%0A[Country_U]</AddressFormat>
+	</Country>
+	<Country Code="MN" Name="Mongolia">
+		<AddressFormat>[Company]%0D%0A[Name]%0D%0A[Address1]%0D%0A[Address2]%0D%0A[City_U], [PostalCode]%0D%0A[Country_U]</AddressFormat>
+	</Country>
+	<Country Code="ME" Name="Montenegro">
+		<AddressFormat>[Company]%0D%0A[Name]%0D%0A[Address1]%0D%0A[Address2]%0D%0A[PostalCode] [City_U]%0D%0A[Country_U]</AddressFormat>
+	</Country>
+	<Country Code="MS" Name="Montserrat" />
+	<Country Code="MA" Name="Morocco">
+		<AddressFormat>[Company]%0D%0A[Name]%0D%0A[Address1]%0D%0A[Address2]%0D%0A[PostalCode] [City_U]%0D%0A[Country_U]</AddressFormat>
+	</Country>
+	<Country Code="MZ" Name="Mozambique">
+		<AddressFormat>[Company]%0D%0A[Name]%0D%0A[Address1]%0D%0A[Address2]%0D%0A[PostalCode] [City_U]%0D%0A[Country_U]</AddressFormat>
+	</Country>
+	<Country Code="MM" Name="Myanmar">
+		<AddressFormat>[Company]%0D%0A[Name]%0D%0A[Address1]%0D%0A[Address2]%0D%0A[City_U], [PostalCode]%0D%0A[Country_U]</AddressFormat>
+	</Country>
+	<Country Code="NA" Name="Namibia">
+		<AddressFormat>[Company]%0D%0A[Name]%0D%0A[Address1]%0D%0A[Address2]%0D%0A[City_U]%0D%0A[Country_U]</AddressFormat>
+	</Country>
+	<Country Code="NR" Name="Nauru">
+		<AddressFormat>[Company]%0D%0A[Name]%0D%0A[Address1]%0D%0A[Address2]%0D%0A[City_U]%0D%0A[Country_U]</AddressFormat>
+	</Country>
+	<Country Code="NP" Name="Nepal">
+		<AddressFormat>[Company]%0D%0A[Name]%0D%0A[Address1]%0D%0A[Address2]%0D%0A[City_U] [PostalCode]%0D%0A[Country_U]</AddressFormat>
+	</Country>
+	<Country Code="NL" Name="Netherlands">
+		<AddressFormat>[Company]%0D%0A[Name]%0D%0A[Address1]%0D%0A[Address2]%0D%0A[PostalCode] [City_U]%0D%0A[Country_U]</AddressFormat>
+	</Country>
+	<Country Code="AN" Name="Netherlands Antilles">
+		<AddressFormat>[Company]%0D%0A[Name]%0D%0A[Address1]%0D%0A[Address2]%0D%0A[City_U]%0D%0A[Country_U]</AddressFormat>
+	</Country>
+	<Country Code="NC" Name="New Caledonia">
+		<AddressFormat>[Company]%0D%0A[Name]%0D%0A[Address1]%0D%0A[Address2]%0D%0A[PostalCode] [City_U]%0D%0A[Country_U]</AddressFormat>
+	</Country>
+	<Country Code="NZ" Name="New Zealand">
+		<AddressFormat>[Company]%0D%0A[Name]%0D%0A[Address1]%0D%0A[Address2]%0D%0A[City_U] [PostalCode]%0D%0A[Country_U]</AddressFormat>
+	</Country>
+	<Country Code="NI" Name="Nicaragua">
+		<AddressFormat>[Company]%0D%0A[Name]%0D%0A[Address1]%0D%0A[Address2]%0D%0A[PostalCode]%0D%0A[City_U]%0D%0A[Country_U]</AddressFormat>
+	</Country>
+	<Country Code="NE" Name="Niger">
+		<AddressFormat>[Company]%0D%0A[Name]%0D%0A[Address1]%0D%0A[Address2]%0D%0A[PostalCode] [City_U]%0D%0A[Country_U]</AddressFormat>
+	</Country>
+	<Country Code="NG" Name="Nigeria">
+		<AddressFormat>[Company]%0D%0A[Name]%0D%0A[Address1]%0D%0A[Address2]%0D%0A[City_U] [PostalCode]%0D%0A[Province_U]%0D%0A[Country_U]</AddressFormat>
+	</Country>
+	<Country Code="NU" Name="Niue">
+		<AddressFormat>[Company]%0D%0A[Name]%0D%0A[Address1]%0D%0A[Address2]%0D%0A[City_U] [PostalCode]%0D%0A[Country_U]</AddressFormat>
+	</Country>
+	<Country Code="NF" Name="Norfolk Island">
+		<AddressFormat>[Company]%0D%0A[Name]%0D%0A[Address1]%0D%0A[Address2]%0D%0A[City_U] [Province_U] [PostalCode]%0D%0A[Country_U]</AddressFormat>
+	</Country>
+	<Country Code="MP" Name="Northern Mariana Islands">
+		<AddressFormat>[Company]%0D%0A[Name]%0D%0A[Address1]%0D%0A[Address2]%0D%0A[City_U], MP [PostalCode]%0D%0AUNITED STATES OF AMERICA</AddressFormat>
+	</Country>
+	<Country Code="NO" Name="Norway">
+		<AddressFormat>[Company]%0D%0A[Name]%0D%0A[Address1]%0D%0A[Address2]%0D%0A[PostalCode] [City_U]%0D%0A[Country_U]</AddressFormat>
+	</Country>
+	<Country Code="OM" Name="Oman">
+		<AddressFormat>[Company]%0D%0A[Name]%0D%0A[Address1]%0D%0A[Address2]%0D%0A[PostalCode]%0D%0A[City_U]%0D%0A[Country_U]</AddressFormat>
+	</Country>
+	<Country Code="PK" Name="Pakistan">
+		<AddressFormat>[Company]%0D%0A[Name]%0D%0A[Address1]%0D%0A[Address2]%0D%0A[City_U]-[PostalCode]%0D%0A[Country_U]</AddressFormat>
+	</Country>
+	<Country Code="PW" Name="Palau">
+		<AddressFormat>[Company]%0D%0A[Name]%0D%0A[Address1]%0D%0A[Address2]%0D%0A[City_U], PW [PostalCode]%0D%0AUNITED STATES OF AMERICA</AddressFormat>
+	</Country>
+	<Country Code="PS" Name="Palestinian Territory">
+		<AddressFormat>[Company]%0D%0A[Name]%0D%0A[Address1]%0D%0A[Address2]%0D%0A[City_U]%0D%0A[Country_U]</AddressFormat>
+	</Country>
+	<Country Code="PA" Name="Panama">
+		<AddressFormat>[Company]%0D%0A[Name]%0D%0A[Address1]%0D%0A[Address2]%0D%0A[City_U]%0D%0A[Country_U]</AddressFormat>
+	</Country>
+	<Country Code="PG" Name="Papua New Guinea">
+		<AddressFormat>[Company]%0D%0A[Name]%0D%0A[Address1]%0D%0A[Address2]%0D%0A[City_U] [PostalCode] [Province_U]%0D%0A[Country_U]</AddressFormat>
+	</Country>
+	<Country Code="PY" Name="Paraguay">
+		<AddressFormat>[Company]%0D%0A[Name]%0D%0A[Address1]%0D%0A[Address2]%0D%0A[PostalCode] [City_U]%0D%0A[Country_U]</AddressFormat>
+	</Country>
+	<Country Code="PE" Name="Peru">
+		<AddressFormat>[Company]%0D%0A[Name]%0D%0A[Address1]%0D%0A[Address2]%0D%0A[City_U] [PostalCode]%0D%0A[Country_U]</AddressFormat>
+	</Country>
+	<Country Code="PH" Name="Philippines">
+		<AddressFormat>[Company]%0D%0A[Name]%0D%0A[Address1]%0D%0A[Address2]%0D%0A[PostalCode] [City_U]%0D%0A[Country_U]</AddressFormat>
+	</Country>
+	<Country Code="PN" Name="Pitcairn">
+		<AddressFormat>[Company]%0D%0A[Name]%0D%0A[Address1]%0D%0A[Address2]%0D%0A[City_U]%0D%0A[PostalCode]%0D%0AUNITED KINGDOM</AddressFormat>
+	</Country>
+	<Country Code="PL" Name="Poland">
+		<AddressFormat>[Company]%0D%0A[Name]%0D%0A[Address1]%0D%0A[Address2]%0D%0A[PostalCode] [City_U]%0D%0A[Country_U]</AddressFormat>
+	</Country>
+	<Country Code="PT" Name="Portugal">
+		<AddressFormat>[Company]%0D%0A[Name]%0D%0A[Address1]%0D%0A[Address2]%0D%0A[PostalCode] [City_U]%0D%0A[Country_U]</AddressFormat>
+	</Country>
+	<Country Code="PR" Name="Puerto Rico">
+		<AddressFormat>[Company]%0D%0A[Name]%0D%0A[Address1]%0D%0A[Address2]%0D%0A[City_U], PR [PostalCode]%0D%0AUNITED STATES OF AMERICA</AddressFormat>
+	</Country>
+	<Country Code="QA" Name="Qatar">
+		<AddressFormat>[Company]%0D%0A[Name]%0D%0A[Address1]%0D%0A[Address2]%0D%0A[City_U]%0D%0A[Country_U]</AddressFormat>
+	</Country>
+	<Country Code="RE" Name="Reunion">
+		<AddressFormat>[Company]%0D%0A[Name]%0D%0A[Address1_U]%0D%0A[Address2_U]%0D%0A[PostalCode] [City_U]%0D%0AFRANCE</AddressFormat>
+	</Country>
+	<Country Code="RO" Name="Romania">
+		<AddressFormat>[Company]%0D%0A[Name]%0D%0A[Address1]%0D%0A[Address2]%0D%0A[PostalCode] [City_U]%0D%0A[Country_U]</AddressFormat>
+	</Country>
+	<Country Code="RU" Name="Russian Federation">
+		<AddressFormat>[Company]%0D%0A[Name]%0D%0A[Address1]%0D%0A[Address2]%0D%0A[City_U]%0D%0A[Country_U]%0D%0A[PostalCode]</AddressFormat>
+	</Country>
+	<Country Code="RW" Name="Rwanda">
+		<AddressFormat>[Company]%0D%0A[Name]%0D%0A[Address1]%0D%0A[Address2]%0D%0A[City_U]%0D%0A[Country_U]</AddressFormat>
+	</Country>
+	<Country Code="BL" Name="Saint Barthelemy">
+		<AddressFormat>[Company]%0D%0A[Name]%0D%0A[Address1_U]%0D%0A[Address2_U]%0D%0A[PostalCode] [City_U]%0D%0AFRANCE</AddressFormat>
+	</Country>
+	<Country Code="SH" Name="Saint Helena">
+		<AddressFormat>[Company]%0D%0A[Name]%0D%0A[Address1]%0D%0A[Address2]%0D%0A[City_U]%0D%0A[PostalCode]%0D%0A[Country_U]</AddressFormat>
+	</Country>
+	<Country Code="KN" Name="Saint Kitts and Nevis">
+		<AddressFormat>[Company]%0D%0A[Name]%0D%0A[Address1]%0D%0A[Address2]%0D%0A[City_U]%0D%0A[Country_U]</AddressFormat>
+	</Country>
+	<Country Code="LC" Name="Saint Lucia">
+		<AddressFormat>[Company]%0D%0A[Name]%0D%0A[Address1]%0D%0A[Address2]%0D%0A[City_U]%0D%0A[Country_U]</AddressFormat>
+	</Country>
+	<Country Code="MF" Name="Saint Martin">
+		<AddressFormat>[Company]%0D%0A[Name]%0D%0A[Address1_U]%0D%0A[Address2_U]%0D%0A[PostalCode] [City_U]%0D%0AFRANCE</AddressFormat>
+	</Country>
+	<Country Code="PM" Name="Saint Pierre and Miquelon">
+		<AddressFormat>[Company]%0D%0A[Name]%0D%0A[Address1_U]%0D%0A[Address2_U]%0D%0A[PostalCode] [City_U]%0D%0AFRANCE</AddressFormat>
+	</Country>
+	<Country Code="VC" Name="Saint Vincent">
+		<AddressFormat>[Company]%0D%0A[Name]%0D%0A[Address1]%0D%0A[Address2]%0D%0A[City_U]%0D%0A[Country_U]</AddressFormat>
+	</Country>
+	<Country Code="WS" Name="Samoa">
+		<AddressFormat>[Company]%0D%0A[Name]%0D%0A[Address1_U]%0D%0A[Address2_U]%0D%0A[City_U], AS [PostalCode]%0D%0AUNITED STATES OF AMERICA</AddressFormat>
+	</Country>
+	<Country Code="SM" Name="San Marino">
+		<AddressFormat>[Company]%0D%0A[Name]%0D%0A[Address1]%0D%0A[Address2]%0D%0A[PostalCode] [City_U]%0D%0A[Country_U]</AddressFormat>
+	</Country>
+	<Country Code="ST" Name="Sao Tome and Principe">
+		<AddressFormat>[Company]%0D%0A[Name]%0D%0A[Address1]%0D%0A[Address2]%0D%0A[City_U]%0D%0A[Country_U]</AddressFormat>
+	</Country>
+	<Country Code="SA" Name="Saudi Arabia">
+		<AddressFormat>[Company]%0D%0A[Name]%0D%0A[Address1]%0D%0A[Address2]%0D%0A[City_U] [PostalCode]%0D%0A[Country_U]</AddressFormat>
+	</Country>
+	<Country Code="SN" Name="Senegal">
+		<AddressFormat>[Company]%0D%0A[Name]%0D%0A[Address1]%0D%0A[Address2]%0D%0A[PostalCode] [City_U]%0D%0A[Country_U]</AddressFormat>
+	</Country>
+	<Country Code="RS" Name="Serbia">
+		<AddressFormat>[Company]%0D%0A[Name]%0D%0A[Address1]%0D%0A[Address2]%0D%0A[PostalCode] [City_U]%0D%0A[Country_U]</AddressFormat>
+	</Country>
+	<Country Code="SC" Name="Seychelles">
+		<AddressFormat>[Company]%0D%0A[Name]%0D%0A[Address1]%0D%0A[Address2]%0D%0A[City_U]%0D%0A[Country_U]</AddressFormat>
+	</Country>
+	<Country Code="SL" Name="Sierra Leone">
+		<AddressFormat>[Company]%0D%0A[Name]%0D%0A[Address1]%0D%0A[Address2]%0D%0A[City_U]%0D%0A[Country_U]</AddressFormat>
+	</Country>
+	<Country Code="SG" Name="Singapore">
+		<AddressFormat>[Company]%0D%0A[Name]%0D%0A[Address1]%0D%0A[Address2]%0D%0A[City_U] [PostalCode]%0D%0A[Country_U]</AddressFormat>
+	</Country>
+	<Country Code="SK" Name="Slovakia">
+		<AddressFormat>[Company]%0D%0A[Name]%0D%0A[Address1]%0D%0A[Address2]%0D%0A[PostalCode] [City_U]%0D%0A[Country_U]</AddressFormat>
+	</Country>
+	<Country Code="SI" Name="Slovenia">
+		<AddressFormat>[Company]%0D%0A[Name]%0D%0A[Address1]%0D%0A[Address2]%0D%0A[PostalCode] [City_U]%0D%0A[Country_U]</AddressFormat>
+	</Country>
+	<Country Code="SB" Name="Solomon Islands">
+		<AddressFormat>[Company]%0D%0A[Name]%0D%0A[Address1]%0D%0A[Address2]%0D%0A[City_U]%0D%0A[Country_U]</AddressFormat>
+	</Country>
+	<Country Code="SO" Name="Somalia">
+		<AddressFormat>[Company]%0D%0A[Name]%0D%0A[Address1_U]%0D%0A[Address2_U]%0D%0A[City_U], [Province_U] [PostalCode]%0D%0A[Country_U]</AddressFormat>
+	</Country>
+	<Country Code="ZA" Name="South Africa">
+		<AddressFormat>[Company]%0D%0A[Name]%0D%0A[Address1]%0D%0A[Address2]%0D%0A[City_U]%0D%0A[PostalCode]%0D%0A[Country_U]</AddressFormat>
+	</Country>
+	<Country Code="ES" Name="Spain">
+		<AddressFormat>[Company]%0D%0A[Name]%0D%0A[Address1]%0D%0A[Address2]%0D%0A[PostalCode] [City_U]%0D%0A[Country_U]</AddressFormat>
+	</Country>
+	<Country Code="LK" Name="Sri Lanka">
+		<AddressFormat>[Company]%0D%0A[Name]%0D%0A[Address1]%0D%0A[Address2]%0D%0A[City_U]%0D%0A[PostalCode]%0D%0A[Country_U]</AddressFormat>
+	</Country>
+	<Country Code="SD" Name="Sudan">
+		<AddressFormat>[Company]%0D%0A[Name]%0D%0A[Address1]%0D%0A[Address2]%0D%0A[PostalCode]%0D%0A[City_U]%0D%0A[Country_U]</AddressFormat>
+	</Country>
+	<Country Code="SR" Name="Suriname">
+		<AddressFormat>[Company]%0D%0A[Name]%0D%0A[Address1]%0D%0A[Address2]%0D%0A[City_U]%0D%0A[Country_U]</AddressFormat>
+	</Country>
+	<Country Code="SJ" Name="Svalbard and Jan Mayen">
+		<AddressFormat>[Company]%0D%0A[Name]%0D%0A[Address1]%0D%0A[Address2]%0D%0A[PostalCode] [City_U]%0D%0ANORWAY</AddressFormat>
+	</Country>
+	<Country Code="SZ" Name="Swaziland">
+		<AddressFormat>[Company]%0D%0A[Name]%0D%0A[Address1]%0D%0A[Address2]%0D%0A[City_U]%0D%0A[PostalCode]%0D%0A[Country_U]</AddressFormat>
+	</Country>
+	<Country Code="SE" Name="Sweden">
+		<AddressFormat>[Company]%0D%0A[Name]%0D%0A[Address1]%0D%0A[Address2]%0D%0A[PostalCode] [City_U]%0D%0A[Country_U]</AddressFormat>
+	</Country>
+	<Country Code="CH" Name="Switzerland">
+		<AddressFormat>[Company]%0D%0A[Name]%0D%0A[Address1]%0D%0A[Address2]%0D%0A[PostalCode] [City_U]%0D%0A[Country_U]</AddressFormat>
+	</Country>
+	<Country Code="SY" Name="Syria">
+		<AddressFormat>[Company]%0D%0A[Name]%0D%0A[Address1]%0D%0A[Address2]%0D%0A[City_U]%0D%0A[Country_U]</AddressFormat>
+	</Country>
+	<Country Code="TW" Name="Taiwan">
+		<AddressFormat>[Company]%0D%0A[Name]%0D%0A[Address1]%0D%0A[Address2]%0D%0A[City_U], [Province_U] [PostalCode]%0D%0A[Country_U]</AddressFormat>
+	</Country>
+	<Country Code="TJ" Name="Tajikistan">
+		<AddressFormat>[Company]%0D%0A[Name]%0D%0A[Address1]%0D%0A[Address2]%0D%0A[PostalCode] [City_U]%0D%0A[Country_U]</AddressFormat>
+	</Country>
+	<Country Code="TZ" Name="Tanzania">
+		<AddressFormat>[Company]%0D%0A[Name]%0D%0A[Address1]%0D%0A[Address2]%0D%0A[City_U]%0D%0A[Country_U]</AddressFormat>
+	</Country>
+	<Country Code="TH" Name="Thailand">
+		<AddressFormat>[Company]%0D%0A[Name]%0D%0A[Address1]%0D%0A[Address2]%0D%0A[City_U] [PostalCode]%0D%0A[Province_U]%0D%0A[Country_U]</AddressFormat>
+	</Country>
+	<Country Code="TL" Name="Timor-leste">
+		<AddressFormat>[Company]%0D%0A[Name]%0D%0A[Address1]%0D%0A[Address2]%0D%0A[City_U] %0D%0A[Country_U]</AddressFormat>
+	</Country>
+	<Country Code="TG" Name="Togo">
+		<AddressFormat>[Company]%0D%0A[Name]%0D%0A[Address1]%0D%0A[Address2]%0D%0A[City_U]%0D%0A[Country_U]</AddressFormat>
+	</Country>
+	<Country Code="TK" Name="Tokelau">
+		<AddressFormat>[Company]%0D%0A[Name]%0D%0A[Address1]%0D%0A[Address2]%0D%0A[City_U] [PostalCode]%0D%0ANEW ZEALAND</AddressFormat>
+	</Country>
+	<Country Code="TO" Name="Tonga">
+		<AddressFormat>[Company]%0D%0A[Name]%0D%0A[Address1]%0D%0A[Address2]%0D%0A[City_U]%0D%0A[Country_U]</AddressFormat>
+	</Country>
+	<Country Code="TT" Name="Trinidad and Tobago">
+		<AddressFormat>[Company]%0D%0A[Name]%0D%0A[Address1]%0D%0A[Address2]%0D%0A[City_U]%0D%0A[Country_U]</AddressFormat>
+	</Country>
+	<Country Code="TN" Name="Tunisia">
+		<AddressFormat>[Company]%0D%0A[Name]%0D%0A[Address1]%0D%0A[Address2]%0D%0A[PostalCode] [City_U]%0D%0A[Country_U]</AddressFormat>
+	</Country>
+	<Country Code="TR" Name="Turkey">
+		<AddressFormat>[Company]%0D%0A[Name]%0D%0A[Address1]%0D%0A[Address2]%0D%0A[PostalCode] [City_U]%0D%0A[Country_U]</AddressFormat>
+	</Country>
+	<Country Code="TM" Name="Turkmenistan">
+		<AddressFormat>[Company]%0D%0A[Name]%0D%0A[Address1]%0D%0A[Address2]%0D%0A[PostalCode] [City_U]%0D%0A[Country_U]</AddressFormat>
+	</Country>
+	<Country Code="TC" Name="Turks and Caicos Islands">
+		<AddressFormat>[Company]%0D%0A[Name]%0D%0A[Address1]%0D%0A[Address2]%0D%0A[City_U]%0D%0A[PostalCode]%0D%0AUNITED KINGDOM</AddressFormat>
+	</Country>
+	<Country Code="TV" Name="Tuvalu">
+		<AddressFormat>[Company]%0D%0A[Name]%0D%0A[Address1]%0D%0A[Address2]%0D%0A[City_U]%0D%0A[Province_U]%0D%0A[Country_U]</AddressFormat>
+	</Country>
+	<Country Code="UG" Name="Uganda">
+		<AddressFormat>[Company]%0D%0A[Name]%0D%0A[Address1]%0D%0A[Address2]%0D%0A[City_U]%0D%0A[Country_U]</AddressFormat>
+	</Country>
+	<Country Code="UA" Name="Ukraine">
+		<AddressFormat>[Company]%0D%0A[Name]%0D%0A[Address1]%0D%0A[Address2]%0D%0A[City_U]%0D%0A[PostalCode]%0D%0A[Country_U]</AddressFormat>
+	</Country>
+	<Country Code="AE" Name="United Arab Emirates">
+		<AddressFormat>[Company]%0D%0A[Name]%0D%0A[Address1]%0D%0A[Address2]%0D%0A[City_U]%0D%0A[Country_U]</AddressFormat>
+	</Country>
+	<Country Code="GB" Name="United Kingdom">
+		<AddressFormat>[Company]%0D%0A[Name]%0D%0A[Address1]%0D%0A[Address2]%0D%0A[City_U]%0D%0A[PostalCode]%0D%0A[Country_U]</AddressFormat>
+	</Country>
+	<Country Code="US" Name="United States">
+		<AddressFormat>[Company]%0D%0A[Name]%0D%0A[Address1]%0D%0A[Address2]%0D%0A[City_U], [Province_U] [PostalCode]%0D%0A[Country_U]</AddressFormat>
+	</Country>
+	<Country Code="UY" Name="Uruguay">
+		<AddressFormat>[Company]%0D%0A[Name]%0D%0A[Address1]%0D%0A[Address2]%0D%0A[PostalCode] [City_U] [Province_U]%0D%0A[Country_U]</AddressFormat>
+	</Country>
+	<Country Code="UZ" Name="Uzbekistan">
+		<AddressFormat>[Company]%0D%0A[Name]%0D%0A[Address1]%0D%0A[Address2]%0D%0A[City_U]%0D%0A[Country_U]%0D%0A[PostalCode]</AddressFormat>
+	</Country>
+	<Country Code="VU" Name="Vanuatu">
+		<AddressFormat>[Company]%0D%0A[Name]%0D%0A[Address1]%0D%0A[Address2]%0D%0A[City_U]%0D%0A[Country_U]</AddressFormat>
+	</Country>
+	<Country Code="VE" Name="Venezuela">
+		<AddressFormat>[Company]%0D%0A[Name]%0D%0A[Address1]%0D%0A[Address2]%0D%0A[City_U] [PostalCode], [Province_U]%0D%0A[Country_U]</AddressFormat>
+	</Country>
+	<Country Code="VN" Name="Viet Nam">
+		<AddressFormat>[Company]%0D%0A[Name]%0D%0A[Address1]%0D%0A[Address2]%0D%0A[City_U] [PostalCode]%0D%0A[Country_U]</AddressFormat>
+	</Country>
+	<Country Code="VG" Name="Virgin Islands, British">
+		<AddressFormat>[Company]%0D%0A[Name]%0D%0A[Address1]%0D%0A[Address2]%0D%0A[City_U] [PostalCode]%0D%0A[Country_U]</AddressFormat>
+	</Country>
+	<Country Code="VI" Name="Virgin Islands, U.S.">
+		<AddressFormat>[Company]%0D%0A[Name]%0D%0A[Address1]%0D%0A[Address2]%0D%0A[City_U], VI [PostalCode]%0D%0AUNITED STATES OF AMERICA</AddressFormat>
+	</Country>
+	<Country Code="WF" Name="Wallis and Futuna">
+		<AddressFormat>[Company]%0D%0A[Name]%0D%0A[Address1]%0D%0A[Address2]%0D%0A[PostalCode] [City_U]%0D%0AFRANCE</AddressFormat>
+	</Country>
+	<Country Code="EH" Name="Western Sahara" />
+	<Country Code="YE" Name="Yemen">
+		<AddressFormat>[Company]%0D%0A[Name]%0D%0A[Address1]%0D%0A[Address2]%0D%0A[City_U]%0D%0A[Province_U]%0D%0A[Country_U]</AddressFormat>
+	</Country>
+	<Country Code="ZM" Name="Zambia">
+		<AddressFormat>[Company]%0D%0A[Name]%0D%0A[Address1]%0D%0A[Address2]%0D%0A[PostalCode] [City_U]%0D%0A[Country_U]</AddressFormat>
+	</Country>
+	<Country Code="ZW" Name="Zimbabwe">
+		<AddressFormat>[Company]%0D%0A[Name]%0D%0A[Address1]%0D%0A[Address2]%0D%0A[City_U]%0D%0A[Province_U]%0D%0A[Country_U]</AddressFormat>
+	</Country>
+</Countries>

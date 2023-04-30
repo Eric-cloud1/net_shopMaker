@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+    <siteMapNode url="~/Default.aspx" title="Home" description="Home page">
+    <siteMapNode url="~/Admin/Default.aspx" title="Admin" description="Store admin" roles="Admin,Customer Service Admin,Customer Service,Gateway Service Admin,Gateway Service" />
+    <siteMapNode url="~/Search.aspx" title="Search" description="Search store catalog" />
+    <siteMapNode url="~/Basket.aspx" title="My Basket" description="View the contents of your basket" />
+    <siteMapNode url="~/AboutUs.aspx" title="About Us" description="About Us" />
+    <siteMapNode url="~/ContactUs.aspx" title="Contact Us" description="Contact Us" />
+    <siteMapNode url="~/Preferences.aspx" title="Preferences" description="Preferences" />
+    <siteMapNode url="~/Members/MyAccount.aspx" title="Your Account">
+      <siteMapNode url="~/Members/MyAddressBook.aspx" title="Address Book" >
+        <siteMapNode url="~/Members/EditMyAddress.aspx" title="Edit Address" />
+      </siteMapNode>
+      <siteMapNode url="~/Members/MyCredentials.aspx" title="Edit Credentials" />
+      <siteMapNode url="~/Members/MyDigitalGoods.aspx" title="My Digital Goods" />
+      <siteMapNode url="~/Members/MyGiftCertificate.aspx" title="View Gift Certificate" />
+      <siteMapNode url="~/Checkout/Receipt.aspx" title="View Order" />
+      <siteMapNode url="~/Members/MyOrder.aspx" title="View Order" />
+      <siteMapNode url="~/Members/MyOrderHistory.aspx" title="Order History" />
+      <siteMapNode url="~/Members/MyProductReviews.aspx" title="Product Reviews">
+        <siteMapNode url="~/Members/EditMyReview.aspx" title="Edit Review" />
+      </siteMapNode>
+      <siteMapNode url="~/Members/MySerialKey.aspx" title="View Serial Key" />
+      <siteMapNode url="~/Members/MySubscriptions.aspx" title="My Subscriptions" />
+      <siteMapNode url="~/Members/MyTrackingInfo.aspx" title="View Tracking Info" />
+      <siteMapNode url="~/Members/MyWishlist.aspx" title="My Wishlist" />
+      <siteMapNode url="~/Members/PayMyOrder.aspx" title="Pay Order" />
+      <siteMapNode url="~/Members/PrintMyOrder.aspx" title="Print Order" />
+    </siteMapNode>
+    <siteMapNode url="~/Login.aspx" title="Login" description="Login" users="?" />
+    <siteMapNode url="~/Logout.aspx" title="Logout" description="Logout" roles="" />
+  </siteMapNode>
+</siteMap>

@@ -1,0 +1,906 @@
+﻿<!doctype html public "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/1999/REC-html401-19991224/loose.dtd">
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Demo</title>
+    <link rel="stylesheet" type="text/css" href="js/jquery.tablescroll.css" />
+</head>
+<body>
+    <table id="thetable" cellspacing="0">
+        <thead>
+            <tr>
+                <td>
+                    city
+                </td>
+                <td>
+                    state code
+                </td>
+                <td>
+                    zip
+                </td>
+                <td>
+                    latitude
+                </td>
+                <td>
+                    longitude
+                </td>
+                <td>
+                    county
+                </td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="first">
+                <td>
+                    Holtsville
+                </td>
+                <td>
+                    NY
+                </td>
+                <td>
+                    00501
+                </td>
+                <td>
+                    40.8152
+                </td>
+                <td>
+                    -73.0455
+                </td>
+                <td>
+                    Suffolk
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Holtsville
+                </td>
+                <td>
+                    NY
+                </td>
+                <td>
+                    00544
+                </td>
+                <td>
+                    40.8152
+                </td>
+                <td>
+                    -73.0455
+                </td>
+                <td>
+                    Suffolk
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Adjuntas
+                </td>
+                <td>
+                    PR
+                </td>
+                <td>
+                    00601
+                </td>
+                <td>
+                    18.1788
+                </td>
+                <td>
+                    -66.7516
+                </td>
+                <td>
+                    Adjuntas
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Aguada
+                </td>
+                <td>
+                    PR
+                </td>
+                <td>
+                    00602
+                </td>
+                <td>
+                    18.381389
+                </td>
+                <td>
+                    -67.188611
+                </td>
+                <td>
+                    Aguada
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Aguadilla
+                </td>
+                <td>
+                    PR
+                </td>
+                <td>
+                    00603
+                </td>
+                <td>
+                    18.4554
+                </td>
+                <td>
+                    -67.1308
+                </td>
+                <td>
+                    Aguadilla
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Aguadilla
+                </td>
+                <td>
+                    PR
+                </td>
+                <td>
+                    00604
+                </td>
+                <td>
+                    18.4812
+                </td>
+                <td>
+                    -67.1467
+                </td>
+                <td>
+                    Aguadilla
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Aguadilla
+                </td>
+                <td>
+                    PR
+                </td>
+                <td>
+                    00605
+                </td>
+                <td>
+                    18.429444
+                </td>
+                <td>
+                    -67.154444
+                </td>
+                <td>
+                    Aguadilla
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Maricao
+                </td>
+                <td>
+                    PR
+                </td>
+                <td>
+                    00606
+                </td>
+                <td>
+                    18.182778
+                </td>
+                <td>
+                    -66.980278
+                </td>
+                <td>
+                    Maricao
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Anasco
+                </td>
+                <td>
+                    PR
+                </td>
+                <td>
+                    00610
+                </td>
+                <td>
+                    18.284722
+                </td>
+                <td>
+                    -67.14
+                </td>
+                <td>
+                    Anasco
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Angeles
+                </td>
+                <td>
+                    PR
+                </td>
+                <td>
+                    00611
+                </td>
+                <td>
+                    18.286944
+                </td>
+                <td>
+                    -66.799722
+                </td>
+                <td>
+                    Utuado
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Arecibo
+                </td>
+                <td>
+                    PR
+                </td>
+                <td>
+                    00612
+                </td>
+                <td>
+                    18.4389
+                </td>
+                <td>
+                    -66.6924
+                </td>
+                <td>
+                    Arecibo
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Arecibo
+                </td>
+                <td>
+                    PR
+                </td>
+                <td>
+                    00613
+                </td>
+                <td>
+                    18.1399
+                </td>
+                <td>
+                    -66.6344
+                </td>
+                <td>
+                    Arecibo
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Arecibo
+                </td>
+                <td>
+                    PR
+                </td>
+                <td>
+                    00614
+                </td>
+                <td>
+                    18.1399
+                </td>
+                <td>
+                    -66.6344
+                </td>
+                <td>
+                    Arecibo
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Bajadero
+                </td>
+                <td>
+                    PR
+                </td>
+                <td>
+                    00616
+                </td>
+                <td>
+                    18.428611
+                </td>
+                <td>
+                    -66.683611
+                </td>
+                <td>
+                    Arecibo
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Barceloneta
+                </td>
+                <td>
+                    PR
+                </td>
+                <td>
+                    00617
+                </td>
+                <td>
+                    18.4525
+                </td>
+                <td>
+                    -66.538889
+                </td>
+                <td>
+                    Barceloneta
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <br />
+ 
+        <table id="thetable2" cellspacing="0">
+            <thead>
+                <tr>
+                    <td>
+                        State
+                    </td>
+                    <td>
+                        Total Sales Tax
+                    </td>
+                    <td>
+                        State Sales Tax
+                    </td>
+                    <td>
+                        Local Sales Tax
+                    </td>
+                    <td>
+                        Merch Sales Tax
+                    </td>
+                    <td>
+                        Total Sales Tax
+                    </td>
+                    <td>
+                        State Sales Tax
+                    </td>
+                    <td>
+                        Local Sales Tax
+                    </td>
+                    <td>
+                        Merch Sales Tax
+                    </td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="first">
+                    <td>
+                        IL
+                    </td>
+                    <td>
+                        $1,364.27
+                    </td>
+                    <td>
+                        $712.05
+                    </td>
+                    <td>
+                        $211.11
+                    </td>
+                    <td>
+                        $416.87
+                    </td>
+                    <td>
+                        $1,364.27
+                    </td>
+                    <td>
+                        $712.05
+                    </td>
+                    <td>
+                        $211.11
+                    </td>
+                    <td>
+                        $416.87
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        IN
+                    </td>
+                    <td>
+                        $1,364.27
+                    </td>
+                    <td>
+                        $712.05
+                    </td>
+                    <td>
+                        $211.11
+                    </td>
+                    <td>
+                        $416.87
+                    </td>
+                    <td>
+                        $1,364.27
+                    </td>
+                    <td>
+                        $712.05
+                    </td>
+                    <td>
+                        $211.11
+                    </td>
+                    <td>
+                        $416.87
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        KS
+                    </td>
+                    <td>
+                        $1,364.27
+                    </td>
+                    <td>
+                        $712.05
+                    </td>
+                    <td>
+                        $211.11
+                    </td>
+                    <td>
+                        $416.87
+                    </td>
+                    <td>
+                        $1,364.27
+                    </td>
+                    <td>
+                        $712.05
+                    </td>
+                    <td>
+                        $211.11
+                    </td>
+                    <td>
+                        $416.87
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        NJ
+                    </td>
+                    <td>
+                        $1,364.27
+                    </td>
+                    <td>
+                        $712.05
+                    </td>
+                    <td>
+                        $211.11
+                    </td>
+                    <td>
+                        $416.87
+                    </td>
+                    <td>
+                        $1,364.27
+                    </td>
+                    <td>
+                        $712.05
+                    </td>
+                    <td>
+                        $211.11
+                    </td>
+                    <td>
+                        $416.87
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        NY
+                    </td>
+                    <td>
+                        $1,364.27
+                    </td>
+                    <td>
+                        $712.05
+                    </td>
+                    <td>
+                        $211.11
+                    </td>
+                    <td>
+                        $416.87
+                    </td>
+                    <td>
+                        $1,364.27
+                    </td>
+                    <td>
+                        $712.05
+                    </td>
+                    <td>
+                        $211.11
+                    </td>
+                    <td>
+                        $416.87
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        FL
+                    </td>
+                    <td>
+                        $1,364.27
+                    </td>
+                    <td>
+                        $712.05
+                    </td>
+                    <td>
+                        $211.11
+                    </td>
+                    <td>
+                        $416.87
+                    </td>
+                    <td>
+                        $1,364.27
+                    </td>
+                    <td>
+                        $712.05
+                    </td>
+                    <td>
+                        $211.11
+                    </td>
+                    <td>
+                        $416.87
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        CA
+                    </td>
+                    <td>
+                        $1,364.27
+                    </td>
+                    <td>
+                        $712.05
+                    </td>
+                    <td>
+                        $211.11
+                    </td>
+                    <td>
+                        $416.87
+                    </td>
+                    <td>
+                        $1,364.27
+                    </td>
+                    <td>
+                        $712.05
+                    </td>
+                    <td>
+                        $211.11
+                    </td>
+                    <td>
+                        $416.87
+                    </td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td>
+                        &nbsp;
+                    </td>
+                    <td>
+                        $1,364.27
+                    </td>
+                    <td>
+                        $712.05
+                    </td>
+                    <td>
+                        $211.11
+                    </td>
+                    <td>
+                        $416.87
+                    </td>
+                    <td>
+                        $1,364.27
+                    </td>
+                    <td>
+                        $712.05
+                    </td>
+                    <td>
+                        $211.11
+                    </td>
+                    <td>
+                        $416.87
+                    </td>
+                </tr>
+            </tfoot>
+        </table>
+   
+<br />
+
+		
+                            
+                  
+			<table width="1300px" cellspacing="0" DefaultSortExpression="Name" DefaultSortDirection="Ascending" border="0" id="ctl00_MainContent_DailyBillingReportGrid">
+				<thead>
+					<tr>
+						<th scope="col"><a href="javascript:__doPostBack('ctl00$MainContent$DailyBillingReportGrid','Sort$Transaction Date')">Transaction Date</a></th><th scope="col"><a href="javascript:__doPostBack('ctl00$MainContent$DailyBillingReportGrid','Sort$total')">Total Count</a></th><th scope="col"><a href="javascript:__doPostBack('ctl00$MainContent$DailyBillingReportGrid','Sort$totalamount')">Total Amount</a></th><th scope="col"><a href="javascript:__doPostBack('ctl00$MainContent$DailyBillingReportGrid','Sort$Authorized')">Authorized Count</a></th><th scope="col"><a href="javascript:__doPostBack('ctl00$MainContent$DailyBillingReportGrid','Sort$AuthorizedAmount')">Authorized Amount</a></th><th scope="col"><a href="javascript:__doPostBack('ctl00$MainContent$DailyBillingReportGrid','Sort$Captured')">Captured Count</a></th><th scope="col"><a href="javascript:__doPostBack('ctl00$MainContent$DailyBillingReportGrid','Sort$capturedamount')">Captured Amount</a></th><th scope="col"><a href="javascript:__doPostBack('ctl00$MainContent$DailyBillingReportGrid','Sort$refundvoid')">Refund/Void Count</a></th><th scope="col"><a href="javascript:__doPostBack('ctl00$MainContent$DailyBillingReportGrid','Sort$refundvoidamount')">Refund/Void Amount</a></th><th scope="col"><a href="javascript:__doPostBack('ctl00$MainContent$DailyBillingReportGrid','Sort$initial')">Initial Count</a></th><th scope="col"><a href="javascript:__doPostBack('ctl00$MainContent$DailyBillingReportGrid','Sort$initialamount')">Initial Amount</a></th><th scope="col"><a href="javascript:__doPostBack('ctl00$MainContent$DailyBillingReportGrid','Sort$trial')">Trial Count</a></th><th scope="col"><a href="javascript:__doPostBack('ctl00$MainContent$DailyBillingReportGrid','Sort$trialamount')">Trial Amount</a></th><th scope="col"><a href="javascript:__doPostBack('ctl00$MainContent$DailyBillingReportGrid','Sort$rebill')">Rebill Count</a></th><th scope="col"><a href="javascript:__doPostBack('ctl00$MainContent$DailyBillingReportGrid','Sort$rebillamount')">Rebill Amount</a></th><th scope="col"><a href="javascript:__doPostBack('ctl00$MainContent$DailyBillingReportGrid','Sort$paymentgateway')">Processor</a></th>
+					</tr>
+				</thead><tbody>
+					<tr class="oddRow">
+						<td align="left" style="width:200px;">
+                                            <span id="ctl00_MainContent_DailyBillingReportGrid_ctl02_lbtransactiondate">10/27/2010</span>
+                                        </td><td align="center" style="width:100px;">
+                                            <span id="ctl00_MainContent_DailyBillingReportGrid_ctl02_lbtotal">3</span>
+                                        </td><td align="center" style="width:100px;">
+                                            <span id="ctl00_MainContent_DailyBillingReportGrid_ctl02_lbtotalamount">$53.70</span>
+                                        </td><td align="center" style="width:100px;">
+                                            <span id="ctl00_MainContent_DailyBillingReportGrid_ctl02_lbauthorized">0</span>
+                                        </td><td align="center" style="width:100px;">
+                                            <span id="ctl00_MainContent_DailyBillingReportGrid_ctl02_lbauthorizedAmount">$0.00</span>
+                                        </td><td align="center" style="width:100px;">
+                                            <span id="ctl00_MainContent_DailyBillingReportGrid_ctl02_lbcaptured">3</span>
+                                        </td><td align="center" style="width:100px;">
+                                            <span id="ctl00_MainContent_DailyBillingReportGrid_ctl02_lbcapturedamount">$53.70</span>
+                                        </td><td align="center" style="width:100px;">
+                                            <span id="ctl00_MainContent_DailyBillingReportGrid_ctl02_lbrefundvoid">0</span>
+                                        </td><td align="center" style="width:100px;">
+                                            <span id="ctl00_MainContent_DailyBillingReportGrid_ctl02_lbrefundvoidamount">$0.00</span>
+                                        </td><td align="center" style="width:100px;">
+                                            <span id="ctl00_MainContent_DailyBillingReportGrid_ctl02_lbinitial">4</span>
+                                        </td><td align="center" style="width:100px;">
+                                            <span id="ctl00_MainContent_DailyBillingReportGrid_ctl02_lbinitialamount">$53.70</span>
+                                        </td><td align="center" style="width:100px;">
+                                            <span id="ctl00_MainContent_DailyBillingReportGrid_ctl02_lbtrial">1</span>
+                                        </td><td align="center" style="width:100px;">
+                                            <span id="ctl00_MainContent_DailyBillingReportGrid_ctl02_lbtrialamount">$0.00</span>
+                                        </td><td align="center" style="width:100px;">
+                                            <span id="ctl00_MainContent_DailyBillingReportGrid_ctl02_lbrebill">1</span>
+                                        </td><td align="center" style="width:100px;">
+                                            <span id="ctl00_MainContent_DailyBillingReportGrid_ctl02_lbrebillamount">$0.00</span>
+                                        </td><td align="center" style="width:100px;">
+                                            <span id="ctl00_MainContent_DailyBillingReportGrid_ctl02_lbpaymentgateway">Sigma_Metro_GetBrightWhites</span>
+                                        </td>
+					</tr><tr class="evenRow">
+						<td align="left" style="width:200px;">
+                                            <span id="ctl00_MainContent_DailyBillingReportGrid_ctl03_lbtransactiondate">10/27/2010</span>
+                                        </td><td align="center" style="width:100px;">
+                                            <span id="ctl00_MainContent_DailyBillingReportGrid_ctl03_lbtotal">24</span>
+                                        </td><td align="center" style="width:100px;">
+                                            <span id="ctl00_MainContent_DailyBillingReportGrid_ctl03_lbtotalamount">$84.99</span>
+                                        </td><td align="center" style="width:100px;">
+                                            <span id="ctl00_MainContent_DailyBillingReportGrid_ctl03_lbauthorized">0</span>
+                                        </td><td align="center" style="width:100px;">
+                                            <span id="ctl00_MainContent_DailyBillingReportGrid_ctl03_lbauthorizedAmount">$0.00</span>
+                                        </td><td align="center" style="width:100px;">
+                                            <span id="ctl00_MainContent_DailyBillingReportGrid_ctl03_lbcaptured">24</span>
+                                        </td><td align="center" style="width:100px;">
+                                            <span id="ctl00_MainContent_DailyBillingReportGrid_ctl03_lbcapturedamount">$84.99</span>
+                                        </td><td align="center" style="width:100px;">
+                                            <span id="ctl00_MainContent_DailyBillingReportGrid_ctl03_lbrefundvoid">0</span>
+                                        </td><td align="center" style="width:100px;">
+                                            <span id="ctl00_MainContent_DailyBillingReportGrid_ctl03_lbrefundvoidamount">$0.00</span>
+                                        </td><td align="center" style="width:100px;">
+                                            <span id="ctl00_MainContent_DailyBillingReportGrid_ctl03_lbinitial">25</span>
+                                        </td><td align="center" style="width:100px;">
+                                            <span id="ctl00_MainContent_DailyBillingReportGrid_ctl03_lbinitialamount">$84.99</span>
+                                        </td><td align="center" style="width:100px;">
+                                            <span id="ctl00_MainContent_DailyBillingReportGrid_ctl03_lbtrial">1</span>
+                                        </td><td align="center" style="width:100px;">
+                                            <span id="ctl00_MainContent_DailyBillingReportGrid_ctl03_lbtrialamount">$0.00</span>
+                                        </td><td align="center" style="width:100px;">
+                                            <span id="ctl00_MainContent_DailyBillingReportGrid_ctl03_lbrebill">1</span>
+                                        </td><td align="center" style="width:100px;">
+                                            <span id="ctl00_MainContent_DailyBillingReportGrid_ctl03_lbrebillamount">$0.00</span>
+                                        </td><td align="center" style="width:100px;">
+                                            <span id="ctl00_MainContent_DailyBillingReportGrid_ctl03_lbpaymentgateway">Sigma_Metro_MaxColoBlast</span>
+                                        </td>
+					</tr><tr class="oddRow">
+						<td align="left" style="width:200px;">
+                                            <span id="ctl00_MainContent_DailyBillingReportGrid_ctl04_lbtransactiondate">10/27/2010</span>
+                                        </td><td align="center" style="width:100px;">
+                                            <span id="ctl00_MainContent_DailyBillingReportGrid_ctl04_lbtotal">334</span>
+                                        </td><td align="center" style="width:100px;">
+                                            <span id="ctl00_MainContent_DailyBillingReportGrid_ctl04_lbtotalamount">$2,991.98</span>
+                                        </td><td align="center" style="width:100px;">
+                                            <span id="ctl00_MainContent_DailyBillingReportGrid_ctl04_lbauthorized">0</span>
+                                        </td><td align="center" style="width:100px;">
+                                            <span id="ctl00_MainContent_DailyBillingReportGrid_ctl04_lbauthorizedAmount">$0.00</span>
+                                        </td><td align="center" style="width:100px;">
+                                            <span id="ctl00_MainContent_DailyBillingReportGrid_ctl04_lbcaptured">330</span>
+                                        </td><td align="center" style="width:100px;">
+                                            <span id="ctl00_MainContent_DailyBillingReportGrid_ctl04_lbcapturedamount">$2,986.02</span>
+                                        </td><td align="center" style="width:100px;">
+                                            <span id="ctl00_MainContent_DailyBillingReportGrid_ctl04_lbrefundvoid">4</span>
+                                        </td><td align="center" style="width:100px;">
+                                            <span id="ctl00_MainContent_DailyBillingReportGrid_ctl04_lbrefundvoidamount">$5.96</span>
+                                        </td><td align="center" style="width:100px;">
+                                            <span id="ctl00_MainContent_DailyBillingReportGrid_ctl04_lbinitial">331</span>
+                                        </td><td align="center" style="width:100px;">
+                                            <span id="ctl00_MainContent_DailyBillingReportGrid_ctl04_lbinitialamount">$2,986.02</span>
+                                        </td><td align="center" style="width:100px;">
+                                            <span id="ctl00_MainContent_DailyBillingReportGrid_ctl04_lbtrial">1</span>
+                                        </td><td align="center" style="width:100px;">
+                                            <span id="ctl00_MainContent_DailyBillingReportGrid_ctl04_lbtrialamount">$0.00</span>
+                                        </td><td align="center" style="width:100px;">
+                                            <span id="ctl00_MainContent_DailyBillingReportGrid_ctl04_lbrebill">1</span>
+                                        </td><td align="center" style="width:100px;">
+                                            <span id="ctl00_MainContent_DailyBillingReportGrid_ctl04_lbrebillamount">$0.00</span>
+                                        </td><td align="center" style="width:100px;">
+                                            <span id="ctl00_MainContent_DailyBillingReportGrid_ctl04_lbpaymentgateway">Sigma_Metro_MyDietMaxCleanse</span>
+                                        </td>
+					</tr><tr class="evenRow">
+						<td align="left" style="width:200px;">
+                                            <span id="ctl00_MainContent_DailyBillingReportGrid_ctl05_lbtransactiondate">10/27/2010</span>
+                                        </td><td align="center" style="width:100px;">
+                                            <span id="ctl00_MainContent_DailyBillingReportGrid_ctl05_lbtotal">8281</span>
+                                        </td><td align="center" style="width:100px;">
+                                            <span id="ctl00_MainContent_DailyBillingReportGrid_ctl05_lbtotalamount">$80,822.56</span>
+                                        </td><td align="center" style="width:100px;">
+                                            <span id="ctl00_MainContent_DailyBillingReportGrid_ctl05_lbauthorized">7267</span>
+                                        </td><td align="center" style="width:100px;">
+                                            <span id="ctl00_MainContent_DailyBillingReportGrid_ctl05_lbauthorizedAmount">$70,925.92</span>
+                                        </td><td align="center" style="width:100px;">
+                                            <span id="ctl00_MainContent_DailyBillingReportGrid_ctl05_lbcaptured">618</span>
+                                        </td><td align="center" style="width:100px;">
+                                            <span id="ctl00_MainContent_DailyBillingReportGrid_ctl05_lbcapturedamount">$6,031.68</span>
+                                        </td><td align="center" style="width:100px;">
+                                            <span id="ctl00_MainContent_DailyBillingReportGrid_ctl05_lbrefundvoid">396</span>
+                                        </td><td align="center" style="width:100px;">
+                                            <span id="ctl00_MainContent_DailyBillingReportGrid_ctl05_lbrefundvoidamount">$3,864.96</span>
+                                        </td><td align="center" style="width:100px;">
+                                            <span id="ctl00_MainContent_DailyBillingReportGrid_ctl05_lbinitial">1</span>
+                                        </td><td align="center" style="width:100px;">
+                                            <span id="ctl00_MainContent_DailyBillingReportGrid_ctl05_lbinitialamount">$0.00</span>
+                                        </td><td align="center" style="width:100px;">
+                                            <span id="ctl00_MainContent_DailyBillingReportGrid_ctl05_lbtrial">6388</span>
+                                        </td><td align="center" style="width:100px;">
+                                            <span id="ctl00_MainContent_DailyBillingReportGrid_ctl05_lbtrialamount">$62,337.12</span>
+                                        </td><td align="center" style="width:100px;">
+                                            <span id="ctl00_MainContent_DailyBillingReportGrid_ctl05_lbrebill">1498</span>
+                                        </td><td align="center" style="width:100px;">
+                                            <span id="ctl00_MainContent_DailyBillingReportGrid_ctl05_lbrebillamount">$14,610.72</span>
+                                        </td><td align="center" style="width:100px;">
+                                            <span id="ctl00_MainContent_DailyBillingReportGrid_ctl05_lbpaymentgateway">Sigma_Metro_OnlineProfitValult</span>
+                                        </td>
+					</tr><tr class="oddRow">
+						<td align="left" style="width:200px;">
+                                            <span id="ctl00_MainContent_DailyBillingReportGrid_ctl06_lbtransactiondate">10/28/2010</span>
+                                        </td><td align="center" style="width:100px;">
+                                            <span id="ctl00_MainContent_DailyBillingReportGrid_ctl06_lbtotal">4</span>
+                                        </td><td align="center" style="width:100px;">
+                                            <span id="ctl00_MainContent_DailyBillingReportGrid_ctl06_lbtotalamount">$71.60</span>
+                                        </td><td align="center" style="width:100px;">
+                                            <span id="ctl00_MainContent_DailyBillingReportGrid_ctl06_lbauthorized">0</span>
+                                        </td><td align="center" style="width:100px;">
+                                            <span id="ctl00_MainContent_DailyBillingReportGrid_ctl06_lbauthorizedAmount">$0.00</span>
+                                        </td><td align="center" style="width:100px;">
+                                            <span id="ctl00_MainContent_DailyBillingReportGrid_ctl06_lbcaptured">4</span>
+                                        </td><td align="center" style="width:100px;">
+                                            <span id="ctl00_MainContent_DailyBillingReportGrid_ctl06_lbcapturedamount">$71.60</span>
+                                        </td><td align="center" style="width:100px;">
+                                            <span id="ctl00_MainContent_DailyBillingReportGrid_ctl06_lbrefundvoid">0</span>
+                                        </td><td align="center" style="width:100px;">
+                                            <span id="ctl00_MainContent_DailyBillingReportGrid_ctl06_lbrefundvoidamount">$0.00</span>
+                                        </td><td align="center" style="width:100px;">
+                                            <span id="ctl00_MainContent_DailyBillingReportGrid_ctl06_lbinitial">5</span>
+                                        </td><td align="center" style="width:100px;">
+                                            <span id="ctl00_MainContent_DailyBillingReportGrid_ctl06_lbinitialamount">$71.60</span>
+                                        </td><td align="center" style="width:100px;">
+                                            <span id="ctl00_MainContent_DailyBillingReportGrid_ctl06_lbtrial">1</span>
+                                        </td><td align="center" style="width:100px;">
+                                            <span id="ctl00_MainContent_DailyBillingReportGrid_ctl06_lbtrialamount">$0.00</span>
+                                        </td><td align="center" style="width:100px;">
+                                            <span id="ctl00_MainContent_DailyBillingReportGrid_ctl06_lbrebill">1</span>
+                                        </td><td align="center" style="width:100px;">
+                                            <span id="ctl00_MainContent_DailyBillingReportGrid_ctl06_lbrebillamount">$0.00</span>
+                                        </td><td align="center" style="width:100px;">
+                                            <span id="ctl00_MainContent_DailyBillingReportGrid_ctl06_lbpaymentgateway">Sigma_Metro_GetBrightWhites</span>
+                                        </td>
+					</tr><tr class="evenRow">
+						<td align="left" style="width:200px;">
+                                            <span id="ctl00_MainContent_DailyBillingReportGrid_ctl07_lbtransactiondate">10/28/2010</span>
+                                        </td><td align="center" style="width:100px;">
+                                            <span id="ctl00_MainContent_DailyBillingReportGrid_ctl07_lbtotal">19</span>
+                                        </td><td align="center" style="width:100px;">
+                                            <span id="ctl00_MainContent_DailyBillingReportGrid_ctl07_lbtotalamount">$176.00</span>
+                                        </td><td align="center" style="width:100px;">
+                                            <span id="ctl00_MainContent_DailyBillingReportGrid_ctl07_lbauthorized">0</span>
+                                        </td><td align="center" style="width:100px;">
+                                            <span id="ctl00_MainContent_DailyBillingReportGrid_ctl07_lbauthorizedAmount">$0.00</span>
+                                        </td><td align="center" style="width:100px;">
+                                            <span id="ctl00_MainContent_DailyBillingReportGrid_ctl07_lbcaptured">19</span>
+                                        </td><td align="center" style="width:100px;">
+                                            <span id="ctl00_MainContent_DailyBillingReportGrid_ctl07_lbcapturedamount">$176.00</span>
+                                        </td><td align="center" style="width:100px;">
+                                            <span id="ctl00_MainContent_DailyBillingReportGrid_ctl07_lbrefundvoid">0</span>
+                                        </td><td align="center" style="width:100px;">
+                                            <span id="ctl00_MainContent_DailyBillingReportGrid_ctl07_lbrefundvoidamount">$0.00</span>
+                                        </td><td align="center" style="width:100px;">
+                                            <span id="ctl00_MainContent_DailyBillingReportGrid_ctl07_lbinitial">20</span>
+                                        </td><td align="center" style="width:100px;">
+                                            <span id="ctl00_MainContent_DailyBillingReportGrid_ctl07_lbinitialamount">$176.00</span>
+                                        </td><td align="center" style="width:100px;">
+                                            <span id="ctl00_MainContent_DailyBillingReportGrid_ctl07_lbtrial">1</span>
+                                        </td><td align="center" style="width:100px;">
+                                            <span id="ctl00_MainContent_DailyBillingReportGrid_ctl07_lbtrialamount">$0.00</span>
+                                        </td><td align="center" style="width:100px;">
+                                            <span id="ctl00_MainContent_DailyBillingReportGrid_ctl07_lbrebill">1</span>
+                                        </td><td align="center" style="width:100px;">
+                                            <span id="ctl00_MainContent_DailyBillingReportGrid_ctl07_lbrebillamount">$0.00</span>
+                                        </td><td align="center" style="width:100px;">
+                                            <span id="ctl00_MainContent_DailyBillingReportGrid_ctl07_lbpaymentgateway">Sigma_Metro_MaxColoBlast</span>
+                                        </td>
+					</tr><tr class="oddRow">
+						<td align="left" style="width:200px;">
+                                            <span id="ctl00_MainContent_DailyBillingReportGrid_ctl08_lbtransactiondate">10/28/2010</span>
+                                        </td><td align="center" style="width:100px;">
+                                            <span id="ctl00_MainContent_DailyBillingReportGrid_ctl08_lbtotal">129</span>
+                                        </td><td align="center" style="width:100px;">
+                                            <span id="ctl00_MainContent_DailyBillingReportGrid_ctl08_lbtotalamount">$1,422.96</span>
+                                        </td><td align="center" style="width:100px;">
+                                            <span id="ctl00_MainContent_DailyBillingReportGrid_ctl08_lbauthorized">0</span>
+                                        </td><td align="center" style="width:100px;">
+                                            <span id="ctl00_MainContent_DailyBillingReportGrid_ctl08_lbauthorizedAmount">$0.00</span>
+                                        </td><td align="center" style="width:100px;">
+                                            <span id="ctl00_MainContent_DailyBillingReportGrid_ctl08_lbcaptured">129</span>
+                                        </td><td align="center" style="width:100px;">
+                                            <span id="ctl00_MainContent_DailyBillingReportGrid_ctl08_lbcapturedamount">$1,422.96</span>
+                                        </td><td align="center" style="width:100px;">
+                                            <span id="ctl00_MainContent_DailyBillingReportGrid_ctl08_lbrefundvoid">0</span>
+                                        </td><td align="center" style="width:100px;">
+                                            <span id="ctl00_MainContent_DailyBillingReportGrid_ctl08_lbrefundvoidamount">$0.00</span>
+                                        </td><td align="center" style="width:100px;">
+                                            <span id="ctl00_MainContent_DailyBillingReportGrid_ctl08_lbinitial">130</span>
+                                        </td><td align="center" style="width:100px;">
+                                            <span id="ctl00_MainContent_DailyBillingReportGrid_ctl08_lbinitialamount">$1,422.96</span>
+                                        </td><td align="center" style="width:100px;">
+                                            <span id="ctl00_MainContent_DailyBillingReportGrid_ctl08_lbtrial">1</span>
+                                        </td><td align="center" style="width:100px;">
+                                            <span id="ctl00_MainContent_DailyBillingReportGrid_ctl08_lbtrialamount">$0.00</span>
+                                        </td><td align="center" style="width:100px;">
+                                            <span id="ctl00_MainContent_DailyBillingReportGrid_ctl08_lbrebill">1</span>
+                                        </td><td align="center" style="width:100px;">
+                                            <span id="ctl00_MainContent_DailyBillingReportGrid_ctl08_lbrebillamount">$0.00</span>
+                                        </td><td align="center" style="width:100px;">
+                                            <span id="ctl00_MainContent_DailyBillingReportGrid_ctl08_lbpaymentgateway">Sigma_Metro_MyDietMaxCleanse</span>
+                                        </td>
+					</tr><tr class="evenRow">
+						<td align="left" style="width:200px;">
+                                            <span id="ctl00_MainContent_DailyBillingReportGrid_ctl09_lbtransactiondate">10/28/2010</span>
+                                        </td><td align="center" style="width:100px;">
+                                            <span id="ctl00_MainContent_DailyBillingReportGrid_ctl09_lbtotal">1934</span>
+                                        </td><td align="center" style="width:100px;">
+                                            <span id="ctl00_MainContent_DailyBillingReportGrid_ctl09_lbtotalamount">$18,875.84</span>
+                                        </td><td align="center" style="width:100px;">
+                                            <span id="ctl00_MainContent_DailyBillingReportGrid_ctl09_lbauthorized">1250</span>
+                                        </td><td align="center" style="width:100px;">
+                                            <span id="ctl00_MainContent_DailyBillingReportGrid_ctl09_lbauthorizedAmount">$12,200.00</span>
+                                        </td><td align="center" style="width:100px;">
+                                            <span id="ctl00_MainContent_DailyBillingReportGrid_ctl09_lbcaptured">433</span>
+                                        </td><td align="center" style="width:100px;">
+                                            <span id="ctl00_MainContent_DailyBillingReportGrid_ctl09_lbcapturedamount">$4,226.08</span>
+                                        </td><td align="center" style="width:100px;">
+                                            <span id="ctl00_MainContent_DailyBillingReportGrid_ctl09_lbrefundvoid">251</span>
+                                        </td><td align="center" style="width:100px;">
+                                            <span id="ctl00_MainContent_DailyBillingReportGrid_ctl09_lbrefundvoidamount">$2,449.76</span>
+                                        </td><td align="center" style="width:100px;">
+                                            <span id="ctl00_MainContent_DailyBillingReportGrid_ctl09_lbinitial">1</span>
+                                        </td><td align="center" style="width:100px;">
+                                            <span id="ctl00_MainContent_DailyBillingReportGrid_ctl09_lbinitialamount">$0.00</span>
+                                        </td><td align="center" style="width:100px;">
+                                            <span id="ctl00_MainContent_DailyBillingReportGrid_ctl09_lbtrial">605</span>
+                                        </td><td align="center" style="width:100px;">
+                                            <span id="ctl00_MainContent_DailyBillingReportGrid_ctl09_lbtrialamount">$5,904.80</span>
+                                        </td><td align="center" style="width:100px;">
+                                            <span id="ctl00_MainContent_DailyBillingReportGrid_ctl09_lbrebill">1083</span>
+                                        </td><td align="center" style="width:100px;">
+                                            <span id="ctl00_MainContent_DailyBillingReportGrid_ctl09_lbrebillamount">$10,560.32</span>
+                                        </td><td align="center" style="width:100px;">
+                                            <span id="ctl00_MainContent_DailyBillingReportGrid_ctl09_lbpaymentgateway">Sigma_Metro_OnlineProfitValult</span>
+                                        </td>
+					</tr>
+				</tbody>
+			</table>
+		
+
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+
+    <script type="text/javascript" src="js/jquery.tablescroll.js"></script>
+
+    <script>        /*<![CDATA[*/jQuery(document).ready(function($) {
+            $('#thetable').tableScroll({ height: 200 });
+            $('#thetable2').tableScroll();
+            $('#ctl00_MainContent_DailyBillingReportGrid').tableScroll({ height: 100 });
+        });  /*]]>*/</script>
+
+</body>
+</html>

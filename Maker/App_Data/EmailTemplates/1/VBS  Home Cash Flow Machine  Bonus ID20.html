@@ -1,0 +1,294 @@
+<html>
+<head>
+<style type="text/css">
+TABLE.Email {
+width: 640px;
+padding: 5px;
+margin: 0px;
+border: 1px solid #5872CB;
+}
+TABLE.Email TH {
+font-weight: bold;
+font-size: 12px;
+color: #ffffff;
+font-family: Arial, Verdana, Sans-Serif;
+font-style: strong;
+background-color: #304FBA;
+text-align: center;
+text-decoration: none;
+padding: 5px;
+}
+#Email2 {
+font-weight: bold;
+color: #006;
+font-family: Arial, Verdana, Sans-Serif;
+font-style: strong;
+background-color: #9eddfe;
+text-align: center;
+text-decoration: none;
+padding: 5px;
+}
+TABLE.Email TD {
+font-weight: normal;
+font-size: 12px;
+color: #000000;
+font-family: Arial, Verdana, Sans-Serif;
+background-color: #ffffff;
+text-align: left;
+text-decoration: none;
+padding: 3px;
+}
+</style>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif">
+<table class="Email">
+<tr >
+    <td colspan="3" height="35" align="center"><div id="Email2"><font face="Arial, Helvetica, sans-serif" style="font-size:30px;">Thank You For Your Order.</font><br>
+</div></td>
+  </tr>
+<tr>
+<td colspan="2" class="Email"><strong><br>
+ <font color="#000099" style="font-size:16px"> 
+  Dear $order.BillToFirstName $order.BillToLastName,</font><br>
+  </strong>
+    <br>
+   Congratulations, on placing your order today! &nbsp;<br>
+    <br>
+  
+ We are pleased to inform you that your order # $order.OrderNumber has been placed
+and you now can get started using Home Cash Flow System Traffic University. Your
+login credentials to begin your training are listed below. Please don’t procrastinate, 
+use this training right away and get moving on your path to financial freedom. 
+
+<br><br><strong>This is a one time charge and you will not be billed for any future charges!</strong><br><br>
+
+<strong>Traffic University Login</strong><br />
+<strong>Username:</strong>  $order.BillToEmail<br>
+<strong>Password:</strong> $order.BillToPostalCode<br>
+<strong>Login website link:</strong> http://bronze.trafficuniversity.com/<br><br>
+
+
+<strong>Bonus Training Access</strong><br />
+<strong>Username:</strong> $order.BillToEmail<br>
+<strong>Password:</strong> $order.BillToPostalCode<br>
+<strong>Login website link:</strong> http://www.successlogin.com<br><br>
+
+
+If you have any questions regarding your order, call us at: 
+$payment.CustomerServicePhone
+ <br>
+Monday – Friday from 9:00 am to 7:00 pm EST 
+
+  
+  
+<br><br>
+  Be sure to reference your order 
+  <strong>
+    # $order.OrderNumber 
+    </strong>
+  when contacting us.<br>
+<br>
+
+  Sincerely,<br>
+<br>
+
+  Edward Allan<br>
+<br>
+
+  Thank you for your  business!&nbsp;<br>
+  <br /><br />
+
+  <div style="background-color: #9eddfe;">
+  <strong><font size="+1">Charges on your credit card statement will read:</font></strong> <br />
+<font size="+2">
+$payment.ChargeDescriptor
+</font>
+</div>
+
+<br />
+<br />
+<font size="+1">&nbsp;</font>
+
+Please see order summary below for details. <br />
+</td>
+</tr>
+</table>
+<table class="Email">
+<tr>
+<th class="Email">Order Summary</th>
+</tr>
+</table>
+<table class="Email">
+<tr>
+<td class="Email"><div align="right"><strong>Email Address:</strong></div></td>
+<td class="Email">
+$order.BillToEmail 
+</td>
+</tr>
+<tr>
+<td class="Email" width="200"><div align="right"><strong>Order Number:</strong> </div></td>
+<td class="Email" width="440">
+<p>
+# $order.OrderNumber 
+</p></td>
+</tr>
+<tr>
+<td class="Email"><div align="right"><strong>Ordered on:</strong></div></td>
+<td class="Email">
+$order.OrderDate.ToString("G")
+</td>
+</tr>
+
+<tr>
+<td><div align="right"><strong>Product:</strong></div></td>
+<td>
+#foreach($orderItem in $order.Items)
+#each
+#if ($orderItem.OrderItemType == "Product")
+$orderItem.Name
+<br />
+
+</td>
+</tr>
+
+#end
+#end
+
+<tr>
+<td><div align="right"><strong>Price</strong></div></td>
+<td>
+$order.Items.TotalPriceById().ToString("ulc")
+</td>
+</tr>
+
+<tr>
+  <td><div align="right"><strong>Card Number:</strong></div></td>
+  <td>
+    #foreach($payment in $payments)
+    $payment.PaymentMethodName
+    $payment.ReferenceNumber
+    #end
+  </td>
+</tr>
+
+<tr>
+<td class="Email"><div align="right"><strong>Billing Statement:</strong></div></td>
+<td class="Email" style="background-color:#9eddfe;">
+$payment.ChargeDescriptor
+</td>
+</tr>
+<tr>
+<td class="Email"><div align="right"><strong>Customer Service:</strong></div></td>
+<td class="Email" style="background-color:#9eddfe;">
+$payment.CustomerServicePhone
+</td>
+</tr>
+</table> 
+
+
+#set ($shipNo = 1)	
+#foreach($shipment in $order.Shipments)
+#beforeall
+<!--<table class="Email">
+<tr>
+<th class="Email">Shipment Information</th>
+</tr>
+</table>
+#each
+<table class="Email">
+<tr>
+<td colspan="4" class="Email" style="text-align: center;">							
+<strong><u>Shipment 
+$shipNo 
+of 
+$order.Shipments.Count</u></strong>
+#set ($shipNo = $shipNo + 1)			
+</td>
+</tr>
+<tr>
+<td class="Email" colspan="4" style="text-align: center;">
+<table width="100%">
+<tr>
+<td class="Email" valign="top">
+
+</td>
+
+<td class="Email" valign="top">
+<strong>Billing & Shipping Address:</strong>
+<div style="padding-left:30px;">
+$shipment.FormatToAddress(true)
+#if ($shipment.ShipMessage.Length > 0)
+<br/><strong>Message:</strong>$shipment.ShipMessage
+#end					  
+</div>
+
+</td>
+<td class="Email" valign="top">
+
+</td>
+</tr>
+</table>	
+</td>
+</tr>
+
+#foreach($orderItem in $order.Items.FilterByShipmentAndSort())
+#beforeall  
+<tr>
+
+<td style="background:#cccccc; color:#00000; text-align: center;"><strong>Description</strong></td>
+<td style="background:#cccccc; color:#00000; text-align: center;"><strong>Quantity</strong></td>
+<td style="background:#cccccc; color:#00000; text-align: center;"><strong>Price</strong></td>
+</tr>
+#each
+
+#if ((($orderItem.OrderItemType == "Product") || ($orderItem.OrderItemType == "Discount") || ($orderItem.OrderItemType == "Coupon") || ($orderItem.OrderItemType == "GiftWrap")) && !$orderItem.IsHidden)
+<tr class="Email">
+<td class="Email" style="text-align: center;">
+#if (($orderItem.OrderItemType == "Product"))
+$orderItem.Name
+#elseif (($orderItem.OrderItemType == "Discount"))
+DISCOUNT
+#elseif (($orderItem.OrderItemType == "Coupon"))
+COUPON
+#elseif (($orderItem.OrderItemType == "GiftWrap"))
+GIFTWRAP
+#end
+</td>-->
+<!--<td class="Email">
+$orderItem.Name
+#if ($orderItem.VariantName.Length > 0)
+($orderItem.VariantName)
+#end
+#foreach($orderItemInput in $orderItem.Inputs)
+#if (!$orderItemInput.IsMerchantField)
+<br /><b>$orderItemInput.Name:</b> $orderItemInput.InputValue
+#end
+#end
+#if ($orderItem.WrapStyle)
+<br>
+Gift Wrap: $orderItem.WrapStyle.Name
+#end
+#if ($orderItem.GiftMessage.Length > 0)
+<br>
+Gift Message: $orderItem.GiftMessage
+#end
+</td>-->
+<!--<td class="Email" style="text-align: center;">$orderItem.Quantity</td>
+<td class="Email" style="text-align: right;">$orderItem.ExtendedPrice.ToString("ulc")</td>
+</tr>
+#end
+#end
+<tr class="Email"><td colspan="4">&nbsp;</td>
+</tr>
+</table>		
+#end	-->
+
+
+
+<p><strong>Thanks again for shopping with us!</strong></p>
+</font>
+
+
+</body>
+</html>

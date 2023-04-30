@@ -1,0 +1,147 @@
+<html>
+<head>
+<style type="text/css">
+TABLE.Email {
+width: 640px;
+padding: 5px;
+margin: 0px;
+border: 1px solid #5872CB;
+}
+TABLE.Email TH {
+font-weight: bold;
+font-size: 12px;
+color: #ffffff;
+font-family: Arial, Verdana, Sans-Serif;
+font-style: strong;
+background-color: #304FBA;
+text-align: center;
+text-decoration: none;
+padding: 5px;
+}
+TABLE.Email TD {
+font-weight: normal;
+font-size: 12px;
+color: #000000;
+font-family: Arial, Verdana, Sans-Serif;
+background-color: #ffffff;
+text-align: left;
+text-decoration: none;
+padding: 3px;
+}
+</style>
+</head>
+<body>
+<table class="Email">
+<tr>
+<td colspan="2" class="Email">
+<p><strong>Greetings $order.BillToFirstName $order.BillToLastName
+!</strong></p>
+<p>Your Digital File is available for download. </p>
+<p><a href="${store.StoreUrl}Members/MyOrder.aspx?OrderNumber=$order.OrderNumber&OrderId=$order.OrderId">  View
+your Order Online</a> and click on the Download icon next to <strong>$orderItemDigitalGood.DigitalGood.Name</strong>.</p>
+#if ($orderItemDigitalGood.DigitalGood.MediaKey.Length > 0)
+<p>Following Media Key will be required to open the download file:
+<br>
+<strong>Media Key: </strong>$orderItemDigitalGood.DigitalGood.MediaKey
+</p>
+#end
+<p>To view all downloads,
+you can also go to your <a href="${store.StoreUrl}Members/MyAccount.aspx">My
+Account</a> page and click on the &quot;My Digital Goods&quot;
+link.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        </p>
+<p>Thank you for shopping with us.<br>
+$store.Name</p>
+</td>
+</tr>
+</table>
+<table class="Email">
+<tr>
+<th class="Email">Order Summary</th>
+</tr>
+</table>
+<table class="Email">
+<tr>
+<td class="Email"><div align="right"><strong>Email Address:</strong></div></td>
+<td class="Email">${order.BillToEmail}</td>
+</tr>
+<tr>
+<td class="Email" width="140"><div align="right"><strong>Order Number:</strong> </div></td>
+<td class="Email" width="500"><p>$order.OrderNumber</p></td>
+</tr>
+<tr>
+<td class="Email"><div align="right"><strong>Ordered on:</strong></div></td>
+<td class="Email">$order.OrderDate.ToString("G")</td>
+</tr>
+<tr>
+<td class="Email"><div align="right"><strong>Ordered by:</strong></div></td>
+<td class="Email">$order.BillToFirstName $order.BillToLastName</td>
+</tr>
+<tr>
+<td><div align="right"><strong>Order Total:</strong></div></td>
+<td>$order.Items.TotalPriceById().ToString("ulc")</td>
+</tr>
+<tr>
+<td class="Email"><div align="right"><strong>Order Status:</strong></div></td>
+<td class="Email"><a href="${store.StoreUrl}Members/MyOrder.aspx?OrderNumber=$order.OrderNumber&OrderId=$order.OrderId">View Online</a></td>
+</tr>
+</table>
+<table class="Email">
+<tr valign="top">
+<td class="Email" width="50%"><strong>Billing Address:</strong>
+<div style="padding-left:30px;">
+$order.FormatAddress(true)
+</div>
+</td>
+<td class="Email" width="50%">
+<strong>Payment Method:</strong>
+<div style="padding-left:30px;">
+#foreach($payment in $payments)
+$payment.PaymentMethodName<br />
+$payment.ReferenceNumber<br />
+#end
+</div>
+</td>
+</tr>
+</table>  
+<!-- Output Non-Shipping Items -->
+#foreach($orderItem in $order.Items.FilterByShipmentAndSort())
+#beforeall
+<table class="Email">
+<tr>
+<th class="Email">Digital Files</th>
+</tr>
+</table>		
+<table class="Email">
+<tr>
+<td style="background:#cccccc; color:#00000; text-align: center;"><strong>SKU</strong></td>
+<td style="background:#cccccc; color:#00000; text-align: center;"><strong>Name</strong></td>
+<td style="background:#cccccc; color:#00000; text-align: center;"><strong>Price</strong></td>
+<td style="background:#cccccc; color:#00000; text-align: center;"><strong>Quantity</strong></td>
+<td style="background:#cccccc; color:#00000; text-align: center;"><strong>Total</strong></td>
+</tr>
+#each
+#if (($orderItem.OrderItemType == "Product"))
+<tr>
+<td class="Email" style="text-align: center;">$orderItem.Sku</td>
+<td class="Email">
+$orderItem.Name
+#if ($orderItem.VariantName.Length > 0)
+($orderItem.VariantName)
+#end
+#foreach($orderItemInput in $orderItem.Inputs)
+#if (!$orderItemInput.IsMerchantField)
+<br /><b>$orderItemInput.Name:</b> $orderItemInput.InputValue
+#end
+#end
+</td>
+<td class="Email" style="text-align: right;">$orderItem.Price.ToString("ulc")</td>
+<td class="Email" style="text-align: center;">$orderItem.Quantity</td>
+<td class="Email" style="text-align: right;">$orderItem.ExtendedPrice.ToString("ulc")</td>
+</tr>
+#end
+#afterall
+</table>		
+#end 
+<p>&nbsp;</p>
+</body>
+</html>

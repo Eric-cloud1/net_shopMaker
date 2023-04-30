@@ -1,0 +1,51 @@
+<html>
+<head>
+<style type="text/css">
+TABLE.Email {
+width: 640px;
+padding: 5px;
+margin: 0px;
+border: 1px solid #5872CB;
+}
+TABLE.Email TH {
+font-weight: bold;
+font-size: 12px;
+color: #ffffff;
+font-family: Arial, Verdana, Sans-Serif;
+font-style: strong;
+background-color: #304FBA;
+text-align: center;
+text-decoration: none;
+padding: 5px;
+}
+TABLE.Email TD {
+font-weight: normal;
+font-size: 12px;
+color: #000000;
+font-family: Arial, Verdana, Sans-Serif;
+background-color: #ffffff;
+text-align: left;
+text-decoration: none;
+padding: 3px;
+}
+</style>
+</head>
+<body>
+<table class="Email">
+<tr>
+<td class="Email">
+<p><strong>Greetings!</strong></p>
+<p>Thank you for joining $list.Name</p>
+<p>You are receiving this message because you (or someone pretending to be you) has signed up to receive messages from $list.Name.</p>
+<p>If you did not intend to sign up for this list, then click the link below
+to remove your address.</p>
+<p><a href="${store.StoreUrl}Subscription.aspx?action=remove&list=${list.EmailListId}&email=${email}">${store.StoreUrl}Subscription.aspx?action=remove&list=${list.EmailListId}&email=${email}</a>	</p>
+<p>If clicking the link doesn't  work, you can copy and paste the link into your browser's address window, or retype it there.</p>
+<p><strong>Thank you for visiting $store.Name!</strong><br>
+<a href="${store.StoreUrl}"><strong>$store.Name</strong></a></p>		
+<p>&nbsp;</p>
+</td>
+</tr>
+</table>
+</body>
+</html>

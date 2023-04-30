@@ -1,0 +1,135 @@
+<p><style type="text/css">TABLE.login {
+	width: 640px;
+	padding: 5px;
+	margin: 0px;
+	border: 1px solid #5872CB;
+}
+TABLE.Email {
+	width: 640px;
+	padding: 5px;
+	margin: 0px;
+	border: 1px solid #5872CB;
+}
+TABLE.Email TH {
+	font-weight: bold;
+	font-size: 12px;
+	color: #ffffff;
+	font-family: Arial, Verdana, Sans-Serif;
+	font-style: strong;
+	background-color: #304FBA;
+	text-align: center;
+	text-decoration: none;
+	padding: 5px;
+}
+TABLE.Email TD {
+	font-weight: normal;
+	font-size: 12px;
+	color: #000000;
+	font-family: Arial, Verdana, Sans-Serif;
+	background-color: #ffffff;
+	text-align: left;
+	text-decoration: none;
+	padding: 3px;
+}
+</style></p>
+<table class="login">
+    <tbody>
+        <tr>
+            <td>
+            <div style="font-family: Arial, Helvetica, sans-serif; font-size: 12px;">
+            <div style="font-size: 18px;"><strong>Thank you for your order $order.BillToFirstName $order.BillToLastName!</strong></div>
+            <br />
+            <br />
+            <div>Congratulations on taking  the first step to improving your overall health!</div>
+            <br />
+            <br />
+            <div style="text-align: center; font-size: 18px;"><strong>Don't forget to login today and KICKSTART your WEIGHT LOSS!</strong></div>
+            <br />
+            <br />
+            <table>
+                <tbody>
+                    <tr>
+                        <td valign="top" style="width: 295px;">
+                        <div style="line-height: 1.4em; font-family: Arial, Helvetica, sans-serif; font-size: 14px;"><strong>Username:&nbsp;</strong>$order.BillToEmail <br />
+                        <strong>Password:&nbsp;</strong>$order.BillToPostalCode <br />
+                        <strong>Login url:</strong> &nbsp;<a href="http://www.fitformulatracker.com?username=$order.BillToEmail&amp;password=$order.BillToPostalCode">http://www.fitformulatracker.com</a></div>
+                        </td>
+                        <td valign="top">
+                        <div style="line-height: 1.2em; font-family: Arial, Helvetica, sans-serif; font-size: 13px;"><strong style="color: rgb(0, 108, 0);">S</strong>earch 100's of foods<br />
+                        <strong style="color: rgb(0, 108, 0);">M</strong>easure your progress<br />
+                        <strong style="color: rgb(0, 108, 0);">A</strong>dd custom foods and recipes to your daily intake<br />
+                        <strong style="color: rgb(0, 108, 0);">R</strong>ecord your calories burned, weight, and exercises<br />
+                        <strong style="color: rgb(0, 108, 0);">T</strong>rack your success and stay FIT!</div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <p style="text-align: center; color: rgb(0, 102, 255); font-size: 22px; font-weight: bold;"><a href="http://www.fitformulatracker.com?username=$order.BillToEmail&amp;password=$order.BillToPostalCode"><img alt="Click Here To Login" style="border: currentColor;" src="http://www.slimbodyextreme.com/images/email-login.jpg" /></a></p>
+            <p>As a way of thanking you for your order today you now have  BONUS access to our exclusive Online Weight Loss E-Book Library. To access your diet and health books go to:<br />
+            <a href="http://www.healthandbeautylibrary.com">www.healthandbeautylibrary.com</a></p>
+            <p>Please start with the diets and exercise plans found in the book, and then follow the eating plan that fits your type for fastest results.</p>
+            <p align="center" style="font-size: 18px; background-color: rgb(200, 243, 251);">Your Billing statement will read: <br />
+            <strong>$payment.ChargeDescriptor<br />
+            </strong></p>
+            <p><font color="#006600" style="font-size: 14px;"> <strong>You will notice the very best results when you take the  time to read these&nbsp;E-book written top national experts that we are sending.</strong>&nbsp; </font></p>
+            <p>Thank you for taking the first  step, and please feel free to <font color="#000099" style="font-size: 14px;"> contact&nbsp;us at <strong> $payment.CustomerServicePhone </strong></font>if you have any questions or need additional support!&nbsp; We  have consultants available Monday through Friday, 9AM to 7PM EST.</p>
+            </div>
+            </td>
+        </tr>
+    </tbody>
+</table>
+<table class="Email">
+    <tbody>
+        <tr>
+            <th class="Email">Order Summary</th>
+        </tr>
+    </tbody>
+</table>
+<table class="Email">
+    <tbody>
+        <tr>
+            <td class="Email">
+            <div align="right"><strong>Email Address:</strong></div>
+            </td>
+            <td class="Email">${order.BillToEmail}</td>
+            <td rowspan="4"><strong>Billing &amp; Shipping Address:</strong>
+#foreach($shipment in $order.Shipments)
+            <div style="padding-left: 30px;">$shipment.FormatToAddress(true)
+            
+#end
+            </td>
+        </tr>
+        <tr>
+            <td width="140" class="Email">
+            <div align="right"><strong>Order Number:</strong></div>
+            </td>
+            <td width="500" class="Email">
+            <p>$order.OrderNumber</p>
+            </td>
+        </tr>
+        <tr>
+            <td class="Email">
+            <div align="right"><strong>Ordered on:</strong></div>
+            </td>
+            <td class="Email">$order.OrderDate.ToString(&quot;G&quot;)</td>
+        </tr>
+        <tr>
+            <td>
+            <div align="right"><strong>Order Total:</strong></div>
+            </td>
+            <td>$order.Items.TotalPriceById().ToString("ulc")</td>
+        </tr>
+        <tr>
+            <td class="Email">
+            <div align="right"><strong>Billing Statement:</strong></div>
+            </td>
+            <td class="Email" colspan="2" style="background-color: yellow;"><strong>$payment.ChargeDescriptor</strong></td>
+        </tr>
+        <tr>
+            <td class="Email">
+            <div align="right"><strong>Customer Service:</strong></div>
+            </td>
+            <td class="Email" colspan="2" style="background-color: yellow;"><strong>$payment.CustomerServicePhone</strong></td>
+        </tr>
+    </tbody>
+</table>

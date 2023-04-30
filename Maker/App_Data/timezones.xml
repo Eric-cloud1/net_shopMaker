@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<TimezoneData>
+  <Timezone Offset="-12.00" Name="Eniwetok, Kwajalein"></Timezone>
+  <Timezone Offset="-11.00" Name="Midway Island, Samoa"></Timezone>
+  <Timezone Offset="-10.00" Name="Hawaii"></Timezone>
+  <Timezone Offset="-9.00" Name="Alaska"></Timezone>
+  <Timezone Offset="-8.00" Name="Pacific Time (US &amp; Canada)"></Timezone>
+  <Timezone Offset="-7.00" Name="Mountain Time (US &amp; Canada)"></Timezone>
+  <Timezone Offset="-6.00" Name="Central Time (US &amp; Canada), Mexico City"></Timezone>
+  <Timezone Offset="-5.00" Name="Eastern Time (US &amp; Canada), Bogota, Lima, Quito"></Timezone>
+  <Timezone Offset="-4.00" Name="Atlantic Time (Canada), Caracas, La Paz"></Timezone>
+  <Timezone Offset="-3.50" Name="Newfoundland"></Timezone>
+  <Timezone Offset="-3.00" Name="Brazil, Buenos Aires, Georgetown"></Timezone>
+  <Timezone Offset="-2.00" Name="Mid-Atlantic"></Timezone>
+  <Timezone Offset="-1.00" Name="Azores, Cape Verde Islands"></Timezone>
+  <Timezone Offset="0.00" Name="Western Europe Time, London, Lisbon, Casablanca, Monrovia"></Timezone>
+  <Timezone Offset="1.00" Name="CET(Central Europe Time), Brussels, Copenhagen, Madrid, Paris"></Timezone>
+  <Timezone Offset="2.00" Name="EET(Eastern Europe Time), Kaliningrad, South Africa"></Timezone>
+  <Timezone Offset="3.00" Name="Baghdad, Kuwait, Riyadh, Moscow, St. Petersburg, Volgograd, Nairobi"></Timezone>
+  <Timezone Offset="3.50" Name="Tehran"></Timezone>
+  <Timezone Offset="4.00" Name="Abu Dhabi, Muscat, Baku, Tbilisi"></Timezone>
+  <Timezone Offset="4.50" Name="Kabul"></Timezone>
+  <Timezone Offset="5.00" Name="Ekaterinburg, Islamabad, Karachi, Tashkent"></Timezone>
+  <Timezone Offset="5.50" Name="Bombay, Calcutta, Madras, New Delhi"></Timezone>
+  <Timezone Offset="6.00" Name="Almaty, Dhaka, Colombo"></Timezone>
+  <Timezone Offset="7.00" Name="Bangkok, Hanoi, Jakarta"></Timezone>
+  <Timezone Offset="8.00" Name="Beijing, Perth, Singapore, Hong Kong, Chongqing, Urumqi, Taipei"></Timezone>
+  <Timezone Offset="9.00" Name="Tokyo, Seoul, Osaka, Sapporo, Yakutsk"></Timezone>
+  <Timezone Offset="9.50" Name="Adelaide, Darwin"></Timezone>
+  <Timezone Offset="10.00" Name="EAST(East Australian Standard), Guam, Papua New Guinea, Vladivostok"></Timezone>
+  <Timezone Offset="11.00" Name="Magadan, Solomon Islands, New Caledonia"></Timezone>
+  <Timezone Offset="12.00" Name="Auckland, Wellington, Fiji, Kamchatka, Marshall Island"></Timezone>
+  <Timezone Offset="13.00" Name="Nuku&quot;alofa"></Timezone>
+</TimezoneData>

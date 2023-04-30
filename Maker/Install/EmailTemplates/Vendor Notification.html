@@ -1,0 +1,196 @@
+<html>
+<head>
+  <style type="text/css">
+  .backgroundWrapper {background-color:#304FBA;margin:0px;padding:6px;}
+  .contentWrapper{background:#FFF;}
+
+  .emailHeader {width:100%}
+  .emailHeader th {font-weight: bold;font-size: 12px;color: #fff;font-family: Verdana;background-color: #304FBA;text-align: center;text-decoration: none;padding: 5px;}
+  .emailHeader td {font-weight: normal;font-size: 12px;color: #000;font-family: Verdana;background-color: #fff;text-align: left;text-decoration: none;padding: 3px;}
+  .emailHeader td h2 {font-weight: bold;font-size: 18px;color: #000;font-family: Verdana;background-color: #fff;text-align: left;text-decoration: none;margin:0px;}
+
+  .shipmentContainer {width:100%;border-top: 1px dashed #333;margin-top:10px}
+  .shipmentContainer th {font-weight: bold;font-size: 12px;color: #fff;font-family: Verdana;background-color: #304FBA;text-align: center;text-decoration: none;padding: 5px;}
+  .shipmentContainer td {font-weight: normal;font-size: 12px;color: #000;font-family: Verdana;background-color: #fff;text-align: left;text-decoration: none;padding: 3px;}
+  .indent {padding-left:20px;}
+
+  .itemsGrid {width:100%}
+  .itemsGrid th {font-weight: bold;font-size: 12px;color: #fff;font-family: Verdana;background-color: #304FBA;text-align: center;text-decoration: none;padding: 5px;}
+  .itemsGrid td {font-weight: normal;font-size: 12px;color: #000;font-family: Verdana;background-color: #fff;text-align: left;text-decoration: none;padding: 3px;}
+
+  .emailFooter {width:100%;padding:10px 4px;}
+  .footerText {color:#000;font-size:12px;font-family:Verdana;}
+  </style>
+</head>
+
+<body>
+
+##############################
+## OPEN THE CONTAINER TABLES
+##############################
+<div class="backgroundWrapper">
+  <div class="contentWrapper">
+
+##############################
+## DRAW THE EMAIL HEADER
+##############################
+    <table class="emailHeader">
+
+      <tr>
+        <td align="right" valign="top" width="300px">
+          <h2>Packing Slip</h2>
+          <strong>Order Number</strong>: ${order.OrderNumber}<br />
+          <strong>Order Date</strong>: ${order.OrderDate}
+        </td>
+        <td valign="top">
+          <strong>${store.Name}</strong><br />
+          <div class="indent">
+            ${store.DefaultWarehouse.FormatAddress(true)}<br />
+            Phone: ${store.DefaultWarehouse.Phone}
+#if ($store.DefaultWarehouse.Email.Length > 0)
+            <br />Email: <a href="mailto:${store.DefaultWarehouse.Email}?subject=Vendor_Notification_Order_${order.OrderNumber}">${store.DefaultWarehouse.Email}</a>
+#end
+          </div>
+        </td>
+      </tr>
+    </table>
+
+##############################
+## OUTPUT NON-SHIPPABLE ITEMS
+##############################
+#foreach($orderItem in $VendorNonShippingItems)
+#beforeall
+    <table class="itemsGrid">
+      <tr>
+        <th colspan="3" style="text-align:left;">Non-Shipping Items</th>
+      </tr>
+      <tr>
+        <th>SKU</th>
+        <th>Description</th>
+        <th>Quantity</th>
+      </tr>
+#each
+
+      <tr>
+        <td style="text-align: center;">
+#if ($orderItem.OrderItemType == "Product")
+          $orderItem.Sku
+#else
+          $orderItem.OrderItemType.ToString().ToUpperInvariant()
+#end
+        </td>
+        <td>
+          $orderItem.Name
+#if ($orderItem.VariantName.Length > 0)
+ ($orderItem.VariantName)
+#end
+#foreach($orderItemInput in $orderItem.Inputs)
+#if ((!$orderItemInput.IsMerchantField) && $orderItemInput.InputValue.Length > 0)
+          <br /><b>$orderItemInput.Name:</b> $orderItemInput.InputValue
+#end
+#end
+        </td>
+        <td style="text-align: center;">$orderItem.Quantity</td>
+      </tr>
+#afterall
+    </table>
+#end
+
+##############################
+## OPEN A TABLE FOR EACH SHIPMENT
+##############################
+#foreach( $shipment in $VendorShipments )
+#each
+    <table class="shipmentContainer">
+      <tr>
+        <td valign="top" width="300px">
+          <strong>Ship to:</strong>
+          <div class="indent">
+            $shipment.FormatToAddress(true)<br />
+            Phone: $shipment.ShipToPhone<br />
+            E-mail: $order.BillToEmail
+          </div>
+        </td>
+        <td valign="top">
+          <strong>Ship from:</strong>
+          <div class="indent">
+            $shipment.Warehouse.Name<br />
+            ${shipment.Warehouse.FormatAddress(true)}<br />
+           </div>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2">
+          <strong>Shipment Method:</strong> 
+$shipment.ShipMethodName
+#if ($shipment.ShipMessage.Length > 0)
+          <br /><strong>Message:</strong> ${shipment.ShipMessage}
+#end
+        <td>
+      </tr>
+      <tr>
+        <td colspan="2">
+
+##############################
+## OUTPUT ITEMS GRID FOR THIS SHIPMENT
+##############################
+
+#foreach($orderItem in $VendorItems)
+#beforeall
+          <table class="itemsGrid">
+            <tr>
+              <th>SKU</th>
+              <th>Description</th>
+              <th>Quantity</th>
+            </tr>
+#each
+
+#if ($orderItem.OrderShipmentId == $shipment.OrderShipmentId)
+            <tr>
+              <td style="text-align: center;">
+#if ($orderItem.OrderItemType == "Product")
+                $orderItem.Sku
+#else
+                $orderItem.OrderItemType.ToString().ToUpperInvariant()
+#end
+              </td>
+              <td>
+                $orderItem.Name
+#if ($orderItem.VariantName.Length > 0)
+ ($orderItem.VariantName)
+#end
+#foreach($orderItemInput in $orderItem.Inputs)
+#if ((!$orderItemInput.IsMerchantField) && $orderItemInput.InputValue.Length > 0)
+                <br /><b>$orderItemInput.Name:</b> $orderItemInput.InputValue
+#end
+#end
+              <td style="text-align: center;">$orderItem.Quantity</td>
+            </tr>
+#end
+#afterall
+          </table>
+#end
+
+##############################
+## CLOSE THE SHIPMENT TABLE
+##############################
+        </td>
+
+      </tr>
+    </table>
+#end
+
+##############################
+## DRAW THE EMAIL FOOTER
+##############################
+    <div class="emailFooter">
+      <span class="footerText">If you have any questions please contact $store.Name at <a href="${store.StoreUrl}">${store.StoreUrl}</a>.<span>
+    </div>
+
+##############################
+## CLOSE THE CONTAINER TABLES
+##############################
+  </div>
+</div>
+</body>
+</html>

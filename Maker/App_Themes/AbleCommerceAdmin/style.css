@@ -1,0 +1,2178 @@
+﻿/* begin with the @media rule to specify media */
+@media screen {
+
+/******************************************************************************************/
+/* common styles used throughout site                                                     */
+/******************************************************************************************/
+
+/* always show vertical scrollbar to prevent screen jumping for ajax updates */
+html {
+/*	overflow: -moz-scrollbars-vertical; */
+	overflow-y: scroll;
+	overflow-x: auto;
+}
+
+/* font setting for all elements */
+*{font-family: Arial, Verdana, Helvetica, sans-serif; font-size: 12px;}
+
+/* styling for body */
+body
+{
+	padding: 0 10px 0 10px;
+	margin: 0 0 0 0;
+	background:#BDD8FE url(images/background_image.gif) repeat-x top left;
+}
+
+/* default styling for file upload input fields */
+input.fileUpload { width: 350px; }
+
+/* default link styling */
+a { color:#000;}
+a:hover { color:#5872CB;}
+a img { border: 0; }
+
+/* link that should show like a traditional HTML link (underlined text) */
+a.link { text-decoration: underline; font-weight:bold;}
+
+/* style for a caption that is inline with other text */
+.inlineCaption {display:inline;font-weight:bold;color: #000000;}
+
+/* default styling for validation summaries */
+.validationSummary 
+{
+	margin-bottom:6px;
+	color: #F00;
+}
+
+/* style for unboxed text content in the page body */
+div.pageContent
+{
+	padding: 6px;
+}
+
+/* default style for a page section */
+div.section 
+{
+	vertical-align:top;
+	padding-left:0px;
+}
+
+/* default style for header within page section */
+div.section div.header
+{
+	background:url(images/section_header_bg.gif) repeat-x left top;
+	height:26px;
+	border: 1px solid #738AD0;
+}
+
+
+/* default style for caption within page section header */
+div.section div.header h2 
+{
+	color: #01076C;
+	height:26px;
+	padding:0 6px 0 26px;
+	margin: 2px 0 0 3px;
+	line-height: 22px;
+	font-weight:normal;
+}
+div.section div.header h2.addcurrency
+{
+	background:url(images/add_currency.gif) no-repeat left top;
+	padding-right:30px;
+	text-indent:5px;
+}
+div.section div.header h2.adddigitalgood
+{
+	background:url(images/add_digital_good.gif) no-repeat left top;
+	padding-right:30px;
+	text-indent:5px;
+}
+div.section div.header h2.addreadme
+{
+	background:url(images/add_read_me.gif) no-repeat left top;
+	padding-right:30px;
+	text-indent:5px;
+}
+div.section div.header h2.addwrapgroup
+{
+	background:url(images/add_wrap_group.gif) no-repeat left top;
+	padding-right:30px;
+	text-indent:5px;
+}
+div.section div.header h2.addgroup
+{
+	background:url(images/add_group.gif) no-repeat left top;
+	padding-right:30px;
+	text-indent:5px;
+}
+div.section div.header h2.addmanufacturer
+{
+	background:url(images/add_manufacturer.gif) no-repeat left top;
+	padding-right:30px;
+	text-indent:5px;
+}
+div.section div.header h2.addaffiliate
+{
+	background:url(images/add_affiliate.gif) no-repeat left top;
+	padding-right:30px;
+	text-indent:5px;
+}
+div.section div.header h2.addscriptlet
+{
+	background:url(images/HeaderIcons/add_scriptlet.gif) no-repeat left top;
+	padding-right:30px;
+	text-indent:5px;
+}
+div.section div.header h2.addemaillist
+{
+	background:url(images/add_email_list.gif) no-repeat left top;
+	padding-right:30px;
+	text-indent:5px;
+}
+div.section div.header h2.adduser
+{
+	background:url(images/add_user_icon.gif) no-repeat left top;
+	padding-right:30px;
+	text-indent:5px;
+}
+div.section div.header h2.additems
+{
+	background:url(images/add_items.gif) no-repeat left top;
+	padding-right:30px;
+	text-indent:5px;
+}
+div.section div.header h2.addtemplate
+{
+	background:url(images/add_template.gif) no-repeat left top;
+	padding-right:30px;
+	text-indent:5px;
+}
+div.section div.header h2.addshippingzone
+{
+	background:url(images/add_shipping_zone.gif) no-repeat left top;
+	padding-right:30px;
+	text-indent:5px;
+}
+div.section div.header h2.addcountry
+{
+	background:url(images/add_country.gif) no-repeat left top;
+	padding-right:30px;
+	text-indent:5px;
+}
+div.section div.header h2.addpaymentmethod
+{
+	background:url(images/add_payment_method.gif) no-repeat left top;
+	padding-right:30px;
+	text-indent:5px;
+}
+div.section div.header h2.administrator
+{
+	background:url(images/administrator.gif) no-repeat left top;
+	padding-right:30px;   
+	text-indent:5px;
+}
+div.section div.header h2.AnonymousUserMaintenance
+{
+	background:url(images/Anonymous_User_Maintenance.gif) no-repeat left top;
+	padding-right:30px;   
+	text-indent:5px;
+}
+div.section div.header h2.automaticexchangerates
+{
+	background:url(images/automatic_exchange_rates.gif) no-repeat left top;
+	padding-right:30px;   
+	text-indent:5px;
+}
+div.section div.header h2.block
+{
+	background:url(images/block.gif) no-repeat left top;
+}
+div.section div.header h2.browse
+{
+	background:url(images/browse.gif) no-repeat left top;
+}
+div.section div.header h2.catalogmode
+{
+	background:url(images/catalog_mode.gif) no-repeat left top;
+	padding-right:30px;
+	text-indent:5px;
+}
+div.section div.header h2.contentsofcatalog
+{
+	background:url(images/contents_of_catalog.gif) no-repeat left top;
+	padding-right:30px;
+	text-indent:5px;
+}
+div.section div.header h2.commonicon
+{
+	background:url(images/common_icon.gif) no-repeat left top;
+	padding-right:30px;
+	text-indent:5px;
+}
+h2.conlib
+{
+	margin:12px 0px 4px 0px;
+	font-size:12px;
+	font-weight:bold;
+}
+div.section div.header h2.currentlyfeatured
+{
+	background:url(images/currently_featured.gif) no-repeat left top;
+	padding-right:30px;
+	text-indent:5px;
+}
+div.section div.header h2.currentlog
+{
+	background:url(images/current_log.gif) no-repeat left top;
+	padding-right:30px;
+	text-indent:5px;
+}
+div.section div.header h2.customers
+{
+	background:url(images/customers.gif) no-repeat left top;
+	padding-right:30px;
+	text-indent:5px;
+}
+div.section div.header h2.defaultimagesize
+{
+	background:url(images/default_image_size.gif) no-repeat left top;
+	padding-right:30px;
+	text-indent:5px;
+}
+div.section div.header h2.defaulttheme
+{
+	background:url(images/default_theme.gif) no-repeat left top;
+	padding-right:30px;
+	text-indent:5px;
+}
+div.section div.header h2.displaypages
+{
+	background:url(images/display_pages.gif) no-repeat left top;
+	padding-right:30px;
+	text-indent:5px;
+}
+div.section div.header h2.download
+{
+	background:url(images/download.gif) no-repeat left top;
+	padding-right:30px;
+	text-indent:5px;
+}
+div.section div.header h2.encrypt
+{
+	background:url(images/encrypt.gif) no-repeat left top;
+	padding-right:30px;
+	text-indent:5px;
+}
+div.section div.header h2.filedetails
+{
+	background:url(images/file_details.gif) no-repeat left top;
+}
+div.section div.header h2.findfeatured
+{
+	background:url(images/find_featured.gif) no-repeat left top;
+	padding-right:30px;
+	text-indent:5px;
+}
+div.section div.header h2.findproductreview
+{
+	background:url(images/find_product_review.gif) no-repeat left top;
+	padding-right:30px;
+	text-indent:5px;
+}
+div.section div.header h2.giftcertificateexpiry
+{
+	background:url(images/gift_certificate_expiry.gif) no-repeat left top;
+	padding-right:30px;
+	text-indent:5px;
+}
+div.section div.header h2.inventory
+{
+	background:url(images/inventory.gif) no-repeat left top;
+	padding-right:30px;
+	text-indent:5px;
+}
+div.section div.header h2.localesettings
+{
+	background:url(images/locale_settings.gif) no-repeat left top;
+	padding-right:30px;
+	text-indent:5px;
+}
+div.section div.header h2.loginpage
+{
+	background:url(images/login_page.gif) no-repeat left top;
+	padding-right:30px;
+	text-indent:5px;
+}
+div.section div.header h2.maillist
+{
+	background:url(images/mail_list.gif) no-repeat left top;
+	padding-right:30px;
+	text-indent:5px;
+}
+div.section div.header h2.matchingitemsincatalog
+{
+	background:url(images/matching_items_in_catalog.gif) no-repeat left top;
+	padding-right:30px;
+	text-indent:5px;
+}
+div.section div.header h2.newcategory
+{
+	background:url(images/new_category.gif) no-repeat left top;
+	padding-right:30px;
+	text-indent:5px;
+}
+div.section div.header h2.optionswatches
+{
+	background:url(images/option_swatches.gif) no-repeat left top;
+	padding-right:30px;
+	text-indent:5px;
+}
+div.section div.header h2.orderhistory
+{
+	background:url(images/order_history.gif) no-repeat left top;
+	padding-right:30px;
+	text-indent:5px;
+}
+div.section div.header h2.product
+{
+	background:url(images/product.gif) no-repeat left top;
+	padding-right:30px;
+	text-indent:5px;
+}
+div.section div.header h2.searchforuser
+{
+	background:url(images/file_details.gif) no-repeat left top;
+	padding-right:30px;
+	text-indent:5px;
+}
+div.section div.header h2.searchthiscategory
+{
+	background:url(images/search_this_category.gif) no-repeat left top;
+	padding-right:30px;
+	text-indent:5px;
+}
+div.section div.header h2.selectcategory
+{
+	background:url(images/select_category.gif) no-repeat left top;
+	padding-right:30px;
+	text-indent:5px;
+}
+
+div.section div.header h2.selecteditems
+{
+	background:url(images/selected_items.gif) no-repeat left top;
+	padding-right:30px;
+	text-indent:5px;
+}
+
+div.section div.header h2.shoppingcart
+{
+	background:url(images/shopping_cart.gif) no-repeat left top;
+	padding-right:30px;
+	text-indent:5px;
+}
+div.section div.header h2.SMTPserver
+{
+	background:url(images/SMTP_server.gif) no-repeat left top;
+	padding-right:30px;
+	text-indent:5px;
+}
+div.section div.header h2.ssl
+{
+	background:url(images/ssl.gif) no-repeat left top;
+	padding-right:30px;
+	text-indent:5px;
+}
+div.section div.header h2.storelogo
+{
+	background:url(images/store_logo.gif) no-repeat left top;
+	padding-right:30px;
+	text-indent:5px;
+}
+div.section div.header h2.thirdpartytracker
+{
+	background:url(images/third_party_tracker.gif) no-repeat left top;
+	padding-right:30px;
+	text-indent:5px;
+}
+div.section div.header h2.uplode
+{
+	background:url(images/update.gif) no-repeat left top;
+}
+div.section div.header h2.upload
+{
+	background:url(images/upload.gif) no-repeat left top;
+}
+div.section div.header h2.visa
+{
+	background:url(images/visa.gif) no-repeat left top;
+}
+div.section div.header h2.volumediscounts
+{
+	background:url(images/volume_discounts.gif) no-repeat left top;
+}
+/* default style for page section content */
+div.section div.content
+{
+	padding: 6px;
+	/*border: 1px solid #C4C4C4;*/
+	border: 1px solid #738AD0;
+}
+
+/* default style for search form within page section */
+div.section div.search
+{
+	border: 1px solid #C4C4C4;
+	padding: 2px;
+}
+
+/* breadcrumbs path within a page section */
+div.section div.breadCrumbs
+{
+	border: 1px solid #C4C4C4;
+	background-color: #E8E8E8;
+	padding: 4px;
+	margin: 0px 0px 2px 0px;
+}
+	
+/* default styling for breadcrumbs elements */
+div.section div.breadCrumbs * { font-size:14px; font-weight:bold; text-decoration:none; }
+
+/* styling for link in breacrumb path */
+div.section div.breadCrumbs a { color:#000000; }
+
+/* hover styling for link in breacrumb path */
+div.section div.breadCrumbs a:hover { color:#FFFFFF; }
+
+/* style for page section header */
+.sectionHeader
+{
+	background: #CECECE;
+	color: #494949;
+	font-weight: bold;
+}
+
+div.sectionHeader { padding: 6px 4px; }
+
+tr.sectionHeader th { padding: 6px 4px; text-align:left; }
+
+/* caption for the page section header */
+.sectionHeader h2
+{
+	margin: 0px;
+	font-size: 14px; 
+	font-weight: bold;
+}
+
+/* Text styles used to provide status information */
+.goodCondition{font-weight: bold; color: #008000; padding-bottom: 3px;}
+.pendingCondition{font-weight: bold; color:#EDD207 ; padding-bottom: 3px;}
+
+
+.warnCondition{font-weight: bold; color: #FFA500; padding-bottom: 3px;}
+.errorCondition{font-weight: bold; color: #FF0000; padding-bottom: 3px;}
+
+/* style for status message container (such as item added or deleted confirmation) */
+.statusMessage { text-align:center; }
+
+/* style for body text container (such as instruction text on a page) */
+.bodyText { padding:4px; }
+
+#progressUpdateWrapper
+{
+	position:relative;
+	margin: 0 auto;
+	width:100%;
+}
+
+/* applied to ajax progress update */
+#progressUpdate {
+	position: absolute;
+	margin: 0 auto;
+	width: 100px;
+	height: 100px;
+	color: #FFFFFF;
+	border: 5px solid #C1C1C1;
+	background: #FFFFFF url(images/processing.gif) no-repeat 50%;
+	top:0px;
+	left:0px;
+}
+
+#centeredProgress
+{
+	width: 300px;
+	height: 200px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-left: -150px;
+	margin-top: -200px;
+	z-index: 99;
+	color: #FFFFFF;
+	border: 5px solid #C1C1C1;
+	background: #FFFFFF url(images/processing.gif) no-repeat 50%;
+}
+
+/* background style for the screen when an ajax progress update is displayed */
+#ajaxProgressBg
+{
+    border: 0px;
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
+    position: absolute;
+    background-color: #000000;
+    opacity: 0.5;
+    filter: Alpha(opacity:50);
+    z-index: 10;
+}
+
+/* style for the ajax progress indicator */
+#ajaxProgress
+{
+    border: 0px;
+    padding: 0px;
+    position: absolute;
+    background-color: #FFFFFF;
+	background: #FFFFFF url(images/processing.gif) no-repeat 50%;
+    z-index: 11;
+    left:50%;
+    margin-left:-100px;
+    width:300px;
+    height:200px;
+}
+
+div.searchPanel
+{
+	margin: 4px 0px 6px 2px;
+}
+
+/* style for empty data container for gridview */
+.emptyData 
+{
+	 text-align:center;
+	 padding:10px;
+	 margin:10px;
+	 font-style:italic;
+	 border: solid 1px black;
+}
+
+/* default style for an empty result message in a table (usu. gridview) */
+table tr.empty td
+{
+	min-width:300px;
+	text-align:center;
+	padding: 10px;
+	font-style:italic;
+	border: solid 1px black;
+	border-color: #dcdcdc; /* required for FireFox */
+}
+
+/* style to hide text on checkboxes used within gridview */
+/* http://www.codeproject.com/useritems/CheckBoxCommand.asp */
+.hiddenText label { display:none; }
+
+/* used for the show all link in the search filter panel */
+.showAll { color:#800000; font-weight: bold; text-align: right; width: auto; display: block; padding: 2px; }
+.showAll:hover { color:#000000; }
+
+/* default styling for definition lists */
+dt { font-weight:bold;font-style:italic; }
+dd { text-indent:0px;padding:0px;margin-left:12px; }
+
+/******************************************************************************************/
+/* end common styles used throughout site                                                 */
+/******************************************************************************************/
+
+/******************************************************************************************/
+/* styles to support sorting pages                                                        */
+/******************************************************************************************/
+
+/*Reorder List*/
+.dragHandle {
+	width:10px;
+	height:15px;
+	background-color:Blue;
+	background-image:url(images/bg-menu-main.png);
+	cursor:move;
+	border:outset thin white;
+}
+
+.callbackStyle {
+	border:thin blue inset;		
+}
+
+/*
+.callbackStyle table {
+	background-color:#5377A9;	
+	color:Black;
+}
+*/
+
+.reorderList li 
+{
+	border: solid 1px black;
+	list-style:none;
+	margin:5px 15px 5px 20px;
+	height:20px;
+	/*background-image:url(images/bg_nav.gif);
+	background-repeat:repeat-x;
+	color:#FFF;*/
+}
+
+.reorderList li a {color:black !important; font-weight:bold;}
+
+.reorderCue {
+	border:dashed thin black;
+	height:20px;
+}
+
+.itemArea {
+	margin-left:15px;
+	font-size:1em;
+	text-align:left;
+}
+
+/* this is necessary to support the ReorderList, otherwise bullets will
+appear when you drag the items */
+/* li { list-style-type:none; } */
+
+/* styling for container of reorder list */
+/*.reorderList
+{
+    margin-left:50px;
+    margin-right:50px;
+}*/
+
+/* styling for the reorder handle on sort pages */
+/*.reorderCue
+{
+    background-color:green;
+    border:thin dotted black;
+    height:25px;
+    margin-right:30px;                       
+}*/
+
+/*div.reorderList li {
+	list-style:none;
+	margin:2px;
+	background-image:url(images/bg_nav.gif);
+	background-repeat:repeat-x;
+	color:#FFF;
+}
+
+div.reorderList li a {color:#FFF !important; font-weight:bold;}
+
+.reorderCue {
+	border:dashed thin black;
+	width:100%;
+	height:25px;
+}
+
+.itemArea {
+	margin-left:15px;
+	font-family:Arial, Verdana, sans-serif;
+	font-size:1em;
+	text-align:left;
+}*/
+
+/******************************************************************************************/
+/* end styles to support sorting pages                                                    */
+/******************************************************************************************/
+
+/******************************************************************************************/
+/* styles that control the layout of the admin page                                       */
+/******************************************************************************************/
+
+/* style for the container that lays out the page */
+#pageLayout
+{
+	width:1000px;
+	background-color:#E3EFFF;
+	margin: 19px auto 0 auto;
+}
+
+/* style for the wrapper of the header content */
+#pageLayoutHeader
+{
+	border: 1px solid #3A51A3;
+	border-bottom-width: 0;
+}
+
+/* style for the outer wrapper of the main content */
+#pageLayoutMain
+{
+	border:solid 1px #3A51A3;	
+}
+
+/* style for the inner wrapper of the main content */
+#pageLayoutInnerMain
+{
+	background-color:#E3EFFF;
+	border:solid 1px #FFFFFF;
+	border-top-width: 0;
+}
+
+/* style for the wrapper of the footer content */
+#pageLayoutFooter { }
+
+/* used to control layout of content within the main area */
+table.innerLayout { margin: 4px auto; width:100%; }
+
+/* used to display a page header within the inner layout */
+table.innerLayout td.pageHeader
+{
+	background-color:#526CC5;
+	font-size:14px;
+	font-weight:bold;
+	text-decoration:none;
+}
+
+/* used to display the caption of the page header within the inner layout */
+table.innerLayout td.pageHeader h1
+{
+	line-height:18px;
+	padding:5px 10px;
+	font-size:14px;
+	font-weight:bold;
+	text-decoration:none;
+	color:White;
+	margin:0 0;
+}
+
+/* used for a cell that contains instructions about the page */
+table.innerLayout td.instructions
+{
+	padding-right:4px;
+	vertical-align:top;
+	text-align:justify;
+	width:300px;
+}
+
+/* used for a cell that contains a list of items */
+table.innerLayout td.itemList
+{
+	padding:4px 4px 10px 4px;
+	vertical-align:top;
+	border: 1px solid #738AD0;
+}
+
+/* used for a cell that appears to the left of an item list, for adding 
+or editing items */
+table.innerLayout td.detailPanel
+{
+	width:30%;
+	padding:0px 20px 20px 4px;
+	/*padding-top:2px;*/
+	vertical-align:top;
+	
+}
+table.innerLayout td.detailPanel .header
+{
+	border: 1px solid #738AD0; 
+	background:url(images/section_header_bg.gif) repeat-x left top;
+	height:26px;
+}
+table.innerLayout td.detailPanel .header h2
+{
+	color: #01076C;
+	height:26px;
+	padding:0 0 0 35px;
+	margin: 0 0 0 0;
+	line-height: 24px;
+	font-weight:normal;
+}
+table.innerLayout td.detailPanel .header h2.adduser
+{
+	background:url(images/add_user_icon.gif) no-repeat left top;
+}
+table.innerLayout td.detailPanel .section
+{
+}
+table.innerLayout td.detailPanel .section .content
+{
+	border:solid 1px #7B92D4;
+	border-top-width:0;
+}
+
+
+
+/* styles the add or edit panel that may appear with the content */
+table.innerLayout td.editPanel { }
+
+/* styles a content section within the edit panel */
+table.innerLayout td.editPanel div.section { border: 1px solid #CCC; }
+
+/* controls style of menu sidebar on admin pages */
+table.innerLayout td.menuPanel 
+{
+	width:170px;
+	vertical-align:top;
+	padding-top:0px;
+	margin-top:4px;
+	margin-left:24px;
+}
+
+/*table.innerLayout td.menuPanel div.section 
+{
+	border:solid 1px #E8E8E8;
+}*/
+
+table.innerLayout td.menuPanel div.section div.header
+{
+	border: 1px solid #C4C4C4;
+	background-color: #E8E8E8;
+	padding: 0 2px;
+	height: 25px;
+	text-align:center;
+	line-height:25px;
+	margin: 0;
+}
+
+table.innerLayout td.menuPanel div.section div.header h2 
+{
+	color: #983434;
+	font-size: 18px;
+	font-weight: bold;
+	padding: 0;
+	margin: 0;
+}
+
+/* controls style of links in the menu sidebar */
+table.innerLayout td.menuPanel div.section div.content a
+{
+	display: block;
+	color: #333333;
+	padding: 4px 2px 4px 22px;
+}
+td.main
+{
+	border-left:solid 1px #3A51A3;
+	border-right:solid 1px #3A51A3;
+}
+
+/* styles the main content panel that appears in the inner layout */
+table.innerLayout td.mainPanel { padding:0 0 20px 20px; width:50%;}
+table.innerLayout td.mainPanel .header
+{
+	border: 1px solid #738AD0; 
+	background:url(images/section_header_bg.gif) repeat-x left top;
+	/*width:461px;*/
+	height:26px;
+}
+table.innerLayout td.mainPanel .header h2
+{
+	/*width:461px;*/
+	color: #01076C;
+	/*background:url(images/search_for_user_icon.gif) no-repeat left top;*/
+	height:26px;
+	padding:0 0 0 0;
+	text-indent:40px;
+	margin: 0 0 0 0;
+	line-height: 24px;
+	font-weight:normal;
+}
+table.innerLayout td.mainPanel .header h2.searchforuser
+{
+	background:url(images/file_details.gif) no-repeat left top;
+}
+table.innerLayout td.mainPanel .header h2.common_icon
+{
+	background:url(images/common_icon.gif) no-repeat left top;
+}
+
+/* styles a content section within the main panel */
+table.innerLayout td.mainPanel div.section { }
+
+/* styles a content section within the main panel */
+table.innerLayout td.mainPanel div.section div.content {border:solid 1px #768DD2; /*width:461px;*/}
+
+/* additional styling to apply to a content section containing a search interface */
+table.innerLayout td.mainPanel div.searchSection 
+{
+	 border: 1px solid #738AD0;
+	 border-top-width:0px;
+	 padding:4px;
+	 margin-bottom:4px;
+}
+
+table.innerLayout td.content { padding:4px; }
+
+table.innerLayout td.submit { padding: 6px 0;text-align:left; }
+
+/******************************************************************************************/
+/* styles for the admin page header and footer                                            */
+/******************************************************************************************/
+
+/* outer container for the admin header */
+#adminHeader
+{
+	width:100%;
+	background: url(images/header_bg.gif) repeat-x;
+	border: 1px solid #FFFFFF;
+	border-bottom-width: 0;
+}
+
+/* container for the admin logo image */
+#adminHeader .logo
+{
+	padding: 0 0 0 0;
+	width:250px;
+	height: 99px;
+}
+#adminHeader .logo img{margin: 0px 0 0 0px;}
+
+/* container for the admin shortcut navigation links */
+#adminHeader .navigation { text-align:right;min-width:400px; }
+
+/* begin styles for the shortcut navigation links */
+#adminHeader .navigation a
+{
+	display: inline-block;
+	width: auto;
+	padding: 30px 3px 0 3px;
+	margin: 10px 3px 0 3px;
+	font-size: 10px;
+	font-weight: bold;
+	text-transform: uppercase;
+	color: #DAECFF;
+	text-decoration: none;
+	text-align: center;
+}
+#adminHeader .navigation a:hover{color: #292A59;}
+#adminHeader .navigation a.dashboard{background:url(images/dashboard.gif) no-repeat 50% top; text-align: center;}
+#adminHeader .navigation a.orders{background:url(images/orders.gif) no-repeat 50% top; text-align: center;}
+#adminHeader .navigation a.catalog{background:url(images/catalog.gif) no-repeat 50% top; text-align: center;}
+#adminHeader .navigation a.stores{background:url(images/store.gif) no-repeat 50% top; text-align: center;}
+#adminHeader .navigation a.logout{background:url(images/logout.gif) no-repeat 50% top; text-align: center;}
+/* end styles for the shortcut navigation links */
+
+/* container for the admin drop down menu bar */
+#menuBar
+{
+	background-color: #E3EFFF;
+	border-top: 1px solid #2B2B5A;
+	border-bottom: 1px solid #2B2B5A;
+}
+#menuBar table tr td
+{
+	border: solid 0 #E3EFFF;
+}
+#footer
+{
+	/*float: left;
+	margin: 10px 0 0 0;*/
+	background-color: #BFD9FE;
+	padding: 10px 0;
+	width: 100%;
+	text-align: center;
+	color: #000000;
+}
+
+#footer a 
+{
+	color: #44589E;
+	margin: 10px;
+	text-decoration:none;
+}
+
+/******************************************************************************************/
+/* end styles for the admin page header and footer                                        */
+/******************************************************************************************/
+
+/******************************************************************************************/
+/* styles for the breadcrumbs panel                                                       */
+/******************************************************************************************/
+
+/* styling for breadcrumb panel */
+div.breadCrumbsPanel
+{
+	width: 100%;
+	height:18px;
+	background-color: #FFFFFF;
+	color: #3196FB;
+	margin:0 auto 0 auto;
+	padding: 4px 0px;
+	text-indent: 10px;
+	vertical-align:middle;
+}
+
+div.breadCrumbsPanel a 
+{
+	color: #01076C;
+	text-decoration: none;
+	margin-right: 4px;
+}
+
+div.breadCrumbsPanel a:hover
+{
+	color: #01076C;
+	text-decoration: underline;
+}
+
+/******************************************************************************************/
+/* end styles for the breadcrumbs panel                                                   */
+/******************************************************************************************/
+
+/******************************************************************************************/
+/* styles for the menu list of items                                                      */
+/******************************************************************************************/
+
+ul.menuList
+{
+	margin: 2px 40px;
+	padding:0px;
+}
+
+ul.menuList li
+{
+	list-style-image: url(images/bullet.gif);
+	margin-bottom:10px;
+}
+
+ul.menuList a
+{
+	font-weight:bold;
+	text-decoration:underline;
+	font-size:14px;
+}
+
+
+/******************************************************************************************/
+/* end styles for the menu list of items                                                  */
+/******************************************************************************************/
+
+/******************************************************************************************/
+/* styles for the standard page header                                                    */
+/******************************************************************************************/
+
+/* container for the page header */
+div.pageHeader 
+{ 
+	border-top:1px solid #283E8B;
+	border-bottom:1px solid #283E8B;
+	position:relative;
+}
+/* page caption container */
+div.pageHeader div.caption
+{
+	background-color:#526CC5;
+}
+
+/* page caption */
+div.pageHeader div.caption h1
+{
+	line-height:18px;
+	padding:5px 10px;
+	font-size:14px;
+	font-weight:bold;
+	color:White;
+	margin:0 0;	
+}
+
+/* container for links that may appear within the caption */
+div.pageHeader div.caption div.links
+{
+	margin: 5px;
+	position:absolute;
+	right:0px;
+	top:0px;
+}
+
+/* styling for links that may appear within the caption */
+div.pageHeader div.caption div.links a
+{
+	color: #E3EFFF;
+	font-weight: bold;
+	background-color: #526CC5;
+	text-decoration: underline;
+	text-transform: uppercase;
+	font-size: 12px;
+	margin-left:4px;
+}
+
+/* hover styling for links that may appear within the caption */
+div.pageHeader div.caption a:hover
+{
+	color:White;
+	text-decoration:underline;
+}
+
+/* special styling for search link within the caption */
+div.pageHeader div.caption a.search
+{
+	background: #FFF url(images/search_icon.gif) no-repeat 50% 0%;
+	padding:0px 4px 0px 4px;
+}
+
+/* usually for instructional text for top of page */
+div.pageHeader div.content { }
+
+/* for subcaption */
+div.pageHeader div.content h2
+{
+	display:inline;
+	margin:0px;
+}
+
+/******************************************************************************************/
+/* end styles for the standard page header                                                */
+/******************************************************************************************/
+
+/******************************************************************************************/
+/* styles for the alternate page header used on pages with left sidebar menus             */
+/******************************************************************************************/
+
+/* container for the page header */
+div.pageHeader2 { margin: 0px; }
+
+/* page caption container */
+div.pageHeader2 div.caption
+{
+	border: solid 1px black;
+	background: #EBBB03;
+	height: 26px;
+	color: #494949;
+	color:White;
+	margin: 0 0 0 0;
+	padding: 0 0 0 0;
+}
+
+/* page caption */
+div.pageHeader2 div.caption h1
+{
+	display:inline;
+	padding: 0px 5px;
+	color: #232323;
+	font-size: 14px;
+	line-height: 26px;
+}
+
+/* usually for instructional text for top of page */
+div.pageHeader2 div.content { }
+
+/* for subcaption */
+div.pageHeader2 div.content h2
+{
+	display:inline;
+	margin:0px;
+}
+
+/******************************************************************************************/
+/* end styles for the alternate page header used on pages with left sidebar menus         */
+/******************************************************************************************/
+
+/******************************************************************************************/
+/* page layout and page header style from inside a "main" table (obsolete)                */
+/******************************************************************************************/
+
+/* container for page layout */
+table#main { width:100%; }
+
+/* page caption container */
+#pageHeader
+{
+	width:100%;
+	background: url(images/gray_back.gif) repeat-x 50% 50%;
+	padding-bottom:6px;
+}
+
+/* page caption */
+#pageHeader h1
+{
+	display:inline;
+	margin: 0 0 0 5px;
+	padding: 0 5px;
+	color: #232323;
+	font-size: 18px;
+	background-color: #FFFFFF;
+	line-height:100%;
+}
+
+/******************************************************************************************/
+/* end page layout and page header style from inside a "main" table (obsolete)            */
+/******************************************************************************************/
+
+/******************************************************************************************/
+/* styles for table that lays out a form of data (such as an invoice)                     */
+/******************************************************************************************/
+
+/* table style */
+table.form 
+{
+	margin-top:1em;
+	margin-bottom:1em;
+ 	border-color:Black;
+	border-collapse:collapse;
+ 	page-break-inside:avoid;
+	width:600px;
+}
+
+/* style common to headers and cells */
+table.form td, table.form th
+{
+	padding:4px 8px;
+}
+
+/* styling for header cells  */
+table.form th { font-weight:bold; }
+
+/* additional styling for header cell */
+table.form th.header {text-align:left; }
+
+/* additional styling for caption */
+table.form th.header span.caption { font-size:20px; }
+
+/* used to display a page header within the inner layout */
+table.form td.pageHeader
+{
+	background: url(images/gray_back.gif) repeat-x 50% 50%;
+	padding: 6px 0;
+}
+
+/* used to display the caption of the page header within the inner layout */
+table.form td.pageHeader h1
+{
+	display:inline;
+	margin: 3px 0 0 10px;
+	padding: 0 5px;
+	color: #232323;
+	font-size: 18px;
+	background-color: #FFFFFF;
+}
+
+/* style for cell that contains a datasheet */
+table.form td.dataSheet { padding:0px; }
+
+/* additional styling for datasheet that appears within a form */
+table.form table.dataSheet { margin-bottom:-1px; }
+
+/* styling for the total row */
+table.dataSheet tr.totalRow td, table.dataSheet tr.totalRow th
+{
+	border-top: double 3px gray;
+	border-bottom: double 3px gray;
+}
+
+/* style for the invoice caption */
+h1.invoice 
+{
+	font-size:24px;
+	font-weight:bold;
+}
+
+/******************************************************************************************/
+/* end styles for table that lays out a form of data (such as an invoice)                 */
+/******************************************************************************************/
+
+/******************************************************************************************/
+/* styles for generic table of data rows                                                  */
+/******************************************************************************************/
+
+/* table style */
+table.dataSheet { border: solid 1px black; /* required for FireFox */}
+
+/* style common to headers and cells */
+table.dataSheet td, table.dataSheet th
+{
+	padding:2px 4px;border-color: gray;
+	border-bottom: dashed 1px black;
+	border-left:solid 1px black;
+}
+
+/* styling for header cells  */
+table.dataSheet th 
+{
+	font-weight:bold;
+	margin:0px;
+	background-color:#EFEFEF;
+}
+
+/* styling for alternating rows */
+table.dataSheet tr.oddRow { }
+table.dataSheet tr.evenRow { }
+
+/******************************************************************************************/
+/* end styles for generic table of data rows                                              */
+/******************************************************************************************/
+
+/******************************************************************************************/
+/* styles for summary table                                                               */
+/******************************************************************************************/
+
+/* table style */
+table.summary {border: 1px solid #738AD0;/* required for FireFox */ }
+
+/* style common to headers and cells */
+table.summary td
+{
+	padding: 4px;border: 1px solid #738AD0;border-color: gray;
+}
+
+table.summary .rowHeader
+{
+	font-weight:bold;
+}
+
+
+/* styling for header cells  */
+table.summary th 
+{
+	padding: 5px 4px;
+	font-weight:bold;
+	margin:0px;
+	border: 1px solid #738AD0; 
+	background:url(images/section_header_bg.gif) repeat-x left top;
+	/*width:461px;
+	height:26px;*/
+}
+
+/* style for links in summary table */
+table.summary td a.total
+{
+	color: #01076C;	
+	font-weight: bold;
+	text-decoration:none;
+}
+
+/* styling for alternating rows */
+table.summary tr.oddRow { background-color: #EEEEEE; border:1px solid #E1E2E4; }
+table.summary tr.evenRow { background-color: #FFFFFF; border:1px solid #FFFFFF; }
+
+/* style for the empty result message */
+table.summary tr.empty td
+{
+	min-width:300px;
+	text-align:center;
+	padding: 10px;
+	font-style:italic;
+	border: solid 1px black;
+}
+
+/******************************************************************************************/
+/* end styles for summary table                                                           */
+/******************************************************************************************/
+
+/******************************************************************************************/
+/* styles for paged list of data                                                          */
+/******************************************************************************************/
+
+/* table style */
+table.pagedList { margin-bottom:4px; border-color: #dcdcdc; /* required for FireFox *//*border:solid 2px #738AD0;*/ }
+
+/* style common to headers and cells */
+table.pagedList td
+{
+	padding:4px;border-color: gray;
+}
+
+/* styling for header cells  */
+table.pagedList th 
+{
+	font-weight:bold;
+	margin:0px;
+	border: 1px solid #738AD0; 
+	background:url(images/section_header_bg.gif) repeat-x left top;
+	height:26px;
+	line-height:26px;
+	padding:0 4px;
+}
+
+/* styling for links in header cells  (such as for sorting columns) */
+table.pagedList th a
+{
+	color: #01076C;	
+	font-weight: bold;
+	text-decoration:none;
+	margin-right: 8px;
+}
+
+/* hover styling for links in header cells  (such as for sorting columns) 
+table.pagedList th a:hover
+{
+	color: #01076C;
+	text-decoration:underline;
+}*/
+
+/* styling for alternating rows */
+table.pagedList tr.oddRow {background-color: #FFFFFF; border:solid 1px #FFFFFF; }
+table.pagedList tr.evenRow {background-color: #EEEEEE; border:solid 1px #E1E2E4; }
+
+/* style for the empty result message */
+table.pagedList tr.empty td
+{
+	 min-width:300px;
+	 text-align:center;
+	 padding: 10px;
+	 font-style:italic;
+	 border: solid 1px black;
+}
+
+
+/******************************************************************************************/
+/* end styles for paged list of data                                                      */
+/******************************************************************************************/
+
+/******************************************************************************************/
+/* styles for item list displayed inside a form                                           */
+/******************************************************************************************/
+
+/* table style */
+table.nestedList { min-width:300px; }
+
+/* style common to headers and cells */
+table.nestedList td
+{
+	padding:2px 4px;border-color: gray;
+}
+
+/* styling for header cells  */
+table.nestedList th 
+{
+	padding: 6px 4px;
+	font-weight:bold;
+	margin:0px;
+	background: #F5F5F5;
+}
+
+/* styling for links in header cells  (such as for sorting columns) */
+table.nestedList th a
+{
+	color:black;
+	text-decoration:underline;
+}
+
+/* hover styling for links in header cells  (such as for sorting columns) */
+table.nestedList th a:hover
+{
+	color: #C77603;
+	text-decoration:underline;
+}
+
+/* styling for alternating rows */
+table.nestedList tr.oddRow { }
+table.nestedList tr.evenRow { background-color: #F5F5F5; }
+
+/* style for the empty result message */
+table.nestedList tr.empty td
+{
+	 min-width:300px;
+	 text-align:center;
+	 padding: 10px;
+	 font-style:italic;
+	 border: solid 1px black;
+}
+
+/******************************************************************************************/
+/* end styles for item list displayed inside a form                                       */
+/******************************************************************************************/
+
+/******************************************************************************************/
+/* styles for configuration pages                                                         */
+/******************************************************************************************/
+
+/* style for configuration sections (such as on config menu) */
+div.configSection div.header
+{
+	padding: 0 2px;
+	height:25px;
+	margin: 5px 0 0 0;
+}
+
+/* header style for configuration section */
+div.configSection div.header h2
+{
+	font-size: 14px;
+	padding: 0;
+	margin: 3px 0 0 5px;
+	width: auto;
+	float: left;
+}
+
+/******************************************************************************************/
+/* end styles for configuration pages                                                     */
+/******************************************************************************************/
+
+/******************************************************************************************/
+/* styles for the order search page                                                       */
+/******************************************************************************************/
+
+/* container for the order search results grid on Orders/Default.aspx */
+div.orderSearchResults
+{
+	border: solid 1px #738AD0;
+	padding:1px;
+}
+
+/* container for the order search */
+#orderSearch { width:98%;margin:0 auto; }
+
+/* style for the cell that contains the search criteria */
+#orderSearch #filterPane
+{
+	width:200px;
+	padding:4px;
+	vertical-align:top;
+	text-align:center;
+	border: solid 1px #7B797B;
+}
+
+/* caption within the filter pane */
+#orderSearch #filterPane h2
+{
+	margin:0px;
+	background-color:#E7C74A;
+	text-align:center;
+	margin:-4px -4px 8px -4px;
+	padding:5px 0 6px 0;
+}
+
+/* style for the cell that contains order search results */
+#orderSearch #resultsPane
+{
+	vertical-align:top;
+}
+
+/* style for the cell that contains action buttons */
+#orderSearch #actionPane
+{
+	padding:6px;
+	border: solid 1px #7B797B;
+}
+/******************************************************************************************/
+/* end styles for the order search page                                                   */
+/******************************************************************************************/
+
+/* styles for order summary control */
+table.form td.orderSummary { width:202px;padding:10px; }
+table.form td.orderSummary h3 { margin: 0 0 2px 0; }
+table.orderSummary { width:100%; }
+table.orderSummary th { text-align:right;font-weight:normal; white-space:nowrap; }
+table.orderSummary td { text-align:right; width:80px; }
+table.orderSummary tr.totalDivider { }
+table.orderSummary tr.totalDivider td { width:100%; }
+table.orderSummary tr.totalDivider td hr { }
+/* end styles for order summary control */
+
+/******************************************************************************************/
+/* styles for generic content section without an outer wrapper (obsolete)                 */
+/******************************************************************************************/
+
+div.contentSection
+{
+	border: 1px solid #7E94D5;
+	padding: 6px 6px 6px 6px;
+	margin: 0 0 2px 0;
+}
+div.contentSection fieldset 
+{
+	padding: 5px 0;
+	margin: 10px 0;
+	border: 1px solid #CCC;
+}
+
+div.contentSection legend 
+{
+	font-size: 12px;
+	color:#666666;
+	font-weight: bold;
+	padding: 0px 10px 3px 10px;
+	border: 1px solid #CCCCCC;
+	margin: 0 0 5px 0;
+}
+
+div.sectionContentLeft
+{
+	border: 1px solid #C4C4C4;
+	padding: 8px;
+	margin: 2px 2px 0 0;
+	width: 55%;
+	float: left;
+}
+
+div.sectionContentRight
+{
+	border: 1px solid #C4C4C4;
+	padding: 8px;
+	width: 38%;
+	float: right;
+	margin: 2px 0 0 0;
+}
+
+.contentSection ul
+{
+	margin: 5px 5px 5px 15px;
+	padding: 0;
+	list-style-type:square;
+}
+.contentSection ul li { margin-bottom: 10px; }
+
+.space { margin-right: 3px; }
+
+/******************************************************************************************/
+/* end styles for generic content section without an outer wrapper (obsolete)             */
+/******************************************************************************************/
+
+/******************************************************************************************/
+/* styles for inner layout wrapped in contentPanel (obsolete)                             */
+/******************************************************************************************/
+
+table.contentPanel .header{
+	border: 1px solid #C4C4C4;
+	background-color: #E8E8E8;
+	padding: 0 2px;
+	height:25px;
+	margin: 5px 0 0 0;
+	
+}
+
+table.contentPanel .header h2{
+	color: #434343;
+	font-size: 14px;
+	padding: 0;
+	margin: 3px 0 0 5px;
+	width: auto;
+	float: left;
+}
+
+table.contentPanel .header a{
+	width: 19px;
+	height: 19px;
+	float: right;
+	margin: 3px 5px 0 0;
+}
+
+/******************************************************************************************/
+/* end styles for inner layout wrapped in contentPanel (obsolete)                         */
+/******************************************************************************************/
+
+/******************************************************************************************/
+/* default styling for generic input forms                                                */
+/******************************************************************************************/
+
+/* container for form */
+table.inputForm { }
+
+/* default styles for cells in form*/
+/*table.inputForm th, table.inputForm td {padding:2px;}*/
+
+/* styling for row headers in form */
+table.inputForm .rowHeader
+{
+	padding: 6px;
+	text-align:right;
+}
+table.inputForm input.text
+{
+	width:100%;
+	padding-left:2px;
+	padding-right:2px;
+}
+/* style for links that appear within rowheader */
+table.inputForm .rowHeader a.header {
+	background-color: #650101;
+	width:100%;
+	color: #FFFFFF;
+	font-weight: normal;
+	font-size: 10px;
+	font-weight:bold;
+	text-align:left;
+	padding: 6px;
+}
+
+a.textLink , table.inputForm td a {
+	color:#ab1030;
+    background:transparent url(images/Icons/link-arrow2.png) no-repeat scroll right center; 
+	padding-right:14px;
+	font-size: 115%;
+}
+
+.arrow
+{
+	background:transparent url(images/Icons/link-arrow2.png) no-repeat scroll right center; 
+}
+
+a.textLink:hover, table.inputForm td a:hover {color:#2810FF; background-color: #e0e0e0;}
+
+/* set style for cells within rowheader */
+table.inputForm .rowHeader td, table.inputForm .rowHeader th 
+{ 
+	font-weight: bold; 
+   font-size: 10px; 
+  }
+
+/* styling for column headers in form */
+table.inputForm .colHeader
+{
+	background: #F5F5F5;
+	color: #333333;
+	padding: 6px;
+}
+
+/* style for links that appear within rowheader */
+table.inputForm .colHeader a.header {
+	background-color: #650101;
+	width:100%;
+	color: #FFFFFF;
+	font-weight: normal;
+	font-size: 10px;
+	font-weight:bold;
+	padding: 6px;
+}
+
+/* set style for other elements within rowheader */
+table.inputForm .colHeader * {	font-weight: bold; font-size: 12px; }
+
+/* style for cell that contains validation summary */
+table.inputForm .validation { margin-top:4px; margin-bottom:8px; }
+
+/* style for cell that contains submit buttons */
+table.inputForm .submit { padding:4px 0px 8px 0px; text-align:left; }
+
+/* style for cell that contains submit buttons */
+table.inputForm .dialogSubmit { padding:4px 0px 8px 0px; text-align:left; }
+
+/* style used to add width to cells for better visuals */
+table.widenCells th.rowHeader {padding-left:30px;}
+table.widenCells td { padding-right: 20px;}
+
+/*table.inputForm .htmlEditor td, table.inputForm .htmlEditor th { padding:0px; }*/
+
+.searchPanel
+{
+	border:outset 2px grey;
+	background-color:#efefef;
+}
+
+/******************************************************************************************/
+/* end default styling for generic input forms                                            */
+/******************************************************************************************/
+
+
+table.dialog
+{
+	background: #F6F7F3;
+	border: solid 1px #e6e2d8;
+}
+
+table.dialog .caption
+{
+	background: #EBBB03;
+	height: 26px;
+	color: #494949;
+	color:black;
+	margin: 0 0 0 0;
+	padding: 0 0 0 0;
+}
+
+
+/******************************************************************************************/
+/* default styling for buttons (input submit and classed hyperlinks)                      */
+/* NOTE: THIS COMES LAST TO OVERRIDE ANY OTHER STYLING APPLIED TO LINKS                   */
+/******************************************************************************************/
+
+/* default style for buttons */
+input.button
+{
+	background:url(images/button_bg.gif) repeat-x;
+	border: 1px solid #7D90B1;
+	color:#134FA3;
+	cursor:pointer;
+	font-size: 10px;
+	font-weight: bold;
+	height:19px;
+	margin:0 0 4px 0;
+	padding:2px 2px;
+	text-decoration:none;
+	text-transform: uppercase;
+	vertical-align:middle;
+	position:relative;
+	top:1px;
+	white-space: nowrap;	
+
+}
+
+a.button
+{
+	background:url(images/button_bg.gif) repeat-x;
+	background-position: 0 1px;
+	border: 1px solid #7D90B1;
+	color:#134FA3;
+	cursor:pointer;
+	display:inline-block;
+	font-size: 10px;
+	font-weight: bold;
+	padding: 3px 8px 2px 8px;
+	text-decoration:none;
+	text-transform: uppercase;
+	vertical-align:middle;
+	position:relative;
+	top:-1px;
+	white-space: nowrap;	
+}
+
+.button:hover 
+{
+	background:url(images/button_hover_bg.gif) repeat-x;
+	border:1px solid #C7B55C;
+	color:#867001;
+}
+
+table.inputForm td a.button {
+	color:#134FA3;
+	background:url(images/button_bg.gif) repeat-x;
+	padding: 3px 8px 2px 8px;
+	font-size: 10px;
+}
+table.inputForm td a.button:hover {background:url(images/button_hover_bg.gif) repeat-x; color:#867001;}
+
+	
+/******************************************************************************************/
+/* end default styling for buttons (input submit and classed hyperlinks)                  */
+/******************************************************************************************/
+
+/******************************************************************************************/
+/* styling for tooltip help                                                               */
+/******************************************************************************************/
+
+/* link container for the tooltip */
+a.toolTip,a.toolTip:hover, table.inputForm td a.toolTip, table.inputForm td a.toolTip:hover
+{	
+	text-decoration:none;
+	z-index:24;
+	/* Added for tool tip icon*/
+    padding-right:12px;	
+	background-image:url(images/icons/tooltip.gif);
+	background-repeat:no-repeat !important;		
+	background-position:right top;
+	color:#000;	
+}
+
+a.toolTipHover, table.inputForm td a.toolTipHover
+{
+	z-index:25;	
+	text-decoration:none;
+	/* Added for tool tip icon*/
+	padding-right:12px;	
+	background-image:url(images/icons/tooltip.gif);
+	background-repeat:no-repeat !important;		
+	background-position:right top;	
+	position:relative !ie; /* will be applied only on IE */
+}
+
+/* style for text in the tooltip, when the tooltip is inactive (hide help) */
+a.toolTip div.toolTip{ display:none; }
+
+/* style for text in the tooltip, when the tooltip is active (show help) */
+a.toolTipHover div.toolTip
+{
+    display:block;
+    position:absolute;
+    padding-top:2em;  
+    padding-left:2em; 
+    padding-top:0px !ie; /* Dont apply padding on IE*/
+    padding-left:0px !ie; /* Dont apply padding on IE*/
+    top:1em !ie; /* Dont apply other then IE*/
+    left:0em !ie; /* Dont apply other then IE*/
+    width:200px;	
+    padding:4px;
+    border:1px solid black;
+    text-align: justify;
+	background-color: #484848;
+	color: #DBDBDB;
+	white-space:normal;
+	z-index:99;
+}
+
+/* link container for the tooltip when used in a column header */
+a.toolTipHeader, a.toolTipHeader:hover
+{	
+	text-decoration:none;
+	z-index:24;
+}
+
+a.toolTipHeaderHover
+{
+	z-index:25;	
+	text-decoration:none;
+	position:relative !ie; /* will be applied only on IE */
+}
+
+/* style for text in the tooltip, when the tooltip is inactive (hide help) */
+a.toolTipHeader div.toolTipHeader, a.toolTipHeader:hover div.toolTipHeader
+{
+	display:none;
+}
+
+/* style for text in the tooltip, when the tooltip is active (show help) */
+a.toolTipHeaderHover div.toolTipHeader
+{
+    display:block;
+    position:absolute;
+    padding-top:2em;  
+    padding-left:2em; 
+    margin-top:10px;
+    margin-left:10px;
+    margin-top:0px !ie; /* Dont apply margins on IE */
+    margin-left:0px !ie; /* Dont apply margins on IE */
+    width:200px;	
+    padding:4px;
+    border:1px solid black;
+    text-align: justify;
+	background-color: #484848;
+	color: #DBDBDB;
+	white-space:normal;
+	z-index:99;
+}
+
+/* style for text that is intended as a help note (such as appears on legacy payment gateway pages) */
+.helpText { font-weight:normal; font-style:italic; }
+
+/******************************************************************************************/
+/* end styling for tooltip help                                                           */
+/******************************************************************************************/
+
+/******************************************************************************************/
+/* styling for context menu buttons                                                       */
+/******************************************************************************************/
+
+a.contextMenuButton
+{
+   font-size:12px;
+   color:#01076C;
+   height:17px;
+   line-height:17px;
+   background:url(images/leftsided_tab_bg.gif) repeat-x left top;
+   background-color:#E3EFFF;
+   border-top-style:solid;
+   border-top-color:#7D90B1;
+   border-top-width:1px;
+   border-bottom-style:solid;
+   border-bottom-color:#7D90B1;
+   border-bottom-width:1px;
+   border-left-style:solid;
+   border-left-color:#7D90B1;
+   border-left-width:15px;
+   border-right-style:solid;
+   border-right-color:#7D90B1;
+   border-right-width:1px;
+   display:block;
+   text-indent:6px;
+   text-decoration:none;
+}
+
+/*a.contextMenuButton:hover { background-color:#526CC5; }*/
+
+a.contextMenuButton:hover
+{
+   font-size:12px;
+   color:#01076C;
+   height:17px;
+   line-height:17px;
+   background:url(images/hover_leftsided_tab_bg.gif) repeat-x left top;
+   background-color:#526CC5;
+   border-top-style:solid;
+   border-top-color:#C7B55C;
+   border-top-width:1px;
+   border-bottom-style:solid;
+   border-bottom-color:#C7B55C;
+   border-bottom-width:1px;
+   border-left-style:solid;
+   border-left-color:#C7B55C;
+   border-left-width:15px;
+   border-right-style:solid;
+   border-right-color:#C7B55C;
+   border-right-width:1px;
+   display:block;
+   text-indent:6px;
+   text-decoration:none;
+   /*font-weight:bold;*/
+}
+a.contextMenuButtonSelected
+{
+   font-size:12px;
+   color:#01076C;
+   height:17px;
+   line-height:17px;
+   background:url(images/hover_leftsided_tab_bg.gif) repeat-x left top;
+   background-color:#526CC5;
+   border-top-style:solid;
+   border-top-color:#C7B55C;
+   border-top-width:1px;
+   border-bottom-style:solid;
+   border-bottom-color:#C7B55C;
+   border-bottom-width:1px;
+   border-left-style:solid;
+   border-left-color:#C7B55C;
+   border-left-width:15px;
+   border-right-style:solid;
+   border-right-color:#C7B55C;
+   border-right-width:1px;
+   display:block;
+   text-indent:6px;
+   text-decoration:none;
+   /*font-weight:bold;*/
+}
+a.contextMenuButtonActive
+{
+   font-size:12px;
+   color:#01076C;
+   height:17px;
+   line-height:17px;
+   background:url(images/hover_leftsided_tab_bg.gif) repeat-x left top;
+   background-color:#526CC5;
+   border-top-style:solid;
+   border-top-color:#C7B55C;
+   border-top-width:1px;
+   border-bottom-style:solid;
+   border-bottom-color:#C7B55C;
+   border-bottom-width:1px;
+   border-left-style:solid;
+   border-left-color:#C7B55C;
+   border-left-width:15px;
+   border-right-style:solid;
+   border-right-color:#C7B55C;
+   border-right-width:1px;
+   display:block;
+   text-indent:6px;
+   text-decoration:none;
+   /*font-weight:bold;*/
+}
+.menu
+{
+	margin-bottom:2px;
+	text-decoration:none;
+}
+/******************************************************************************************/
+/* end styling for context menu buttons                                                   */
+/******************************************************************************************/
+
+/******************************************************************************************/
+/* styles for tree view                                                                   */
+/******************************************************************************************/
+
+.treeNode { color:#000; padding: 3px 0; }
+.treeNode a {text-decoration:none;}
+.treeNode a:hover { color:#5872CB; }
+.treeNodeExpanded { color:#EFEFEF; padding: 3px 0; }
+.treeNodeExpanded a { text-decoration:none; }
+.treeNodeSelected { color:#000; padding: 3px 0; font-weight:bold; }
+.treeNodeSelected a { text-decoration:none; }
+
+/******************************************************************************************/
+/* end styles for tree view                                                               */
+/******************************************************************************************/
+
+/******************************************************************************************/
+/* styling for pager controls                                                             */
+/******************************************************************************************/
+
+/* style for paging container (tr) 
+.paging {text-align:right; margin-left:1px; }*/
+.paging td table td {border: 1px solid #0B3C6D; text-align:center; margin-left:1px; width:16px; padding: 0;}
+/* span within the paging container - this is actually the active page index */
+.paging td table td span {display: block; padding:1px 0; font-size: 10px; font-weight:bold; background-color: #E7ECFF; color: #003366; }
+/* link within paging container */
+.paging td table td a {display: block; padding:1px 0; font-size: 10px; font-weight:bold; background-color: #5872CB; color: #FFFFFF; text-decoration:none; }
+/* link(hover) within paging container */
+.paging td table td a:hover {background-color: #E7ECFF; color: #003366; }
+
+/******************************************************************************************/
+/* end styling for pager controls                                                         */
+/******************************************************************************************/
+
+/************** Style for the Product Image ******************/
+.productimg
+{
+	vertical-align:top;
+	text-align:center
+}
+
+
+/******************************************************************************************/
+/* begin styles for modal popup dialogs                                                   */
+/******************************************************************************************/
+
+/* background for main page when modal popup is visible */
+.modalBackground {
+	background-color:Gray;
+	filter:alpha(opacity=70);
+	opacity:0.7;
+}
+
+/* style for modal popup dialog */
+.modalPopup {
+	background-color:#E3EFFF;
+	border-width:3px;
+	border-style:solid;
+	border-color:Gray;
+	padding:3px;
+	width:300px;
+}
+
+/* style for header of modal popup dialog */
+.modalPopupHeader 
+{
+	cursor:move;
+	background-color:#DDDDDD;
+	border:solid 1px Gray;
+	color:Black;
+	margin:-3px;
+	padding:6px;
+	font-weight:bold;
+}
+
+/******************************************************************************************/
+/* end styles for modal popup dialogs                                                     */
+/******************************************************************************************/
+
+/******************************************************************************************/
+/* begin styles for collapsible panels                                                    */
+/******************************************************************************************/
+
+/* header for collapsible panel */
+.collapsePanelHeader{	
+	width:100%;		
+	height:30px;
+	background-image: url(images/bg-menu-main.png);
+	background-repeat:repeat-x;
+	color:#FFF;
+	font-weight:bold;
+}
+
+/* collapsible panel */
+.collapsePanel {
+	
+	background-color:white;
+	overflow:hidden;
+}
+
+/* used to display reviews message  */
+pre.Reviews 
+{
+    font-family: Arial, Verdana, Helvetica, sans-serif;
+	font-size: 12px;
+	white-space: pre-wrap;       /* css-3 */
+    white-space: -moz-pre-wrap !important;  /* Mozilla, since 1999 */
+    white-space: -pre-wrap;      /* Opera 4-6 */
+    white-space: -o-pre-wrap;    /* Opera 7 */
+    word-wrap: break-word;       /* Internet Explorer 5.5+ */
+}
+
+.gridHeader a
+{
+	color: black;
+	background :transparent;
+	font-weight: bold; 
+    font-size: 12px; 
+}
+
+/******************************************************************************************/
+/* end styles for collapsible panels                                                      */
+/******************************************************************************************/
+
+/*************************************************************/
+
+/* close the @media screen rule */
+}

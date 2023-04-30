@@ -1,0 +1,8 @@
+E:\XMAble\trunk\Website\bin\MakerShop.Web.dll
+E:\XMAble\trunk\Website\bin\MakerShop.Web.pdb
+E:\XMAble\trunk\MakerShop.Web.UI\obj\Debug\ResolveAssemblyReference.cache
+E:\XMAble\trunk\MakerShop.Web.UI\obj\Debug\MakerShop.Web.UI.WebControls.SearchKeywordValidator.js
+E:\XMAble\trunk\MakerShop.Web.UI\obj\Debug\MakerShop.Web.UI.WebControls.ToolTipLabel.js
+E:\XMAble\trunk\MakerShop.Web.UI\obj\Debug\MakerShop.Web.UI.WebControls.ToolTipLabel_IE6.js
+E:\XMAble\trunk\MakerShop.Web.UI\obj\Debug\MakerShop.Web.dll
+E:\XMAble\trunk\MakerShop.Web.UI\obj\Debug\MakerShop.Web.pdb

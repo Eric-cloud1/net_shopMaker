@@ -1,0 +1,213 @@
+﻿@media print {
+
+/* default font styling for all elements */
+html * { font-family: Georgia, "Times New Roman", Times, serif; font-size: 16px; }
+
+/* style for a caption that is inline with other text */
+.inlineCaption {display:inline;font-weight:bold;color: #333333;}
+
+/* class to specifically hide element during printing */
+.noPrint { display:none; }
+
+/* class to indicate that a page break should follow the element */
+.breakAfter { page-break-after:always; }
+
+/* class to indicate that a page break should follow the element */
+.breakBefore { page-break-before:always; }
+
+a { text-decoration:none;color:Black; }
+
+th a { font-weight: bold; }
+
+/******************************************************************************************/
+/* styles that control the layout of the admin page                                       */
+/******************************************************************************************/
+
+/* style for the header panel */
+#pageLayoutHeader { display:none; }
+
+/* style for the footer panel */
+#pageLayoutFooter { display:none; }
+
+/******************************************************************************************/
+/* styles for the standard page header                                                    */
+/******************************************************************************************/
+
+/* container for the page header */
+div.pageHeader { margin-bottom:6px; }
+
+/* page caption container */
+div.pageHeader div.caption { }
+
+/* page caption */
+div.pageHeader div.caption h1
+{
+	margin: 0 0 12px 0;
+	color: #232323;
+	font-size: 24px;
+	border-bottom:solid 1px black;
+}
+
+/* usually for instructional text for top of page */
+div.pageHeader div.content { }
+
+/* for subcaption */
+div.pageHeader div.content h2
+{
+	display:inline;
+	margin:0px;
+	font-size:16px;
+}
+
+h2.conlib
+{
+	margin:12px 0px 4px 0px;
+	font-size:larger;
+	font-weight:bold;
+}
+
+/* default styling for definition lists */
+dt { font-weight:bold;font-style:italic; }
+dd { text-indent:0px;padding:0px;margin-left:12px; }
+
+/******************************************************************************************/
+/* end styles for the standard page header                                                */
+/******************************************************************************************/
+
+/******************************************************************************************/
+/* styles for table that lays out a form of data (such as an invoice)                     */
+/******************************************************************************************/
+
+/* table style */
+table.form 
+{
+	margin-top:1em;
+	margin-bottom:1em;
+ 	border-color:Black;
+	border-collapse:collapse;
+ 	page-break-inside:avoid;
+	width:100%;
+}
+
+/* style common to headers and cells */
+table.form td, table.form th
+{
+	padding:4px 8px;
+}
+
+/* styling for header cells  */
+table.form th { font-weight:bold; }
+
+/* additional styling for header cell */
+table.form th.header { text-align:left; }
+
+/* additional styling for caption */
+table.form th.header span.caption { font-size:20px; }
+
+/* used to display a page header within the inner layout */
+table.form td.pageHeader
+{
+	padding: 12px 0px;
+}
+
+/* used to display the caption of the page header within the inner layout */
+table.form td.pageHeader h1
+{
+	padding:3px 0px;
+	margin: 0px;
+	color: #232323;
+	font-size: 24px;
+	border-top:dashed 1px black;
+	border-bottom:dashed 1px black;
+}
+
+/* style for cell that contains a datasheet */
+table.form td.dataSheet { padding:0px; }
+
+/* additional styling for datasheet that appears within a form */
+table.form table.dataSheet { margin-bottom:-1px; }
+
+/* style for the invoice caption */
+h1.invoice 
+{
+	font-size:24px;
+	font-weight:bold;
+}
+
+/******************************************************************************************/
+/* end styles for table that lays out a form of data (such as an invoice)                 */
+/******************************************************************************************/
+
+/******************************************************************************************/
+/* styles for generic table of data rows                                                  */
+/******************************************************************************************/
+
+/* table style */
+table.dataSheet { border: solid 1px black; }
+
+/* style common to headers and cells */
+table.dataSheet td, table.dataSheet th
+{
+	padding:8px 12px;
+	border-bottom: dashed 1px black;
+	border-left:solid 1px black;
+}
+
+/* styling for header cells  */
+table.dataSheet th { font-weight:bold; }
+
+/* styling for the total row */
+table.dataSheet tr.totalRow td, table.dataSheet tr.totalRow th
+{
+	border-top: double 3px gray;
+	border-bottom: double 3px gray;
+}
+
+/******************************************************************************************/
+/* end styles for generic table of data rows                                              */
+/******************************************************************************************/
+
+/******************************************************************************************/
+/* styles for summary table                                                               */
+/******************************************************************************************/
+
+/* table style */
+table.summary { border: solid 2px black; border-collapse: collapse;  }
+
+/* style common to headers and cells */
+table.summary td, table.summary th
+{
+	padding: 6px 4px;
+	border-top: solid 1px black;
+	border-bottom: solid 1px black;
+}
+
+/* styling for header cells  */
+table.summary th 
+{
+	font-weight:bold;
+}
+
+/* style for the empty result message */
+table.summary tr.empty td
+{
+	min-width:300px;
+	text-align:center;
+	padding: 10px;
+	font-style:italic;
+}
+
+/* styling for the total row */
+table.summary tr.totalRow td, table.summary tr.totalRow th
+{
+	border-top: double 3px gray;
+	border-bottom: double 3px gray;
+}
+
+/******************************************************************************************/
+/* end styles for summary table                                                           */
+/******************************************************************************************/
+
+
+/* close the print media selector */
+}
